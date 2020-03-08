@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
 
-author: "John Smith"
-layout: "foobar"
+<body class="theme-base-08">
+  ...
+</body>
