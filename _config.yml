@@ -20,7 +20,7 @@ title                    : "Charlie的学习与生活"
 title_separator          : "-"
 subtitle                 : "Beta"
 name                     : "宋昌霖"
-description              : "爱人与食物不可辜负。"
+description              : "唯爱人与食物不可辜负。"
 url                      : "https://s975188062.github.io"
 baseurl                  : #"/master"
 repository               : #"s975188062/s975188062.github.io"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "宋昌霖"
   avatar           : "/assets/images/icon.png" #"/assets/imgs/head_photo.png"
-  bio              : "爱人与美食不可辜负。"
+  bio              : "唯爱人与美食不可辜负。"
   location         : "Beijing"
   email            : “Schanglin@outlook.com”
   links:
