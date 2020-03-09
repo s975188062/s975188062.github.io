@@ -25,7 +25,7 @@ url                      : #"https://s975188062.github.io"
 baseurl                  : #"/master"
 repository               : #"s975188062/s975188062.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/imgs/icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -107,10 +107,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "宋昌霖"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "爱人与美食不可辜负。""
+  location         : "Beijing"
   email            :
   links:
     - label: "Email"
