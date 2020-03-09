@@ -261,7 +261,7 @@ tag_archive:
   path: /articals/tags/
 recipe_archive:
   type: liquid
-  path: /articals/recepe/
+  path: /articals/recipe/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
