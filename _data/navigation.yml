@@ -9,4 +9,4 @@ main:
   - title: "美食"
     url: /articals/recipe/
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /_pages/about.md
