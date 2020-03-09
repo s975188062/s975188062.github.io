@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "宋昌霖"
-  avatar           : "/assets/imgs/icon.png"#"/assets/imgs/head_photo.png"
+  avatar           : "/assets/images/icon.png"#"/assets/imgs/head_photo.png"
   bio              : "爱人与美食不可辜负。"
   location         : "Beijing"
   email            : “Schanglin@outlook.com”
