@@ -24,7 +24,7 @@ description              : "爱人与食物不可辜负。"
 url                      : "https://s975188062.github.io"
 baseurl                  : #"/master"
 repository               : #"s975188062/s975188062.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/icon.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : #"/assets/imgs/icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : #true # true, false (default)
