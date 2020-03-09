@@ -1,7 +1,7 @@
 ---
 title: "文章分类"
 layout: categories
-permalink: /articals/categories/
+permalink: /categories/
 author_profile: true
 ---
 

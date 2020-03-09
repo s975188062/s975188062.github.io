@@ -1,6 +1,6 @@
 ---
 title: "文章标签"
-permalink: /articals/tags/
+permalink: /tags/
 layout: tags
 author_profile: true
 ---

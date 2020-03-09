@@ -1,6 +1,6 @@
 ---
 title: "黑哥的私房菜谱"
-permalink: /articals/recipe/
+permalink: /_recipes/
 layout: recipe
 author_profile: true
 ---
