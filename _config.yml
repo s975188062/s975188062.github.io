@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "宋昌霖"
+  name             : "Charlie"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "爱人与美食不可辜负。""
+  bio              : "爱人与美食不可辜负。"
   location         : "Beijing"
   email            : “Schanglin@outlook.com”
   links:
