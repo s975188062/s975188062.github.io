@@ -1,8 +1,6 @@
 ---
-title: "test"
+title: "关于Drift Check你应该知道更多"
 ---
-
-# 关于Drift Check你应该知道更多
 
 ## 什么是Drift Check？
 
