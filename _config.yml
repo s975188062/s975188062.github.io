@@ -255,13 +255,13 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /articals/categories/
+  path: /categories/
 tag_archive:
   type: liquid
-  path: /articals/tags/
+  path: /tags/
 recipe_archive:
   type: liquid
-  path: /articals/recipe/
+  path: /_recipes/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
