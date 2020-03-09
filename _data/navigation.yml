@@ -2,9 +2,11 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "分类2"
+  - title: "分类"
     url: /articals/categories/
-  - title: "标签2"
+  - title: "标签"
     url: /articals/tags/
+  - title: "美食"
+    url: /articals/recipe/
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
