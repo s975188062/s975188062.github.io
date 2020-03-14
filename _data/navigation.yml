@@ -18,16 +18,16 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Home"
+    url: /
   - title: "分类"
     url: /categories/
   - title: "标签"
     url: /tags/
-  - title: "美食"
-    url: /_recipes/
   - title: "About"
     url: /about/
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
 
 # sidebar navigation list sample
