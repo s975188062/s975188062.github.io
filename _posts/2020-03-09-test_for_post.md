@@ -6,9 +6,7 @@ tags:
   - 数据质量
   - 眼动仪校准
 toc: ture
-excerpt_separator: "<!--more-->"
-header:
-  overlay_image: /assets/images/Head.png
+
 ---
 
 ## 什么是Drift Check？
