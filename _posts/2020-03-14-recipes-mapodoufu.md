@@ -3,7 +3,7 @@ tittle: "麻婆豆腐"
 categories:
   - Recipe
 tags:
-  - “简单快手菜”
+  - 简单快手菜
   - "辣"
 ---
 
