@@ -15,5 +15,4 @@ tags:
 前段时间重温《中华小当家》的时候注意到了一个细节——正宗的麻婆豆腐应当是炒出来的，而不是炖煮出来，这也将是我们制作麻婆豆腐的关键。
 
 在下面的食谱中，我用的是“草原红太阳”的麻婆豆腐调料，
-
-![recipe-caoyuanhongtaiyang](media/recipe-caoyuanhongtaiyang.png)
+![img](/assets/images/recipe-caoyuanhongtaiyang.png)
