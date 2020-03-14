@@ -13,4 +13,4 @@ tags:
 
 在下面的食谱中，我用的是“草原红太阳”的麻婆豆腐调料，
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/recipe-caoyuanhongtaiyang.png){: .align-center}
+![image-center](/assets/images/recipe-caoyuanhongtaiyang.png)
