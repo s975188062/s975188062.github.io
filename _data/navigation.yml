@@ -19,8 +19,8 @@ foo:
 # main links
 main:
   - title: "Quick-Start Guide"
-    url: /docs/
-    #url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    #url: /docs/
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "分类"
     url: /categories/
   - title: "标签"
