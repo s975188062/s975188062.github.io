@@ -8,7 +8,7 @@ tags:
 toc: ture
 excerpt_separator: "<!--more-->"
 header:
-  overlay_image: /assets/images/head.jpeg
+  overlay_image: /assets/images/head.png
 ---
 
 ## 什么是Drift Check？
