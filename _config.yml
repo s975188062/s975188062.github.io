@@ -22,7 +22,7 @@ subtitle                 : "Building in Beta" #副标题
 name                     : "宋昌霖"
 description              : "唯爱人与食物不可辜负"
 url                      : "https://s975188062.github.io"
-baseurl                  : "/master"
+baseurl                  : "/tree/master"
 repository               : #"s975188062/s975188062.github.io"
 teaser                   : #"/assets/images/background.png" #默认的文章缩略图 path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : #"/assets/imgs/icon.png"
