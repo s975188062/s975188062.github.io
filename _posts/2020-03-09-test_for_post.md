@@ -1,5 +1,7 @@
 ---
 title: "关于Drift Check你应该知道更多"
+
+toc: ture
 ---
 
 ## 什么是Drift Check？

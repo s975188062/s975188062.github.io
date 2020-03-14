@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "About Me"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 
 toc: false
