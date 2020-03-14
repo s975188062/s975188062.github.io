@@ -4,7 +4,7 @@ categories:
   - Recipe
 tags:
   - 简单快手菜
-  - "辣"
+  - 辣
 ---
 
 
