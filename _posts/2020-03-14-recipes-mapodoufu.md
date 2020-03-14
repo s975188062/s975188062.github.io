@@ -14,7 +14,8 @@ tags:
 
 ---
 
-## 话不多说，先上成品图
+话不多说，先上成品图
+![img](/assets/images/recipe-caoyuanhongtaiyang.png)
 
 
 ## 食材准备
