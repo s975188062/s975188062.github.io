@@ -13,3 +13,6 @@ tags:
 
 在下面的食谱中，我用的是“草原红太阳”的麻婆豆腐调料，
 
+{% capture fig_img %}
+![Foo]({{ "/assets/images/recipe-caoyuanhongtaiyang.png" | relative_url }})
+{% endcapture %}
