@@ -1,6 +1,10 @@
 ---
 title: "关于Drift Check你应该知道更多"
-
+categories:
+  - EyeTracking
+tags:
+  - 数据质量
+  - 眼动仪校准
 toc: ture
 ---
 
