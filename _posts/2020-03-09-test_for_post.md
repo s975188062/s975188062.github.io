@@ -8,7 +8,7 @@ tags:
 toc: ture
 excerpt_separator: "<!--more-->"
 header:
-  image: /assets/images/icon.png
+  # image: /assets/images/icon.png
   og_image: /assets/images/head_photo.png
 ---
 
