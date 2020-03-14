@@ -27,7 +27,7 @@ main:
   - title: "美食"
     url: /_recipes/
   - title: "About"
-    url: https://www.baidu.com/
+    url: /about/
 
 
 # sidebar navigation list sample
