@@ -117,8 +117,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:Schanglin@outlook.com
     - label: "付费咨询"
-      # icon: "fas fa-fw fa-envelope-square"
-      url: /about/
+      url: /pay4more/
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
 #      url: "https://your-website.com"
@@ -138,24 +137,24 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://github.com/s975188062"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://github.com/s975188062"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://github.com/s975188062"
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      url: "https://github.com/s975188062"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/s975188062"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://github.com/s975188062"
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      url: "https://github.com/s975188062"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://github.com/s975188062"
+#    - label: "GitLab"
+#      icon: "fab fa-fw fa-gitlab"
+#      url: "https://github.com/s975188062"
+#    - label: "Bitbucket"
+#      icon: "fab fa-fw fa-bitbucket"
+#      url: "https://github.com/s975188062"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://github.com/s975188062"
 
 
 # Reading Files
