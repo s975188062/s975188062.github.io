@@ -8,7 +8,7 @@ sidebar:
   - title: "Parent Page A"
     children:
       - title: "Child Page A1"
-        url: “http://charlie-techblog.com/recipe/recipes-mapodoufu/”
+        url: "http://charlie-techblog.com/recipe/recipes-mapodoufu/"
 
 ---
 
