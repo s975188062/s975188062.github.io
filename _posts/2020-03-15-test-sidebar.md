@@ -1,5 +1,5 @@
 ---
-title: "麻婆豆腐"
+title: "test"
 author_profile: false
 comments: true
 categories:
@@ -8,9 +8,9 @@ sidebar:
   - title: "Parent Page A"
     children:
       - title: "Child Page A1"
-        url: "http://charlie-techblog.com/recipe/recipes-mapodoufu/"
+        url: /about/
       - title: "222"
-        url: "http://www.baidu.com"
+        url: /about/
 
 ---
 
