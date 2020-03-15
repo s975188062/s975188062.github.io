@@ -10,7 +10,7 @@ main:
     url: /about/
 
 
-docs:
+foo:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
