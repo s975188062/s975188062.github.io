@@ -1,5 +1,6 @@
 ---
 title: "麻婆豆腐"
+permalink: /_posts/qmapodoufu/
 categories:
   - Recipe
 toc: true

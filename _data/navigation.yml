@@ -8,3 +8,30 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /_posts/qmapodoufu/
+      - title: "Structure"
+        url: /_posts/qmapodoufu/
+      - title: "Installation"
+        url: /_posts/qmapodoufu/
+      - title: "Upgrading"
+        url: /_posts/qmapodoufu/
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /_posts/qmapodoufu/
+      - title: "Overriding Theme Defaults"
+        url: /_posts/qmapodoufu/
+      - title: "Navigation"
+        url: /_posts/qmapodoufu/
+      - title: "UI Text"
+        url: /_posts/qmapodoufu/
+      - title: "Authors"
+        url: /_posts/qmapodoufu/
+      - title: "Layouts"
+        url: /_posts/qmapodoufu/
