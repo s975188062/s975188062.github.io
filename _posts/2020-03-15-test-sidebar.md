@@ -1,7 +1,6 @@
 ---
 title: "test"
 author_profile: false
-comments: true
 categories:
   - TestPage
 sidebar:
