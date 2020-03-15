@@ -1,6 +1,8 @@
 ---
 title: "麻婆豆腐"
 author_profile: false
+categories:
+  - TestPage
 sidebar:
   - title: "Parent Page A"
     children:
