@@ -111,11 +111,11 @@ author:
   avatar           : "/assets/images/head_photo.png"
   bio              : "唯爱人与美食不可辜负"
   location         : "Beijing"
-  email            : "Schanglin@outlook.com"
+  email            : # "Schanglin@outlook.com"
   links:
-    - label: "Email"
+    - label: "Schanglin@outlook.com"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:Schanglin@outlook.com
+      url: mailto:Schanglin@outlook.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://your-website.com"
