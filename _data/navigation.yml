@@ -8,12 +8,3 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
-#  - title: "Quick-Start Guide"
-#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-
-docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /about/
-      
