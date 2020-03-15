@@ -9,6 +9,8 @@ sidebar:
     children:
       - title: "Child Page A1"
         url: "http://charlie-techblog.com/recipe/recipes-mapodoufu/"
+      - title: "222"
+        url: "http://www.baidu.com"
 
 ---
 
