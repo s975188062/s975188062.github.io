@@ -14,24 +14,24 @@ docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Structure"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Installation"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Upgrading"
-        url: /_posts/qmapodoufu/
+        url: /about/
   - title: Customization
     children:
       - title: "Configuration"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Overriding Theme Defaults"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Navigation"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "UI Text"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Authors"
-        url: /_posts/qmapodoufu/
+        url: /about/
       - title: "Layouts"
-        url: /_posts/qmapodoufu/
+        url: /about/
