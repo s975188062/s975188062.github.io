@@ -110,7 +110,7 @@ author:
   name             : "宋昌霖"
   avatar           : "/assets/images/head_photo.png"
   bio              : "唯爱人与美食不可辜负"
-  location         : "Beijing"
+  location         : #"Beijing"
   email            : # "Schanglin@outlook.com"
   links:
     - label: "Schanglin@outlook.com"
