@@ -14,7 +14,7 @@ typora-root-url: ../../s975188062.github.io
 ---
 
 话不多说，先上成品图
-![img](/assets/images/mapodoufu_bb.png)
+![img](/assets/images/mapodoufu_BB.jpeg)
 
 
 ## 食材准备
