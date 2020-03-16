@@ -3,6 +3,7 @@ title: "麻婆豆腐"
 categories:
   - Recipe
 toc: true # 右侧页内导航
+typora-root-url: ../../s975188062.github.io
 ---
 
 麻婆豆腐作为一道家喻户晓的川菜，以其麻辣的口味和弹软的口感深受普通老百姓喜欢。即便是身处东北的黑龙江，巧手的主妇也会时不时给孩子做上一次解解馋。
@@ -13,7 +14,7 @@ toc: true # 右侧页内导航
 ---
 
 话不多说，先上成品图
-![img](/assets/images/recipe-caoyuanhongtaiyang.png)
+![img](/assets/images/mapodoufu_bb.png)
 
 
 ## 食材准备
@@ -41,3 +42,5 @@ toc: true # 右侧页内导航
 ## 写在最后
 
 花椒和辣椒的量根据自己喜好酌情调整。步骤3中的花椒也可炸过后捞出，这样做好的成品里面就不会有花椒粒。
+
+勾芡很重要，目的是将酱料挂在豆腐上，这样才好吃。
