@@ -114,9 +114,9 @@ author:
   email            : # "Schanglin@outlook.com"
   links:
     - label: "Schanglin@outlook.com"
-      icon: "/assets/images/icon_email_white.png"
+      icon: "fas fa-fw fa-envelope-square"
       url: mailto:Schanglin@outlook.com
-    - label: "付费咨询"
+    - label: "Charlie的万事屋"
       url: /pay4more/
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
