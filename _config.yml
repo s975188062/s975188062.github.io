@@ -187,6 +187,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - /_editing
+  - /.MWebMetaData
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
