@@ -34,7 +34,7 @@ title: "Eyelink指北"
 
 ## Tips
 
-* [DriftCorrection Action](http://charlie-techblog.com/eyetracking/Drift/)
+* [DriftCorrection Action](http://charlie-techblog.com/eyelink/Drift/)
 
 ---
 
