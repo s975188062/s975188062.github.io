@@ -1,7 +1,7 @@
 ---
 permalink: /content/
 title: "索引导航"
-toc: false
+toc: true
 ---
 
 >欢迎，这里是Charlie的Eyelink指北。内容在逐步更新中……
