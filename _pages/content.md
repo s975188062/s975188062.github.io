@@ -16,7 +16,7 @@ toc: false
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
 * Trial层（PrepareSequence和DriftCorrection）
-* Recording层（Datasource和引用）
+* [Recording层（Datasource和引用）](http://charlie-techblog.com/eyetracking/Drift/)
 * 设置随机（Datasource）
 * 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
 * 记录行为信息（ResultFile和AddToResultFile）
