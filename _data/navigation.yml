@@ -17,13 +17,7 @@ main:
 EB:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
-  - title: "Data Viewer"
-    url: /editing/
-  - title: "主试机操作"
-    url: /editing/
-  - title: "3rd-Party Tools"
-    url: /editing/
-  - title: "Experiment Builder Basic"
+  - title: "EB Basic"
     children:
       - title: "认识软件"
         url: /editing/
@@ -45,7 +39,7 @@ EB:
         url: /editing/
       - title: "实验的保存、编译、压缩与迁移"
         url: /editing/
-  - title: "Experiment Builder Master"
+  - title: "EB Master"
     children:
       - title: "播放声音材料"
         url: /editing/
@@ -65,7 +59,15 @@ EB:
         url: /editing/
       - title: "绘制兴趣区"
         url: /editing/
-  - title: "Experiment Builder Tips"
+  - title: "EB Tips"
     children:    
       - title: "DriftCorrection"
         url: "http://charlie-techblog.com/eyelink/Drift/"
+  - title: "Eyelink指北的其他部分"
+    children:    
+    - title: "Data Viewer"
+      url: /editing/
+    - title: "主试机操作"
+      url: /editing/
+    - title: "3rd-Party Tools"
+      url: /editing/
