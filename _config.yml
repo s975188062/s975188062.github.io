@@ -193,6 +193,7 @@ exclude:
   - tmp
   - /_editing
   - /.MWebMetaData
+  - /_source
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
