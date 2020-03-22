@@ -29,6 +29,7 @@ toc: false
 * Visual-World（DisplayScreen和Mouse）
 * 多模态（SetTTL、BiometricTTL等）
 * 真随机（Variable和UpdateAttribute）
+* [草原红太阳的麻婆豆腐调料，京东3.8元/袋](https://item.jd.com/10343211189.html)
 
 # Data Viewer
 ## Basic
