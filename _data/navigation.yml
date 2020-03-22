@@ -23,7 +23,7 @@ EB:
     url: /editing/
   - title: "3rd-Party Tools"
     url: /editing/
-  - title: "Basic"
+  - title: "Experiment Builder Basic"
     children:
       - title: "认识软件"
         url: /editing/
@@ -45,7 +45,7 @@ EB:
         url: /editing/
       - title: "实验的保存、编译、压缩与迁移"
         url: /editing/
-  - title: "Master"
+  - title: "Experiment Builder Master"
     children:
       - title: "播放声音材料"
         url: /editing/
@@ -65,7 +65,7 @@ EB:
         url: /editing/
       - title: "绘制兴趣区"
         url: /editing/
-  - title: "Tips"
+  - title: "Experiment Builder Tips"
     children:    
       - title: "DriftCorrection"
         url: "http://charlie-techblog.com/eyelink/Drift/"
