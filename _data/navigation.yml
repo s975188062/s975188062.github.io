@@ -12,7 +12,7 @@ main:
 
 EB:
   - title: "DV相关"
-    url: /about/
+    url: /content/
   - title: Customization
     children:
       - title: "Configuration"
