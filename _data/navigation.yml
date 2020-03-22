@@ -17,6 +17,12 @@ main:
 EB:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
+  - title: "Data Viewer"
+    url: /editing/
+  - title: "主试机操作"
+    url: /editing/
+  - title: "3rd-Party Tools"
+    url: /editing/
   - title: "Basic"
     children:
       - title: "认识软件"
