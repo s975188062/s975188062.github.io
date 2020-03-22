@@ -29,6 +29,7 @@ title: "索引导航"
 * Visual-World（DisplayScreen和Mouse）
 * 多模态（SetTTL、BiometricTTL等）
 * 真随机（Variable和UpdateAttribute）
+* 绘制兴趣区InterestArea（DisplayScreen）
 
 ---
 
@@ -45,8 +46,17 @@ title: "索引导航"
 
 ## Basic
 
+* 数据导入
+* TrialGrouping
+* 设置InterestPeriod
+* 绘制InterestArea
+* Report Data
 
 ## Master
+
+* 数据清洗
+* 绘制动态兴趣区DynamicInterestArea
+* 数据补救
 
 ---
 
@@ -57,13 +67,17 @@ title: "索引导航"
 * 概述
 * elConnect
 * elCameraSetup
-* startRecoring
+* startRecording
 * stopRecording
 * elClose
 
 ## PsychoToolBox
 
+* 概述
+
 ## PsychoPy
+
+[Zhiguo-Eyelab](https://github.com/zhiguo-eyelab/Pylink_book)
 
 ## Translog II
 
