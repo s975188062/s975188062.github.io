@@ -14,8 +14,8 @@ title: "索引导航"
 * 实验的典型结构
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
-* Trial层（PrepareSequence和DriftCorrection）
-* [Recording层（Datasource和引用）](http://charlie-techblog.com/eyetracking/Drift/)
+* [Trial层（PrepareSequence和DriftCorrection）](http://charlie-techblog.com/eyetracking/Drift/)
+* Recording层（Datasource和引用）
 * 设置随机（Datasource）
 * 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
 * 记录行为信息（ResultFile和AddToResultFile）
@@ -45,3 +45,16 @@ title: "索引导航"
 ## Basic
 
 ## Master
+
+---
+
+# 3rd-Party Tools
+
+## E-Prime
+
+## PsychoToolBox
+
+##PsychoPy
+
+## Translog II
+
