@@ -14,7 +14,7 @@ title: "索引导航"
 * 实验的典型结构
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
-* [Trial层（PrepareSequence和DriftCorrection）](http://charlie-techblog.com/eyetracking/Drift/)
+* Trial层（PrepareSequence和DriftCorrection）
 * Recording层（Datasource和引用）
 * 设置随机（Datasource）
 * 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
@@ -31,14 +31,23 @@ title: "索引导航"
 * 真随机（Variable和UpdateAttribute）
 * 绘制兴趣区InterestArea（DisplayScreen）
 
+## Tips
+
+* [DriftCorrection Action](http://charlie-techblog.com/eyetracking/Drift/)
+
 ---
 
 # 主试机及操作
 
 ## Basic
 
+* 实验室环境配置
+* 数据采集操作
+* 常见问题汇总
 
 ## Master
+
+* 主试机软件更新
 
 ---
 
