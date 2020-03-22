@@ -22,6 +22,7 @@ title: "Eyelink指北"
 * 实验的保存、编译、压缩与迁移
 
 ## Master
+* 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
 * 边界触发（InvisibleBoundary）

@@ -17,65 +17,51 @@ main:
 EB:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
-  - title: Customization
+  - title: "Experiment Builder"
     children:
-      - title: "Configuration"
-        url: /about/
-      - title: "Overriding Theme Defaults"
-        url: /about/
-      - title: "Navigation"
-        url: /about/
-      - title: "UI Text"
-        url: /about/
-      - title: "Authors"
-        url: /about/
-      - title: "Layouts"
-        url: /about/
-      - title: "Configuration"
-        url: /about/
-      - title: "Overriding Theme Defaults"
-        url: /about/
-      - title: "Navigation"
-        url: /about/
-      - title: "UI Text"
-        url: /about/
-      - title: "Authors"
-        url: /about/
-      - title: "Layouts"
-        url: /about/
-      - title: "Configuration"
-        url: /about/
-      - title: "Overriding Theme Defaults"
-        url: /about/
-      - title: "Navigation"
-        url: /about/
-      - title: "UI Text"
-        url: /about/
-      - title: "Authors"
-        url: /about/
-      - title: "Layouts"
-        url: /about/
-      - title: "Configuration"
-        url: /about/
-      - title: "Overriding Theme Defaults"
-        url: /about/
-      - title: "Navigation"
-        url: /about/
-      - title: "UI Text"
-        url: /about/
-      - title: "Authors"
-        url: /about/
-      - title: "Layouts"
-        url: /about/
-      - title: "Configuration"
-        url: /about/
-      - title: "Overriding Theme Defaults"
-        url: /about/
-      - title: "Navigation"
-        url: /about/
-      - title: "UI Text"
-        url: /about/
-      - title: "Authors"
-        url: /about/
-      - title: "Layouts"
-        url: /about/
+      - title: "Basic"
+        children:
+          - title: "认识软件"
+            url: ""
+          - title: "实验的典型结构"
+            url: ""
+          - title: "指导语与结束语"
+            url: ""
+          - title: "Block层"
+            url: ""
+          - title: "Trial层"
+            url: ""
+          - title: "Recording层"
+            url: ""
+          - title: "随机设置"
+            url: ""
+          - title: "计算反应时和正确率"
+            url: ""
+          - title: "行为信息记录"
+            url: ""
+          - title: "实验的保存、编译、压缩与迁移"
+            url: ""
+      - title: "Master"
+        children:
+          - title: "播放声音材料"
+            url: ""
+          - title: "播放视频材料"
+            url: ""
+          - title: "录音"
+            url: ""
+          - title: "边界触发范式"
+            url: ""
+          - title: "GC-Window范式"
+            url: ""
+          - title: "Visual World范式"
+            url: ""
+          - title: "多模态"
+            url: ""
+          - title: "真随机"
+            url: ""
+          - title: "绘制兴趣区"
+            url: ""
+      - title: "Tips"
+        children:    
+          - title: "DriftCorrection"
+            url: "http://charlie-techblog.com/eyelink/Drift/"
