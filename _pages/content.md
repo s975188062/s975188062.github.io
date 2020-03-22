@@ -20,6 +20,7 @@ toc: false
 * 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
 * 记录行为信息（ResultFile和AddToResultFile）
 * 实验的保存、编译、压缩与迁移
+
 ## Master
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
