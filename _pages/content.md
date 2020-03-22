@@ -10,9 +10,9 @@ title: "Eyelink指北"
 >如果有想要看到的内容，请通过邮件与我联系：Schanglin@outlook.com
 
 
-# Experiment Builder
+# 1. Experiment Builder
 
-## Basic
+## 1.1 Basic
 * 认识软件
 * 实验的典型结构
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
@@ -24,7 +24,7 @@ title: "Eyelink指北"
 * 记录行为信息（ResultFile和AddToResultFile）
 * 实验的保存、编译、压缩与迁移
 
-## Master
+## 1.2 Master
 * 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
@@ -35,29 +35,29 @@ title: "Eyelink指北"
 * 真随机（Variable和UpdateAttribute）
 * 绘制兴趣区InterestArea（DisplayScreen）
 
-## Tips
+## 1.3 Tips
 
 * [DriftCorrection Action](http://charlie-techblog.com/eyelink/Drift/)
 
 ---
 
-# 主试机及操作
+# 2. 主试机及操作
 
-## Basic
+## 2.1 Basic
 
 * 实验室环境配置
 * 数据采集操作
 * 常见问题汇总
 
-## Master
+## 2.2 Master
 
 * 主试机软件更新
 
 ---
 
-# Data Viewer
+# 3. Data Viewer
 
-## Basic
+## 3.1 Basic
 
 * 数据导入
 * TrialGrouping
@@ -65,7 +65,7 @@ title: "Eyelink指北"
 * 绘制InterestArea
 * Report Data
 
-## Master
+## 3.2 Master
 
 * 数据清洗
 * 绘制动态兴趣区DynamicInterestArea
@@ -73,9 +73,9 @@ title: "Eyelink指北"
 
 ---
 
-# 3rd-Party Tools
+# 4. Thrid-Party Tools
 
-## E-Prime
+## 4.1 E-Prime
 
 * 概述
 * elConnect
@@ -84,15 +84,15 @@ title: "Eyelink指北"
 * stopRecording
 * elClose
 
-## PsychoToolBox
+## 4.2 PsychoToolBox
 
 * 概述
 
-## PsychoPy
+## 4.3 PsychoPy
 
 * [Zhiguo-Eyelab](https://github.com/zhiguo-eyelab/Pylink_book)
 
-## Translog II
+## 4.4 Translog II
 
 * 概述
 * Project的制作
