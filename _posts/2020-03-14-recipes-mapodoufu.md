@@ -1,7 +1,7 @@
 ---
 title: "麻婆豆腐"
 categories:
-  - Recipe
+  - 私房食谱
 toc: true # 右侧页内导航
 typora-root-url: ../../s975188062.github.io
 ---
