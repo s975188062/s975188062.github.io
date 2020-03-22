@@ -86,7 +86,7 @@ title: "索引导航"
 
 ## PsychoPy
 
-[Zhiguo-Eyelab](https://github.com/zhiguo-eyelab/Pylink_book)
+* [Zhiguo-Eyelab](https://github.com/zhiguo-eyelab/Pylink_book)
 
 ## Translog II
 
