@@ -61,7 +61,7 @@ EB:
         url: /editing/
   - title: "EB Tips"
     children:    
-      - title: "DriftCorrection（完成）"
+      - title: "DriftCorrection（完）"
         url: "http://charlie-techblog.com/eyelink/Drift/"
   - title: "Eyelink指北的其他部分"
     children:    
