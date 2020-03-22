@@ -1,7 +1,7 @@
 ---
 title: "麻婆豆腐"
 categories:
-  - 私房食谱
+  - Recipe
 toc: true # 右侧页内导航
 ---
 
