@@ -1,6 +1,6 @@
 ---
 permalink: /content/
-title: "索引导航"
+title: "Eyelink指北"
 ---
 
 >欢迎，这里是Charlie的Eyelink指北。内容在逐步更新中……
