@@ -32,17 +32,19 @@ title: "索引导航"
 
 ---
 
-# Data Viewer
+# 主试机及操作
 
 ## Basic
+
 
 ## Master
 
 ---
 
-# 主试机及操作
+# Data Viewer
 
 ## Basic
+
 
 ## Master
 
@@ -52,9 +54,21 @@ title: "索引导航"
 
 ## E-Prime
 
+* 概述
+* elConnect
+* elCameraSetup
+* startRecoring
+* stopRecording
+* elClose
+
 ## PsychoToolBox
 
 ## PsychoPy
 
 ## Translog II
+
+* 概述
+* Project的制作
+* 数据采集
+* TPR_DB
 
