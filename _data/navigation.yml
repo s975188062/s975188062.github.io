@@ -10,17 +10,9 @@ main:
     url: /about/
 
 
-foo:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /about/
-      - title: "Structure"
-        url: /about/
-      - title: "Installation"
-        url: /about/
-      - title: "Upgrading"
-        url: /about/
+EB:
+  - title: "DV相关"
+    url: /about/
   - title: Customization
     children:
       - title: "Configuration"
