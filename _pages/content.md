@@ -46,7 +46,7 @@ toc: true
 
 ## 2.1 Basic
 
-* 实验室环境配置
+* [实验室环境配置](http://charlie-techblog.com/eyelink/LabSetup/)
 * 数据采集操作
 * 常见问题汇总
 
