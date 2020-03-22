@@ -54,7 +54,7 @@ title: "索引导航"
 
 ## PsychoToolBox
 
-##PsychoPy
+## PsychoPy
 
 ## Translog II
 
