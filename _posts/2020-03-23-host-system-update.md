@@ -1,5 +1,5 @@
 ---
-title: "主试机系统更新"
+title: "主试机系统更新教程"
 categories:
   - Eyelink
 tags:
