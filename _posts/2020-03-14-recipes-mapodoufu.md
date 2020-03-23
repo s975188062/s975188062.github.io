@@ -43,5 +43,4 @@ toc: true # 右侧页内导航
 
 勾芡很重要，目的是将酱料挂在豆腐上，这样才好吃。
 
----
-Copyright © 2020 by Changlin Song
+以上。
