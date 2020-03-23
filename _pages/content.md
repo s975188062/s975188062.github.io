@@ -16,7 +16,7 @@ toc: true
 # 1. Experiment Builder
 
 ## 1.1 Basic
-* 认识软件
+* 认识EB软件
 * 实验的典型结构
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
