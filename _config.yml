@@ -28,7 +28,7 @@ teaser                   : #"/assets/images/background.png" #默认的文章缩�
 logo                     : #"/assets/imgs/icon.png"
 masthead_title           : "Charlie的学习与生活" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
-words_per_minute         : # 100
+words_per_minute         : 100
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
