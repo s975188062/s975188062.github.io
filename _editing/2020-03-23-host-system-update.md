@@ -23,9 +23,13 @@ toc: true
 
 我们可以看到当前主试机的系统版本号为“5.00.50”。
 
+官方指南：
+
 # Eyelink 1000/2000
 
 系统更新文件下载链接：
 
-* 红外发光器在左侧：[Github]()，[百度网盘-]()；
-* 红外发光器在右侧：[Github]()，[百度网盘-]()。
+* 红外发光器在左侧：[Github](https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_left.zip)，[百度网盘-z52o](https://pan.baidu.com/s/10IoW79--cSgtJgkLcM7wpA)；
+* 红外发光器在右侧：[Github](https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_right.zip)，[百度网盘-xi2x](https://pan.baidu.com/s/1kGxr_IbWez46tFMZUCkEwg)。
+
+
