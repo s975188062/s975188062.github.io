@@ -124,19 +124,19 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 >
 > ![host_system_update](/media/host_system_update.jpg)
 >在窗口上方的地址栏中，选择新插入的U盘，名称可能是`/fs/usb0`。
-
+>
 >![host_sysUpdate_choose_drive](/media/host_sysUpdate_choose_drive.jpg)
-
+>
 >在文件列表中选择准备好的升级包，点击右下角的`Open`按钮。
-
+>
 >![host_sysUpdate_choose_file](/media/host_sysUpdate_choose_file.jpg)
-
+>
 >点击`Update`按钮。
-
+>
 >![host_sysUpdate_confrim_update](/media/host_sysUpdate_confrim_update.jpg)
-
+>
 >系统会自动完成更新，点击工具栏的`Eyelink`按钮即可返回到`Track`系统中。
-
+>
 >![host_start_from_filemanage](/media/host_start_from_filemanager.jpg)
 
 以上。
