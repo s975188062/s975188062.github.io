@@ -64,7 +64,7 @@ toc: true
 
 ## 2.2 Master
 
-* [主试机软件更新教程](http://charlie-techblog.com/eyelink/host-system-update/)
+* [主试机系统更新教程](http://charlie-techblog.com/eyelink/host-system-update/)
 
 ---
 
