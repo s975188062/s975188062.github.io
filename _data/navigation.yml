@@ -6,6 +6,8 @@ main:
     url: /content/
   - title: "私房食谱"
     url: /recipe/
+  - title: "三斤狗粮"
+    url: /dogfood/
   - title: "文章分类"
     url: /categories/
   - title: "标签"
