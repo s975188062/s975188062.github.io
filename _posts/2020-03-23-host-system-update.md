@@ -23,7 +23,9 @@ toc: true
 
 我们可以看到当前主试机的系统版本号为“5.00.50”。
 
-# Eyelink 1000/2000
+---
+
+# 1. Eyelink 1000/2000
 
 `桌面式`根据红外发光器的位置，在下图中二选一下载；
 `塔式`、`核磁式`、`灵长类动物式`下载任意一个均可；
@@ -48,7 +50,7 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 ---
 
-# Eyelink 1000Plus
+# 2. Eyelink 1000Plus
 
 `Eyelink 1000Plus`系列主试机系统的最新版本为`5.15`.
 
@@ -94,7 +96,7 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 ---
 
-# Eyelink Portable Duo
+# 3. Eyelink Portable Duo
 
 `Eyelink Portable Duo`系列主试机系统的最新版本为`6.12`.
 
