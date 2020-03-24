@@ -19,7 +19,7 @@ toc: true
 
 您可以打开主试机，在`Offline界面`的右下角，查看当前系统版本号，如下图所示：
 
-![hsot_1kp_offline](/assets/images/hsot_1kp_offline-1.jpg)
+![hsot_1kp_offline](/assets/images/hsot_1kp_offline.jpg)
 
 我们可以看到当前主试机的系统版本号为“5.00.50”。
 
