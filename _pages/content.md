@@ -12,10 +12,17 @@ toc: true
 >
 >如果有想要看到的内容，请通过邮件与我联系：Charlie-TechBlog@outlook.com
 
+# 0. Intro
+
+* 认识眼动研究
+* 认识眼动仪
+
+---
 
 # 1. Experiment Builder
 
 ## 1.1 Basic
+
 * 认识Experiment Builder
 * 实验的典型结构
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
@@ -28,6 +35,7 @@ toc: true
 * 实验的保存、编译、压缩与迁移
 
 ## 1.2 Master
+
 * 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
@@ -77,7 +85,7 @@ toc: true
 
 ---
 
-# 4. Thrid-Party Tools
+# 4. Third-Party Programing Tools
 
 ## 4.1 E-Prime
 
@@ -108,6 +116,10 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 * Project的制作
 * 数据采集
 * TPR_DB
+
+## 4.5 辅助工具
+
+* Visual-Angle Calculator
 
 ---
 
