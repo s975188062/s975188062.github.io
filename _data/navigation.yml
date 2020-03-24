@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "Eyelink指北"
     url: /content/
   - title: "私房食谱"
