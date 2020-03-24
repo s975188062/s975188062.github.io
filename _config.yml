@@ -120,8 +120,12 @@ author:
       url: /content/
     - label: "私房食谱"
       url: /recipe/
+    - label: "三斤狗粮"
+      url: /dogfood/
     - label: "Charlie的万事屋"
       url: /pay4more/
+    - label: "About"
+      url: /about/
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
 #      url: "https://your-website.com"
