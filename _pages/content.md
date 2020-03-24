@@ -10,7 +10,7 @@ toc: true
 >
 >您可以点击右侧的导航栏来快速跳转到您感兴趣的内容。
 >
->如果有想要看到的内容，请通过邮件与我联系：Schanglin@outlook.com
+>如果有想要看到的内容，请通过邮件与我联系：Charlie-TechBlog@outlook.com
 
 
 # 1. Experiment Builder

@@ -113,9 +113,9 @@ author:
   location         : #"Beijing"
   email            : # "Schanglin@outlook.com"
   links:
-    - label: "Schanglin@outlook.com"
+    - label: "Charlie-TechBlog@outlook.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:Schanglin@outlook.com
+      url: mailto:Charlie-TechBlog@outlook.com
     - label: "Eyelink指北"
       url: /content/
     - label: "私房食谱"

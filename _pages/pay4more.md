@@ -10,4 +10,4 @@ toc: false
 
 请写邮件给我，我会在第一时间跟您联系 ;P
 
-E-Mail：Schanglin@outlook.com
+E-Mail：Charlie-TechBlog@outlook.com

@@ -10,4 +10,4 @@ toc: false
 
 如果您想尽快看到这部分内容，就写邮件给我吧 :D 
 
-Schanglin@outlook.com
+Charlie-TechBlog@outlook.com
