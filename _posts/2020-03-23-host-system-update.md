@@ -19,7 +19,7 @@ toc: true
 
 您可以打开主试机，在`Offline界面`的右下角，查看当前系统版本号，如下图所示：
 
-![hsot_1kp_offline](/media/hsot_1kp_offline-1.jpg)
+![hsot_1kp_offline](/assets/images/hsot_1kp_offline-1.jpg)
 
 我们可以看到当前主试机的系统版本号为“5.00.50”。
 
@@ -36,7 +36,7 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 开机，在`Boost Manager`界面进入`Microsoft Windows Vista`。
 
-![EL_1k_host_boost](/media/EL_1k_host_boost.jpg)
+![EL_1k_host_boost](/assets/images/EL_1k_host_boost.jpg)
 
 进入`Microsoft Windows Vista`后打开`我的电脑`，可以看到除Windows系统分区外还有一个硬盘分区，根据主试机版本不同，可能叫做`D:/`或`Eyelink`等不同名字。
 
@@ -58,7 +58,7 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 首先，在主试机的`Offline界面`点击`Exit Eyelink`按钮，退出`Track系统`。
 
-![host_offline2boost](/media/host_offline2boost.jpg)
+![host_offline2boost](/assets/images/host_offline2boost.jpg)
 
 系统将直接进入到如下图所示的`File Manager界面`。如果没有自行跳转，则点击`File Manager按钮`进入到`File Manager界面`。
 
@@ -66,31 +66,31 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 点击`Configuration按钮`。
 
-![host_filemanager2configuration](/media/host_filemanager2configuration.jpg)
+![host_filemanager2configuration](/assets/images/host_filemanager2configuration.jpg)
 
 点击`System Update按钮`。
 
-![host_configuration2updateSyste](/media/host_configuration2updateSystem.jpg)
+![host_configuration2updateSyste](/assets/images/host_configuration2updateSystem.jpg)
 
 点击`Choose File按钮`。
 
-![host_system_update](/media/host_system_update.jpg)
+![host_system_update](/assets/images/host_system_update.jpg)
 
 在窗口上方的地址栏中，选择新插入的U盘，名称可能是`/fs/usb0`。
 
-![host_sysUpdate_choose_drive](/media/host_sysUpdate_choose_drive.jpg)
+![host_sysUpdate_choose_drive](/assets/images/host_sysUpdate_choose_drive.jpg)
 
 在文件列表中选择准备好的升级包，点击右下角的`Open`按钮。
 
-![host_sysUpdate_choose_file](/media/host_sysUpdate_choose_file.jpg)
+![host_sysUpdate_choose_file](/assets/images/host_sysUpdate_choose_file.jpg)
 
 点击`Update`按钮。
 
-![host_sysUpdate_confrim_update](/media/host_sysUpdate_confrim_update.jpg)
+![host_sysUpdate_confrim_update](/assets/images/host_sysUpdate_confrim_update.jpg)
 
 系统会自动完成更新，点击工具栏的`Eyelink`按钮即可返回到`Track`系统中。
 
-![host_start_from_filemanage](/media/host_start_from_filemanager.jpg)
+![host_start_from_filemanage](/assets/images/host_start_from_filemanager.jpg)
 
 ---
 
@@ -102,7 +102,7 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 
 您可以在主试机的`Setup界面`的**左下角**查看主试机的系统版本号。如下图所示：
 
-![host_pd_setup](/media/host_pd_setup.jpg)
+![host_pd_setup](/assets/images/host_pd_setup.jpg)
 
 下载后将文件直接放到U盘中，**不要解压缩**。
 
@@ -114,30 +114,30 @@ Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需
 >
 >点击`Configuration按钮`。
 >
->![host_filemanager2configuration](/media/host_filemanager2configuration.jpg)
+>![host_filemanager2configuration](/assets/images/host_filemanager2configuration.jpg)
 >
 >点击`System Update按钮`。
 >
->![host_configuration2updateSyste](/media/host_configuration2updateSystem.jpg)
+>![host_configuration2updateSyste](/assets/images/host_configuration2updateSystem.jpg)
 >
 > 点击`Choose File按钮`。
 >
-> ![host_system_update](/media/host_system_update.jpg)
+> ![host_system_update](/assets/images/host_system_update.jpg)
 >在窗口上方的地址栏中，选择新插入的U盘，名称可能是`/fs/usb0`。
 >
->![host_sysUpdate_choose_drive](/media/host_sysUpdate_choose_drive.jpg)
+>![host_sysUpdate_choose_drive](/assets/images/host_sysUpdate_choose_drive.jpg)
 >
 >在文件列表中选择准备好的升级包，点击右下角的`Open`按钮。
 >
->![host_sysUpdate_choose_file](/media/host_sysUpdate_choose_file.jpg)
+>![host_sysUpdate_choose_file](/assets/images/host_sysUpdate_choose_file.jpg)
 >
 >点击`Update`按钮。
 >
->![host_sysUpdate_confrim_update](/media/host_sysUpdate_confrim_update.jpg)
+>![host_sysUpdate_confrim_update](/assets/images/host_sysUpdate_confrim_update.jpg)
 >
 >系统会自动完成更新，点击工具栏的`Eyelink`按钮即可返回到`Track`系统中。
 >
->![host_start_from_filemanage](/media/host_start_from_filemanager.jpg)
+>![host_start_from_filemanage](/assets/images/host_start_from_filemanager.jpg)
 
 以上。
 
