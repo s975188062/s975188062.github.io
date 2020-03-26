@@ -20,9 +20,7 @@ EB:
   - title: "EB Basic"
     children:
       - title: "认识软件"
-        url: /editing/
-      - title: "实验的典型结构"
-        url: /editing/
+        url: "http://charlie-techblog.com/eyelink/EB_Intro/"
       - title: "指导语与结束语"
         url: /editing/
       - title: "Block层"

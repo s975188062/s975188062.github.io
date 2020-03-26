@@ -7,10 +7,6 @@ tags:
   - 实验室设置
 toc: true
 comments: true
-author_profile: false
-sidebar:
-  title: "目录"
-  nav: EB
 ---
 
 ---
