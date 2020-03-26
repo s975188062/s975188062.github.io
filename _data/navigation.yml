@@ -21,6 +21,8 @@ EB:
     children:
       - title: "认识软件"
         url: "http://charlie-techblog.com/eyelink/EB_Intro/"
+      - title: "编程前的实验设计准备"
+        url: /editing/
       - title: "指导语与结束语"
         url: /editing/
       - title: "Block层"
