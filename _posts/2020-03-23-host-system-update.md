@@ -6,6 +6,7 @@ tags:
   - 主试机
   - 实验室设置
 toc: true
+comments: true
 ---
 
 ---

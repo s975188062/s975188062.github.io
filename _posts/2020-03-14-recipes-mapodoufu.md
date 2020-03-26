@@ -3,6 +3,7 @@ title: "麻婆豆腐"
 categories:
   - Recipe
 toc: true # 右侧页内导航
+comments: true
 ---
 
 ---
