@@ -22,6 +22,8 @@ sidebar:
 >
 >我们将检测阅读过程中，每个单词的`First Fixation Duration`、`Gaze Duration`和`Dwell Time`三个指标与词长的关系。
 
+---
+
 # 1. 手绘流程图
 
 > 好记性不如烂笔头。
@@ -38,9 +40,21 @@ sidebar:
 
 ---
 
-# 2. 内容的
+# 2. Datasource表格
+
+在编写实验程序的过程中，我们需要创建一个表格来把每个试次呈现的内容装进去。这在我们制作实验材料的时候也是需要的。
+
+例如我目前的实验任务，我需要设置的内容很简单，即每个试次呈现的文字内容即可。此处由于排版的关系，我简化了Text Page的内容
 
 
+| Trial ID | Text Page             | Question                         | Correct Answer |
+|:---------|:----------------------|:---------------------------------|:---------------|
+| 1        | Buck did not read...  | The heavy dogs are popular.      | f              |
+| 2        | The house was...      | There are 13 boys here in total. | f              |
+| 3        | They came and...      | The fox terriers never yelp.     | j              |
+| 4        | Among the terriers... | Elmo weight 100 pounds.          | j              |
 
+---
 
+以上。
 
