@@ -28,6 +28,10 @@ sidebar:
 > 
 > 把实验中需要注意的点一项一项写在纸上就不会出错了。
 
+![eb_exp_design](/assets/images/eb_exp_design.png)
+
+
+
 
 
 
