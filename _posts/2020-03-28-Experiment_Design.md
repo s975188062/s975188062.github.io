@@ -4,6 +4,8 @@ categories:
   - Eyelink
 tags:
   - Experiment Builder
+  - 编程技巧
+  - 实验设计
 toc: true
 comments: true
 author_profile: false
