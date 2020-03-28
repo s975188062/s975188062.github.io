@@ -19,7 +19,7 @@ locale                   : "zh-CN" #设备语言为中文
 title                    : "Charlie的学习与生活" #设置标题
 title_separator          : "-" #标题分隔符
 subtitle                 : "Last Update 2020.03.25 | 8% Done" #副标题
-name                     : "宋昌霖"
+name                     : "Charlie"
 description              : "唯爱人与食物不可辜负"
 url                      : "https://s975188062.github.io"
 baseurl                  : # "/tree/master"
