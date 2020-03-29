@@ -26,7 +26,7 @@ toc: true
 ## 1.1 Basic
 
 * [认识Experiment Builder](/eyelink/EB_Intro/)
-* 编程前的实验设计准备
+* [编程前的实验设计准备](/eyelink/Experiment_Design/)
 * 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
 * Trial层（PrepareSequence和DriftCorrection）
@@ -50,7 +50,7 @@ toc: true
 
 ## 1.3 Tips
 
-* [DriftCorrection Action](http://charlie-techblog.com/eyelink/Drift/)
+* [DriftCorrection Action](/eyelink/Drift/)
 
 ---
 
@@ -58,13 +58,13 @@ toc: true
 
 ## 2.1 Basic
 
-* [实验室环境配置](http://charlie-techblog.com/eyelink/LabSetup/)
+* [实验室环境配置](/eyelink/LabSetup/)
 * 数据采集操作
 * 常见问题汇总
 
 ## 2.2 Master
 
-* [主试机系统更新教程](http://charlie-techblog.com/eyelink/host-system-update/)
+* [主试机系统更新教程](/eyelink/host-system-update/)
 
 ---
 
