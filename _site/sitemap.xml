@@ -46,9 +46,6 @@
 <loc>http://localhost:4000/pay4more/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/_recipes/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/recipe/</loc>
 </url>
 <url>
