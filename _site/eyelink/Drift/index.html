@@ -1,0 +1,1259 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>关于Drift Correction 你应该知道更多 - Charlie的学习与生活</title>
+<meta name="description" content="  ">
+
+
+  <meta name="author" content="宋昌霖">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="Charlie的学习与生活">
+<meta property="og:title" content="关于Drift Correction 你应该知道更多">
+<meta property="og:url" content="http://localhost:4000/eyelink/Drift/">
+
+
+  <meta property="og:description" content="  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-19T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/eyelink/Drift/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "宋昌霖",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Charlie的学习与生活 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<style>
+  table{
+    border-left:1px solid #000000;border-top:1px solid #000000;
+    width: 100%;
+    word-wrap:break-word; word-break:break-all;
+  }
+  table th{
+  text-align:center;
+  }
+  table th,td{
+    border-right:1px solid #000000;border-bottom:1px solid #000000;
+  }
+</style>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Charlie的学习与生活
+          <span class="site-subtitle">Last Update 2020.03.25 | 8% Done</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/content/" >Eyelink指北</a>
+            </li><li class="masthead__menu-item">
+              <a href="/recipe/" >私房食谱</a>
+            </li><li class="masthead__menu-item">
+              <a href="/dogfood/" >三斤狗粮</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >文章分类</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >标签</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">首页</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#eyelink" itemprop="item"><span itemprop="name">Eyelink</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">关于Drift Correction 你应该知道更多</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">目录</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/content/"><span class="nav__sub-title">点此获取“Eyelink指北”完整目录</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Basic</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/EB_Intro/" class="">认识软件</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">编程前的实验设计准备</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">指导语与结束语</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Block层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Trial层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Recording层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">随机设置</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">计算反应时和正确率</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">行为信息记录</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">实验的保存、编译、压缩与迁移</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Master</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放声音材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放视频材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">录音</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">边界触发范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">GC-Window范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Visual World范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">多模态</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">真随机</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">绘制兴趣区</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Tips</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/Drift/" class="">DriftCorrection（完）</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Eyelink指北的其他部分</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Data Viewer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">主试机操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">3rd-Party Tools</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="关于Drift Correction 你应该知道更多">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2020-03-19T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">关于Drift Correction 你应该知道更多
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 分钟阅读
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#1-什么是drift-check">1. 什么是Drift Check</a></li>
+  <li><a href="#2-drift-check-能帮我们做到哪些事情">2. Drift Check 能帮我们做到哪些事情</a>
+    <ul>
+      <li><a href="#21-误差监测">2.1 误差监测</a></li>
+      <li><a href="#22-休息休息一下">2.2 休息，休息一下</a></li>
+      <li><a href="#23-cue注意">2.3 Cue注意</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-如何实现">3. 如何实现</a>
+    <ul>
+      <li><a href="#31-误差监测和休息">3.1 误差监测和休息</a></li>
+      <li><a href="#32-cue注意">3.2 Cue注意</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-drift-correction-action-的全部属性">4. Drift Correction Action 的全部属性</a></li>
+  <li><a href="#5-drift-correction-的-tips">5. Drift Correction 的 Tips</a>
+    <ul>
+      <li><a href="#51-设置自定义的背景色">5.1 设置自定义的背景色</a></li>
+      <li><a href="#52-设置自定义校准点">5.2 设置自定义校准点</a>
+        <ul>
+          <li><a href="#自定义动画校准目标">自定义动画校准目标</a></li>
+          <li><a href="#自定义图片校准目标">自定义图片校准目标</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <hr />
+
+<p>在屏幕的特定位置呈现一个校准点，在被试盯住这个校准点的同时，主试在主试机上按空格获取校准点位置的误差。</p>
+
+<blockquote>
+  <p>如误差小于1度，则继续进行实验。如误差大于1度，则不会继续进行下去，此时主试可以挂起进行到一半的实验，重新校准。</p>
+
+  <p>在重新校准结束后，可以从刚刚挂起的地方继续实验。</p>
+</blockquote>
+
+<hr />
+
+<h1 id="1-什么是drift-check">1. 什么是Drift Check</h1>
+
+<p>在Eyelink历代的产品线中，<code class="highlighter-rouge">Drift Check</code>曾经被叫过三个名字：<code class="highlighter-rouge">Drift Correction</code>、<code class="highlighter-rouge">Drift Correct</code>和<code class="highlighter-rouge">Drift Check</code>。</p>
+
+<p>从命名上我们可以看到，<code class="highlighter-rouge">Drift Check</code>的功能是存在一个迭代的。</p>
+
+<p>起初，在<code class="highlighter-rouge">Eyelink</code>最早期的<code class="highlighter-rouge">Eyelink I头戴式</code>眼动仪中，我们将两台红外相机通过头戴装置与头部固定，并通过相机采集眼球运动，如下图所示：</p>
+
+<p><img src="/assets/images/head_tracker.jpg" alt="head_tracker-w1282" /></p>
+
+<p>在理想的条件下，相机可以与头部保持绝对的固定，那在相机视野中观察到的眼球运动即为真实的眼球运动。</p>
+
+<p>然而在实际的应用场景中，当被试的头发生加速度较大的运动时，眼动仪就会和头发生一定程度的位移。这种位移会导致在相机的视野中，即使眼睛自身没有运动，相机采集到的眼睛位置也会发生变化，这就引入了一类误差，我们称之为<code class="highlighter-rouge">Drift</code>——漂移误差。</p>
+
+<p>值得庆幸的是，这类误差在方向上是统一的，而且偏移的大小也可以测量。至于测量方法就是我们所说的<code class="highlighter-rouge">Drift Correction</code>。以屏幕中心为参考点，测量相机向下飘移前后，被试注视同一位置的瞳孔位置差异。将这种差异补偿到校准数据中，即达到了补偿飘移的目的。</p>
+
+<p>虽然在桌面式或者塔式等固定在桌上的眼动仪中，不会产生因为相机下坠的飘移产生。但<code class="highlighter-rouge">Drift Correction</code>功能仍然能在必要的时候向我们提示眼动仪的误差。所以在桌面式的眼动仪中，将<code class="highlighter-rouge">Drift Correction</code>以<code class="highlighter-rouge">Drift Check</code>的形式保留，即只计算误差，不做任何的校准补偿。</p>
+
+<hr />
+
+<h1 id="2-drift-check-能帮我们做到哪些事情">2. Drift Check 能帮我们做到哪些事情</h1>
+
+<h2 id="21-误差监测">2.1 误差监测</h2>
+
+<p>我们可以在每个试次开始的时候进行<code class="highlighter-rouge">Drift Check</code>，在实验运行过程中近乎实时地监测误差水平。</p>
+
+<p>这在时长非常短的实验中可能不是必需的，但是在试次数量较大和长时程的实验中尤为重要。</p>
+
+<p>这个功能实现起来是非常简单的，只需要在<code class="highlighter-rouge">Trial Sequence</code>中，紧接着<code class="highlighter-rouge">Recording Sequence</code>的前面加入<code class="highlighter-rouge">DriftCorrection Action</code>即可。如下图所示：</p>
+
+<p><img src="/assets/images/Drift_in_EB.png" alt="Drift_in_graph" /></p>
+
+<p>在<code class="highlighter-rouge">Drift Check</code>的过程中，被试机屏幕呈现如图所示：</p>
+
+<p><img src="/assets/images/Drift_on_display.png" alt="img" /></p>
+
+<p>此时需要被试盯住显示在屏幕上的校准点。与此同时，注视在主试机上按<code class="highlighter-rouge">回车</code>或<code class="highlighter-rouge">空格</code>测量眼动仪误差。如下图所示：</p>
+
+<p><img src="/assets/images/drift_on_host.png" alt="drift_on_host" /></p>
+
+<p>如此时误差<code class="highlighter-rouge">小于1度视角</code>，则主试机将快速报告误差值，然后继续实验。否则将报告误差值，然后停在<code class="highlighter-rouge">Drift界面</code>，等待主试决定下一步操作。</p>
+
+<p>正如我们前一部分所说，如果在<code class="highlighter-rouge">Drift过程</code>中发现误差过大，则不会继续进行实验，而是等待主试决定下一步应该进行什么操作。那么这里所指的操作就是——校准。</p>
+
+<blockquote>
+  <p>Q:</p>
+
+  <p>应该多久进行一次相机校准？</p>
+
+  <p>A:</p>
+
+  <p>需要多久一次就多久一次。</p>
+</blockquote>
+
+<p>我们应该尽可能多地在实验中预留重新校准的机会，发现数据质量下降则立即重新校准。</p>
+
+<p>那最多是多少呢?——每个试次都有一次。</p>
+
+<p>这就是Drift在重新校准眼动仪中的意义。</p>
+
+<blockquote>
+  <p>主试在实验过程中并不可以去倒茶喝水冲咖啡，这是对自己数据不负责任的表现。</p>
+</blockquote>
+
+<p>主试在实验过程中应当集中注意力监控数据质量，在数据质量不理想的情况下立即重新校准，以此将数据质量提升至最高。</p>
+
+<h2 id="22-休息休息一下">2.2 休息，休息一下</h2>
+
+<p>对于一些特殊被试或者实验长度过长时，我们往往需要让被试在实验进行到一半的时候进行一次或多次休息。一般的做法是将实验分割成多个<code class="highlighter-rouge">Block</code>，在编写实验程序的时候设计休息流程。例如一个实验共有180个<code class="highlighter-rouge">Trial</code>，每60个试次组成一个<code class="highlighter-rouge">Block</code>，在<code class="highlighter-rouge">Block</code>之间预留3分钟的休息时间。</p>
+
+<p>这种周期行的休息是必须的，但并不总能满足被试对于休息的需求。当实验任务进行到某个<code class="highlighter-rouge">Block</code>中间的时候，被试表示自己眼睛干涩需要休息时，如何满足被试的需求呢？</p>
+
+<blockquote>
+  <p>毕竟，被试就是上帝！</p>
+</blockquote>
+
+<p>其实方法也很简单，在下一个试次开始时的<code class="highlighter-rouge">Drift环节</code>进入<code class="highlighter-rouge">Camera Setup</code>，挂起实验进程，让被试的到充分的休息之后重新校准眼动仪，继续实验即可。</p>
+
+<h2 id="23-cue注意">2.3 Cue注意</h2>
+
+<p><img src="/assets/images/cue.jpg" alt="imgcu" /></p>
+
+<p>如上图左图所示，在类单行文本阅读的范式中，我们希望文字出现之前，被试的注视位置停留在红色十字光标的位置。这样当文本刺激出现之后，被试可以从句首的第一个字开始，顺序阅读。</p>
+
+<p>如上图有图所示，在类视觉搜索任务中，我们希望在刺激出现之前，被试的注视位置在所有目标物所围成的圆的圆心，以保证对所有目标物的视角距离相等。</p>
+
+<p>以上两种都是典型的Cue注意应用，通过调整<code class="highlighter-rouge">Drift Correction</code>过程中校准点出现的位置，以达到将被试的注意力引导到特定位置的目的。</p>
+
+<hr />
+
+<h1 id="3-如何实现">3. 如何实现</h1>
+
+<h2 id="31-误差监测和休息">3.1 误差监测和休息</h2>
+
+<p>这一部分操作需要在主试机上完成，如下图红框所示，在<code class="highlighter-rouge">Drift环节</code>点击<code class="highlighter-rouge">Camera Setup</code>进入<code class="highlighter-rouge">相机校准</code>环节即可。</p>
+
+<p><img src="/assets/images/drift_2_setup.jpg" alt="drift_2_setup" /></p>
+
+<h2 id="32-cue注意">3.2 Cue注意</h2>
+
+<p>这一部分操作的核心是设置<code class="highlighter-rouge">Drift校准点</code>出现的位置，不要着急，我们先从<code class="highlighter-rouge">Drift的属性</code>开始了解。</p>
+
+<p><img src="/assets/images/drift_properties.jpg" alt="drift_propertie" /></p>
+
+<p>虽然这里面有很多属性，但是需要的设置的只有两个<code class="highlighter-rouge">X Location</code>和<code class="highlighter-rouge">Y Location</code>，我们先说这两个，剩下的稍后慢慢解释。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>变量类型</th>
+      <th>解释</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X Location</td>
+      <td>int（整数）</td>
+      <td>校准点出现的屏幕上的X方向坐标，屏幕的左边缘为0。</td>
+    </tr>
+    <tr>
+      <td>Y Location</td>
+      <td>int</td>
+      <td>校准点出现的屏幕上的Y方向坐标，屏幕的上边缘为0。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>看到这里，其实问题就已经解决了一半了，我们只需要把想要显示的位置填进属性即可。</p>
+
+<p>那么问题来了，我到底应该把校准点呈现在那里呢？</p>
+
+<blockquote>
+  <p>对于类搜索任务，把校准点呈现在目标物所围成的圆的圆心即可，保证校准点到各个目标物的视角距离一致。通常来讲是放到屏幕的中心。</p>
+
+  <p>对于类阅读任务，通常会把校准点放到段首第一个字左侧0-2度视角距离的位置。当然这和语言的阅读方向有关。例如：自上而下阅读的蒙文，则需要将校准点放到段首第一个字上方0-2度视角距离的位置。</p>
+</blockquote>
+
+<p>说了这么多，<code class="highlighter-rouge">X Location</code>和<code class="highlighter-rouge">Y Location</code>的数值究竟应该填多少呢？</p>
+
+<p>在准备刺激材料的时候，其实我们是知道刺激材料所在的位置的。如下图所示，只需要将鼠标悬停在显示内容的编辑窗口中，鼠标的右下角就会提示此处的坐标。</p>
+
+<p><img src="/assets/images/mouse_hang.png" alt="image-20200318225322971" /></p>
+
+<p>由于截图工具的问题，没有显示鼠标。实际上我将鼠标悬停到了“There”的第一个字母“T”上。我们可以看到提示的坐标位置为<code class="highlighter-rouge">(86.00, 403.00)</code>。</p>
+
+<p>向前追溯0-2度距离约为60像素，所以设置Drift的位置为<code class="highlighter-rouge">(26.00, 403.00)</code>。</p>
+
+<p>即</p>
+
+<blockquote>
+  <p>X Location = 26</p>
+
+  <p>Y Location = 403</p>
+</blockquote>
+
+<hr />
+
+<h1 id="4-drift-correction-action-的全部属性">4. Drift Correction Action 的全部属性</h1>
+
+<p>一下属性是<code class="highlighter-rouge">Drift Correct</code>控件的全部属性，根据您实验的不同设置，显示出来的属性可能有所不同。</p>
+
+<p>标记为<code class="highlighter-rouge">#</code>的属性为不可直接修改的属性。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>变量类型</th>
+      <th>解释</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>String</td>
+      <td>当前Drift Correction控件的标签，默认为“DRIFT_CORRECTT”。</td>
+    </tr>
+    <tr>
+      <td>Type#</td>
+      <td>*</td>
+      <td>当前Drift Correction控件的类型。</td>
+    </tr>
+    <tr>
+      <td>Node Path#</td>
+      <td>String</td>
+      <td>当前Drift Correction控件在实验中的绝对路径。</td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>String</td>
+      <td>完成当前Drift Correction控件的执行后，向EDF文件发送的Message内容。</td>
+    </tr>
+    <tr>
+      <td>Time#</td>
+      <td>Float</td>
+      <td>完成当前Drift Correction控件的执行后，被试机时钟的时间。</td>
+    </tr>
+    <tr>
+      <td>NTP Time#</td>
+      <td>Float</td>
+      <td>完成当前Drift Correction控件的执行后，NTP时钟的时间。</td>
+    </tr>
+    <tr>
+      <td>Start Time#</td>
+      <td>Float</td>
+      <td>开始执行当前Drift Correction控件时，被试机时钟的时间。</td>
+    </tr>
+    <tr>
+      <td>Clear Input Queues</td>
+      <td>Boolean</td>
+      <td>如果为True，当此控件开始执行时，会刷新全部输入</td>
+    </tr>
+    <tr>
+      <td>X Location</td>
+      <td>Int</td>
+      <td>Drift Correction校准点出现的X坐标，以屏幕像素为单位。</td>
+    </tr>
+    <tr>
+      <td>Y Location</td>
+      <td>Int</td>
+      <td>Drift Correction校准点出现的Y坐标，以屏幕像素为单位。</td>
+    </tr>
+    <tr>
+      <td>Apply Correction</td>
+      <td>String</td>
+      <td>若选择Current，则引用主试机中的设置。<br />若选择YES，则即将误差逆向补偿到校准文件中。<br />如选择No，则不会对校准文件执行任何操作。</td>
+    </tr>
+    <tr>
+      <td>Allow Setup</td>
+      <td>Bollean</td>
+      <td>若选择True，则允许在Drift Correction期间通过按主试机的Esc键进入Cmera Setup界面。<br />若选择False，则不会进入到Camera Setup界面。</td>
+    </tr>
+    <tr>
+      <td>Draw Drift Correction Target</td>
+      <td>Boolean</td>
+      <td>若选择True，则在完成Drift Correction后先清除屏幕（显示空屏），再呈现刺激内容。<br />若选择False，则不会清除Drift Correction显示的内容。在某些情况下，可能希望校准点持续存在到刺激内容出现。</td>
+    </tr>
+    <tr>
+      <td>Clear Target At Exit</td>
+      <td>Boolean</td>
+      <td>若选择True，则在完成Drift Correction后先清除屏幕至Background Color。<br />若选择False，则不会执行清屏操作。</td>
+    </tr>
+    <tr>
+      <td>Foreground Color</td>
+      <td>Color</td>
+      <td>校准点的颜色。</td>
+    </tr>
+    <tr>
+      <td>Background Color</td>
+      <td>Color</td>
+      <td>屏幕的背景色。</td>
+    </tr>
+    <tr>
+      <td>Use Animation Target</td>
+      <td>Boolean</td>
+      <td>若选择True，则使用一个自定义的动图作为校准点。<br />若选择False，则使用默认校准目标。</td>
+    </tr>
+    <tr>
+      <td>Animation Target</td>
+      <td>String</td>
+      <td>校准动图的文件名，仅支持.avi格式的视频文件。</td>
+    </tr>
+    <tr>
+      <td>Animation Play Count</td>
+      <td>Int</td>
+      <td>校准视频的播放次数，若为“-1”则无限循环播放。</td>
+    </tr>
+    <tr>
+      <td>Apply Transparency</td>
+      <td>Boolean</td>
+      <td>若选择True，则将对您自定义的校准动图执行透明度操作。<br />若选择False，则不执行。我们建议您不要开启此选项。</td>
+    </tr>
+    <tr>
+      <td>Use Custom Target</td>
+      <td>Boolean</td>
+      <td>若选择True，则使用一个自定义的图片作为校准点。<br />若选择False，则使用默认校准目标。</td>
+    </tr>
+    <tr>
+      <td>Custom Target</td>
+      <td>String</td>
+      <td>校准目标图片的文件名。</td>
+    </tr>
+    <tr>
+      <td>Target Outer Size</td>
+      <td>Int</td>
+      <td>默认校准目标的外圆直径。</td>
+    </tr>
+    <tr>
+      <td>Target Inner Size</td>
+      <td>Int</td>
+      <td>默认校准目标的内圆直径。</td>
+    </tr>
+    <tr>
+      <td>Use Custom Background</td>
+      <td>Boolean</td>
+      <td>若选择True，则使用一个自定义的图片作为校准背景。<br />若选择False，则使用默认Background Color所设置颜色的全色背景。</td>
+    </tr>
+    <tr>
+      <td>Custom Background</td>
+      <td>String</td>
+      <td>自定义校准背景图片的文件名。</td>
+    </tr>
+    <tr>
+      <td>Target Beep</td>
+      <td>String</td>
+      <td>校准目标出现时，被试机所播放声音的文件名。</td>
+    </tr>
+    <tr>
+      <td>Error Beep</td>
+      <td>String</td>
+      <td>校准失败或中断时，被试机所播放声音的文件名。</td>
+    </tr>
+    <tr>
+      <td>Good Beep</td>
+      <td>String</td>
+      <td>成功执行操作时，被试机所播放声音的文件名。</td>
+    </tr>
+    <tr>
+      <td>Enable External Control</td>
+      <td>Boolean</td>
+      <td>若选择True，则允许使用主试机和被试机键盘以外的设备执行Drift Correction所需的按键操作。<br />若选择False，则不允许。</td>
+    </tr>
+    <tr>
+      <td>External Control Device Config</td>
+      <td>String</td>
+      <td>指定一个文件，该文件用于配制External Control的操作映射。</td>
+    </tr>
+    <tr>
+      <td>External Control Device</td>
+      <td>String</td>
+      <td>用于执行External Control的设备类型。</td>
+    </tr>
+    <tr>
+      <td>Button State Callback Function</td>
+      <td>*</td>
+      <td>对于启动了Custom Class的实验任务，可以通过Custom Class监测其他外部设备的按键状态。以达到自定义设备完成External Control的目的。</td>
+    </tr>
+    <tr>
+      <td>Result#</td>
+      <td>Int</td>
+      <td>如果该控件执行成功，则返回0。若中断，则返回27。</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="5-drift-correction-的-tips">5. Drift Correction 的 Tips</h1>
+
+<h2 id="51-设置自定义的背景色">5.1 设置自定义的背景色</h2>
+
+<p>由于瞳孔缩放漂移的存在，在实验过程中应当尽量避免外在因素引起的瞳孔尺寸变化。在所有外在因素中，对与瞳孔尺寸影响最敏感的就是显示器亮度。当入射到我们瞳孔中的光发生亮度变化时，瞳孔会发生缩放反射。</p>
+
+<p>因此，我们应当保证校准环节和正式实验环节的显示器亮度保持一致，方法就是设置显示的背景色。从上面的表格中，我们已经注意到了名为<code class="highlighter-rouge">Background Color</code>的属性，即执行Drift Correction过程时，屏幕显示的背景颜色。</p>
+
+<p><code class="highlighter-rouge">Background Color</code>的参数类型为<code class="highlighter-rouge">Color</code>。在EB中，<code class="highlighter-rouge">Color</code>类型的参数由四个0到255之间的整型变量构成。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Red, Green, Blue, Alpha]
+</code></pre></div></div>
+
+<p>前三个参数分别是颜色的RGB值，最后一个参数是指颜色的透明度，在设置背景颜色时一般选择不透明，即<code class="highlighter-rouge">Alpah = 255</code>。</p>
+
+<h2 id="52-设置自定义校准点">5.2 设置自定义校准点</h2>
+
+<p>在Drift Correction和Camera Setup环节，默认的校准目标都是一个带圆心的圆，对于正常被试来讲没有任何问题。但是在面对一些特殊被试的时候，这个小圆点往往会表现得力不从心。</p>
+
+<blockquote>
+  <p>在面对婴幼儿时，我们可能会选择使用被试<code class="highlighter-rouge">父母的头像</code>作为校准目标。</p>
+
+  <p>在面对自闭症儿童时，我们可能会选择使用<code class="highlighter-rouge">带声音的动画</code>作为校准目标。</p>
+
+  <p>在面对色弱患者时，我们通常会选用<code class="highlighter-rouge">高对比度的图片</code>作为校准目标。</p>
+
+  <p>……</p>
+</blockquote>
+
+<p>在上述的几种情况中，我们需要自定义校准目标来实现更好的校准结果。关于具体设置方法上，我们将自定义校准目标情况分成两类——动画和图片。</p>
+
+<h3 id="自定义动画校准目标">自定义动画校准目标</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Drift Correction Properties
+├── ...
+├── Use Animation Target         # 是否使用自定义的动画作为校准目标
+|  ├── Animation Target          # 动画的文件名，仅支持.avi格式的视频文件。
+|  ├── Animation Play Count      # 动画的循环播放次数，-1为无限循环。
+|  └── Apply Transparency        # 开始无色背景透明。
+├── ...
+├── Target Beep                  # 校准点出现时播放的声音文件。
+├── ...
+</code></pre></div></div>
+
+<p>一般情况下，我们首先要开启<code class="highlighter-rouge">Use Animation Target</code>，然后在<code class="highlighter-rouge">Animation Target</code>选择使用的视频文件，最后再设置<code class="highlighter-rouge">Target Beep</code>的声音。为了能吸引婴幼儿的注意力，可以在呈现校准目标的同时，播放一段可以吸引小朋友的音乐，而不是使用默认的蜂鸣音。</p>
+
+<h3 id="自定义图片校准目标">自定义图片校准目标</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Drift Correction Properties
+├── ...
+├── Use Custom Target            # 是否使用自定义的图片作为校准目标
+|  └── Custom Target             # 图片的文件名。
+├── ...
+├── Target Beep                  # 校准点出现时播放的声音文件。
+├── ...
+</code></pre></div></div>
+
+<p>和自定义视频校准目标相似，我们首先要开启<code class="highlighter-rouge">Use Custom Target</code>，然后在<code class="highlighter-rouge">Custom Target</code>选择使用的图片文件，最后再考虑是否设置<code class="highlighter-rouge">Target Beep</code>的声音。</p>
+
+<p>以上。</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 标签: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#driftcorrection" class="page__taxonomy-item" rel="tag">DriftCorrection</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#experiment-builder" class="page__taxonomy-item" rel="tag">Experiment Builder</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7" class="page__taxonomy-item" rel="tag">编程技巧</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#eyelink" class="page__taxonomy-item" rel="tag">Eyelink</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2020-03-19T00:00:00+08:00">March 19, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E5%85%B3%E4%BA%8EDrift+Correction+%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E6%9B%B4%E5%A4%9A%20http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FDrift%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FDrift%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FDrift%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/recipe/recipes-mapodoufu/" class="pagination--pager" title="麻婆豆腐
+">向前</a>
+    
+    
+      <a href="/eyelink/LabSetup/" class="pagination--pager" title="好的数据质量 从一个完美的实验室开始
+">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">猜您还喜欢</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Experiment_Design/" rel="permalink">编程前的实验设计准备
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/EB_Intro/" rel="permalink">认识Experiment Builder
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/host-system-update/" rel="permalink">主试机系统更新教程
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/LabSetup/" rel="permalink">好的数据质量 从一个完美的实验室开始
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/s975188062" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 宋昌霖. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

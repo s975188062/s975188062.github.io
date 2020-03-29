@@ -1,0 +1,376 @@
+I">d<hr />
+
+<blockquote>
+  <p><code class="highlighter-rouge">Experiment Builder</code>软件在首次安装时，会附带时长为<code class="highlighter-rouge">30天</code>的<code class="highlighter-rouge">Demo License</code>。即30天之内是可以不用<code class="highlighter-rouge">加密狗</code>就可以打开<code class="highlighter-rouge">Experiment Builder</code>软件的。</p>
+
+  <p>但需要注意的是，<code class="highlighter-rouge">Demo License</code>下编写的实验程序和<code class="highlighter-rouge">加密狗</code>的正式授权存在文件不互通的问题。换句话说，在<code class="highlighter-rouge">Demo License</code>下编写的实验程序无法在查了加密狗的条件下打开。而且在<code class="highlighter-rouge">Demo License</code>下运行的程序会有一个去不掉的红色水印，不能用于正式实验。</p>
+</blockquote>
+
+<p>用户手册下载链接：</p>
+<ul>
+  <li>v2.2.245(299)：<a href="https://github.com/s975188062/s975188062.github.io/raw/master/_source/F_Manuals/ExperimentBuilder%20User%20Manual.pdf">Github</a>，<a href="https://pan.baidu.com/s/1NkjeYMToELh51yqPyvjh3g">百度网盘(fezc)</a></li>
+</ul>
+
+<hr />
+
+<h1 id="1-软件界面">1. 软件界面</h1>
+
+<p><img src="/assets/images/EB_shotcut.jpg" alt="EB_shotcut" /></p>
+
+<p>Experiment Builder使用的是Windows软件的典型构架，由菜单栏、工具栏、工作区和一些辅助面板构成。下面我们来依次介绍：</p>
+
+<h2 id="11-菜单栏">1.1 菜单栏</h2>
+
+<p><img src="/assets/images/eb_menu_bar.jpg" alt="eb_menu_ba" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Experiment Builder 菜单栏
+├── File                    
+|  ├── New                      # 新建一个新的Project
+|  ├── Open                     # 打开一个现有的Project
+|  ├── Recent                   # 最近打开过的Project
+|  ├── Examples                 # EB自带的模板
+|  ├── Save                     # 保存当前Project
+|  ├── Save As                  # 将当前Project另存
+|  ├── Unlock Project           # 解锁当前Project
+|  ├── Package                  # 将当前Project压缩为.ebz文件
+|  ├── Unpack                   # 解压缩一个.ebz文件
+|  ├── Set Restore Point        # 设置回溯点
+|  ├── Restore                  # 回溯当前Project
+|  └── Exit                     # 退出EB
+├── Edit
+|  ├── Undo                     # 撤销
+|  ├── Redo                     # 重做
+|  ├── Cut                      # 剪切
+|  ├── Copy                     # 复制
+|  ├── Paste                    # 粘贴
+|  ├── Paste Multiple           # 粘贴多个
+|  ├── Delete                   # 删除
+|  ├── Refresh Custom Class     # 刷新重置Custom Class
+|  ├── Preferences              # 首选项
+|  ├── Library Manager          # 素材库管理器
+|  ├── Reference Manager        # 引用管理器
+|  ├── Node Groups              # 节点组
+|  └── Select All               # 全选
+├── View
+|  ├── Overview                 # 显示/隐藏Overview面板
+|  ├── Structure                # 显示/隐藏Structure面板
+|  ├── Properties               # 显示/隐藏Properties面板
+|  ├── Connections              # 显示/隐藏Connections面板
+|  ├── Navigator                # 显示/隐藏Navigator面板
+|  ├── Restore Default Views    # 显示/隐藏重置视图设置
+|  ├── Back                     # 上一个节点
+|  ├── Forward                  # 下一个节点
+|  ├── Zoom Selected            # 聚焦到选中的节点
+|  ├── Zoom In                  # 放大
+|  ├── Zoom Out                 # 缩小
+|  ├── Fit Content              # 铺满屏幕
+|  ├── Layout Options           # 排列设置
+|  ├── Arrange Layout           # 自动排列
+|  ├── Export Node              # 导出节点
+|  └── Import Node              # 导入节点
+├── Experiment
+|  ├── Clean                    # 清空当前Project
+|  ├── Build                    # 编译当前Project
+|  ├── Test Run                 # 编译并试运行当前Project
+|  └── Deploy                   # 编译并导出当前Project为可执行文件
+└── Help
+   ├── Contents                 # 电子版用户手册
+   ├── About                    # 关于
+   └── License                  # 许可证书
+</code></pre></div></div>
+
+<h2 id="12-工具栏">1.2 工具栏</h2>
+
+<p><img src="/assets/images/eb_tool_bar.jpg" alt="eb_tool_ba" /></p>
+
+<p>工具栏的按钮基本都是菜单栏里面常用功能的快捷按钮，因此不做过多解释。</p>
+
+<p>但最后一个下拉菜单不是快捷按钮，是<code class="highlighter-rouge">Datasource</code>的快捷导航，这部分内容详见<code class="highlighter-rouge">Recording层</code>这篇文章。</p>
+
+<h2 id="13-overview面板">1.3 Overview面板</h2>
+
+<p><img src="/assets/images/eb_overview_pannel.jpg" alt="eb_overview_panne" /></p>
+
+<p><code class="highlighter-rouge">Overview面板</code>实际上是工作区内<code class="highlighter-rouge">实验流程图</code>的一个缩略图，当<code class="highlighter-rouge">实验流程图</code>非常长时，方便我们快速导航到希望的位置。</p>
+
+<h2 id="14-structure面板">1.4 Structure面板</h2>
+
+<p><img src="/assets/images/eb_structure_pannel.jpg" alt="eb_structure_panne" /></p>
+
+<p><code class="highlighter-rouge">Structure面板</code>从三个层次来解析实验的结构——<code class="highlighter-rouge">逻辑关系</code>、<code class="highlighter-rouge">控件</code>和<code class="highlighter-rouge">硬件</code>。这三个层次依次显示在<code class="highlighter-rouge">Structure面板</code>的左下角。</p>
+
+<ul>
+  <li>Experiment - 将实验的所有控件按照树状图的机构显示出来。</li>
+  <li>Components - 将实验中所用到的空间按类型归类后显示。</li>
+  <li>Device - 将实验中涉及到的硬件设备罗列出来。</li>
+</ul>
+
+<p>其中最值得一提的是<code class="highlighter-rouge">Device</code>中的<code class="highlighter-rouge">Eyelink</code>，这部分所指代的内容是眼动仪，我们可以在这里设置眼动仪的型号和工作模式。</p>
+
+<h2 id="15-properties面板">1.5 Properties面板</h2>
+
+<p><img src="/assets/images/eb_properties_pannel.jpg" alt="eb_properties_panne" /></p>
+
+<p><code class="highlighter-rouge">Properties面板</code>顾名思义，这里显示的是特定对象的属性。</p>
+
+<p>当我们在<code class="highlighter-rouge">Experiment Builder</code>中选择任意一个对象时，该对象的属性都会显示在<code class="highlighter-rouge">Properties面板</code>中。</p>
+
+<h2 id="16-note面板">1.6 Note面板</h2>
+
+<p><img src="/assets/images/eb_note_pannel.jpg" alt="eb_note_panne-w235" /></p>
+
+<p>和前面的<code class="highlighter-rouge">Properties面板</code>类似，<code class="highlighter-rouge">Note面板</code>里面显示的是选中对象的备注信息。</p>
+
+<h2 id="17-工作区标签">1.7 工作区标签</h2>
+
+<p><img src="/assets/images/eb_tab_pannel.jpg" alt="eb_tab_panne" /></p>
+
+<p><code class="highlighter-rouge">工作区标签</code>显示在整<code class="highlighter-rouge">工作区</code>的上方，提示了当前的工作区显示的是哪个对象的内容，并且允许用户在各个对象之间快速切换。</p>
+
+<h2 id="18-控件库">1.8 控件库</h2>
+
+<p><img src="/assets/images/eb_node_library.jpg" alt="eb_node_library" /></p>
+
+<p>控件库中是<code class="highlighter-rouge">Experiment Builder</code>中可以用来构建实验的全部功能控件。</p>
+
+<p><code class="highlighter-rouge">Experiment Builder</code>将所有控件分为三类：<code class="highlighter-rouge">Action</code>、<code class="highlighter-rouge">Trigger</code>和<code class="highlighter-rouge">Other</code>。</p>
+
+<ul>
+  <li>Action - 命令主试机、被试机或者眼动仪执行某一个特定的命令。</li>
+  <li>Trigger - 控制Action的开始和结束。</li>
+  <li>Other - 除上述两种以外的辅助控件。</li>
+</ul>
+
+<p>详细列表如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>控件库
+├── Action                  
+|  ├── DisplayScreen                # 显示特定内容
+|  ├── DriftCorrection              # 漂移检查
+|  ├── CameraSetup                  # 执行相机校准
+|  ├── AddToLog                     # 将文本内容添加到运行日志中
+|  ├── SendEyelikMessage            # 将文本内容以Message的形式发送到.edf文件中
+|  ├── EyelinkCommand               # 将文本命令发送给主试机
+|  ├── AddToAccumulator             # 添加到累加器
+|  ├── PrepareSequence              # 准备下一个试次的刺激材料
+|  ├── Sequence                     # 序列
+|  ├── UpdateAttribute              # 更新属性
+|  ├── Play Sound                   # 播放声音
+|  ├── Play Sound Control           # 声音播放控制
+|  ├── Record Sound                 # 录制声音
+|  ├── Record Sound Control         # 声音录制控制
+|  ├── AddToResultFile              # 将特定变量添加到ResultFile中
+|  ├── SetTTL                       # 设置TTL设备针脚电平
+|  ├── Biometric TTL                # 控制被试机向其他设备发送TTL信号
+|  ├── serialPortWriteMessageTip    # 控制串口发送消息
+|  ├── Reset                        # 重置某一特定控件
+|  ├── Terminate                    # 终断实验
+|  ├── Recycle Data Line            # 挂起当前Datsouce数据行稍后执行
+|  └── Null action                  # 啥也不干
+├── Trigger
+|  ├── Timer                        # 计时器
+|  ├── InvisibleBoundry             # 当注视位置落入特定边界内触发
+|  ├── Conditional                  # 条件触发
+|  ├── EyeLinkButton                # Eyelink反应手柄触发
+|  ├── CedrusInput                  # Cedrus反应盒触发
+|  ├── Keyboard                     # 键盘触发
+|  ├── TTL                          # 接收到特定TTL信号的时候触发
+|  ├── triggerSerialPortMessageTip  # 穿口信号触发
+|  ├── Mouse                        # 鼠标点击触发
+|  ├── Fixation                     # 发生注视时触发
+|  ├── Saccade                      # 发生扫视时触发
+|  ├── Blink                        # 发生眨眼时触发
+|  ├── SampleVelocity               # 眼球运动达到特定速度时触发
+|  └── Voice Key                    # 采集到声音时触发
+└── Other
+   ├── Accumulator                  # 加法器
+   ├── Variable                     # 定义变量
+   └── ResultFile                   # 创建一个ResultFile
+</code></pre></div></div>
+
+<h2 id="19-工作区">1.9 工作区</h2>
+
+<p><img src="/assets/images/eb_workspace.jpg" alt="eb_workspace" /></p>
+
+<p>这一部分非常简单，<code class="highlighter-rouge">工作区</code>就是编辑实验的地方，具体内容和<code class="highlighter-rouge">1.7 工作区标签</code>对应。</p>
+
+<h2 id="110-导航器">1.10 导航器</h2>
+
+<p><img src="/assets/images/eb_navigator_pannel.jpg" alt="eb_navigator_panne" /></p>
+
+<p>帮助我们快速了解当前工作区的上级结构。</p>
+
+<hr />
+
+<h1 id="2-查阅操作手册">2. 查阅操作手册</h1>
+
+<blockquote>
+  <p>遇事不决查Manual。——王治国</p>
+</blockquote>
+
+<p>关于<code class="highlighter-rouge">Experiment Builder</code>的全部问题，在<code class="highlighter-rouge">Manual</code>里面几乎都可以找到答案。</p>
+
+<p>在我学习软件的时候，曾经将英文手册翻译为中文。虽然后面没有再查阅过中文的操作手册，但是<strong>英译汉的过程</strong>给我带来了极大的技能提升。</p>
+
+<p>在我们安装好<code class="highlighter-rouge">Experiment Builder</code>时，<code class="highlighter-rouge">Manual</code>就已经被同步拷贝到我们的电脑上了。</p>
+
+<p>您可以通过一下两种方式打开用户手册：</p>
+
+<p><img src="/assets/images/eb_call_content.jpg" alt="eb_call_content" /></p>
+
+<ul>
+  <li>如上图所示，在<code class="highlighter-rouge">Experiment Builder</code>中打开。点击菜单栏“<code class="highlighter-rouge">Help</code> -&gt; <code class="highlighter-rouge">Content</code>”，或者直接按<code class="highlighter-rouge">F1</code>打开电子版操作手册。</li>
+</ul>
+
+<p><img src="/assets/images/eb_start_manual.jpg" alt="eb_start_manua" /></p>
+
+<ul>
+  <li>或者您也可以在开始菜单中找到<code class="highlighter-rouge">.pdf</code>格式的用户手册。如上图所示，依次点击“<code class="highlighter-rouge">开始</code> -&gt; <code class="highlighter-rouge">SR Research</code> -&gt; <code class="highlighter-rouge">ExperimentBuilder User Manual</code>”即可打开。</li>
+</ul>
+
+<hr />
+
+<h1 id="3-实验程序编写逻辑">3. 实验程序编写逻辑</h1>
+
+<h2 id="31-基本流程图">3.1 基本流程图</h2>
+
+<p>在介绍<code class="highlighter-rouge">Experiment Builder</code>时，我会说这是一个功能强大的<strong>可视化</strong>编程工具。</p>
+
+<p>提起编程，我们可能以为是下面这样的：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">click_load_button</span><span class="p">():</span>
+
+    <span class="k">global</span> <span class="n">log_file_path</span>
+
+    <span class="n">log_fp</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askopenfilename</span><span class="p">()</span>
+
+    <span class="c1"># 设置显示的路径内容
+</span>    <span class="n">find_index</span> <span class="o">=</span> <span class="n">log_fp</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span> <span class="o">-</span> <span class="mi">3</span>
+    <span class="n">count_num</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+            <span class="n">count_num</span> <span class="o">=</span> <span class="n">count_num</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">count_num</span> <span class="o">==</span> <span class="n">find_index</span><span class="p">:</span>
+                <span class="k">break</span>
+    <span class="n">path_2_show</span> <span class="o">=</span> <span class="s">'...'</span> <span class="o">+</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)]</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">monty3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"             "</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s">'W'</span><span class="p">)</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">monty3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">path_2_show</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s">'W'</span><span class="p">)</span>
+
+    <span class="c1"># 获取文件的绝对路径
+</span>    <span class="n">find_index</span> <span class="o">=</span> <span class="n">log_fp</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+    <span class="n">count_num</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+            <span class="n">count_num</span> <span class="o">=</span> <span class="n">count_num</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">count_num</span> <span class="o">==</span> <span class="n">find_index</span><span class="p">:</span>
+                <span class="k">break</span>
+    <span class="n">log_file_path</span> <span class="o">=</span> <span class="n">log_fp</span><span class="p">[</span><span class="mi">0</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<p>上面这样就是代码编程，需要系统的学习才可以完成。</p>
+
+<p>好在EB用的并不是这样的方法，EB将常用的功能封装成了名为<code class="highlighter-rouge">控件</code>的黑盒，我们只需要在<code class="highlighter-rouge">Propreties面板</code>中设置相应控件的参数即可。无需担心控件内部的每一步是怎么工作的。</p>
+
+<p>下图就是EB编写程序的方式——<strong>流程图</strong>。</p>
+
+<p><img src="/assets/images/eb_workspace.jpg" alt="eb_workspace" /></p>
+
+<p>在编写实验的过程中，我们将控件托放到工作区，以合适的逻辑关系链接起来，构成实验。</p>
+
+<p>在上图所示的例子中：</p>
+
+<ul>
+  <li>实验进程从<code class="highlighter-rouge">START</code>开始</li>
+  <li>然后第二行的<code class="highlighter-rouge">DISPLAY_SCREEN</code>工作，呈现我们事先设定好的刺激内容；</li>
+  <li>刺激内容呈现完毕后，等待第三行中的<code class="highlighter-rouge">Trigger</code>被触发。我们可以看，第二行的<code class="highlighter-rouge">DISPLAY_SCREEN</code>同时链接了三个<code class="highlighter-rouge">Trigger</code>：<code class="highlighter-rouge">TIMER</code>、<code class="highlighter-rouge">EL_BUTTON</code>和<code class="highlighter-rouge">EL_KEYBOARD</code>。三个Trigger会同时等待触发信号，当三个当中的任意一个触发事件发生时，则根据箭头的连接继续进行实验。即运行<code class="highlighter-rouge">DISPLAY_BLANK</code>。</li>
+</ul>
+
+<blockquote>
+  <p>我们可以总结一下上面几个控件实现的功能：</p>
+
+  <p>呈现刺激后，等待被试通过<code class="highlighter-rouge">Eyelink反应手柄</code>或者<code class="highlighter-rouge">键盘</code>进行行为反馈，接收到反馈信息后，清空显示的内容，呈现空屏幕。但是如果被试没有在规定的限制时间内给予反馈，则计时结束后直接呈现空屏。</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">Experiment Builder</code>就是通过这样的方式完成实验程序编写的。</p>
+
+<h2 id="32-实验的典型结构">3.2 实验的典型结构</h2>
+
+<p>打开我们在本文第二节提到的操作手册，可以在“6.1 Hierarchical Organization of Experiment”中看到下图：</p>
+
+<p><img src="/assets/images/eb_hierarchical_org.jpg" alt="eb_hierarchical_org" /></p>
+
+<p>一个典型的眼动实验就是分为这样四层的套娃结构。</p>
+
+<ul>
+  <li>
+    <p><strong>Experiment</strong> - 代表整个实验，由<code class="highlighter-rouge">指导语</code>、<code class="highlighter-rouge">结束语</code>和一个或多个Block组成。</p>
+  </li>
+  <li>
+    <p><strong>Block</strong> - 实验组。当我们由于一些特殊需求将整个实验拆分成多个小块进行时，每个小块就是一个<code class="highlighter-rouge">Block</code>。常见的拆分原因有：实验中途需要休息、设定几个试次为练习部分、特殊的实验设计等。单个<code class="highlighter-rouge">Block</code>由<code class="highlighter-rouge">Camera Setup</code>和多个<code class="highlighter-rouge">Trial</code>组成。</p>
+  </li>
+  <li>
+    <p><strong>Trial</strong> - 试次，是实验的最小循环单位。包括从电脑读取呈现的材料、呈现刺激材料并记录眼动数据的一整个过程。</p>
+  </li>
+  <li>
+    <p><strong>Recording</strong> - 真正记录眼动数据的部分。在这里面编写实验的刺激的内容和被试反馈等。</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>关于Trial和Recording的关系，我任务有必要拿出来单独讲解一下。</p>
+
+  <p>我们假设一个<strong>自定步速阅读</strong>的实验，一共50个<code class="highlighter-rouge">Trial</code>，每个<code class="highlighter-rouge">Trial</code>内给被试看一个语篇，被试看完之后按<code class="highlighter-rouge">空格</code>出现下一篇。</p>
+
+  <p>从<code class="highlighter-rouge">Trial</code>的定义来看，整个实验的最小循环单位看似是“<code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”，实则不然。</p>
+
+  <p>从计算机层面来看，实验的最小循环单位是：“<code class="highlighter-rouge">加载一会要呈现的语篇</code> -&gt; <code class="highlighter-rouge">漂移矫正</code> -&gt; <code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”。</p>
+
+  <p>即“<code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”的过程仅仅是<code class="highlighter-rouge">Recording</code>。<code class="highlighter-rouge">Trial</code>要多出一些<strong>计算机后台</strong>的操作。</p>
+</blockquote>
+
+<p>那么，在<code class="highlighter-rouge">Experiment Builder</code>中编程就是按照自己的<strong>实验设计</strong>，依照<strong>层级结构</strong>，将不同的<strong>实验控件</strong>连接成<strong>流程图</strong>。</p>
+
+<hr />
+
+<h1 id="4-创建我的第一个实验">4. 创建我的第一个实验</h1>
+
+<p>点击菜单栏“<code class="highlighter-rouge">File</code> -&gt; <code class="highlighter-rouge">New</code>”</p>
+
+<p><img src="/assets/images/eb_new_poject.jpg" alt="eb_new_poject" /></p>
+
+<p>跳出新建窗口：</p>
+
+<p><img src="/assets/images/eb_new_poject_2.jpg" alt="eb_new_poject_2" /></p>
+
+<p>四行设置从上到下依次是：</p>
+
+<ul>
+  <li>
+    <p>Project Name - 实验项目的名称。</p>
+  </li>
+  <li>
+    <p>Project Location - 保存的位置。</p>
+  </li>
+  <li>
+    <p>Templates - 创建实验使用的模板。如果选择<code class="highlighter-rouge">None</code>则创建一个空文件，如果选择<code class="highlighter-rouge">Eyelink_Template.ebz</code>则打开实验模板。</p>
+  </li>
+  <li>
+    <p>Eyelink Experiment - 是否是一个Eyelink的眼动实验。如果选<code class="highlighter-rouge">True</code>，则需要选择眼动仪的具体型号，<code class="highlighter-rouge">Current</code>为自动识别。</p>
+  </li>
+</ul>
+
+<p>点击<code class="highlighter-rouge">OK</code>则执行创建操作，此时会提示下图所示的窗口，告诉我们不要对实验文件夹内的文件执行新增或者删除的操作。</p>
+
+<p><img src="/assets/images/eb_new_poject_3.jpg" alt="eb_new_poject_3" /></p>
+
+<p>这一点很重要，是<code class="highlighter-rouge">Experiment Builder</code>和<code class="highlighter-rouge">E-Prime</code>的一个很大的区别。</p>
+
+<p>点击<code class="highlighter-rouge">确定</code>后，我们的第一个实验就创建好了！</p>
+
+<p><img src="/assets/images/eb_new_poject_4.jpg" alt="eb_new_poject_4" /></p>
+
+<hr />
+
+<p>以上。</p>
+
+:ET

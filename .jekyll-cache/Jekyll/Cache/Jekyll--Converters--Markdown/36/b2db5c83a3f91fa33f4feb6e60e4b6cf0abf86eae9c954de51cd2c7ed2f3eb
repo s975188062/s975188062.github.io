@@ -1,0 +1,170 @@
+I"�"<hr />
+
+<blockquote>
+  <p>“不允许随意移动眼动仪！”</p>
+
+  <p>有些实验室里面是有这样的要求的。实验室老师会说，自己是清了专业的人调整了眼动仪的摆放位置，不允许学生随意移动。</p>
+
+  <p>我不会评论这是否是正确的，但是这从侧面反映了一个事实：</p>
+
+  <p>“<strong>实验室环境对于我们的实验很重要。</strong>”</p>
+</blockquote>
+
+<h1 id="1-实验室的装修">1. 实验室的装修</h1>
+
+<p><img src="/assets/images/device_overlay.jpg" alt="device_overlay" /></p>
+
+<p>在实验室的装修过程中，我们应当明确一下几点：</p>
+
+<ul>
+  <li>实验室应单独装修，墙壁铺满吸音材料为宜；</li>
+  <li>实验室应为无窗或者仅单侧有窗，每扇窗户都应配套遮阳窗帘；</li>
+  <li>主试和被试尽量隔离，如没有条件单独设立房间，则至少保证被试面对墙壁，主试和主试机都不会出现在被试的视野当中；</li>
+  <li>对于<code class="highlighter-rouge">19寸显示器</code>，被试所用的桌子应至少宽<code class="highlighter-rouge">80cm</code>，才能保证被试到显示器有足够的距离。您可以测量显示器的水平边长度，乘以<code class="highlighter-rouge">1.75</code>即为被试眼睛到显示器的距离；</li>
+  <li>被试头顶后方应避免安装灯光，使用无主照明或将光源悬挂于显示器正上方；</li>
+  <li>选用光源时，避免使用暖光光源（偏红或偏黄），<code class="highlighter-rouge">冷光</code>或<code class="highlighter-rouge">普通白光</code>为宜；</li>
+  <li>实验室应保证<code class="highlighter-rouge">充足照明</code>，光线过暗不易进行实验；</li>
+  <li>被试座椅应选用<code class="highlighter-rouge">带靠背</code>的<code class="highlighter-rouge">可升降座椅</code>，根据被试身高酌情调节；</li>
+</ul>
+
+<hr />
+
+<h1 id="2-设备摆放">2. 设备摆放</h1>
+
+<h2 id="21-被试到显示器的距离">2.1 被试到显示器的距离</h2>
+
+<p><img src="/assets/images/device_setup_DE.jpg" alt="device_setup_DE" /></p>
+
+<p><code class="highlighter-rouge">Eyelink 1000Plus</code>系列桌面时眼动仪的可追踪眼动范围是<code class="highlighter-rouge">水平32度×竖直26度</code>，即眼睛在这个范围内运动时，眼动仪是可以稳定地追踪到眼动的。</p>
+
+<p>为了最大化利用眼动仪的可追踪范围，我们应尽量让显示器充满可追踪范围，这样可以获取更高的眼动质量。</p>
+
+<p>所以，我们要调整显示器的摆放位置，让显示器的长边刚好占据32度的视角。</p>
+
+<p><img src="/assets/images/device_setup_ABC.jpg" alt="device_setup_ABC" /></p>
+
+<p>以19寸正品显示器为例，显示器显示范围的物理尺寸是37.5×30.5cm。那么被试到显示器的距离<strong>A</strong>应为：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d = (37.5cm ÷ 2) ÷ tan(16度) ≈ 37.5 × 1.75 = 656.25cm
+</code></pre></div></div>
+
+<blockquote>
+  <p>考虑到显示器的厚度和被试头部不可能紧贴桌子边缘，我们在选择桌子时应留有富裕。</p>
+
+  <p>即至少选用80cm宽的桌子。</p>
+</blockquote>
+
+<h2 id="22-下颌托高度">2.2 下颌托高度</h2>
+
+<p>接下来，我们来调整下颌托的高度，让被试的眼睛可以平视显示器的上<code class="highlighter-rouge">1/4</code>处。</p>
+
+<p>由于我们的视觉习惯是向下俯视的，因此我们要把刺激内容放到水平视线以下。</p>
+
+<blockquote>
+  <p>Q：那我们为什么不将水平实现对齐到显示器的上边缘呢？</p>
+
+  <p>A：其实也可以，但是我推荐对齐到上1/4处。</p>
+</blockquote>
+
+<h2 id="23-眼动仪到被试的距离">2.3 眼动仪到被试的距离</h2>
+
+<p>无论是固定头部还是遥测模式，都将眼动仪放到距离被试眼睛<code class="highlighter-rouge">55～60cm</code>之间的地方，即上图中<strong>C</strong>的值应在<code class="highlighter-rouge">55～60cm</code>之间。</p>
+
+<blockquote>
+  <p>根据选用镜头的焦段不同，实际的有效追踪距离是有变化的。但是55～60的这个范围可以适合全焦段的镜头。</p>
+</blockquote>
+
+<p>值得注意的是，固定头部和遥测模式下，被试的坐姿会发生变化。头部在纵向上的位置不同。</p>
+
+<p>因此，从固定头部切换到遥测模式时，可能需要将眼动仪朝着被试的方向移动，以保证眼动仪到被试眼睛的距离在适当的范围内。反之则朝向远离被试的方向移动。</p>
+
+<h2 id="24-眼动仪的摆放高度">2.4 眼动仪的摆放高度</h2>
+
+<blockquote>
+  <p>眼动仪最好是可以和水平实现在同一高度，这样可追踪范围最大。</p>
+
+  <p>但是这样会遮挡刺激内容。</p>
+</blockquote>
+
+<p>所以我们应当尽量提升眼动仪的高度。但应保证眼动仪<code class="highlighter-rouge">尽量高</code>的同时，不要让眼动仪遮挡屏幕的显示内容。</p>
+
+<p>具体操作可以做到被试的位置，将头放到下颌托上，变看变调节。</p>
+
+<h2 id="25-眼动仪显示器和下颌托的位置关系">2.5 眼动仪、显示器和下颌托的位置关系</h2>
+
+<p>保证显示器的平面垂直于视线。</p>
+
+<p>保证显示器的中线、眼动仪的中线和下颌托在同一个竖直平面内。</p>
+
+<hr />
+
+<h1 id="3-计算机配置">3. 计算机配置</h1>
+
+<h2 id="31-主试机配置">3.1 主试机配置</h2>
+
+<p>保证主试机的软件版本最新即可，查询主试机最新的系统版本有一下三种方法</p>
+
+<ul>
+  <li>关注“Eyelink博润视动”公众号，后台回复“Host”</li>
+  <li><a href="https://cn.sr-support.com/viewforum.php?f=15">SR Research中文论坛主试机板块</a></li>
+  <li><a href="https://www.sr-support.com/forum/downloads/eyelink-host-software">SR Research英文论坛主试机板块</a></li>
+</ul>
+
+<p>您可以打开主试机，在<code class="highlighter-rouge">Offline界面</code>的右下角，查看系统版本号，如下图所示：</p>
+
+<p><img src="/assets/images/hsot_1kp_offline.jpg" alt="hsot_1kp_offline" /></p>
+
+<p>我们可以看到当前主试机的系统版本号为<code class="highlighter-rouge">5.00.50</code>。</p>
+
+<p>截止2020年3月23日，最新的系统版本号如下：</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Eyelink 1000</code> -&gt; <code class="highlighter-rouge">4.594</code>
+<code class="highlighter-rouge">Eyelink 2000</code> -&gt; <code class="highlighter-rouge">4.594</code>
+<code class="highlighter-rouge">Eyelink 1000Plus</code> -&gt; <code class="highlighter-rouge">5.15</code>
+<code class="highlighter-rouge">Eyelink Portable Duo</code> -&gt; <code class="highlighter-rouge">6.12</code></p>
+</blockquote>
+
+<p>关于主试机的系统升级方法，您可以参照我<a href="http://charlie-techblog.com/eyelink/host-system-update/">主试机系统更新教程</a>。</p>
+
+<h2 id="32-被试机配置">3.2 被试机配置</h2>
+
+<h3 id="系统环境">系统环境</h3>
+
+<p>首先要明确的是，一定要遵循专机专用的原则，严谨在专用的被试机上安装无关的软件——保护被试机就是在保护自己的数据。</p>
+
+<p>您可以遵循一下操作来提升被试机的时间性能：</p>
+
+<ul>
+  <li>卸载或关闭所有与Eyelink无关的软件和进程，包括并不仅限于各类杀毒软、各类安全卫士、浏览器、即时通讯软件、邮箱、网盘等其他程序。</li>
+  <li>取消所有计划任务，如数据备份、自动杀毒等。</li>
+  <li>关闭屏幕保护程序，确保电脑用不休眠和熄屏幕。</li>
+  <li>关闭“主题”等不必要的服务（Windows 7）</li>
+  <li>禁用不要要的硬件设备，如多余的网卡等。</li>
+</ul>
+
+<p>最后，重要的事情说三遍：</p>
+<ul>
+  <li><strong>不要装360</strong></li>
+  <li><strong>不要装360</strong></li>
+  <li><strong>不要装360</strong></li>
+</ul>
+
+<h3 id="eyelink软件">Eyelink软件</h3>
+
+<p><code class="highlighter-rouge">Eyelink软件</code>由于其免费升级的特性，<code class="highlighter-rouge">SR-Research公司</code>在开发软件的时候非常注意不同版本间的兼容问题。</p>
+
+<p>不要害怕更新软件，新版本的软件一定是<strong>功能更多、运行更稳定、兼容性更好</strong>的。</p>
+
+<p>和上面一样，您可以通过以下三种方式获取最新的软件安装包：</p>
+
+<ul>
+  <li>关注“Eyelink博润视动”公众号，后台回复“EB、DV、Devkit和Weblink”</li>
+  <li><a href="https://cn.sr-support.com/">SR Research中文论坛</a></li>
+  <li><a href="https://www.sr-support.com/">SR Research英文论坛</a></li>
+</ul>
+
+<p>安装过程中遵循默认设置即可，建议将软件安装到系统盘中。</p>
+
+<p>以上。</p>
+:ET

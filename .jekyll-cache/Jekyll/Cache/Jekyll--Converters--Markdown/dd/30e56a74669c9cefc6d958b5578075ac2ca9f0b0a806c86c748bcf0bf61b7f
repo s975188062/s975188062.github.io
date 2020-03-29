@@ -1,0 +1,153 @@
+I"W<hr />
+
+<blockquote>
+  <p>欢迎，这里是Charlie的Eyelink指北。内容在逐步更新中……</p>
+
+  <p>您可以点击右侧的导航栏来快速跳转到您感兴趣的内容。</p>
+
+  <p>如果有想要看到的内容，请通过邮件与我联系：Charlie-TechBlog@outlook.com</p>
+
+  <p>您也可以发送一封邮件给我，这样我会把您加到邮件列表中，等我更新文章时会在第一时间通知您。</p>
+</blockquote>
+
+<h1 id="0-intro">0. Intro</h1>
+
+<ul>
+  <li>认识眼动研究</li>
+  <li>认识眼动仪</li>
+</ul>
+
+<hr />
+
+<h1 id="1-experiment-builder">1. Experiment Builder</h1>
+
+<h2 id="11-basic">1.1 Basic</h2>
+
+<ul>
+  <li><a href="/eyelink/EB_Intro/">认识Experiment Builder</a></li>
+  <li>编程前的实验设计准备</li>
+  <li>指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）</li>
+  <li>Block层（Sequence和CameraSetup）</li>
+  <li>Trial层（PrepareSequence和DriftCorrection）</li>
+  <li>Recording层（Datasource和引用）</li>
+  <li>设置随机（Datasource）</li>
+  <li>计算反应时和正确率（Variable、UpdateAttribute和Conditional）</li>
+  <li>记录行为信息（ResultFile和AddToResultFile）</li>
+  <li>实验的保存、编译、压缩与迁移</li>
+</ul>
+
+<h2 id="12-master">1.2 Master</h2>
+
+<ul>
+  <li>播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）</li>
+  <li>播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）</li>
+  <li>录音（RecordSound、RecordSoundControl和VoiceKey）</li>
+  <li>边界触发（InvisibleBoundary）</li>
+  <li>GC-Window（DisplayScreen）</li>
+  <li>Visual-World（DisplayScreen和Mouse）</li>
+  <li>多模态（SetTTL、BiometricTTL等）</li>
+  <li>真随机（Variable和UpdateAttribute）</li>
+  <li>绘制兴趣区InterestArea（DisplayScreen）</li>
+</ul>
+
+<h2 id="13-tips">1.3 Tips</h2>
+
+<ul>
+  <li><a href="http://charlie-techblog.com/eyelink/Drift/">DriftCorrection Action</a></li>
+</ul>
+
+<hr />
+
+<h1 id="2-主试机及操作">2. 主试机及操作</h1>
+
+<h2 id="21-basic">2.1 Basic</h2>
+
+<ul>
+  <li><a href="http://charlie-techblog.com/eyelink/LabSetup/">实验室环境配置</a></li>
+  <li>数据采集操作</li>
+  <li>常见问题汇总</li>
+</ul>
+
+<h2 id="22-master">2.2 Master</h2>
+
+<ul>
+  <li><a href="http://charlie-techblog.com/eyelink/host-system-update/">主试机系统更新教程</a></li>
+</ul>
+
+<hr />
+
+<h1 id="3-data-viewer">3. Data Viewer</h1>
+
+<h2 id="31-basic">3.1 Basic</h2>
+
+<ul>
+  <li>认识Data Viewer</li>
+  <li>数据导入</li>
+  <li>TrialGrouping</li>
+  <li>设置InterestPeriod</li>
+  <li>绘制InterestArea</li>
+  <li>Report Data</li>
+</ul>
+
+<h2 id="32-master">3.2 Master</h2>
+
+<ul>
+  <li>数据清洗</li>
+  <li>绘制动态兴趣区DynamicInterestArea</li>
+  <li>数据补救</li>
+</ul>
+
+<hr />
+
+<h1 id="4-third-party-programing-tools">4. Third-Party Programing Tools</h1>
+
+<h2 id="41-e-prime">4.1 E-Prime</h2>
+
+<ul>
+  <li>概述</li>
+  <li>elConnect</li>
+  <li>elCameraSetup</li>
+  <li>startRecording</li>
+  <li>stopRecording</li>
+  <li>elClose</li>
+</ul>
+
+<h2 id="42-psychotoolbox">4.2 PsychoToolBox</h2>
+
+<ul>
+  <li>概述</li>
+</ul>
+
+<h2 id="43-psychopy">4.3 PsychoPy</h2>
+
+<p>SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的工具书，此处直接引用王博士的劳动成果。</p>
+
+<blockquote>
+  <p>This book will first introduce the building blocks and syntax of Python, then discuss libraries that we can use to program psychology experiments, i.e., PsychoPy and Pygame. For eye-tracking, this book will feature the Pylink library, a Python interface to the EyeLink Developer’s Kit. The example scripts accompanying this book are freely available on GitHub, https://github.com/zhiguo-eyelab/Pylink_book/tree/master/example_scripts. This book is a useful reference for eye-tracking researchers, but you can also use it in graduate or undergraduate level programming courses. ——王治国</p>
+</blockquote>
+
+<p><strong>传送门</strong>：<a href="https://github.com/zhiguo-eyelab/Pylink_book">Zhiguo-Eyelab</a></p>
+
+<p>感谢王博士的无私分享。</p>
+
+<h2 id="44-translog-ii">4.4 Translog II</h2>
+
+<ul>
+  <li>概述</li>
+  <li>Project的制作</li>
+  <li>数据采集</li>
+  <li>TPR_DB</li>
+</ul>
+
+<h2 id="45-辅助工具">4.5 辅助工具</h2>
+
+<ul>
+  <li>Visual-Angle Calculator</li>
+</ul>
+
+<hr />
+
+<h1 id="5-weblink">5. Weblink</h1>
+
+<h2 id="准备中">准备中……</h2>
+:ET

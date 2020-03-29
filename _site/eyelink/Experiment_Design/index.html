@@ -1,0 +1,893 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>编程前的实验设计准备 - Charlie的学习与生活</title>
+<meta name="description" content="  ">
+
+
+  <meta name="author" content="宋昌霖">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="Charlie的学习与生活">
+<meta property="og:title" content="编程前的实验设计准备">
+<meta property="og:url" content="http://localhost:4000/eyelink/Experiment_Design/">
+
+
+  <meta property="og:description" content="  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-28T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/eyelink/Experiment_Design/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "宋昌霖",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Charlie的学习与生活 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<style>
+  table{
+    border-left:1px solid #000000;border-top:1px solid #000000;
+    width: 100%;
+    word-wrap:break-word; word-break:break-all;
+  }
+  table th{
+  text-align:center;
+  }
+  table th,td{
+    border-right:1px solid #000000;border-bottom:1px solid #000000;
+  }
+</style>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Charlie的学习与生活
+          <span class="site-subtitle">Last Update 2020.03.25 | 8% Done</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/content/" >Eyelink指北</a>
+            </li><li class="masthead__menu-item">
+              <a href="/recipe/" >私房食谱</a>
+            </li><li class="masthead__menu-item">
+              <a href="/dogfood/" >三斤狗粮</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >文章分类</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >标签</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">首页</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#eyelink" itemprop="item"><span itemprop="name">Eyelink</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">编程前的实验设计准备</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">目录</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/content/"><span class="nav__sub-title">点此获取“Eyelink指北”完整目录</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Basic</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/EB_Intro/" class="">认识软件</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">编程前的实验设计准备</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">指导语与结束语</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Block层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Trial层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Recording层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">随机设置</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">计算反应时和正确率</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">行为信息记录</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">实验的保存、编译、压缩与迁移</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Master</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放声音材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放视频材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">录音</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">边界触发范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">GC-Window范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Visual World范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">多模态</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">真随机</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">绘制兴趣区</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Tips</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/Drift/" class="">DriftCorrection（完）</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Eyelink指北的其他部分</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Data Viewer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">主试机操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">3rd-Party Tools</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="编程前的实验设计准备">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2020-03-28T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">编程前的实验设计准备
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  少于 1 分钟阅读
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#1-手绘流程图">1. 手绘流程图</a></li>
+  <li><a href="#2-datasource表格">2. Datasource表格</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <hr />
+
+<p>本节将介绍如何高效地进行编程前的实验设计准备。</p>
+
+<p>预先设定的实验设计如下：</p>
+
+<blockquote>
+  <p>被试将自定步速浏览4篇英文文章，在此过程中同步采集眼动数据。在被试完成当前文章的浏览后，会向被试提出一个关于文章的问题，以保证被试认真阅读。</p>
+
+  <p>我们将检测阅读过程中，每个单词的<code class="highlighter-rouge">First Fixation Duration</code>、<code class="highlighter-rouge">Gaze Duration</code>和<code class="highlighter-rouge">Dwell Time</code>三个指标与词长的关系。</p>
+</blockquote>
+
+<hr />
+
+<h1 id="1-手绘流程图">1. 手绘流程图</h1>
+
+<blockquote>
+  <p>好记性不如烂笔头。</p>
+
+  <p>把实验中需要注意的点一项一项写在纸上就不会出错了。</p>
+</blockquote>
+
+<p><img src="/assets/images/eb_exp_design.png" alt="eb_exp_design" /></p>
+
+<p>我个人习惯于将实验设计的细节全部铺在纸上，通过思维导图的方式把细节全部链接在一起。</p>
+
+<p>编程的过程中需要设置很多细节内容，这是在编程的过程中一步一步设置的。切不能把所有内容编辑好之后一次性回头重来，这样非常容易丢失细节。</p>
+
+<p>如上图所示，我将实验设计中所有的细节信息都罗列了出来。在后面的章节中将一致依照这个思维导图来完成实验编写。</p>
+
+<hr />
+
+<h1 id="2-datasource表格">2. Datasource表格</h1>
+
+<p>在编写实验程序的过程中，我们需要创建一个表格来把每个试次呈现的内容装进去。这在我们制作实验材料的时候也是需要的。</p>
+
+<p>例如我目前的实验任务，我需要设置的内容很简单，即每个试次呈现的文字内容即可。此处由于排版的关系，我简化了Text Page的内容</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Trial ID</th>
+      <th style="text-align: left">Text Page</th>
+      <th style="text-align: left">Question</th>
+      <th style="text-align: left">Correct Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">Buck did not read…</td>
+      <td style="text-align: left">The heavy dogs are popular.</td>
+      <td style="text-align: left">f</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">The house was…</td>
+      <td style="text-align: left">There are 13 boys here in total.</td>
+      <td style="text-align: left">f</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">They came and…</td>
+      <td style="text-align: left">The fox terriers never yelp.</td>
+      <td style="text-align: left">j</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">Among the terriers…</td>
+      <td style="text-align: left">Elmo weight 100 pounds.</td>
+      <td style="text-align: left">j</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>以上。</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 标签: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#experiment-builder" class="page__taxonomy-item" rel="tag">Experiment Builder</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1" class="page__taxonomy-item" rel="tag">实验设计</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7" class="page__taxonomy-item" rel="tag">编程技巧</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#eyelink" class="page__taxonomy-item" rel="tag">Eyelink</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2020-03-28T00:00:00+08:00">March 28, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E7%BC%96%E7%A8%8B%E5%89%8D%E7%9A%84%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1%E5%87%86%E5%A4%87%20http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FExperiment_Design%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FExperiment_Design%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FExperiment_Design%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/eyelink/EB_Intro/" class="pagination--pager" title="认识Experiment Builder
+">向前</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">猜您还喜欢</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/EB_Intro/" rel="permalink">认识Experiment Builder
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/host-system-update/" rel="permalink">主试机系统更新教程
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  少于 1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/LabSetup/" rel="permalink">好的数据质量 从一个完美的实验室开始
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Drift/" rel="permalink">关于Drift Correction 你应该知道更多
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/s975188062" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 宋昌霖. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

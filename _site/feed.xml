@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>宋昌霖</title>
+    <description>唯爱人与食物不可辜负</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>编程前的实验设计准备</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;本节将介绍如何高效地进行编程前的实验设计准备。&lt;/p&gt;
+
+&lt;p&gt;预先设定的实验设计如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;被试将自定步速浏览4篇英文文章，在此过程中同步采集眼动数据。在被试完成当前文章的浏览后，会向被试提出一个关于文章的问题，以保证被试认真阅读。&lt;/p&gt;
+
+  &lt;p&gt;我们将检测阅读过程中，每个单词的&lt;code class=&quot;highlighter-rouge&quot;&gt;First Fixation Duration&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Gaze Duration&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Dwell Time&lt;/code&gt;三个指标与词长的关系。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-手绘流程图&quot;&gt;1. 手绘流程图&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;好记性不如烂笔头。&lt;/p&gt;
+
+  &lt;p&gt;把实验中需要注意的点一项一项写在纸上就不会出错了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_exp_design.png&quot; alt=&quot;eb_exp_design&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我个人习惯于将实验设计的细节全部铺在纸上，通过思维导图的方式把细节全部链接在一起。&lt;/p&gt;
+
+&lt;p&gt;编程的过程中需要设置很多细节内容，这是在编程的过程中一步一步设置的。切不能把所有内容编辑好之后一次性回头重来，这样非常容易丢失细节。&lt;/p&gt;
+
+&lt;p&gt;如上图所示，我将实验设计中所有的细节信息都罗列了出来。在后面的章节中将一致依照这个思维导图来完成实验编写。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-datasource表格&quot;&gt;2. Datasource表格&lt;/h1&gt;
+
+&lt;p&gt;在编写实验程序的过程中，我们需要创建一个表格来把每个试次呈现的内容装进去。这在我们制作实验材料的时候也是需要的。&lt;/p&gt;
+
+&lt;p&gt;例如我目前的实验任务，我需要设置的内容很简单，即每个试次呈现的文字内容即可。此处由于排版的关系，我简化了Text Page的内容&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Trial ID&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Text Page&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Question&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Correct Answer&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Buck did not read…&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;The heavy dogs are popular.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;f&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;The house was…&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;There are 13 boys here in total.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;f&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;They came and…&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;The fox terriers never yelp.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;j&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Among the terriers…&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Elmo weight 100 pounds.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;j&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 28 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//eyelink/Experiment_Design/</link>
+        <guid isPermaLink="true">http://localhost:4000//eyelink/Experiment_Design/</guid>
+      </item>
+    
+      <item>
+        <title>认识Experiment Builder</title>
+        <description>&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;软件在首次安装时，会附带时长为&lt;code class=&quot;highlighter-rouge&quot;&gt;30天&lt;/code&gt;的&lt;code class=&quot;highlighter-rouge&quot;&gt;Demo License&lt;/code&gt;。即30天之内是可以不用&lt;code class=&quot;highlighter-rouge&quot;&gt;加密狗&lt;/code&gt;就可以打开&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;软件的。&lt;/p&gt;
+
+  &lt;p&gt;但需要注意的是，&lt;code class=&quot;highlighter-rouge&quot;&gt;Demo License&lt;/code&gt;下编写的实验程序和&lt;code class=&quot;highlighter-rouge&quot;&gt;加密狗&lt;/code&gt;的正式授权存在文件不互通的问题。换句话说，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Demo License&lt;/code&gt;下编写的实验程序无法在查了加密狗的条件下打开。而且在&lt;code class=&quot;highlighter-rouge&quot;&gt;Demo License&lt;/code&gt;下运行的程序会有一个去不掉的红色水印，不能用于正式实验。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;用户手册下载链接：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;v2.2.245(299)：&lt;a href=&quot;https://github.com/s975188062/s975188062.github.io/raw/master/_source/F_Manuals/ExperimentBuilder%20User%20Manual.pdf&quot;&gt;Github&lt;/a&gt;，&lt;a href=&quot;https://pan.baidu.com/s/1NkjeYMToELh51yqPyvjh3g&quot;&gt;百度网盘(fezc)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-软件界面&quot;&gt;1. 软件界面&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/EB_shotcut.jpg&quot; alt=&quot;EB_shotcut&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Experiment Builder使用的是Windows软件的典型构架，由菜单栏、工具栏、工作区和一些辅助面板构成。下面我们来依次介绍：&lt;/p&gt;
+
+&lt;h2 id=&quot;11-菜单栏&quot;&gt;1.1 菜单栏&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_menu_bar.jpg&quot; alt=&quot;eb_menu_ba&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Experiment Builder 菜单栏
+├── File                    
+|  ├── New                      # 新建一个新的Project
+|  ├── Open                     # 打开一个现有的Project
+|  ├── Recent                   # 最近打开过的Project
+|  ├── Examples                 # EB自带的模板
+|  ├── Save                     # 保存当前Project
+|  ├── Save As                  # 将当前Project另存
+|  ├── Unlock Project           # 解锁当前Project
+|  ├── Package                  # 将当前Project压缩为.ebz文件
+|  ├── Unpack                   # 解压缩一个.ebz文件
+|  ├── Set Restore Point        # 设置回溯点
+|  ├── Restore                  # 回溯当前Project
+|  └── Exit                     # 退出EB
+├── Edit
+|  ├── Undo                     # 撤销
+|  ├── Redo                     # 重做
+|  ├── Cut                      # 剪切
+|  ├── Copy                     # 复制
+|  ├── Paste                    # 粘贴
+|  ├── Paste Multiple           # 粘贴多个
+|  ├── Delete                   # 删除
+|  ├── Refresh Custom Class     # 刷新重置Custom Class
+|  ├── Preferences              # 首选项
+|  ├── Library Manager          # 素材库管理器
+|  ├── Reference Manager        # 引用管理器
+|  ├── Node Groups              # 节点组
+|  └── Select All               # 全选
+├── View
+|  ├── Overview                 # 显示/隐藏Overview面板
+|  ├── Structure                # 显示/隐藏Structure面板
+|  ├── Properties               # 显示/隐藏Properties面板
+|  ├── Connections              # 显示/隐藏Connections面板
+|  ├── Navigator                # 显示/隐藏Navigator面板
+|  ├── Restore Default Views    # 显示/隐藏重置视图设置
+|  ├── Back                     # 上一个节点
+|  ├── Forward                  # 下一个节点
+|  ├── Zoom Selected            # 聚焦到选中的节点
+|  ├── Zoom In                  # 放大
+|  ├── Zoom Out                 # 缩小
+|  ├── Fit Content              # 铺满屏幕
+|  ├── Layout Options           # 排列设置
+|  ├── Arrange Layout           # 自动排列
+|  ├── Export Node              # 导出节点
+|  └── Import Node              # 导入节点
+├── Experiment
+|  ├── Clean                    # 清空当前Project
+|  ├── Build                    # 编译当前Project
+|  ├── Test Run                 # 编译并试运行当前Project
+|  └── Deploy                   # 编译并导出当前Project为可执行文件
+└── Help
+   ├── Contents                 # 电子版用户手册
+   ├── About                    # 关于
+   └── License                  # 许可证书
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;12-工具栏&quot;&gt;1.2 工具栏&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_tool_bar.jpg&quot; alt=&quot;eb_tool_ba&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;工具栏的按钮基本都是菜单栏里面常用功能的快捷按钮，因此不做过多解释。&lt;/p&gt;
+
+&lt;p&gt;但最后一个下拉菜单不是快捷按钮，是&lt;code class=&quot;highlighter-rouge&quot;&gt;Datasource&lt;/code&gt;的快捷导航，这部分内容详见&lt;code class=&quot;highlighter-rouge&quot;&gt;Recording层&lt;/code&gt;这篇文章。&lt;/p&gt;
+
+&lt;h2 id=&quot;13-overview面板&quot;&gt;1.3 Overview面板&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_overview_pannel.jpg&quot; alt=&quot;eb_overview_panne&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Overview面板&lt;/code&gt;实际上是工作区内&lt;code class=&quot;highlighter-rouge&quot;&gt;实验流程图&lt;/code&gt;的一个缩略图，当&lt;code class=&quot;highlighter-rouge&quot;&gt;实验流程图&lt;/code&gt;非常长时，方便我们快速导航到希望的位置。&lt;/p&gt;
+
+&lt;h2 id=&quot;14-structure面板&quot;&gt;1.4 Structure面板&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_structure_pannel.jpg&quot; alt=&quot;eb_structure_panne&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Structure面板&lt;/code&gt;从三个层次来解析实验的结构——&lt;code class=&quot;highlighter-rouge&quot;&gt;逻辑关系&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;控件&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;硬件&lt;/code&gt;。这三个层次依次显示在&lt;code class=&quot;highlighter-rouge&quot;&gt;Structure面板&lt;/code&gt;的左下角。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experiment - 将实验的所有控件按照树状图的机构显示出来。&lt;/li&gt;
+  &lt;li&gt;Components - 将实验中所用到的空间按类型归类后显示。&lt;/li&gt;
+  &lt;li&gt;Device - 将实验中涉及到的硬件设备罗列出来。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;其中最值得一提的是&lt;code class=&quot;highlighter-rouge&quot;&gt;Device&lt;/code&gt;中的&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;，这部分所指代的内容是眼动仪，我们可以在这里设置眼动仪的型号和工作模式。&lt;/p&gt;
+
+&lt;h2 id=&quot;15-properties面板&quot;&gt;1.5 Properties面板&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_properties_pannel.jpg&quot; alt=&quot;eb_properties_panne&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Properties面板&lt;/code&gt;顾名思义，这里显示的是特定对象的属性。&lt;/p&gt;
+
+&lt;p&gt;当我们在&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;中选择任意一个对象时，该对象的属性都会显示在&lt;code class=&quot;highlighter-rouge&quot;&gt;Properties面板&lt;/code&gt;中。&lt;/p&gt;
+
+&lt;h2 id=&quot;16-note面板&quot;&gt;1.6 Note面板&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_note_pannel.jpg&quot; alt=&quot;eb_note_panne-w235&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;和前面的&lt;code class=&quot;highlighter-rouge&quot;&gt;Properties面板&lt;/code&gt;类似，&lt;code class=&quot;highlighter-rouge&quot;&gt;Note面板&lt;/code&gt;里面显示的是选中对象的备注信息。&lt;/p&gt;
+
+&lt;h2 id=&quot;17-工作区标签&quot;&gt;1.7 工作区标签&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_tab_pannel.jpg&quot; alt=&quot;eb_tab_panne&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;工作区标签&lt;/code&gt;显示在整&lt;code class=&quot;highlighter-rouge&quot;&gt;工作区&lt;/code&gt;的上方，提示了当前的工作区显示的是哪个对象的内容，并且允许用户在各个对象之间快速切换。&lt;/p&gt;
+
+&lt;h2 id=&quot;18-控件库&quot;&gt;1.8 控件库&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_node_library.jpg&quot; alt=&quot;eb_node_library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;控件库中是&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;中可以用来构建实验的全部功能控件。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;将所有控件分为三类：&lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Trigger&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Other&lt;/code&gt;。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Action - 命令主试机、被试机或者眼动仪执行某一个特定的命令。&lt;/li&gt;
+  &lt;li&gt;Trigger - 控制Action的开始和结束。&lt;/li&gt;
+  &lt;li&gt;Other - 除上述两种以外的辅助控件。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;详细列表如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;控件库
+├── Action                  
+|  ├── DisplayScreen                # 显示特定内容
+|  ├── DriftCorrection              # 漂移检查
+|  ├── CameraSetup                  # 执行相机校准
+|  ├── AddToLog                     # 将文本内容添加到运行日志中
+|  ├── SendEyelikMessage            # 将文本内容以Message的形式发送到.edf文件中
+|  ├── EyelinkCommand               # 将文本命令发送给主试机
+|  ├── AddToAccumulator             # 添加到累加器
+|  ├── PrepareSequence              # 准备下一个试次的刺激材料
+|  ├── Sequence                     # 序列
+|  ├── UpdateAttribute              # 更新属性
+|  ├── Play Sound                   # 播放声音
+|  ├── Play Sound Control           # 声音播放控制
+|  ├── Record Sound                 # 录制声音
+|  ├── Record Sound Control         # 声音录制控制
+|  ├── AddToResultFile              # 将特定变量添加到ResultFile中
+|  ├── SetTTL                       # 设置TTL设备针脚电平
+|  ├── Biometric TTL                # 控制被试机向其他设备发送TTL信号
+|  ├── serialPortWriteMessageTip    # 控制串口发送消息
+|  ├── Reset                        # 重置某一特定控件
+|  ├── Terminate                    # 终断实验
+|  ├── Recycle Data Line            # 挂起当前Datsouce数据行稍后执行
+|  └── Null action                  # 啥也不干
+├── Trigger
+|  ├── Timer                        # 计时器
+|  ├── InvisibleBoundry             # 当注视位置落入特定边界内触发
+|  ├── Conditional                  # 条件触发
+|  ├── EyeLinkButton                # Eyelink反应手柄触发
+|  ├── CedrusInput                  # Cedrus反应盒触发
+|  ├── Keyboard                     # 键盘触发
+|  ├── TTL                          # 接收到特定TTL信号的时候触发
+|  ├── triggerSerialPortMessageTip  # 穿口信号触发
+|  ├── Mouse                        # 鼠标点击触发
+|  ├── Fixation                     # 发生注视时触发
+|  ├── Saccade                      # 发生扫视时触发
+|  ├── Blink                        # 发生眨眼时触发
+|  ├── SampleVelocity               # 眼球运动达到特定速度时触发
+|  └── Voice Key                    # 采集到声音时触发
+└── Other
+   ├── Accumulator                  # 加法器
+   ├── Variable                     # 定义变量
+   └── ResultFile                   # 创建一个ResultFile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;19-工作区&quot;&gt;1.9 工作区&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_workspace.jpg&quot; alt=&quot;eb_workspace&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一部分非常简单，&lt;code class=&quot;highlighter-rouge&quot;&gt;工作区&lt;/code&gt;就是编辑实验的地方，具体内容和&lt;code class=&quot;highlighter-rouge&quot;&gt;1.7 工作区标签&lt;/code&gt;对应。&lt;/p&gt;
+
+&lt;h2 id=&quot;110-导航器&quot;&gt;1.10 导航器&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_navigator_pannel.jpg&quot; alt=&quot;eb_navigator_panne&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;帮助我们快速了解当前工作区的上级结构。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-查阅操作手册&quot;&gt;2. 查阅操作手册&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;遇事不决查Manual。——王治国&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;关于&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;的全部问题，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Manual&lt;/code&gt;里面几乎都可以找到答案。&lt;/p&gt;
+
+&lt;p&gt;在我学习软件的时候，曾经将英文手册翻译为中文。虽然后面没有再查阅过中文的操作手册，但是&lt;strong&gt;英译汉的过程&lt;/strong&gt;给我带来了极大的技能提升。&lt;/p&gt;
+
+&lt;p&gt;在我们安装好&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;时，&lt;code class=&quot;highlighter-rouge&quot;&gt;Manual&lt;/code&gt;就已经被同步拷贝到我们的电脑上了。&lt;/p&gt;
+
+&lt;p&gt;您可以通过一下两种方式打开用户手册：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_call_content.jpg&quot; alt=&quot;eb_call_content&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如上图所示，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;中打开。点击菜单栏“&lt;code class=&quot;highlighter-rouge&quot;&gt;Help&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Content&lt;/code&gt;”，或者直接按&lt;code class=&quot;highlighter-rouge&quot;&gt;F1&lt;/code&gt;打开电子版操作手册。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_start_manual.jpg&quot; alt=&quot;eb_start_manua&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;或者您也可以在开始菜单中找到&lt;code class=&quot;highlighter-rouge&quot;&gt;.pdf&lt;/code&gt;格式的用户手册。如上图所示，依次点击“&lt;code class=&quot;highlighter-rouge&quot;&gt;开始&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;SR Research&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;ExperimentBuilder User Manual&lt;/code&gt;”即可打开。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;3-实验程序编写逻辑&quot;&gt;3. 实验程序编写逻辑&lt;/h1&gt;
+
+&lt;h2 id=&quot;31-基本流程图&quot;&gt;3.1 基本流程图&lt;/h2&gt;
+
+&lt;p&gt;在介绍&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;时，我会说这是一个功能强大的&lt;strong&gt;可视化&lt;/strong&gt;编程工具。&lt;/p&gt;
+
+&lt;p&gt;提起编程，我们可能以为是下面这样的：&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;click_load_button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_file_path&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filedialog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;askopenfilename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# 设置显示的路径内容
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;find_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;find_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;path_2_show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'...'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ttk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;monty3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;             &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columnspan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sticky&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ttk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;monty3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path_2_show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columnspan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sticky&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# 获取文件的绝对路径
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;find_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;find_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;log_file_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log_fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上面这样就是代码编程，需要系统的学习才可以完成。&lt;/p&gt;
+
+&lt;p&gt;好在EB用的并不是这样的方法，EB将常用的功能封装成了名为&lt;code class=&quot;highlighter-rouge&quot;&gt;控件&lt;/code&gt;的黑盒，我们只需要在&lt;code class=&quot;highlighter-rouge&quot;&gt;Propreties面板&lt;/code&gt;中设置相应控件的参数即可。无需担心控件内部的每一步是怎么工作的。&lt;/p&gt;
+
+&lt;p&gt;下图就是EB编写程序的方式——&lt;strong&gt;流程图&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_workspace.jpg&quot; alt=&quot;eb_workspace&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在编写实验的过程中，我们将控件托放到工作区，以合适的逻辑关系链接起来，构成实验。&lt;/p&gt;
+
+&lt;p&gt;在上图所示的例子中：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;实验进程从&lt;code class=&quot;highlighter-rouge&quot;&gt;START&lt;/code&gt;开始&lt;/li&gt;
+  &lt;li&gt;然后第二行的&lt;code class=&quot;highlighter-rouge&quot;&gt;DISPLAY_SCREEN&lt;/code&gt;工作，呈现我们事先设定好的刺激内容；&lt;/li&gt;
+  &lt;li&gt;刺激内容呈现完毕后，等待第三行中的&lt;code class=&quot;highlighter-rouge&quot;&gt;Trigger&lt;/code&gt;被触发。我们可以看，第二行的&lt;code class=&quot;highlighter-rouge&quot;&gt;DISPLAY_SCREEN&lt;/code&gt;同时链接了三个&lt;code class=&quot;highlighter-rouge&quot;&gt;Trigger&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;TIMER&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;EL_BUTTON&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;EL_KEYBOARD&lt;/code&gt;。三个Trigger会同时等待触发信号，当三个当中的任意一个触发事件发生时，则根据箭头的连接继续进行实验。即运行&lt;code class=&quot;highlighter-rouge&quot;&gt;DISPLAY_BLANK&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们可以总结一下上面几个控件实现的功能：&lt;/p&gt;
+
+  &lt;p&gt;呈现刺激后，等待被试通过&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink反应手柄&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;键盘&lt;/code&gt;进行行为反馈，接收到反馈信息后，清空显示的内容，呈现空屏幕。但是如果被试没有在规定的限制时间内给予反馈，则计时结束后直接呈现空屏。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;就是通过这样的方式完成实验程序编写的。&lt;/p&gt;
+
+&lt;h2 id=&quot;32-实验的典型结构&quot;&gt;3.2 实验的典型结构&lt;/h2&gt;
+
+&lt;p&gt;打开我们在本文第二节提到的操作手册，可以在“6.1 Hierarchical Organization of Experiment”中看到下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_hierarchical_org.jpg&quot; alt=&quot;eb_hierarchical_org&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一个典型的眼动实验就是分为这样四层的套娃结构。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Experiment&lt;/strong&gt; - 代表整个实验，由&lt;code class=&quot;highlighter-rouge&quot;&gt;指导语&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;结束语&lt;/code&gt;和一个或多个Block组成。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Block&lt;/strong&gt; - 实验组。当我们由于一些特殊需求将整个实验拆分成多个小块进行时，每个小块就是一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;。常见的拆分原因有：实验中途需要休息、设定几个试次为练习部分、特殊的实验设计等。单个&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;由&lt;code class=&quot;highlighter-rouge&quot;&gt;Camera Setup&lt;/code&gt;和多个&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;组成。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trial&lt;/strong&gt; - 试次，是实验的最小循环单位。包括从电脑读取呈现的材料、呈现刺激材料并记录眼动数据的一整个过程。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Recording&lt;/strong&gt; - 真正记录眼动数据的部分。在这里面编写实验的刺激的内容和被试反馈等。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;关于Trial和Recording的关系，我任务有必要拿出来单独讲解一下。&lt;/p&gt;
+
+  &lt;p&gt;我们假设一个&lt;strong&gt;自定步速阅读&lt;/strong&gt;的实验，一共50个&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;，每个&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;内给被试看一个语篇，被试看完之后按&lt;code class=&quot;highlighter-rouge&quot;&gt;空格&lt;/code&gt;出现下一篇。&lt;/p&gt;
+
+  &lt;p&gt;从&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;的定义来看，整个实验的最小循环单位看似是“&lt;code class=&quot;highlighter-rouge&quot;&gt;呈现语篇&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;被试按键&lt;/code&gt;”，实则不然。&lt;/p&gt;
+
+  &lt;p&gt;从计算机层面来看，实验的最小循环单位是：“&lt;code class=&quot;highlighter-rouge&quot;&gt;加载一会要呈现的语篇&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;漂移矫正&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;呈现语篇&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;被试按键&lt;/code&gt;”。&lt;/p&gt;
+
+  &lt;p&gt;即“&lt;code class=&quot;highlighter-rouge&quot;&gt;呈现语篇&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;被试按键&lt;/code&gt;”的过程仅仅是&lt;code class=&quot;highlighter-rouge&quot;&gt;Recording&lt;/code&gt;。&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;要多出一些&lt;strong&gt;计算机后台&lt;/strong&gt;的操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;那么，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;中编程就是按照自己的&lt;strong&gt;实验设计&lt;/strong&gt;，依照&lt;strong&gt;层级结构&lt;/strong&gt;，将不同的&lt;strong&gt;实验控件&lt;/strong&gt;连接成&lt;strong&gt;流程图&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;4-创建我的第一个实验&quot;&gt;4. 创建我的第一个实验&lt;/h1&gt;
+
+&lt;p&gt;点击菜单栏“&lt;code class=&quot;highlighter-rouge&quot;&gt;File&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;New&lt;/code&gt;”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_new_poject.jpg&quot; alt=&quot;eb_new_poject&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;跳出新建窗口：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_new_poject_2.jpg&quot; alt=&quot;eb_new_poject_2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;四行设置从上到下依次是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Project Name - 实验项目的名称。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Project Location - 保存的位置。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Templates - 创建实验使用的模板。如果选择&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt;则创建一个空文件，如果选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink_Template.ebz&lt;/code&gt;则打开实验模板。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eyelink Experiment - 是否是一个Eyelink的眼动实验。如果选&lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;，则需要选择眼动仪的具体型号，&lt;code class=&quot;highlighter-rouge&quot;&gt;Current&lt;/code&gt;为自动识别。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;OK&lt;/code&gt;则执行创建操作，此时会提示下图所示的窗口，告诉我们不要对实验文件夹内的文件执行新增或者删除的操作。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_new_poject_3.jpg&quot; alt=&quot;eb_new_poject_3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一点很重要，是&lt;code class=&quot;highlighter-rouge&quot;&gt;Experiment Builder&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;E-Prime&lt;/code&gt;的一个很大的区别。&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;确定&lt;/code&gt;后，我们的第一个实验就创建好了！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/eb_new_poject_4.jpg&quot; alt=&quot;eb_new_poject_4&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 25 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//eyelink/EB_Intro/</link>
+        <guid isPermaLink="true">http://localhost:4000//eyelink/EB_Intro/</guid>
+      </item>
+    
+      <item>
+        <title>主试机系统更新教程</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;截止2020年3月23日，最新的系统版本号如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;4.594&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 2000&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;4.594&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000Plus&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;5.15&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink Portable Duo&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;6.12&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;您可以打开主试机，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Offline界面&lt;/code&gt;的右下角，查看当前系统版本号，如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/hsot_1kp_offline.jpg&quot; alt=&quot;hsot_1kp_offline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们可以看到当前主试机的系统版本号为“5.00.50”。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-eyelink-10002000&quot;&gt;1. Eyelink 1000/2000&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;桌面式&lt;/code&gt;根据红外发光器的位置，在下图中二选一下载；
+&lt;code class=&quot;highlighter-rouge&quot;&gt;塔式&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;核磁式&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;灵长类动物式&lt;/code&gt;下载任意一个均可；
+&lt;code class=&quot;highlighter-rouge&quot;&gt;LCD Arm&lt;/code&gt;请下载红外发光器在右侧的版本。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;红外发光器在左侧：&lt;a href=&quot;https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_left.zip&quot;&gt;Github&lt;/a&gt;，&lt;a href=&quot;https://pan.baidu.com/s/10IoW79--cSgtJgkLcM7wpA&quot;&gt;百度网盘(z52o)&lt;/a&gt;；&lt;/li&gt;
+  &lt;li&gt;红外发光器在右侧：&lt;a href=&quot;https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_right.zip&quot;&gt;Github&lt;/a&gt;，&lt;a href=&quot;https://pan.baidu.com/s/1kGxr_IbWez46tFMZUCkEwg&quot;&gt;百度网盘(xi2x)&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需要进入到&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows&lt;/code&gt;系统中来操作。&lt;/p&gt;
+
+&lt;p&gt;开机，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Boost Manager&lt;/code&gt;界面进入&lt;code class=&quot;highlighter-rouge&quot;&gt;Microsoft Windows Vista&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/EL_1k_host_boost.jpg&quot; alt=&quot;EL_1k_host_boost&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;进入&lt;code class=&quot;highlighter-rouge&quot;&gt;Microsoft Windows Vista&lt;/code&gt;后打开&lt;code class=&quot;highlighter-rouge&quot;&gt;我的电脑&lt;/code&gt;，可以看到除Windows系统分区外还有一个硬盘分区，根据主试机版本不同，可能叫做&lt;code class=&quot;highlighter-rouge&quot;&gt;D:/&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;等不同名字。&lt;/p&gt;
+
+&lt;p&gt;无论硬盘分区叫什么名字，该分区下都有一个名为&lt;code class=&quot;highlighter-rouge&quot;&gt;ELCL&lt;/code&gt;的文件夹。&lt;/p&gt;
+
+&lt;p&gt;另一边，我们将下载好的更新压缩包解压保存到U盘中。将U盘插到需要更新的主试机上，我们可以看到解压好的更新压缩包也叫做&lt;code class=&quot;highlighter-rouge&quot;&gt;ELCL&lt;/code&gt;。此时我们只需要将U盘中的&lt;code class=&quot;highlighter-rouge&quot;&gt;ELCL&lt;/code&gt;文件夹拖拽至Eyelink系统盘中，覆盖原来的&lt;code class=&quot;highlighter-rouge&quot;&gt;ELCL&lt;/code&gt;文件夹即可。&lt;/p&gt;
+
+&lt;p&gt;重新启动电脑，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Boost Manager&lt;/code&gt;进入&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;，敲入“t”，按回车即可启动主试机。这个时候我们可以在&lt;code class=&quot;highlighter-rouge&quot;&gt;Offile界面&lt;/code&gt;看到已经更新到最新系统了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-eyelink-1000plus&quot;&gt;2. Eyelink 1000Plus&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000Plus&lt;/code&gt;系列主试机系统的最新版本为&lt;code class=&quot;highlighter-rouge&quot;&gt;5.15&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;下载链接：&lt;a href=&quot;https://github.com/s975188062/s975188062.github.io/raw/master/_source/Host%20PC%20Upgrade%20Installiation/elcl-5.15.zip&quot;&gt;Github&lt;/a&gt;，&lt;a href=&quot;https://pan.baidu.com/s/1AkHcBcP-OohzHz62zG0jFw&quot;&gt;百度网盘(2zef)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下载后将文件直接放到U盘中，&lt;strong&gt;不要解压缩&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;首先，在主试机的&lt;code class=&quot;highlighter-rouge&quot;&gt;Offline界面&lt;/code&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Exit Eyelink&lt;/code&gt;按钮，退出&lt;code class=&quot;highlighter-rouge&quot;&gt;Track系统&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_offline2boost.jpg&quot; alt=&quot;host_offline2boost&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;系统将直接进入到如下图所示的&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager界面&lt;/code&gt;。如果没有自行跳转，则点击&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager按钮&lt;/code&gt;进入到&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager界面&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;在电脑上插入已经准备好的U盘。&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuration按钮&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_filemanager2configuration.jpg&quot; alt=&quot;host_filemanager2configuration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;System Update按钮&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_configuration2updateSystem.jpg&quot; alt=&quot;host_configuration2updateSyste&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Choose File按钮&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_system_update.jpg&quot; alt=&quot;host_system_update&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在窗口上方的地址栏中，选择新插入的U盘，名称可能是&lt;code class=&quot;highlighter-rouge&quot;&gt;/fs/usb0&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_choose_drive.jpg&quot; alt=&quot;host_sysUpdate_choose_drive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在文件列表中选择准备好的升级包，点击右下角的&lt;code class=&quot;highlighter-rouge&quot;&gt;Open&lt;/code&gt;按钮。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_choose_file.jpg&quot; alt=&quot;host_sysUpdate_choose_file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Update&lt;/code&gt;按钮。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_confrim_update.jpg&quot; alt=&quot;host_sysUpdate_confrim_update&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;系统会自动完成更新，点击工具栏的&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;按钮即可返回到&lt;code class=&quot;highlighter-rouge&quot;&gt;Track&lt;/code&gt;系统中。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_start_from_filemanager.jpg&quot; alt=&quot;host_start_from_filemanage&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;3-eyelink-portable-duo&quot;&gt;3. Eyelink Portable Duo&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink Portable Duo&lt;/code&gt;系列主试机系统的最新版本为&lt;code class=&quot;highlighter-rouge&quot;&gt;6.12&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;下载链接：&lt;a href=&quot;https://github.com/s975188062/s975188062.github.io/raw/master/_source/Host%20PC%20Upgrade%20Installiation/elusb-6.12-18-02-01-PortableDUO.duo.zip&quot;&gt;Github&lt;/a&gt;，&lt;a href=&quot;https://pan.baidu.com/s/1HL-TsFR2V48d04APO_Zg2g&quot;&gt;百度网盘(i87e)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;您可以在主试机的&lt;code class=&quot;highlighter-rouge&quot;&gt;Setup界面&lt;/code&gt;的&lt;strong&gt;左下角&lt;/strong&gt;查看主试机的系统版本号。如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/host_pd_setup.jpg&quot; alt=&quot;host_pd_setup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下载后将文件直接放到U盘中，&lt;strong&gt;不要解压缩&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;点击屏幕右侧的&lt;code class=&quot;highlighter-rouge&quot;&gt;Exit按钮&lt;/code&gt;，随后在出现的对话框中点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Exit Eyelink&lt;/code&gt;即可自动跳转到&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager界面&lt;/code&gt;。如果没有自行跳转，则点击&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager按钮&lt;/code&gt;进入到&lt;code class=&quot;highlighter-rouge&quot;&gt;File Manager界面&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;后面的操作和&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000Plus&lt;/code&gt;的升级方法一致。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在电脑上插入已经准备好的U盘。&lt;/p&gt;
+
+  &lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Configuration按钮&lt;/code&gt;。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_filemanager2configuration.jpg&quot; alt=&quot;host_filemanager2configuration&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;System Update按钮&lt;/code&gt;。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_configuration2updateSystem.jpg&quot; alt=&quot;host_configuration2updateSyste&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Choose File按钮&lt;/code&gt;。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_system_update.jpg&quot; alt=&quot;host_system_update&quot; /&gt;
+在窗口上方的地址栏中，选择新插入的U盘，名称可能是&lt;code class=&quot;highlighter-rouge&quot;&gt;/fs/usb0&lt;/code&gt;。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_choose_drive.jpg&quot; alt=&quot;host_sysUpdate_choose_drive&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;在文件列表中选择准备好的升级包，点击右下角的&lt;code class=&quot;highlighter-rouge&quot;&gt;Open&lt;/code&gt;按钮。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_choose_file.jpg&quot; alt=&quot;host_sysUpdate_choose_file&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Update&lt;/code&gt;按钮。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_sysUpdate_confrim_update.jpg&quot; alt=&quot;host_sysUpdate_confrim_update&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;系统会自动完成更新，点击工具栏的&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;按钮即可返回到&lt;code class=&quot;highlighter-rouge&quot;&gt;Track&lt;/code&gt;系统中。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/assets/images/host_start_from_filemanager.jpg&quot; alt=&quot;host_start_from_filemanage&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 23 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//eyelink/host-system-update/</link>
+        <guid isPermaLink="true">http://localhost:4000//eyelink/host-system-update/</guid>
+      </item>
+    
+      <item>
+        <title>好的数据质量 从一个完美的实验室开始</title>
+        <description>&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“不允许随意移动眼动仪！”&lt;/p&gt;
+
+  &lt;p&gt;有些实验室里面是有这样的要求的。实验室老师会说，自己是清了专业的人调整了眼动仪的摆放位置，不允许学生随意移动。&lt;/p&gt;
+
+  &lt;p&gt;我不会评论这是否是正确的，但是这从侧面反映了一个事实：&lt;/p&gt;
+
+  &lt;p&gt;“&lt;strong&gt;实验室环境对于我们的实验很重要。&lt;/strong&gt;”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;1-实验室的装修&quot;&gt;1. 实验室的装修&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/device_overlay.jpg&quot; alt=&quot;device_overlay&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在实验室的装修过程中，我们应当明确一下几点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;实验室应单独装修，墙壁铺满吸音材料为宜；&lt;/li&gt;
+  &lt;li&gt;实验室应为无窗或者仅单侧有窗，每扇窗户都应配套遮阳窗帘；&lt;/li&gt;
+  &lt;li&gt;主试和被试尽量隔离，如没有条件单独设立房间，则至少保证被试面对墙壁，主试和主试机都不会出现在被试的视野当中；&lt;/li&gt;
+  &lt;li&gt;对于&lt;code class=&quot;highlighter-rouge&quot;&gt;19寸显示器&lt;/code&gt;，被试所用的桌子应至少宽&lt;code class=&quot;highlighter-rouge&quot;&gt;80cm&lt;/code&gt;，才能保证被试到显示器有足够的距离。您可以测量显示器的水平边长度，乘以&lt;code class=&quot;highlighter-rouge&quot;&gt;1.75&lt;/code&gt;即为被试眼睛到显示器的距离；&lt;/li&gt;
+  &lt;li&gt;被试头顶后方应避免安装灯光，使用无主照明或将光源悬挂于显示器正上方；&lt;/li&gt;
+  &lt;li&gt;选用光源时，避免使用暖光光源（偏红或偏黄），&lt;code class=&quot;highlighter-rouge&quot;&gt;冷光&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;普通白光&lt;/code&gt;为宜；&lt;/li&gt;
+  &lt;li&gt;实验室应保证&lt;code class=&quot;highlighter-rouge&quot;&gt;充足照明&lt;/code&gt;，光线过暗不易进行实验；&lt;/li&gt;
+  &lt;li&gt;被试座椅应选用&lt;code class=&quot;highlighter-rouge&quot;&gt;带靠背&lt;/code&gt;的&lt;code class=&quot;highlighter-rouge&quot;&gt;可升降座椅&lt;/code&gt;，根据被试身高酌情调节；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-设备摆放&quot;&gt;2. 设备摆放&lt;/h1&gt;
+
+&lt;h2 id=&quot;21-被试到显示器的距离&quot;&gt;2.1 被试到显示器的距离&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/device_setup_DE.jpg&quot; alt=&quot;device_setup_DE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000Plus&lt;/code&gt;系列桌面时眼动仪的可追踪眼动范围是&lt;code class=&quot;highlighter-rouge&quot;&gt;水平32度×竖直26度&lt;/code&gt;，即眼睛在这个范围内运动时，眼动仪是可以稳定地追踪到眼动的。&lt;/p&gt;
+
+&lt;p&gt;为了最大化利用眼动仪的可追踪范围，我们应尽量让显示器充满可追踪范围，这样可以获取更高的眼动质量。&lt;/p&gt;
+
+&lt;p&gt;所以，我们要调整显示器的摆放位置，让显示器的长边刚好占据32度的视角。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/device_setup_ABC.jpg&quot; alt=&quot;device_setup_ABC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以19寸正品显示器为例，显示器显示范围的物理尺寸是37.5×30.5cm。那么被试到显示器的距离&lt;strong&gt;A&lt;/strong&gt;应为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;d = (37.5cm ÷ 2) ÷ tan(16度) ≈ 37.5 × 1.75 = 656.25cm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;考虑到显示器的厚度和被试头部不可能紧贴桌子边缘，我们在选择桌子时应留有富裕。&lt;/p&gt;
+
+  &lt;p&gt;即至少选用80cm宽的桌子。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;22-下颌托高度&quot;&gt;2.2 下颌托高度&lt;/h2&gt;
+
+&lt;p&gt;接下来，我们来调整下颌托的高度，让被试的眼睛可以平视显示器的上&lt;code class=&quot;highlighter-rouge&quot;&gt;1/4&lt;/code&gt;处。&lt;/p&gt;
+
+&lt;p&gt;由于我们的视觉习惯是向下俯视的，因此我们要把刺激内容放到水平视线以下。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Q：那我们为什么不将水平实现对齐到显示器的上边缘呢？&lt;/p&gt;
+
+  &lt;p&gt;A：其实也可以，但是我推荐对齐到上1/4处。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;23-眼动仪到被试的距离&quot;&gt;2.3 眼动仪到被试的距离&lt;/h2&gt;
+
+&lt;p&gt;无论是固定头部还是遥测模式，都将眼动仪放到距离被试眼睛&lt;code class=&quot;highlighter-rouge&quot;&gt;55～60cm&lt;/code&gt;之间的地方，即上图中&lt;strong&gt;C&lt;/strong&gt;的值应在&lt;code class=&quot;highlighter-rouge&quot;&gt;55～60cm&lt;/code&gt;之间。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;根据选用镜头的焦段不同，实际的有效追踪距离是有变化的。但是55～60的这个范围可以适合全焦段的镜头。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;值得注意的是，固定头部和遥测模式下，被试的坐姿会发生变化。头部在纵向上的位置不同。&lt;/p&gt;
+
+&lt;p&gt;因此，从固定头部切换到遥测模式时，可能需要将眼动仪朝着被试的方向移动，以保证眼动仪到被试眼睛的距离在适当的范围内。反之则朝向远离被试的方向移动。&lt;/p&gt;
+
+&lt;h2 id=&quot;24-眼动仪的摆放高度&quot;&gt;2.4 眼动仪的摆放高度&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;眼动仪最好是可以和水平实现在同一高度，这样可追踪范围最大。&lt;/p&gt;
+
+  &lt;p&gt;但是这样会遮挡刺激内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所以我们应当尽量提升眼动仪的高度。但应保证眼动仪&lt;code class=&quot;highlighter-rouge&quot;&gt;尽量高&lt;/code&gt;的同时，不要让眼动仪遮挡屏幕的显示内容。&lt;/p&gt;
+
+&lt;p&gt;具体操作可以做到被试的位置，将头放到下颌托上，变看变调节。&lt;/p&gt;
+
+&lt;h2 id=&quot;25-眼动仪显示器和下颌托的位置关系&quot;&gt;2.5 眼动仪、显示器和下颌托的位置关系&lt;/h2&gt;
+
+&lt;p&gt;保证显示器的平面垂直于视线。&lt;/p&gt;
+
+&lt;p&gt;保证显示器的中线、眼动仪的中线和下颌托在同一个竖直平面内。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;3-计算机配置&quot;&gt;3. 计算机配置&lt;/h1&gt;
+
+&lt;h2 id=&quot;31-主试机配置&quot;&gt;3.1 主试机配置&lt;/h2&gt;
+
+&lt;p&gt;保证主试机的软件版本最新即可，查询主试机最新的系统版本有一下三种方法&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关注“Eyelink博润视动”公众号，后台回复“Host”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cn.sr-support.com/viewforum.php?f=15&quot;&gt;SR Research中文论坛主试机板块&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sr-support.com/forum/downloads/eyelink-host-software&quot;&gt;SR Research英文论坛主试机板块&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;您可以打开主试机，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Offline界面&lt;/code&gt;的右下角，查看系统版本号，如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/hsot_1kp_offline.jpg&quot; alt=&quot;hsot_1kp_offline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们可以看到当前主试机的系统版本号为&lt;code class=&quot;highlighter-rouge&quot;&gt;5.00.50&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;截止2020年3月23日，最新的系统版本号如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;4.594&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 2000&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;4.594&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink 1000Plus&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;5.15&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink Portable Duo&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;6.12&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;关于主试机的系统升级方法，您可以参照我&lt;a href=&quot;http://charlie-techblog.com/eyelink/host-system-update/&quot;&gt;主试机系统更新教程&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;32-被试机配置&quot;&gt;3.2 被试机配置&lt;/h2&gt;
+
+&lt;h3 id=&quot;系统环境&quot;&gt;系统环境&lt;/h3&gt;
+
+&lt;p&gt;首先要明确的是，一定要遵循专机专用的原则，严谨在专用的被试机上安装无关的软件——保护被试机就是在保护自己的数据。&lt;/p&gt;
+
+&lt;p&gt;您可以遵循一下操作来提升被试机的时间性能：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;卸载或关闭所有与Eyelink无关的软件和进程，包括并不仅限于各类杀毒软、各类安全卫士、浏览器、即时通讯软件、邮箱、网盘等其他程序。&lt;/li&gt;
+  &lt;li&gt;取消所有计划任务，如数据备份、自动杀毒等。&lt;/li&gt;
+  &lt;li&gt;关闭屏幕保护程序，确保电脑用不休眠和熄屏幕。&lt;/li&gt;
+  &lt;li&gt;关闭“主题”等不必要的服务（Windows 7）&lt;/li&gt;
+  &lt;li&gt;禁用不要要的硬件设备，如多余的网卡等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最后，重要的事情说三遍：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;不要装360&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;不要装360&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;不要装360&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;eyelink软件&quot;&gt;Eyelink软件&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink软件&lt;/code&gt;由于其免费升级的特性，&lt;code class=&quot;highlighter-rouge&quot;&gt;SR-Research公司&lt;/code&gt;在开发软件的时候非常注意不同版本间的兼容问题。&lt;/p&gt;
+
+&lt;p&gt;不要害怕更新软件，新版本的软件一定是&lt;strong&gt;功能更多、运行更稳定、兼容性更好&lt;/strong&gt;的。&lt;/p&gt;
+
+&lt;p&gt;和上面一样，您可以通过以下三种方式获取最新的软件安装包：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关注“Eyelink博润视动”公众号，后台回复“EB、DV、Devkit和Weblink”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cn.sr-support.com/&quot;&gt;SR Research中文论坛&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sr-support.com/&quot;&gt;SR Research英文论坛&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;安装过程中遵循默认设置即可，建议将软件安装到系统盘中。&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//eyelink/LabSetup/</link>
+        <guid isPermaLink="true">http://localhost:4000//eyelink/LabSetup/</guid>
+      </item>
+    
+      <item>
+        <title>关于Drift Correction 你应该知道更多</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;在屏幕的特定位置呈现一个校准点，在被试盯住这个校准点的同时，主试在主试机上按空格获取校准点位置的误差。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如误差小于1度，则继续进行实验。如误差大于1度，则不会继续进行下去，此时主试可以挂起进行到一半的实验，重新校准。&lt;/p&gt;
+
+  &lt;p&gt;在重新校准结束后，可以从刚刚挂起的地方继续实验。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-什么是drift-check&quot;&gt;1. 什么是Drift Check&lt;/h1&gt;
+
+&lt;p&gt;在Eyelink历代的产品线中，&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;曾经被叫过三个名字：&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correction&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correct&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;从命名上我们可以看到，&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;的功能是存在一个迭代的。&lt;/p&gt;
+
+&lt;p&gt;起初，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink&lt;/code&gt;最早期的&lt;code class=&quot;highlighter-rouge&quot;&gt;Eyelink I头戴式&lt;/code&gt;眼动仪中，我们将两台红外相机通过头戴装置与头部固定，并通过相机采集眼球运动，如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/head_tracker.jpg&quot; alt=&quot;head_tracker-w1282&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在理想的条件下，相机可以与头部保持绝对的固定，那在相机视野中观察到的眼球运动即为真实的眼球运动。&lt;/p&gt;
+
+&lt;p&gt;然而在实际的应用场景中，当被试的头发生加速度较大的运动时，眼动仪就会和头发生一定程度的位移。这种位移会导致在相机的视野中，即使眼睛自身没有运动，相机采集到的眼睛位置也会发生变化，这就引入了一类误差，我们称之为&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift&lt;/code&gt;——漂移误差。&lt;/p&gt;
+
+&lt;p&gt;值得庆幸的是，这类误差在方向上是统一的，而且偏移的大小也可以测量。至于测量方法就是我们所说的&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correction&lt;/code&gt;。以屏幕中心为参考点，测量相机向下飘移前后，被试注视同一位置的瞳孔位置差异。将这种差异补偿到校准数据中，即达到了补偿飘移的目的。&lt;/p&gt;
+
+&lt;p&gt;虽然在桌面式或者塔式等固定在桌上的眼动仪中，不会产生因为相机下坠的飘移产生。但&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correction&lt;/code&gt;功能仍然能在必要的时候向我们提示眼动仪的误差。所以在桌面式的眼动仪中，将&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correction&lt;/code&gt;以&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;的形式保留，即只计算误差，不做任何的校准补偿。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-drift-check-能帮我们做到哪些事情&quot;&gt;2. Drift Check 能帮我们做到哪些事情&lt;/h1&gt;
+
+&lt;h2 id=&quot;21-误差监测&quot;&gt;2.1 误差监测&lt;/h2&gt;
+
+&lt;p&gt;我们可以在每个试次开始的时候进行&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;，在实验运行过程中近乎实时地监测误差水平。&lt;/p&gt;
+
+&lt;p&gt;这在时长非常短的实验中可能不是必需的，但是在试次数量较大和长时程的实验中尤为重要。&lt;/p&gt;
+
+&lt;p&gt;这个功能实现起来是非常简单的，只需要在&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial Sequence&lt;/code&gt;中，紧接着&lt;code class=&quot;highlighter-rouge&quot;&gt;Recording Sequence&lt;/code&gt;的前面加入&lt;code class=&quot;highlighter-rouge&quot;&gt;DriftCorrection Action&lt;/code&gt;即可。如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Drift_in_EB.png&quot; alt=&quot;Drift_in_graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Check&lt;/code&gt;的过程中，被试机屏幕呈现如图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Drift_on_display.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;此时需要被试盯住显示在屏幕上的校准点。与此同时，注视在主试机上按&lt;code class=&quot;highlighter-rouge&quot;&gt;回车&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;空格&lt;/code&gt;测量眼动仪误差。如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/drift_on_host.png&quot; alt=&quot;drift_on_host&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如此时误差&lt;code class=&quot;highlighter-rouge&quot;&gt;小于1度视角&lt;/code&gt;，则主试机将快速报告误差值，然后继续实验。否则将报告误差值，然后停在&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift界面&lt;/code&gt;，等待主试决定下一步操作。&lt;/p&gt;
+
+&lt;p&gt;正如我们前一部分所说，如果在&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift过程&lt;/code&gt;中发现误差过大，则不会继续进行实验，而是等待主试决定下一步应该进行什么操作。那么这里所指的操作就是——校准。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Q:&lt;/p&gt;
+
+  &lt;p&gt;应该多久进行一次相机校准？&lt;/p&gt;
+
+  &lt;p&gt;A:&lt;/p&gt;
+
+  &lt;p&gt;需要多久一次就多久一次。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我们应该尽可能多地在实验中预留重新校准的机会，发现数据质量下降则立即重新校准。&lt;/p&gt;
+
+&lt;p&gt;那最多是多少呢?——每个试次都有一次。&lt;/p&gt;
+
+&lt;p&gt;这就是Drift在重新校准眼动仪中的意义。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;主试在实验过程中并不可以去倒茶喝水冲咖啡，这是对自己数据不负责任的表现。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;主试在实验过程中应当集中注意力监控数据质量，在数据质量不理想的情况下立即重新校准，以此将数据质量提升至最高。&lt;/p&gt;
+
+&lt;h2 id=&quot;22-休息休息一下&quot;&gt;2.2 休息，休息一下&lt;/h2&gt;
+
+&lt;p&gt;对于一些特殊被试或者实验长度过长时，我们往往需要让被试在实验进行到一半的时候进行一次或多次休息。一般的做法是将实验分割成多个&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;，在编写实验程序的时候设计休息流程。例如一个实验共有180个&lt;code class=&quot;highlighter-rouge&quot;&gt;Trial&lt;/code&gt;，每60个试次组成一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;之间预留3分钟的休息时间。&lt;/p&gt;
+
+&lt;p&gt;这种周期行的休息是必须的，但并不总能满足被试对于休息的需求。当实验任务进行到某个&lt;code class=&quot;highlighter-rouge&quot;&gt;Block&lt;/code&gt;中间的时候，被试表示自己眼睛干涩需要休息时，如何满足被试的需求呢？&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;毕竟，被试就是上帝！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;其实方法也很简单，在下一个试次开始时的&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift环节&lt;/code&gt;进入&lt;code class=&quot;highlighter-rouge&quot;&gt;Camera Setup&lt;/code&gt;，挂起实验进程，让被试的到充分的休息之后重新校准眼动仪，继续实验即可。&lt;/p&gt;
+
+&lt;h2 id=&quot;23-cue注意&quot;&gt;2.3 Cue注意&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cue.jpg&quot; alt=&quot;imgcu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如上图左图所示，在类单行文本阅读的范式中，我们希望文字出现之前，被试的注视位置停留在红色十字光标的位置。这样当文本刺激出现之后，被试可以从句首的第一个字开始，顺序阅读。&lt;/p&gt;
+
+&lt;p&gt;如上图有图所示，在类视觉搜索任务中，我们希望在刺激出现之前，被试的注视位置在所有目标物所围成的圆的圆心，以保证对所有目标物的视角距离相等。&lt;/p&gt;
+
+&lt;p&gt;以上两种都是典型的Cue注意应用，通过调整&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correction&lt;/code&gt;过程中校准点出现的位置，以达到将被试的注意力引导到特定位置的目的。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;3-如何实现&quot;&gt;3. 如何实现&lt;/h1&gt;
+
+&lt;h2 id=&quot;31-误差监测和休息&quot;&gt;3.1 误差监测和休息&lt;/h2&gt;
+
+&lt;p&gt;这一部分操作需要在主试机上完成，如下图红框所示，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift环节&lt;/code&gt;点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Camera Setup&lt;/code&gt;进入&lt;code class=&quot;highlighter-rouge&quot;&gt;相机校准&lt;/code&gt;环节即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/drift_2_setup.jpg&quot; alt=&quot;drift_2_setup&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;32-cue注意&quot;&gt;3.2 Cue注意&lt;/h2&gt;
+
+&lt;p&gt;这一部分操作的核心是设置&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift校准点&lt;/code&gt;出现的位置，不要着急，我们先从&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift的属性&lt;/code&gt;开始了解。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/drift_properties.jpg&quot; alt=&quot;drift_propertie&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;虽然这里面有很多属性，但是需要的设置的只有两个&lt;code class=&quot;highlighter-rouge&quot;&gt;X Location&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Y Location&lt;/code&gt;，我们先说这两个，剩下的稍后慢慢解释。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;属性&lt;/th&gt;
+      &lt;th&gt;变量类型&lt;/th&gt;
+      &lt;th&gt;解释&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;X Location&lt;/td&gt;
+      &lt;td&gt;int（整数）&lt;/td&gt;
+      &lt;td&gt;校准点出现的屏幕上的X方向坐标，屏幕的左边缘为0。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Y Location&lt;/td&gt;
+      &lt;td&gt;int&lt;/td&gt;
+      &lt;td&gt;校准点出现的屏幕上的Y方向坐标，屏幕的上边缘为0。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;看到这里，其实问题就已经解决了一半了，我们只需要把想要显示的位置填进属性即可。&lt;/p&gt;
+
+&lt;p&gt;那么问题来了，我到底应该把校准点呈现在那里呢？&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;对于类搜索任务，把校准点呈现在目标物所围成的圆的圆心即可，保证校准点到各个目标物的视角距离一致。通常来讲是放到屏幕的中心。&lt;/p&gt;
+
+  &lt;p&gt;对于类阅读任务，通常会把校准点放到段首第一个字左侧0-2度视角距离的位置。当然这和语言的阅读方向有关。例如：自上而下阅读的蒙文，则需要将校准点放到段首第一个字上方0-2度视角距离的位置。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;说了这么多，&lt;code class=&quot;highlighter-rouge&quot;&gt;X Location&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Y Location&lt;/code&gt;的数值究竟应该填多少呢？&lt;/p&gt;
+
+&lt;p&gt;在准备刺激材料的时候，其实我们是知道刺激材料所在的位置的。如下图所示，只需要将鼠标悬停在显示内容的编辑窗口中，鼠标的右下角就会提示此处的坐标。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mouse_hang.png&quot; alt=&quot;image-20200318225322971&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;由于截图工具的问题，没有显示鼠标。实际上我将鼠标悬停到了“There”的第一个字母“T”上。我们可以看到提示的坐标位置为&lt;code class=&quot;highlighter-rouge&quot;&gt;(86.00, 403.00)&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;向前追溯0-2度距离约为60像素，所以设置Drift的位置为&lt;code class=&quot;highlighter-rouge&quot;&gt;(26.00, 403.00)&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;即&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;X Location = 26&lt;/p&gt;
+
+  &lt;p&gt;Y Location = 403&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;4-drift-correction-action-的全部属性&quot;&gt;4. Drift Correction Action 的全部属性&lt;/h1&gt;
+
+&lt;p&gt;一下属性是&lt;code class=&quot;highlighter-rouge&quot;&gt;Drift Correct&lt;/code&gt;控件的全部属性，根据您实验的不同设置，显示出来的属性可能有所不同。&lt;/p&gt;
+
+&lt;p&gt;标记为&lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt;的属性为不可直接修改的属性。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;属性&lt;/th&gt;
+      &lt;th&gt;变量类型&lt;/th&gt;
+      &lt;th&gt;解释&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Label&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;当前Drift Correction控件的标签，默认为“DRIFT_CORRECTT”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Type#&lt;/td&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;当前Drift Correction控件的类型。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Node Path#&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;当前Drift Correction控件在实验中的绝对路径。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Message&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;完成当前Drift Correction控件的执行后，向EDF文件发送的Message内容。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Time#&lt;/td&gt;
+      &lt;td&gt;Float&lt;/td&gt;
+      &lt;td&gt;完成当前Drift Correction控件的执行后，被试机时钟的时间。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;NTP Time#&lt;/td&gt;
+      &lt;td&gt;Float&lt;/td&gt;
+      &lt;td&gt;完成当前Drift Correction控件的执行后，NTP时钟的时间。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Start Time#&lt;/td&gt;
+      &lt;td&gt;Float&lt;/td&gt;
+      &lt;td&gt;开始执行当前Drift Correction控件时，被试机时钟的时间。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clear Input Queues&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;如果为True，当此控件开始执行时，会刷新全部输入&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;X Location&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;Drift Correction校准点出现的X坐标，以屏幕像素为单位。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Y Location&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;Drift Correction校准点出现的Y坐标，以屏幕像素为单位。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Apply Correction&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;若选择Current，则引用主试机中的设置。&lt;br /&gt;若选择YES，则即将误差逆向补偿到校准文件中。&lt;br /&gt;如选择No，则不会对校准文件执行任何操作。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Allow Setup&lt;/td&gt;
+      &lt;td&gt;Bollean&lt;/td&gt;
+      &lt;td&gt;若选择True，则允许在Drift Correction期间通过按主试机的Esc键进入Cmera Setup界面。&lt;br /&gt;若选择False，则不会进入到Camera Setup界面。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Draw Drift Correction Target&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则在完成Drift Correction后先清除屏幕（显示空屏），再呈现刺激内容。&lt;br /&gt;若选择False，则不会清除Drift Correction显示的内容。在某些情况下，可能希望校准点持续存在到刺激内容出现。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clear Target At Exit&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则在完成Drift Correction后先清除屏幕至Background Color。&lt;br /&gt;若选择False，则不会执行清屏操作。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Foreground Color&lt;/td&gt;
+      &lt;td&gt;Color&lt;/td&gt;
+      &lt;td&gt;校准点的颜色。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Background Color&lt;/td&gt;
+      &lt;td&gt;Color&lt;/td&gt;
+      &lt;td&gt;屏幕的背景色。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use Animation Target&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则使用一个自定义的动图作为校准点。&lt;br /&gt;若选择False，则使用默认校准目标。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Animation Target&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;校准动图的文件名，仅支持.avi格式的视频文件。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Animation Play Count&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;校准视频的播放次数，若为“-1”则无限循环播放。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Apply Transparency&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则将对您自定义的校准动图执行透明度操作。&lt;br /&gt;若选择False，则不执行。我们建议您不要开启此选项。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use Custom Target&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则使用一个自定义的图片作为校准点。&lt;br /&gt;若选择False，则使用默认校准目标。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Custom Target&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;校准目标图片的文件名。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Target Outer Size&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;默认校准目标的外圆直径。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Target Inner Size&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;默认校准目标的内圆直径。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use Custom Background&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则使用一个自定义的图片作为校准背景。&lt;br /&gt;若选择False，则使用默认Background Color所设置颜色的全色背景。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Custom Background&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;自定义校准背景图片的文件名。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Target Beep&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;校准目标出现时，被试机所播放声音的文件名。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Error Beep&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;校准失败或中断时，被试机所播放声音的文件名。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Good Beep&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;成功执行操作时，被试机所播放声音的文件名。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Enable External Control&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;若选择True，则允许使用主试机和被试机键盘以外的设备执行Drift Correction所需的按键操作。&lt;br /&gt;若选择False，则不允许。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;External Control Device Config&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;指定一个文件，该文件用于配制External Control的操作映射。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;External Control Device&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;用于执行External Control的设备类型。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Button State Callback Function&lt;/td&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;对于启动了Custom Class的实验任务，可以通过Custom Class监测其他外部设备的按键状态。以达到自定义设备完成External Control的目的。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Result#&lt;/td&gt;
+      &lt;td&gt;Int&lt;/td&gt;
+      &lt;td&gt;如果该控件执行成功，则返回0。若中断，则返回27。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;5-drift-correction-的-tips&quot;&gt;5. Drift Correction 的 Tips&lt;/h1&gt;
+
+&lt;h2 id=&quot;51-设置自定义的背景色&quot;&gt;5.1 设置自定义的背景色&lt;/h2&gt;
+
+&lt;p&gt;由于瞳孔缩放漂移的存在，在实验过程中应当尽量避免外在因素引起的瞳孔尺寸变化。在所有外在因素中，对与瞳孔尺寸影响最敏感的就是显示器亮度。当入射到我们瞳孔中的光发生亮度变化时，瞳孔会发生缩放反射。&lt;/p&gt;
+
+&lt;p&gt;因此，我们应当保证校准环节和正式实验环节的显示器亮度保持一致，方法就是设置显示的背景色。从上面的表格中，我们已经注意到了名为&lt;code class=&quot;highlighter-rouge&quot;&gt;Background Color&lt;/code&gt;的属性，即执行Drift Correction过程时，屏幕显示的背景颜色。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Background Color&lt;/code&gt;的参数类型为&lt;code class=&quot;highlighter-rouge&quot;&gt;Color&lt;/code&gt;。在EB中，&lt;code class=&quot;highlighter-rouge&quot;&gt;Color&lt;/code&gt;类型的参数由四个0到255之间的整型变量构成。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Red, Green, Blue, Alpha]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;前三个参数分别是颜色的RGB值，最后一个参数是指颜色的透明度，在设置背景颜色时一般选择不透明，即&lt;code class=&quot;highlighter-rouge&quot;&gt;Alpah = 255&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;52-设置自定义校准点&quot;&gt;5.2 设置自定义校准点&lt;/h2&gt;
+
+&lt;p&gt;在Drift Correction和Camera Setup环节，默认的校准目标都是一个带圆心的圆，对于正常被试来讲没有任何问题。但是在面对一些特殊被试的时候，这个小圆点往往会表现得力不从心。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在面对婴幼儿时，我们可能会选择使用被试&lt;code class=&quot;highlighter-rouge&quot;&gt;父母的头像&lt;/code&gt;作为校准目标。&lt;/p&gt;
+
+  &lt;p&gt;在面对自闭症儿童时，我们可能会选择使用&lt;code class=&quot;highlighter-rouge&quot;&gt;带声音的动画&lt;/code&gt;作为校准目标。&lt;/p&gt;
+
+  &lt;p&gt;在面对色弱患者时，我们通常会选用&lt;code class=&quot;highlighter-rouge&quot;&gt;高对比度的图片&lt;/code&gt;作为校准目标。&lt;/p&gt;
+
+  &lt;p&gt;……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在上述的几种情况中，我们需要自定义校准目标来实现更好的校准结果。关于具体设置方法上，我们将自定义校准目标情况分成两类——动画和图片。&lt;/p&gt;
+
+&lt;h3 id=&quot;自定义动画校准目标&quot;&gt;自定义动画校准目标&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Drift Correction Properties
+├── ...
+├── Use Animation Target         # 是否使用自定义的动画作为校准目标
+|  ├── Animation Target          # 动画的文件名，仅支持.avi格式的视频文件。
+|  ├── Animation Play Count      # 动画的循环播放次数，-1为无限循环。
+|  └── Apply Transparency        # 开始无色背景透明。
+├── ...
+├── Target Beep                  # 校准点出现时播放的声音文件。
+├── ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;一般情况下，我们首先要开启&lt;code class=&quot;highlighter-rouge&quot;&gt;Use Animation Target&lt;/code&gt;，然后在&lt;code class=&quot;highlighter-rouge&quot;&gt;Animation Target&lt;/code&gt;选择使用的视频文件，最后再设置&lt;code class=&quot;highlighter-rouge&quot;&gt;Target Beep&lt;/code&gt;的声音。为了能吸引婴幼儿的注意力，可以在呈现校准目标的同时，播放一段可以吸引小朋友的音乐，而不是使用默认的蜂鸣音。&lt;/p&gt;
+
+&lt;h3 id=&quot;自定义图片校准目标&quot;&gt;自定义图片校准目标&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Drift Correction Properties
+├── ...
+├── Use Custom Target            # 是否使用自定义的图片作为校准目标
+|  └── Custom Target             # 图片的文件名。
+├── ...
+├── Target Beep                  # 校准点出现时播放的声音文件。
+├── ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;和自定义视频校准目标相似，我们首先要开启&lt;code class=&quot;highlighter-rouge&quot;&gt;Use Custom Target&lt;/code&gt;，然后在&lt;code class=&quot;highlighter-rouge&quot;&gt;Custom Target&lt;/code&gt;选择使用的图片文件，最后再考虑是否设置&lt;code class=&quot;highlighter-rouge&quot;&gt;Target Beep&lt;/code&gt;的声音。&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//eyelink/Drift/</link>
+        <guid isPermaLink="true">http://localhost:4000//eyelink/Drift/</guid>
+      </item>
+    
+      <item>
+        <title>麻婆豆腐</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;麻婆豆腐作为一道家喻户晓的川菜，以其麻辣的口味和弹软的口感深受普通老百姓喜欢。即便是身处东北的黑龙江，巧手的主妇也会时不时给孩子做上一次解解馋。话不多说，先上成品图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mapodoufu_BB.jpeg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;前段时间重温《中华小当家》的时候注意到了一个细节——正宗的麻婆豆腐应当是炒出来的，而不是炖煮出来，这也将是我们制作麻婆豆腐的关键。在下面的食谱中，我用的是&lt;a href=&quot;https://item.jd.com/10343211189.html&quot;&gt;草原红太阳的麻婆豆腐调料，京东3.8元/袋&lt;/a&gt;的麻婆豆腐调料，和美美地吃上一顿晚饭来讲，还算经济实惠。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipe-caoyuanhongtaiyang.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;食材准备&quot;&gt;食材准备&lt;/h2&gt;
+
+&lt;h3 id=&quot;食材&quot;&gt;食材&lt;/h3&gt;
+
+&lt;p&gt;北方豆腐（卤水豆腐）1块约400-500g、香葱若干、猪肉馅（少量）&lt;/p&gt;
+
+&lt;h3 id=&quot;调料&quot;&gt;调料&lt;/h3&gt;
+
+&lt;p&gt;草原红太阳麻婆豆腐调料1包、食用油、花椒、盐、干辣椒、淀粉&lt;/p&gt;
+
+&lt;h2 id=&quot;烹饪步骤&quot;&gt;烹饪步骤&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;把豆腐切成拇指指甲大小见方的小块。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;锅内烧开淡盐水，将切好的豆腐下锅焯熟，捞出后过凉水备用（也可以不过凉水）。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;热锅凉油下干辣椒和花椒炸出香味，下麻婆豆腐调料炒出红油，加入猪肉馅炒变色。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;将豆腐加入锅中，翻炒锅内食材，注意要用炒勺的背面去推豆腐，否则豆腐会碎。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;搅拌均匀后，勾芡入锅，翻炒至豆腐挂芡即可关火出锅，撒上香葱即可。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;写在最后&quot;&gt;写在最后&lt;/h2&gt;
+
+&lt;p&gt;花椒和辣椒的量根据自己喜好酌情调整。步骤3中的花椒也可炸过后捞出，这样做好的成品里面就不会有花椒粒。&lt;/p&gt;
+
+&lt;p&gt;勾芡很重要，目的是将酱料挂在豆腐上，这样才好吃。&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Mar 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//recipe/recipes-mapodoufu/</link>
+        <guid isPermaLink="true">http://localhost:4000//recipe/recipes-mapodoufu/</guid>
+      </item>
+    
+  </channel>
+</rss>

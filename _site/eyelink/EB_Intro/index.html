@@ -1,0 +1,1202 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>认识Experiment Builder - Charlie的学习与生活</title>
+<meta name="description" content="  ">
+
+
+  <meta name="author" content="宋昌霖">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="Charlie的学习与生活">
+<meta property="og:title" content="认识Experiment Builder">
+<meta property="og:url" content="http://localhost:4000/eyelink/EB_Intro/">
+
+
+  <meta property="og:description" content="  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-25T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/eyelink/EB_Intro/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "宋昌霖",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Charlie的学习与生活 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<style>
+  table{
+    border-left:1px solid #000000;border-top:1px solid #000000;
+    width: 100%;
+    word-wrap:break-word; word-break:break-all;
+  }
+  table th{
+  text-align:center;
+  }
+  table th,td{
+    border-right:1px solid #000000;border-bottom:1px solid #000000;
+  }
+</style>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Charlie的学习与生活
+          <span class="site-subtitle">Last Update 2020.03.25 | 8% Done</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/content/" >Eyelink指北</a>
+            </li><li class="masthead__menu-item">
+              <a href="/recipe/" >私房食谱</a>
+            </li><li class="masthead__menu-item">
+              <a href="/dogfood/" >三斤狗粮</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >文章分类</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >标签</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">首页</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#eyelink" itemprop="item"><span itemprop="name">Eyelink</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">认识Experiment Builder</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">目录</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">切换菜单</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/content/"><span class="nav__sub-title">点此获取“Eyelink指北”完整目录</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Basic</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/EB_Intro/" class="">认识软件</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">编程前的实验设计准备</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">指导语与结束语</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Block层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Trial层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Recording层</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">随机设置</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">计算反应时和正确率</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">行为信息记录</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">实验的保存、编译、压缩与迁移</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Master</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放声音材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">播放视频材料</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">录音</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">边界触发范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">GC-Window范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Visual World范式</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">多模态</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">真随机</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">绘制兴趣区</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">EB Tips</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://charlie-techblog.com/eyelink/Drift/" class="">DriftCorrection（完）</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Eyelink指北的其他部分</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">Data Viewer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">主试机操作</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/editing/" class="">3rd-Party Tools</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="认识Experiment Builder">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2020-03-25T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">认识Experiment Builder
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 分钟阅读
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#1-软件界面">1. 软件界面</a>
+    <ul>
+      <li><a href="#11-菜单栏">1.1 菜单栏</a></li>
+      <li><a href="#12-工具栏">1.2 工具栏</a></li>
+      <li><a href="#13-overview面板">1.3 Overview面板</a></li>
+      <li><a href="#14-structure面板">1.4 Structure面板</a></li>
+      <li><a href="#15-properties面板">1.5 Properties面板</a></li>
+      <li><a href="#16-note面板">1.6 Note面板</a></li>
+      <li><a href="#17-工作区标签">1.7 工作区标签</a></li>
+      <li><a href="#18-控件库">1.8 控件库</a></li>
+      <li><a href="#19-工作区">1.9 工作区</a></li>
+      <li><a href="#110-导航器">1.10 导航器</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-查阅操作手册">2. 查阅操作手册</a></li>
+  <li><a href="#3-实验程序编写逻辑">3. 实验程序编写逻辑</a>
+    <ul>
+      <li><a href="#31-基本流程图">3.1 基本流程图</a></li>
+      <li><a href="#32-实验的典型结构">3.2 实验的典型结构</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-创建我的第一个实验">4. 创建我的第一个实验</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <hr />
+
+<blockquote>
+  <p><code class="highlighter-rouge">Experiment Builder</code>软件在首次安装时，会附带时长为<code class="highlighter-rouge">30天</code>的<code class="highlighter-rouge">Demo License</code>。即30天之内是可以不用<code class="highlighter-rouge">加密狗</code>就可以打开<code class="highlighter-rouge">Experiment Builder</code>软件的。</p>
+
+  <p>但需要注意的是，<code class="highlighter-rouge">Demo License</code>下编写的实验程序和<code class="highlighter-rouge">加密狗</code>的正式授权存在文件不互通的问题。换句话说，在<code class="highlighter-rouge">Demo License</code>下编写的实验程序无法在查了加密狗的条件下打开。而且在<code class="highlighter-rouge">Demo License</code>下运行的程序会有一个去不掉的红色水印，不能用于正式实验。</p>
+</blockquote>
+
+<p>用户手册下载链接：</p>
+<ul>
+  <li>v2.2.245(299)：<a href="https://github.com/s975188062/s975188062.github.io/raw/master/_source/F_Manuals/ExperimentBuilder%20User%20Manual.pdf">Github</a>，<a href="https://pan.baidu.com/s/1NkjeYMToELh51yqPyvjh3g">百度网盘(fezc)</a></li>
+</ul>
+
+<hr />
+
+<h1 id="1-软件界面">1. 软件界面</h1>
+
+<p><img src="/assets/images/EB_shotcut.jpg" alt="EB_shotcut" /></p>
+
+<p>Experiment Builder使用的是Windows软件的典型构架，由菜单栏、工具栏、工作区和一些辅助面板构成。下面我们来依次介绍：</p>
+
+<h2 id="11-菜单栏">1.1 菜单栏</h2>
+
+<p><img src="/assets/images/eb_menu_bar.jpg" alt="eb_menu_ba" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Experiment Builder 菜单栏
+├── File                    
+|  ├── New                      # 新建一个新的Project
+|  ├── Open                     # 打开一个现有的Project
+|  ├── Recent                   # 最近打开过的Project
+|  ├── Examples                 # EB自带的模板
+|  ├── Save                     # 保存当前Project
+|  ├── Save As                  # 将当前Project另存
+|  ├── Unlock Project           # 解锁当前Project
+|  ├── Package                  # 将当前Project压缩为.ebz文件
+|  ├── Unpack                   # 解压缩一个.ebz文件
+|  ├── Set Restore Point        # 设置回溯点
+|  ├── Restore                  # 回溯当前Project
+|  └── Exit                     # 退出EB
+├── Edit
+|  ├── Undo                     # 撤销
+|  ├── Redo                     # 重做
+|  ├── Cut                      # 剪切
+|  ├── Copy                     # 复制
+|  ├── Paste                    # 粘贴
+|  ├── Paste Multiple           # 粘贴多个
+|  ├── Delete                   # 删除
+|  ├── Refresh Custom Class     # 刷新重置Custom Class
+|  ├── Preferences              # 首选项
+|  ├── Library Manager          # 素材库管理器
+|  ├── Reference Manager        # 引用管理器
+|  ├── Node Groups              # 节点组
+|  └── Select All               # 全选
+├── View
+|  ├── Overview                 # 显示/隐藏Overview面板
+|  ├── Structure                # 显示/隐藏Structure面板
+|  ├── Properties               # 显示/隐藏Properties面板
+|  ├── Connections              # 显示/隐藏Connections面板
+|  ├── Navigator                # 显示/隐藏Navigator面板
+|  ├── Restore Default Views    # 显示/隐藏重置视图设置
+|  ├── Back                     # 上一个节点
+|  ├── Forward                  # 下一个节点
+|  ├── Zoom Selected            # 聚焦到选中的节点
+|  ├── Zoom In                  # 放大
+|  ├── Zoom Out                 # 缩小
+|  ├── Fit Content              # 铺满屏幕
+|  ├── Layout Options           # 排列设置
+|  ├── Arrange Layout           # 自动排列
+|  ├── Export Node              # 导出节点
+|  └── Import Node              # 导入节点
+├── Experiment
+|  ├── Clean                    # 清空当前Project
+|  ├── Build                    # 编译当前Project
+|  ├── Test Run                 # 编译并试运行当前Project
+|  └── Deploy                   # 编译并导出当前Project为可执行文件
+└── Help
+   ├── Contents                 # 电子版用户手册
+   ├── About                    # 关于
+   └── License                  # 许可证书
+</code></pre></div></div>
+
+<h2 id="12-工具栏">1.2 工具栏</h2>
+
+<p><img src="/assets/images/eb_tool_bar.jpg" alt="eb_tool_ba" /></p>
+
+<p>工具栏的按钮基本都是菜单栏里面常用功能的快捷按钮，因此不做过多解释。</p>
+
+<p>但最后一个下拉菜单不是快捷按钮，是<code class="highlighter-rouge">Datasource</code>的快捷导航，这部分内容详见<code class="highlighter-rouge">Recording层</code>这篇文章。</p>
+
+<h2 id="13-overview面板">1.3 Overview面板</h2>
+
+<p><img src="/assets/images/eb_overview_pannel.jpg" alt="eb_overview_panne" /></p>
+
+<p><code class="highlighter-rouge">Overview面板</code>实际上是工作区内<code class="highlighter-rouge">实验流程图</code>的一个缩略图，当<code class="highlighter-rouge">实验流程图</code>非常长时，方便我们快速导航到希望的位置。</p>
+
+<h2 id="14-structure面板">1.4 Structure面板</h2>
+
+<p><img src="/assets/images/eb_structure_pannel.jpg" alt="eb_structure_panne" /></p>
+
+<p><code class="highlighter-rouge">Structure面板</code>从三个层次来解析实验的结构——<code class="highlighter-rouge">逻辑关系</code>、<code class="highlighter-rouge">控件</code>和<code class="highlighter-rouge">硬件</code>。这三个层次依次显示在<code class="highlighter-rouge">Structure面板</code>的左下角。</p>
+
+<ul>
+  <li>Experiment - 将实验的所有控件按照树状图的机构显示出来。</li>
+  <li>Components - 将实验中所用到的空间按类型归类后显示。</li>
+  <li>Device - 将实验中涉及到的硬件设备罗列出来。</li>
+</ul>
+
+<p>其中最值得一提的是<code class="highlighter-rouge">Device</code>中的<code class="highlighter-rouge">Eyelink</code>，这部分所指代的内容是眼动仪，我们可以在这里设置眼动仪的型号和工作模式。</p>
+
+<h2 id="15-properties面板">1.5 Properties面板</h2>
+
+<p><img src="/assets/images/eb_properties_pannel.jpg" alt="eb_properties_panne" /></p>
+
+<p><code class="highlighter-rouge">Properties面板</code>顾名思义，这里显示的是特定对象的属性。</p>
+
+<p>当我们在<code class="highlighter-rouge">Experiment Builder</code>中选择任意一个对象时，该对象的属性都会显示在<code class="highlighter-rouge">Properties面板</code>中。</p>
+
+<h2 id="16-note面板">1.6 Note面板</h2>
+
+<p><img src="/assets/images/eb_note_pannel.jpg" alt="eb_note_panne-w235" /></p>
+
+<p>和前面的<code class="highlighter-rouge">Properties面板</code>类似，<code class="highlighter-rouge">Note面板</code>里面显示的是选中对象的备注信息。</p>
+
+<h2 id="17-工作区标签">1.7 工作区标签</h2>
+
+<p><img src="/assets/images/eb_tab_pannel.jpg" alt="eb_tab_panne" /></p>
+
+<p><code class="highlighter-rouge">工作区标签</code>显示在整<code class="highlighter-rouge">工作区</code>的上方，提示了当前的工作区显示的是哪个对象的内容，并且允许用户在各个对象之间快速切换。</p>
+
+<h2 id="18-控件库">1.8 控件库</h2>
+
+<p><img src="/assets/images/eb_node_library.jpg" alt="eb_node_library" /></p>
+
+<p>控件库中是<code class="highlighter-rouge">Experiment Builder</code>中可以用来构建实验的全部功能控件。</p>
+
+<p><code class="highlighter-rouge">Experiment Builder</code>将所有控件分为三类：<code class="highlighter-rouge">Action</code>、<code class="highlighter-rouge">Trigger</code>和<code class="highlighter-rouge">Other</code>。</p>
+
+<ul>
+  <li>Action - 命令主试机、被试机或者眼动仪执行某一个特定的命令。</li>
+  <li>Trigger - 控制Action的开始和结束。</li>
+  <li>Other - 除上述两种以外的辅助控件。</li>
+</ul>
+
+<p>详细列表如下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>控件库
+├── Action                  
+|  ├── DisplayScreen                # 显示特定内容
+|  ├── DriftCorrection              # 漂移检查
+|  ├── CameraSetup                  # 执行相机校准
+|  ├── AddToLog                     # 将文本内容添加到运行日志中
+|  ├── SendEyelikMessage            # 将文本内容以Message的形式发送到.edf文件中
+|  ├── EyelinkCommand               # 将文本命令发送给主试机
+|  ├── AddToAccumulator             # 添加到累加器
+|  ├── PrepareSequence              # 准备下一个试次的刺激材料
+|  ├── Sequence                     # 序列
+|  ├── UpdateAttribute              # 更新属性
+|  ├── Play Sound                   # 播放声音
+|  ├── Play Sound Control           # 声音播放控制
+|  ├── Record Sound                 # 录制声音
+|  ├── Record Sound Control         # 声音录制控制
+|  ├── AddToResultFile              # 将特定变量添加到ResultFile中
+|  ├── SetTTL                       # 设置TTL设备针脚电平
+|  ├── Biometric TTL                # 控制被试机向其他设备发送TTL信号
+|  ├── serialPortWriteMessageTip    # 控制串口发送消息
+|  ├── Reset                        # 重置某一特定控件
+|  ├── Terminate                    # 终断实验
+|  ├── Recycle Data Line            # 挂起当前Datsouce数据行稍后执行
+|  └── Null action                  # 啥也不干
+├── Trigger
+|  ├── Timer                        # 计时器
+|  ├── InvisibleBoundry             # 当注视位置落入特定边界内触发
+|  ├── Conditional                  # 条件触发
+|  ├── EyeLinkButton                # Eyelink反应手柄触发
+|  ├── CedrusInput                  # Cedrus反应盒触发
+|  ├── Keyboard                     # 键盘触发
+|  ├── TTL                          # 接收到特定TTL信号的时候触发
+|  ├── triggerSerialPortMessageTip  # 穿口信号触发
+|  ├── Mouse                        # 鼠标点击触发
+|  ├── Fixation                     # 发生注视时触发
+|  ├── Saccade                      # 发生扫视时触发
+|  ├── Blink                        # 发生眨眼时触发
+|  ├── SampleVelocity               # 眼球运动达到特定速度时触发
+|  └── Voice Key                    # 采集到声音时触发
+└── Other
+   ├── Accumulator                  # 加法器
+   ├── Variable                     # 定义变量
+   └── ResultFile                   # 创建一个ResultFile
+</code></pre></div></div>
+
+<h2 id="19-工作区">1.9 工作区</h2>
+
+<p><img src="/assets/images/eb_workspace.jpg" alt="eb_workspace" /></p>
+
+<p>这一部分非常简单，<code class="highlighter-rouge">工作区</code>就是编辑实验的地方，具体内容和<code class="highlighter-rouge">1.7 工作区标签</code>对应。</p>
+
+<h2 id="110-导航器">1.10 导航器</h2>
+
+<p><img src="/assets/images/eb_navigator_pannel.jpg" alt="eb_navigator_panne" /></p>
+
+<p>帮助我们快速了解当前工作区的上级结构。</p>
+
+<hr />
+
+<h1 id="2-查阅操作手册">2. 查阅操作手册</h1>
+
+<blockquote>
+  <p>遇事不决查Manual。——王治国</p>
+</blockquote>
+
+<p>关于<code class="highlighter-rouge">Experiment Builder</code>的全部问题，在<code class="highlighter-rouge">Manual</code>里面几乎都可以找到答案。</p>
+
+<p>在我学习软件的时候，曾经将英文手册翻译为中文。虽然后面没有再查阅过中文的操作手册，但是<strong>英译汉的过程</strong>给我带来了极大的技能提升。</p>
+
+<p>在我们安装好<code class="highlighter-rouge">Experiment Builder</code>时，<code class="highlighter-rouge">Manual</code>就已经被同步拷贝到我们的电脑上了。</p>
+
+<p>您可以通过一下两种方式打开用户手册：</p>
+
+<p><img src="/assets/images/eb_call_content.jpg" alt="eb_call_content" /></p>
+
+<ul>
+  <li>如上图所示，在<code class="highlighter-rouge">Experiment Builder</code>中打开。点击菜单栏“<code class="highlighter-rouge">Help</code> -&gt; <code class="highlighter-rouge">Content</code>”，或者直接按<code class="highlighter-rouge">F1</code>打开电子版操作手册。</li>
+</ul>
+
+<p><img src="/assets/images/eb_start_manual.jpg" alt="eb_start_manua" /></p>
+
+<ul>
+  <li>或者您也可以在开始菜单中找到<code class="highlighter-rouge">.pdf</code>格式的用户手册。如上图所示，依次点击“<code class="highlighter-rouge">开始</code> -&gt; <code class="highlighter-rouge">SR Research</code> -&gt; <code class="highlighter-rouge">ExperimentBuilder User Manual</code>”即可打开。</li>
+</ul>
+
+<hr />
+
+<h1 id="3-实验程序编写逻辑">3. 实验程序编写逻辑</h1>
+
+<h2 id="31-基本流程图">3.1 基本流程图</h2>
+
+<p>在介绍<code class="highlighter-rouge">Experiment Builder</code>时，我会说这是一个功能强大的<strong>可视化</strong>编程工具。</p>
+
+<p>提起编程，我们可能以为是下面这样的：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">click_load_button</span><span class="p">():</span>
+
+    <span class="k">global</span> <span class="n">log_file_path</span>
+
+    <span class="n">log_fp</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askopenfilename</span><span class="p">()</span>
+
+    <span class="c1"># 设置显示的路径内容
+</span>    <span class="n">find_index</span> <span class="o">=</span> <span class="n">log_fp</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span> <span class="o">-</span> <span class="mi">3</span>
+    <span class="n">count_num</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+            <span class="n">count_num</span> <span class="o">=</span> <span class="n">count_num</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">count_num</span> <span class="o">==</span> <span class="n">find_index</span><span class="p">:</span>
+                <span class="k">break</span>
+    <span class="n">path_2_show</span> <span class="o">=</span> <span class="s">'...'</span> <span class="o">+</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)]</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">monty3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"             "</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s">'W'</span><span class="p">)</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">monty3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">path_2_show</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s">'W'</span><span class="p">)</span>
+
+    <span class="c1"># 获取文件的绝对路径
+</span>    <span class="n">find_index</span> <span class="o">=</span> <span class="n">log_fp</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+    <span class="n">count_num</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">log_fp</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">log_fp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+            <span class="n">count_num</span> <span class="o">=</span> <span class="n">count_num</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">count_num</span> <span class="o">==</span> <span class="n">find_index</span><span class="p">:</span>
+                <span class="k">break</span>
+    <span class="n">log_file_path</span> <span class="o">=</span> <span class="n">log_fp</span><span class="p">[</span><span class="mi">0</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<p>上面这样就是代码编程，需要系统的学习才可以完成。</p>
+
+<p>好在EB用的并不是这样的方法，EB将常用的功能封装成了名为<code class="highlighter-rouge">控件</code>的黑盒，我们只需要在<code class="highlighter-rouge">Propreties面板</code>中设置相应控件的参数即可。无需担心控件内部的每一步是怎么工作的。</p>
+
+<p>下图就是EB编写程序的方式——<strong>流程图</strong>。</p>
+
+<p><img src="/assets/images/eb_workspace.jpg" alt="eb_workspace" /></p>
+
+<p>在编写实验的过程中，我们将控件托放到工作区，以合适的逻辑关系链接起来，构成实验。</p>
+
+<p>在上图所示的例子中：</p>
+
+<ul>
+  <li>实验进程从<code class="highlighter-rouge">START</code>开始</li>
+  <li>然后第二行的<code class="highlighter-rouge">DISPLAY_SCREEN</code>工作，呈现我们事先设定好的刺激内容；</li>
+  <li>刺激内容呈现完毕后，等待第三行中的<code class="highlighter-rouge">Trigger</code>被触发。我们可以看，第二行的<code class="highlighter-rouge">DISPLAY_SCREEN</code>同时链接了三个<code class="highlighter-rouge">Trigger</code>：<code class="highlighter-rouge">TIMER</code>、<code class="highlighter-rouge">EL_BUTTON</code>和<code class="highlighter-rouge">EL_KEYBOARD</code>。三个Trigger会同时等待触发信号，当三个当中的任意一个触发事件发生时，则根据箭头的连接继续进行实验。即运行<code class="highlighter-rouge">DISPLAY_BLANK</code>。</li>
+</ul>
+
+<blockquote>
+  <p>我们可以总结一下上面几个控件实现的功能：</p>
+
+  <p>呈现刺激后，等待被试通过<code class="highlighter-rouge">Eyelink反应手柄</code>或者<code class="highlighter-rouge">键盘</code>进行行为反馈，接收到反馈信息后，清空显示的内容，呈现空屏幕。但是如果被试没有在规定的限制时间内给予反馈，则计时结束后直接呈现空屏。</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">Experiment Builder</code>就是通过这样的方式完成实验程序编写的。</p>
+
+<h2 id="32-实验的典型结构">3.2 实验的典型结构</h2>
+
+<p>打开我们在本文第二节提到的操作手册，可以在“6.1 Hierarchical Organization of Experiment”中看到下图：</p>
+
+<p><img src="/assets/images/eb_hierarchical_org.jpg" alt="eb_hierarchical_org" /></p>
+
+<p>一个典型的眼动实验就是分为这样四层的套娃结构。</p>
+
+<ul>
+  <li>
+    <p><strong>Experiment</strong> - 代表整个实验，由<code class="highlighter-rouge">指导语</code>、<code class="highlighter-rouge">结束语</code>和一个或多个Block组成。</p>
+  </li>
+  <li>
+    <p><strong>Block</strong> - 实验组。当我们由于一些特殊需求将整个实验拆分成多个小块进行时，每个小块就是一个<code class="highlighter-rouge">Block</code>。常见的拆分原因有：实验中途需要休息、设定几个试次为练习部分、特殊的实验设计等。单个<code class="highlighter-rouge">Block</code>由<code class="highlighter-rouge">Camera Setup</code>和多个<code class="highlighter-rouge">Trial</code>组成。</p>
+  </li>
+  <li>
+    <p><strong>Trial</strong> - 试次，是实验的最小循环单位。包括从电脑读取呈现的材料、呈现刺激材料并记录眼动数据的一整个过程。</p>
+  </li>
+  <li>
+    <p><strong>Recording</strong> - 真正记录眼动数据的部分。在这里面编写实验的刺激的内容和被试反馈等。</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>关于Trial和Recording的关系，我任务有必要拿出来单独讲解一下。</p>
+
+  <p>我们假设一个<strong>自定步速阅读</strong>的实验，一共50个<code class="highlighter-rouge">Trial</code>，每个<code class="highlighter-rouge">Trial</code>内给被试看一个语篇，被试看完之后按<code class="highlighter-rouge">空格</code>出现下一篇。</p>
+
+  <p>从<code class="highlighter-rouge">Trial</code>的定义来看，整个实验的最小循环单位看似是“<code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”，实则不然。</p>
+
+  <p>从计算机层面来看，实验的最小循环单位是：“<code class="highlighter-rouge">加载一会要呈现的语篇</code> -&gt; <code class="highlighter-rouge">漂移矫正</code> -&gt; <code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”。</p>
+
+  <p>即“<code class="highlighter-rouge">呈现语篇</code> -&gt; <code class="highlighter-rouge">被试按键</code>”的过程仅仅是<code class="highlighter-rouge">Recording</code>。<code class="highlighter-rouge">Trial</code>要多出一些<strong>计算机后台</strong>的操作。</p>
+</blockquote>
+
+<p>那么，在<code class="highlighter-rouge">Experiment Builder</code>中编程就是按照自己的<strong>实验设计</strong>，依照<strong>层级结构</strong>，将不同的<strong>实验控件</strong>连接成<strong>流程图</strong>。</p>
+
+<hr />
+
+<h1 id="4-创建我的第一个实验">4. 创建我的第一个实验</h1>
+
+<p>点击菜单栏“<code class="highlighter-rouge">File</code> -&gt; <code class="highlighter-rouge">New</code>”</p>
+
+<p><img src="/assets/images/eb_new_poject.jpg" alt="eb_new_poject" /></p>
+
+<p>跳出新建窗口：</p>
+
+<p><img src="/assets/images/eb_new_poject_2.jpg" alt="eb_new_poject_2" /></p>
+
+<p>四行设置从上到下依次是：</p>
+
+<ul>
+  <li>
+    <p>Project Name - 实验项目的名称。</p>
+  </li>
+  <li>
+    <p>Project Location - 保存的位置。</p>
+  </li>
+  <li>
+    <p>Templates - 创建实验使用的模板。如果选择<code class="highlighter-rouge">None</code>则创建一个空文件，如果选择<code class="highlighter-rouge">Eyelink_Template.ebz</code>则打开实验模板。</p>
+  </li>
+  <li>
+    <p>Eyelink Experiment - 是否是一个Eyelink的眼动实验。如果选<code class="highlighter-rouge">True</code>，则需要选择眼动仪的具体型号，<code class="highlighter-rouge">Current</code>为自动识别。</p>
+  </li>
+</ul>
+
+<p>点击<code class="highlighter-rouge">OK</code>则执行创建操作，此时会提示下图所示的窗口，告诉我们不要对实验文件夹内的文件执行新增或者删除的操作。</p>
+
+<p><img src="/assets/images/eb_new_poject_3.jpg" alt="eb_new_poject_3" /></p>
+
+<p>这一点很重要，是<code class="highlighter-rouge">Experiment Builder</code>和<code class="highlighter-rouge">E-Prime</code>的一个很大的区别。</p>
+
+<p>点击<code class="highlighter-rouge">确定</code>后，我们的第一个实验就创建好了！</p>
+
+<p><img src="/assets/images/eb_new_poject_4.jpg" alt="eb_new_poject_4" /></p>
+
+<hr />
+
+<p>以上。</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 标签: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#experiment-builder" class="page__taxonomy-item" rel="tag">Experiment Builder</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#eyelink" class="page__taxonomy-item" rel="tag">Eyelink</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2020-03-25T00:00:00+08:00">March 25, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E8%AE%A4%E8%AF%86Experiment+Builder%20http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FEB_Intro%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FEB_Intro%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2FEB_Intro%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/eyelink/host-system-update/" class="pagination--pager" title="主试机系统更新教程
+">向前</a>
+    
+    
+      <a href="/eyelink/Experiment_Design/" class="pagination--pager" title="编程前的实验设计准备
+">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">猜您还喜欢</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Experiment_Design/" rel="permalink">编程前的实验设计准备
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/host-system-update/" rel="permalink">主试机系统更新教程
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  少于 1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/LabSetup/" rel="permalink">好的数据质量 从一个完美的实验室开始
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Drift/" rel="permalink">关于Drift Correction 你应该知道更多
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/s975188062" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 宋昌霖. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

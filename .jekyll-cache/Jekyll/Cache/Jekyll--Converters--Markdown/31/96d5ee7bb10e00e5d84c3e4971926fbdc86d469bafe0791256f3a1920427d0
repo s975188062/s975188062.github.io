@@ -1,0 +1,29 @@
+I"�<ul class="toc__menu">
+  <li><a href="#1-什么是drift-check">1. 什么是Drift Check</a></li>
+  <li><a href="#2-drift-check-能帮我们做到哪些事情">2. Drift Check 能帮我们做到哪些事情</a>
+    <ul>
+      <li><a href="#21-误差监测">2.1 误差监测</a></li>
+      <li><a href="#22-休息休息一下">2.2 休息，休息一下</a></li>
+      <li><a href="#23-cue注意">2.3 Cue注意</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-如何实现">3. 如何实现</a>
+    <ul>
+      <li><a href="#31-误差监测和休息">3.1 误差监测和休息</a></li>
+      <li><a href="#32-cue注意">3.2 Cue注意</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-drift-correction-action-的全部属性">4. Drift Correction Action 的全部属性</a></li>
+  <li><a href="#5-drift-correction-的-tips">5. Drift Correction 的 Tips</a>
+    <ul>
+      <li><a href="#51-设置自定义的背景色">5.1 设置自定义的背景色</a></li>
+      <li><a href="#52-设置自定义校准点">5.2 设置自定义校准点</a>
+        <ul>
+          <li><a href="#自定义动画校准目标">自定义动画校准目标</a></li>
+          <li><a href="#自定义图片校准目标">自定义图片校准目标</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET
