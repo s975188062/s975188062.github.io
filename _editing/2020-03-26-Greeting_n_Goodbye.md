@@ -63,4 +63,4 @@ sidebar:
 
 ![eb_open_screen_builde](/assets/images/eb_open_screen_builder.gif)
 
-
+我们目前打开的这个小窗口叫做`Screen Builder`，即呈现内容的编辑器。
