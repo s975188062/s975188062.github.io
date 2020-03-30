@@ -7,6 +7,7 @@ tags:
   - DisplayScreen
   - Keyboard
   - Timer
+  - Sequence
 toc: true
 comments: true
 author_profile: false
