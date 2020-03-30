@@ -19,4 +19,4 @@
 <!--
 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 
 -->
-{{ post.content | strip_html | strip_newlines | size | divided_by:350 | round}}{{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+{{ post.content | strip_html | strip_newlines | size | divided_by:400 | round}}{{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
