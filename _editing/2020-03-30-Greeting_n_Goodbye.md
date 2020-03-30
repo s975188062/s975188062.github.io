@@ -49,7 +49,7 @@ sidebar:
 
 # 1. 指导语
 
->指导语内容：
+指导语内容：
 
 >你好，欢迎参加本实验！
 >
@@ -188,10 +188,21 @@ sidebar:
 
 # 2. 添加Block
 
-添加
+![eb_node_lib_sequence](/assets/images/eb_node_lib_sequence.png)
+
+将`Sequence`控件从`控件库`拖拽到工作区中，连接箭头，修改`Label`属性为`Block`。
+
+![eb_add_block_sequence](/assets/images/eb_add_block_sequence.gif)
+
+---
+
+# 3. 添加结束语
+
+结束语内容：
+
+> 实验结束，谢谢您的参与。
 
 
 
 ---
-
 以上。
