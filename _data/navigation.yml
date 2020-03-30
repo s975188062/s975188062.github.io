@@ -23,7 +23,7 @@ EB:
         url: /eyelink/EB_Intro/
       - title: "编程前的实验设计准备"
         url: /eyelink/Experiment_Design/
-      - title: "指导语与结束语"
+      - title: "Experiment层"
         url: /editing/
       - title: "Block层"
         url: /editing/

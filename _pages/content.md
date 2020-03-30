@@ -27,7 +27,7 @@ toc: true
 
 * [认识Experiment Builder](/eyelink/EB_Intro/)
 * [编程前的实验设计准备](/eyelink/Experiment_Design/)
-* 指导语和结束语的呈现（DisplayScreen、Keyboard和Timer）
+* Experiment层（DisplayScreen、Keyboard和Timer）
 * Block层（Sequence和CameraSetup）
 * Trial层（PrepareSequence和DriftCorrection）
 * Recording层（Datasource和引用）
