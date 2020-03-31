@@ -1,10 +1,11 @@
 ---
-title: "Block层"
+title: "Experiment层"
 categories:
   - Eyelink
 tags:
   - Experiment Builder
   - CameraSetup
+  - Sequence
 toc: true
 comments: true
 author_profile: false
