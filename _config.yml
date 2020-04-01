@@ -25,7 +25,7 @@ url                      : "https://s975188062.github.io"
 baseurl                  : # "/tree/master"
 repository               : #"s975188062/s975188062.github.io"
 teaser                   : #"/assets/images/background.png" #默认的文章缩略图 path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/icon.png"
+logo                     : "/assets/images/blog_icon_charlie.png"
 masthead_title           : "Charlie的学习与生活" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 100
