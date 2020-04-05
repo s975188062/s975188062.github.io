@@ -16,13 +16,13 @@ sidebar:
 
 ---
 
-# 0. 回顾实验设计
-![eb_expdesign_block_level](/assets/images/eb_expdesign_block_level.png)
-
-根据实验设计，我们需要在`Block层`编辑`CameraSetup`和`Trial层级`两个部分。
-
-在`Experiment层`中双击编辑好的`Block`进入`Block层`内部开始编辑。
-![eb_open_block_level](/assets/images/eb_open_block_level.gif)
+>回顾实验设计
+>>![eb_expdesign_block_level](/assets/images/eb_expdesign_block_level.png)
+>
+>根据实验设计，我们需要在`Block层`编辑`CameraSetup`和`Trial层级`两个部分。
+>
+>在`Experiment层`中双击编辑好的`Block`进入`Block层`内部开始编辑。
+>>![eb_open_block_level](/assets/images/eb_open_block_level.gif)
 
 ---
 
