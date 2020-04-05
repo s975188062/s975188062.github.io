@@ -26,7 +26,7 @@ EB:
       - title: "Experiment层"
         url: /eyelink/Experiment_Level/
       - title: "Block层"
-        url: /editing/
+        url: /eyelink/Block_Level/
       - title: "Trial层"
         url: /editing/
       - title: "Recording层"
