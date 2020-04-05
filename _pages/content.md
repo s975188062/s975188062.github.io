@@ -29,7 +29,7 @@ toc: true
 * [编程前的实验设计准备](/eyelink/Experiment_Design/)
 * [Experiment层](/eyelink/Experiment_Level/)（DisplayScreen、Keyboard、Timer和Sequence）
 * [Block层](/eyelink/Block_Level/)（CameraSetup）
-* Trial层（PrepareSequence和DriftCorrection）
+* [Trial层](/eyelink/Trial_Level/)（PrepareSequence和DriftCorrection）
 * Recording层（Datasource和引用）
 * 设置随机（Datasource）
 * 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
