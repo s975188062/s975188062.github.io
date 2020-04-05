@@ -6,6 +6,7 @@ tags:
   - Experiment Builder
   - Datasource
   - 引用
+  - Test Run
 toc: true
 comments: true
 author_profile: false
@@ -66,16 +67,35 @@ sidebar:
 
 ![eb_add_display_q](/assets/images/eb_add_display_q.gif)
 
+> ⬆️此处是操作动图，文件较大可能加载缓慢。
+
 ## 1.4 Keyboard_of_Question
 
+* 添加一个新的`Keyboard Trigger`，连接箭头，修改`Label`为“Keyboard_of_TP”。
+
+* 此处我们的设计是让被试判断问题的对错，如果问题是对的，则按`f`键，反之则按`j`键。因此我们设置`Keyboard_of_Question`的触发按键为`f`或`j`。
+
+>设置按键多选时可以直接使用`Ctrl`或者`Shift`进行多选。
+
+![eb_set_keyboard_q_keys](/assets/images/eb_set_keyboard_q_keys.gif)
+
+至此，单一试次编写完成。
 
 ---
 
-# 2. Datasource与引用
+# 2. 测试程序
 
-## 2.1 添加Datasource
+## 2.1 设置Dummy Mode
 
-## 2.2 对刺激材料设置引用
+## 2.2 Test Run试运行
+
+---
+
+# 3. Datasource与引用
+
+## 3.1 添加Datasource
+
+## 3.2 对刺激材料设置引用
 
 
 ---
