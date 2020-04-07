@@ -7,6 +7,7 @@ tags:
   - Datasource
   - 引用
   - Test Run
+  - Message
 toc: true
 comments: true
 author_profile: false
@@ -79,24 +80,72 @@ sidebar:
 
 ![eb_set_keyboard_q_keys](/assets/images/eb_set_keyboard_q_keys.gif)
 
-至此，单一试次编写完成。
+至此，单一试次任务编写完成。
 
 ---
 
 # 2. 测试程序
 
+在完成但一试次任务编写之后，我们可以试运行我们的实验，以此来检测整个实验流程是否是按照我们的想法进行的。
+
+这里要用到`Experiment Builder`的`Test Run`功能，你可以在工具栏中找到它。
+
+![eb_testrun_in_toolbar](/assets/images/eb_testrun_in_toolbar.png)
+
+无论是否连接眼动仪，我们都可以通过点击`Test Run`按钮来试运行程序。
+
+* 连接眼动仪 - 点击`Test Run`直接运行即可；
+* 未连接眼动仪 - 开启`Dummy Mode`后试运行实验。
+
+很多时候我们都不能连接眼动仪来调试设备，那么`Dummy Mode`的存在就非常有意义了。在`Dummy Mode`下，可以不连接眼动仪、直接跳过眼动仪校准等环节运行试验。
+
+当然这样做的代价是，在整个实验的运行过程中，和眼动相关的很多触发器等功能都无法使用了。
+
 ## 2.1 设置Dummy Mode
 
+首先设置`Dummy Mode`，如果您已经连接了眼动仪，请跳过此步骤直接进行`2.2 Test Run试运行`。。
+
+在`Structure面板`中选中`Devices`标签页，点击`Eyelink`，在其`Properties`面板中即可找到`Dummy Mode`属性。
+
+![eb_set_dummymode](/assets/images/eb_set_dummymode.png)
+
 ## 2.2 Test Run试运行
+
+点击`工具栏`中的`Test Run`开始试运行。
+
+![eb_testrun_in_toolbar](/assets/images/eb_testrun_in_toolbar.png)
+
+首先会出现第一个提示，告知`Test Run`会清空现存的所有数据，即之前`Test Run`时采集的数据。
+
+![eb_testrun_1_confrim](/assets/images/eb_testrun_1_confrim.png)
+
+在这里强调一下，`Test Run`仅仅适用于试运行程序，**不能用于正式的数据采集**。
+
+之后会和正常运行程序一样，出现第二个提示窗口，输入`.edf`文件的名称。
+
+![eb_testrun_creat_edf](/assets/images/eb_testrun_creat_edf.png)
+
+然后是最后一个提示框，告知`Test Run`模式下部分眼动相关的功能可能会失效。
+
+![eb_testrun_2_confrim](/assets/images/eb_testrun_2_confrim.png)
+
+整个过程如下图所示（可能加载缓慢）：
+
+![eb_testrun](/assets/images/eb_testrun.gif)
 
 ---
 
 # 3. Datasource与引用
 
-## 3.1 添加Datasource
+## 3.1 建立Datasource
 
 ## 3.2 对刺激材料设置引用
 
+## 3.3 再次Test Run
+
+---
+
+# 4. 添加Message
 
 ---
 
