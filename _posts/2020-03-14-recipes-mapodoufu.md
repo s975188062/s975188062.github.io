@@ -46,6 +46,11 @@ comments: true
 
 以上。
 
-{% figure caption %}
-![icc](/assets/images/icon.png)
-{% endfigure %}
+{% capture fig_img %}
+![icco]({{ '/assets/images/icon.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Photo from Unsplash.</figcaption>
+</figure>
