@@ -1,5 +1,7 @@
 ---
 title: "麻婆豆腐"
+image: 
+  path: /assets/images/icon.png
 categories:
   - Recipe
 toc: true # 右侧页内导航
@@ -45,12 +47,3 @@ comments: true
 勾芡很重要，目的是将酱料挂在豆腐上，这样才好吃。
 
 以上。
-
-{% capture fig_img %}
-![icco]({{ '/assets/images/icon.png' | relative_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
-</figure>
