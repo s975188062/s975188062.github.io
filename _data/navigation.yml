@@ -30,7 +30,7 @@ EB:
       - title: "Trial层"
         url: /eyelink/Trial_Level/
       - title: "Recording层"
-        url: /editing/
+        url: /eyelink/Recording_Level/
       - title: "随机设置"
         url: /editing/
       - title: "计算反应时和正确率"
