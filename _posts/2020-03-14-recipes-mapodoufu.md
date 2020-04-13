@@ -45,3 +45,7 @@ comments: true
 勾芡很重要，目的是将酱料挂在豆腐上，这样才好吃。
 
 以上。
+
+{% figure caption %}
+![icc](/assets/images/icon.png)
+{% endfigure %}
