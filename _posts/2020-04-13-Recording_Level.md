@@ -8,6 +8,7 @@ tags:
   - 引用
   - Test Run
   - Message
+  - Sequence
 toc: true
 comments: true
 author_profile: false
