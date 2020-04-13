@@ -1,6 +1,7 @@
 ---
 title: "麻婆豆腐"
-feature: /assets/images/icon.png
+header:
+  overlay_image: /assets/images/background.png
 categories:
   - Recipe
 toc: true # 右侧页内导航
