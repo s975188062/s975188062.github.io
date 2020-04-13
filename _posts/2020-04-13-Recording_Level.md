@@ -1,5 +1,6 @@
 ---
 title: "Recording层"
+share: true
 categories:
   - Eyelink
 tags:
