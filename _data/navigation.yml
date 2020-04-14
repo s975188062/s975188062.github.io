@@ -66,8 +66,10 @@ EB:
   - title: "Eyelink指北的其他部分"
     children:    
     - title: "Data Viewer"
-      url: /editing/
+      url: /content/#3-data-viewer
     - title: "主试机操作"
-      url: /editing/
+      url: /content/#2-主试机及操作
     - title: "3rd-Party Tools"
-      url: /editing/
+      url: /content/#4-third-party-programing-tools
+    - title: "Weblink"
+      url: /content/#5-weblink
