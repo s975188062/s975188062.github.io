@@ -1,5 +1,7 @@
 ---
 title: "麻婆豆腐"
+header:
+  overlay_image: recipe-mapodoufu_header.jpg
 categories:
   - Recipe
 toc: true # 右侧页内导航
