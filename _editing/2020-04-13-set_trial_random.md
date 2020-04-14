@@ -1,5 +1,6 @@
 ---
 title: "设置随机"
+excerpt: "EB Basic系列的随机设置，主要涉及试次随机、实验内分组（Block）和分割实验等。"
 categories:
   - Eyelink
 tags:
@@ -28,6 +29,6 @@ sidebar:
 
 ## 2.2 分割Block
 
-## 2.3 分割程序
+## 2.3 分割实验
 
 # 
