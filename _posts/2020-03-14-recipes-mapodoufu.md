@@ -8,7 +8,8 @@ header:
   overlay_filter: 0.5
 categories:
   - Recipe
-toc: true # 右侧页内导航
+classes: wide
+toc: false # 右侧页内导航
 comments: true
 ---
 
