@@ -1,5 +1,6 @@
 ---
 title: "Block层"
+excerpt: "EB Basic系列的Block层设置方法，主要涉及Camera参数设置等。"
 categories:
   - Eyelink
 tags:

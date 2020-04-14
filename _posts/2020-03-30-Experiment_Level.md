@@ -1,5 +1,6 @@
 ---
 title: "Experiment层"
+excerpt: "EB Basic系列的Experiment层设置方法，主要涉及Sequence概念、显示内容、设置时间和键盘触发等内容。"
 categories:
   - Eyelink
 tags:

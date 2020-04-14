@@ -1,5 +1,6 @@
 ---
 title: "Trial层"
+excerpt: "EB Basic系列的Trial层设置方法，涉及到PrepareSequence、DriftCorrection和Sequence等。"
 categories:
   - Eyelink
 tags:

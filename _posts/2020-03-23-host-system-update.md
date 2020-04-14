@@ -1,5 +1,6 @@
 ---
 title: "主试机系统更新教程"
+excerpt: "主要讲述Eyelink 1000和Eyelink 1000Plus的主试机升级方法，Eyelink II等头戴式眼动仪不包含在内。"
 categories:
   - Eyelink
 tags:

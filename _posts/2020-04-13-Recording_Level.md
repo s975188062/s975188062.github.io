@@ -1,6 +1,6 @@
 ---
 title: "Recording层"
-excerpt: "EB Basic系列的Recording层设置方法，设计到Datasource、引用/Reference、TestRun和Message等概念的用法。"
+excerpt: "EB Basic系列的Recording层设置方法，涉及建立Datasource、设置引用/Reference、试运行/TestRun和添加Message等。"
 categories:
   - Eyelink
 tags:

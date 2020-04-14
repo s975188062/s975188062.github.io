@@ -1,5 +1,6 @@
 ---
 title: "编程前的实验设计准备"
+excerpt: "EB Basic系列的前序文章，提示开始变成之前需要做哪些准备。"
 categories:
   - Eyelink
 tags:
