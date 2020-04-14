@@ -65,10 +65,10 @@ EB:
         url: "http://charlie-techblog.com/eyelink/Drift/"
   - title: "Eyelink指北的其他部分"
     children:    
-    - title: "Data Viewer"
-      url: /content/#3-data-viewer
     - title: "主试机操作"
       url: /content/#2-主试机及操作
+    - title: "Data Viewer"
+      url: /content/#3-data-viewer
     - title: "3rd-Party Tools"
       url: /content/#4-third-party-programing-tools
     - title: "Weblink"
