@@ -4,6 +4,7 @@ excerpt: "快手下饭，即便是家庭聚餐也拿的出手的一道永远都�
 read_time: false
 header:
   overlay_image: /assets/images/recipe-mapodoufu_header.jpg
+  og_image: /assets/images/icon.png
   overlay_filter: 0.5
 categories:
   - Recipe
