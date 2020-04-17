@@ -3,7 +3,7 @@ title: "设置随机与Block分割"
 excerpt: "EB Basic系列的随机设置，主要涉及试次随机、实验内分组（Block）和分割实验等。"
 read_time: false
 header:
-  overlay_image: /assets/images/eb_spliting_column_runing_window.png
+  overlay_image: /assets/images/eb_rand_header.png
   overlay_filter: 0.5
   teaser: /assets/images/eb_spliting_column_runing_window.png
 categories:
@@ -22,7 +22,7 @@ sidebar:
 
 ---
 
-# 1 为什么要设置随机
+# 1. 为什么要设置随机
 
 通过随机或者拉丁方等方法，可以避免因试次运行顺序引入的不可控的变量。设置随机的理论可以很简单，也可以非常复杂。这里不是实验设计的教程，因此这部分暂且略过。
 
