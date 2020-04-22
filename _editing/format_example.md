@@ -1,13 +1,21 @@
 ---
-title: "麻婆豆腐"
-excerpt: "快手下饭，即便是家庭聚餐也拿的出手，一道永远都不会错的菜。"
+title: "设置随机与Block分割"
+excerpt: "EB Basic系列的随机设置，主要涉及试次随机、实验内分组（Block）和分割实验等。"
 read_time: false
 header:
-  overlay_image: /assets/images/recipe-mapodoufu_header.jpg
+  overlay_image: /assets/images/eb_rand_header.png
   overlay_filter: 0.5
+  teaser: /assets/images/eb_spliting_column_runing_window.png
 categories:
-  - Recipe
-classes: wide
-toc: false # 右侧页内导航
+  - Eyelink
+tags:
+  - Experiment Builder
+  - Datasource
+  - Randomization
+toc: true
 comments: true
+author_profile: false
+sidebar:
+  title: "目录"
+  nav: EB
 ---
