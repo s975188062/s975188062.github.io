@@ -38,7 +38,7 @@ sidebar:
 
 ## 1.2 计算Text Page阅读用时
 
-
+首先，我们将
 
 ## 1.3 计算Question反应时
 
