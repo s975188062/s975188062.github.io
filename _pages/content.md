@@ -32,8 +32,8 @@ toc: true
 * [Trial层](/eyelink/Trial_Level/)（PrepareSequence和DriftCorrection）
 * [Recording层](/eyelink/Recording_Level/)（Datasource、引用和Test Run）
 * [设置随机](/eyelink/set_trial_random/)（Datasource）
-* 计算反应时和正确率（Variable、UpdateAttribute和Conditional）
-* 记录行为信息（ResultFile和AddToResultFile）
+* [计算反应时和正确率](/eyelink/calcuate_rt_n_acc/#1-计算反应时)（Variable、UpdateAttribute和Conditional）
+* [记录行为信息](/eyelink/calcuate_rt_n_acc/#23-保存到result-file)（ResultFile和AddToResultFile）
 * 实验的保存、编译、压缩与迁移
 
 ## 1.2 Master
