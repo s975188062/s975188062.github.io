@@ -1,6 +1,6 @@
 ---
 title: "计算反应时和正确率"
-excerpt: "EB Basic系列的行为信息记录，主要涉及Variable、Update Attribute和Conditional三个控件的用法。"
+excerpt: "EB Basic系列的行为信息记录，主要涉及Variable、Update Attribute、Conditional、ResultsFile和AddToResultsFile五个控件的用法。"
 read_time: false
 header:
   overlay_image: /assets/images/eb_calcuate_rt_n_acc_header.png
