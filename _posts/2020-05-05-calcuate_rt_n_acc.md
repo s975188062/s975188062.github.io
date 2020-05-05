@@ -1,5 +1,5 @@
 ---
-title: "计算反应时和正确率"
+title: "反应时和正确率的计算与记录"
 excerpt: "EB Basic系列的行为信息记录，主要涉及Variable、Update Attribute、Conditional、ResultsFile和AddToResultsFile五个控件的用法。"
 read_time: false
 header:
