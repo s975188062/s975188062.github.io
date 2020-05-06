@@ -160,4 +160,8 @@ sidebar:
 
 ---
 
+`Test Run`一下试试效果吧！
+
+![eb_show_test_run](/assets/images/eb_show_test_run.png)
+
 以上。
