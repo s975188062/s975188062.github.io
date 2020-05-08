@@ -38,7 +38,7 @@ EB:
       - title: "行为信息记录"
         url: /eyelink/calcuate_rt_n_acc/#23-保存到result-file
       - title: "实验的保存、编译、压缩与迁移"
-        url: /editing/
+        url: /eyelink/exp_package_save_n_transfer/
   - title: "EB Master"
     children:
       - title: "播放声音材料"

@@ -34,7 +34,7 @@ toc: true
 * [设置随机](/eyelink/set_trial_random/)（Datasource）
 * [计算反应时和正确率](/eyelink/calcuate_rt_n_acc/#1-计算反应时)（Variable、UpdateAttribute和Conditional）
 * [记录行为信息](/eyelink/calcuate_rt_n_acc/#23-保存到result-file)（ResultFile和AddToResultFile）
-* 实验的保存、编译、压缩与迁移
+* [实验的保存、编译、压缩与迁移](/eyelink/exp_package_save_n_transfer/)
 
 ## 1.2 Master
 
