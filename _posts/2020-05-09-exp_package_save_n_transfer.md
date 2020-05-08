@@ -51,6 +51,30 @@ EB软件不会自动保存实验，因此我们要养成良好的保存习惯。
 
 # 3. 实验程序打包与迁移
 
->无数老师和同学在想我求助的时候，都直接把程序打包成了普通的压缩包，
+> “无数老师和同学在向我求助的时候，都直接把程序打包成了普通的压缩包发给我。虽然绝大多数时候我都可以正常打开，但其实这是不规范的。”
+
+Eyelink有自己的`.ebz`格式，全称“**E**xperiment **B**uilder **Z**ip”。这是一种压缩率特别高的压缩格式，以我们在前面几章编写的实验为例，整个实验文件夹的大小为401Kb，压缩后仅34Kb，压缩率高达90%。
+
+除此之外，这种EB自带的压缩方式可以兼顾不同电脑软件环境和系统环境的变化。例如在Windows上面编写的实验直接放到MacOS上面运行就很容易报错，如果使用这种Package的方法就完全不需要担心兼容性的问题。
+
+首先我们点击工具栏中的`Package`按钮。
+
+![eb_show_package](/assets/images/eb_show_package.png)
+
+在随后出现的窗口中输入保存的`.ebz`压缩包的文件名和储存路径，点击`OK`即可。
+
+![eb_package_window](/assets/images/eb_package_window.png)
+
+如图所示我解压到了桌面：
+
+![eb_show_packaged_ebz](/assets/images/eb_show_packaged_ebz.png)
+
+双击即可再次打开次压缩包，输入解压的路径和新的Project名称即可。默认在相同路径下生成相同名字的Project。
+
+![eb_unpack_window](/assets/images/eb_unpack_window.png)
+
+点击OK，解压完毕后将自动打开实验。
 
 ---
+
+以上。
