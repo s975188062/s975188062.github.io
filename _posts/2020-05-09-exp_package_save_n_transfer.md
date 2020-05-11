@@ -65,7 +65,7 @@ Eyelink有自己的`.ebz`格式，全称“**E**xperiment **B**uilder **Z**ip”
 
 ![eb_package_window](/assets/images/eb_package_window.png)
 
-如图所示我解压到了桌面：
+如图所示我压缩到了桌面：
 
 <figure class="align-center">
   <img src="/assets/images/eb_show_packaged_ebz.png" alt="">
