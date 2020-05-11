@@ -67,7 +67,7 @@ Eyelink有自己的`.ebz`格式，全称“**E**xperiment **B**uilder **Z**ip”
 
 如图所示我解压到了桌面：
 
-![eb_show_packaged_ebz](/assets/images/eb_show_packaged_ebz.png)
+![eb_show_packaged_ebz](/assets/images/eb_show_packaged_ebz.png){: .align-center}
 
 双击即可再次打开次压缩包，输入解压的路径和新的Project名称即可。默认在相同路径下生成相同名字的Project。
 
