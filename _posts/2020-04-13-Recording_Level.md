@@ -55,10 +55,7 @@ sidebar:
 * 关闭`MultiLine_Text_Resource`窗口完成编辑。
 
 **⚠️注意⚠️：**我们需要额外设置`Use For Host Display`属性为`True`，以配合`Trial层`中的`Prepare Sequence`的`Draw to Eyelink Host`设置[（传送门）](/eyelink/Trial_Level/#12-将实验材料等信息发送到主试机上以便监控实验)。
-{: .notice--danger}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
-{: .notice--danger}
+{: .notice--warning}
 
 ## 1.2 Keyboard_of_TP
 
@@ -211,6 +208,7 @@ sidebar:
 ![eb_ds_3](/assets/images/eb_ds_3.png)
 
 > **⚠️注意⚠️**：总的行数需要和`Datasource`的实际行数完全一致，不能留有空行，否则会报错。
+{: .notice--warning}
 
 ### 3.1.3 添加内容
 
@@ -219,6 +217,7 @@ sidebar:
 ![eb_ds_paste](/assets/images/eb_ds_paste.gif)
 
 > **⚠️注意⚠️**：下图中`绿框`和`红框`中的数字虽然一样，但是`绿框`仅代表行的编号。而`红框`中的数字，即`Trial_ID`的值，则是给每个条件的试次一个单独的编号，用作后面的数据分析与统计。
+{: .notice--warning}
 
 ## 3.2 对刺激材料设置引用
 
