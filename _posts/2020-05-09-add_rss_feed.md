@@ -16,6 +16,7 @@ tags:
 toc: false
 comments: false
 author_profile: true
+classes: wide
 ---
 
 ---
