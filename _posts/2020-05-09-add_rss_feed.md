@@ -26,7 +26,7 @@ author_profile: true
 
 ![feed_blogtrottr_shotcut](/assets/images/feed_blogtrottr_shotcut.png)
 
-输入要订阅的网站和自己的邮箱，点击`Feed Me`。
+输入要订阅的网站“”和自己的邮箱，点击`Feed Me`。
 
 ![feed_set_feed_me](/assets/images/feed_set_feed_me.png)
 
