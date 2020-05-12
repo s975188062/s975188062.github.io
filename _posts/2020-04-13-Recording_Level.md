@@ -34,10 +34,10 @@ sidebar:
 
 本阶段中用到的所有控件其实已经在之前的部分介绍过了。我在这里会做一个最基本的叙述作为复习。
 
-<div class="notice">{: .notice--info}
+<div class="notice">
   <h4>⚠️注意⚠️：</h4>
   <p>A basic message.</p>
-</div>
+</div>{: .notice--info}
 
 ## 1.1 Display_TextPage
 
