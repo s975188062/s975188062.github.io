@@ -37,7 +37,7 @@ sidebar:
 <div class="notice">
   <h4>⚠️注意⚠️：</h4>
   <p>A basic message.</p>
-</div>{: .notice--info}
+</div>{: .notice--danger}
 
 ## 1.1 Display_TextPage
 
