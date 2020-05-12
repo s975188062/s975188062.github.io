@@ -54,10 +54,11 @@ sidebar:
 
 * 关闭`MultiLine_Text_Resource`窗口完成编辑。
 
-<p>
-⚠️注意⚠️：
-我们需要额外设置`Use For Host Display`属性为`True`，以配合`Trial层`中的`Prepare Sequence`的`Draw to Eyelink Host`设置[（传送门）](/eyelink/Trial_Level/#12-将实验材料等信息发送到主试机上以便监控实验)。
-</p>{: .notice--warning}
+**⚠️注意⚠️：**我们需要额外设置`Use For Host Display`属性为`True`，以配合`Trial层`中的`Prepare Sequence`的`Draw to Eyelink Host`设置[（传送门）](/eyelink/Trial_Level/#12-将实验材料等信息发送到主试机上以便监控实验)。
+{: .notice--danger}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
+{: .notice--danger}
 
 ## 1.2 Keyboard_of_TP
 
