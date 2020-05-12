@@ -32,9 +32,7 @@ sidebar:
 
 # 1. 构建单个试次结构
 
-<p>
 本阶段中用到的所有控件其实已经在之前的部分介绍过了。我在这里会做一个最基本的叙述作为复习。
-</p>{: .notice}
 
 ## 1.1 Display_TextPage
 
@@ -56,7 +54,9 @@ sidebar:
 
 * 关闭`MultiLine_Text_Resource`窗口完成编辑。
 
-> **⚠️注意⚠️**：我们需要额外设置`Use For Host Display`属性为`True`，以配合`Trial层`中的`Prepare Sequence`的`Draw to Eyelink Host`设置[（传送门）](/eyelink/Trial_Level/#12-将实验材料等信息发送到主试机上以便监控实验)。
+<p>
+**⚠️注意⚠️**：我们需要额外设置`Use For Host Display`属性为`True`，以配合`Trial层`中的`Prepare Sequence`的`Draw to Eyelink Host`设置[（传送门）](/eyelink/Trial_Level/#12-将实验材料等信息发送到主试机上以便监控实验)。
+</p>{: .notice--info}
 
 ## 1.2 Keyboard_of_TP
 
