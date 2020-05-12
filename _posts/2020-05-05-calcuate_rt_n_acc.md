@@ -96,7 +96,8 @@ sidebar:
 
 ![eb_calculate_rt_of_TP_value](/assets/images/eb_calculate_rt_of_TP_value.gif)
 
->**⚠️注意⚠️**：所有的Trigger都有两个Time，第一个Time是Trigger开始等待被触发的时间，第二个在Trigger Data下面的Time才是被触发时的时间。大多数的时候我们都是使用Trigger Data里面的Time做计算。
+**⚠️注意⚠️**：所有的Trigger都有两个Time，第一个Time是Trigger开始等待被触发的时间，第二个在Trigger Data下面的Time才是被触发时的时间。大多数的时候我们都是使用Trigger Data里面的Time做计算。
+{: .notice--warning}
 
 ## 1.3 计算Question反应时
 

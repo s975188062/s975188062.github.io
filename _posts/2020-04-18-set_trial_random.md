@@ -91,8 +91,9 @@ sidebar:
 >`Split by`属性默认是空，意为一次性执行完全部4个`Trial`。我们的需求是将4个Trial分成两次执行，因此将`Split by`属性设置为“[1, 3]”。
 >
 >![eb_set_trial_split](/assets/images/eb_set_trial_split.png)
->
->**⚠️注意⚠️**：“[1, 3]”中的逗号必须是英文逗号，不能是中文。
+
+**⚠️注意⚠️**：“[1, 3]”中的逗号必须是英文逗号，不能是中文。
+{: .notice--warning}
 
 * 设置`Datasource`分割
 

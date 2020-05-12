@@ -45,7 +45,8 @@ EB软件不会自动保存实验，因此我们要养成良好的保存习惯。
 
 ![eb_deployed_folder](/assets/images/eb_deployed_folder.png)
 
-> **⚠️注意⚠️**：在`Deploy`之前务必取消`Dummy Mode`的勾选，否则编译出来的实验程序也会是Dummy Mode的实验程序，无法链接眼动仪。
+**⚠️注意⚠️**：在`Deploy`之前务必取消`Dummy Mode`的勾选，否则编译出来的实验程序也会是Dummy Mode的实验程序，无法链接眼动仪。
+{: .notice--warning}
 
 ---
 
