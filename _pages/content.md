@@ -12,7 +12,7 @@ toc: true
 >
 >如果有想要看到的内容，可以通过[首页表单](/)或者邮件与我联系：Charlie-TechBlog@outlook.com
 >
->您也可以[订阅我的博客](/blog%20usage/add_rss_feed/)，在我更新文章时会在第一时间通知您。
+>欢迎[订阅我的博客](/blog%20usage/add_rss_feed/)，在我更新文章时会在第一时间通知您。
 
 # 0. Intro
 
