@@ -69,3 +69,20 @@ EB:
       url: /content/#4-third-party-programing-tools
     - title: "Weblink"
       url: /content/#5-weblink
+
+
+host:
+  - title: "点此获取“Eyelink指北”完整目录"
+    url: /content/
+  - title: "HOST Basic"
+    children:
+      - title: "实验室环境配置"
+        url: /eyelink/LabSetup/
+      - title: "数据采集操作"
+        url: /editing/
+  - title: "HOST Master"
+    children:
+      - title: "主试机系统更新"
+        url: /eyelink/host-system-update/
+      - title: "FAQs"
+        url: /editing/
