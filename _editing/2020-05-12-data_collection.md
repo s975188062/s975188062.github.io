@@ -1,5 +1,5 @@
 ---
-title: "数据采集操作"
+title: "眼动仪数据采集操作 - Eyelink 1000Plus"
 excerpt: "主试机及操作的Basic系列，主要涉及数据采集过程中规范操作和执行标准。"
 read_time: false
 header:
@@ -17,7 +17,7 @@ comments: true
 author_profile: false
 sidebar:
   title: "目录"
-  nav: EB
+  nav: host
 ---
 
 ---
