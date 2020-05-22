@@ -48,7 +48,7 @@ toc: true
 * 真随机（Variable和UpdateAttribute）
 * 绘制兴趣区InterestArea（DisplayScreen）
 
-## 1.3 Tips
+## 1.3 单控件精讲
 
 * [DriftCorrection Action](/eyelink/Drift/)
 
