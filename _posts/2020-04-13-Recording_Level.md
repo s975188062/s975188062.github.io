@@ -77,7 +77,7 @@ sidebar:
 
 ## 1.4 Keyboard_of_Question
 
-* 添加一个新的`Keyboard Trigger`，连接箭头，修改`Label`为“Keyboard_of_TP”。
+* 添加一个新的`Keyboard Trigger`，连接箭头，修改`Label`为“Keyboard_of_Question”。
 
 * 此处我们的设计是让被试判断问题的对错，如果问题是对的，则按`f`键，反之则按`j`键。因此我们设置`Keyboard_of_Question`的触发按键为`f`或`j`。
 

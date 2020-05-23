@@ -77,7 +77,7 @@ sidebar:
 
 ![eb_Choosed_n_notChoosed](/assets/images/eb_Choosed_n_notChoosed.png)
 
-选中`Display_Screen`后，到`Prperties面板`中修改`Label`属性，更改为“Greeting”。如下图所示：
+选中`Display_Screen`后，到`Properties面板`中修改`Label`属性，更改为“Greeting”。如下图所示：
 
 ![eb_edit_node_labe](/assets/images/eb_edit_node_label.gif)
 
@@ -211,7 +211,7 @@ sidebar:
 
 ## 4.1 添加单行文本
 
-首先还是从`控件库`中拖拽一个`DisplayScreen Action`至工作区，链接箭头，修改`Label`属性为`Greeting`。双击打开`Goodbye`进入`Screen Builder`。
+首先还是从`控件库`中拖拽一个`DisplayScreen Action`至工作区，链接箭头，修改`Label`属性为`Goodbye`。双击打开`Goodbye`进入`Screen Builder`。
 
 ![eb_add_goodbye](/assets/images/eb_add_goodbye.gif)
 
@@ -265,7 +265,7 @@ sidebar:
 
 # 6. 自动排版
 
-截止目前，`Experiment层`的编写就完成了。工作区看起来很乱，我们可以通过一个按钮来执行快速没话排版——`Arrange Layout`。我们可以在`Experiment Builder`的工具栏中找到他。
+截止目前，`Experiment层`的编写就完成了。工作区看起来很乱，我们可以通过一个按钮来执行快速美化排版——`Arrange Layout`。我们可以在`Experiment Builder`的工具栏中找到他。
 
 ![eb_toolbar_arrange_layout](/assets/images/eb_toolbar_arrange_layout.png)
 

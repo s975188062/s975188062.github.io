@@ -52,7 +52,7 @@ sidebar:
 
 细心的同学可能已经发现了，当`Recoding层`中有多个`DisplayScreen Action`时，只能在其中选择一个投影到主试机上进行监测。
 
-那么此处我们在`PrepareSequence Action`控件上需要进行的设置只有将`Draw to Eyelink Host`设置成`Image`即可。
+那么此处我们在`PrepareSequence Action`控件上需要进行的设置只要将`Draw to Eyelink Host`设置成`Image`即可。
 
 ![eb_set_prepare_sequence](/assets/images/eb_set_prepare_sequence.png)
 

@@ -76,6 +76,10 @@ sidebar:
 
 
 
+![host_display_show_globalview](/assets/images/host_display_show_globalview.png)
+
+
+
 ## 4.2 调焦
 
 ## 4.3 调节阈值
