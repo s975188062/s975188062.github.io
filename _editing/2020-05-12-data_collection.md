@@ -68,11 +68,20 @@ sidebar:
 
 需要注意的是，整个Camera Setup环节的目的是：让眼动仪可以**持续**、**稳定**地追踪到眼睛。
 
-继续实验到`CameraSetup`环节，此时屏幕应是完全空白的，不会显示任何内容。
+继续实验到`CameraSetup`环节，此时屏幕是空的，不会显示任何内容。
 
 ## 4.1 找眼镜
 
 在主试机或者被试机键盘上按`Enter`，此时被试机屏幕上会出现如下图所示的图像：
+
+![host_display_PC_show_zoom_view](/assets/images/host_display_PC_show_zoom_view.png)
+
+此时在被试机显示器上显示的是`Zoom View`。对应主试机`CameraSetup`界面下部眼睛的小窗口。
+
+![host_pc_camera_setup_screen_show_zoom_view](/assets/images/host_pc_camera_setup_screen_show_zoom_view.png)
+
+我们可以注意到左侧的小窗口中提示“Left Eye Image Not Available”。这是因为我们目前只设置了追中右眼。
+
 
 
 
