@@ -82,12 +82,45 @@ sidebar:
 
 我们可以注意到左侧的小窗口中提示“Left Eye Image Not Available”。这是因为我们目前只设置了追中右眼。
 
+**如何在选择追踪哪一只眼睛呢？** 大多数研究中，研究者选择统一追踪右眼。我们已知双眼的运动是共轭的，两只眼睛的注视位置总会非常接近。因此除一些双眼信息对抗的范式外，没有采集双眼的必要。而我们只要左右眼是分化出一只优势眼和一只非优势眼的，理论上来讲采集优势眼的数据会更为准确。但是实际操作层面来看，优势眼的判定本身具有很多争议，且右眼为优势眼的人多于左眼为优势眼的人。综上所述，建议统一采集右眼即可，仅供参考。
+{: .notice--info}
 
+在主试机上我们将相机的整个视野称为`Global View`，在`Global View`中可以看到小绿框，小绿框中的图像会显示到下方的`Zoom View`，即眼睛的部分。
 
+![host_PC_zoom_view_in_golbal_view](/assets/images/host_PC_zoom_view_in_golbal_view.png)
+
+在被试机上按`Enter`显示`Zoom View`后，可以继续按⬅️或➡️在`Global View`和`Zoom View`间随意切换。
+
+首先，让我们从`Global View`开始。
 
 ![host_display_show_globalview](/assets/images/host_display_show_globalview.png)
 
+如上图所示，在`Global View`下，我们可以看到相机的整个视野。此时，我们需要将眼睛放到相机视野的中央。或者您也可以这样理解，我们要**调整相机的角度，将相机视野的中央对准要追踪的眼睛**。
 
+上图所示的情况是非常理想的，被试的眼睛已经在相机视野的中央了。如果实际情况不尽理想，则首先旋松下图所示的球形关节，随后按住相机底座，调整上半部分相机和发光器的采集角度。注意调整过程中不要遮挡相机和发光器。
+
+![host_adjust_tracker_angle](/assets/images/host_adjust_tracker_angle.png)
+
+角度调整完成后，重新拧紧固定球形关节即可。
+
+如果在整个过程中，相机的视野非常模糊，无法看清任何东西，那么恭喜你，上一个做实验的同学调了个皮。他把镜头胡乱拧了一顿，导致镜头失焦。不过不需要担心，您只需调整一下镜头，即可让眼动仪看清，此处仅粗略看清即可，这个阶段的目的是让被试的眼睛落在相机视野的中央。
+
+![host_how_to_adjust_focus](/assets/images/host_how_to_adjust_focus.png)
+
+调焦过程中您可以看到效果如下：
+
+![host_adjust_focurs_result](/assets/images/host_adjust_focurs_result.gif)
+
+将眼睛调整到相机视野中央后，我们来选择要追踪的眼睛。我们需要到主试机这边来执行这部分操作。
+
+![host_select_eye_to_track](/assets/images/host_select_eye_to_track.png)
+
+选定左/右眼后，还需要在`Global View`的窗口中点击一下对应的眼睛，确保`Search Limit`的红圈完全包括眼睛。
+
+
+
+当前眼动仪的工作模式为`Monocular`，因此我们现在只能追踪一只眼睛。如需追踪双眼，则需要在`SetOption`中更改为`Binocular`即可。
+{: .notice--info}
 
 ## 4.2 调焦
 
