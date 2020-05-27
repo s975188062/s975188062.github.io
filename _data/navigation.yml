@@ -79,7 +79,7 @@ host:
       - title: "实验室环境配置"
         url: /eyelink/LabSetup/
       - title: "数据采集操作"
-        url: /editing/
+        url: /eyelink/data_collection/
   - title: "HOST Master"
     children:
       - title: "主试机系统更新"

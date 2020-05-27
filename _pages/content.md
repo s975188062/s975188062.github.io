@@ -59,7 +59,7 @@ toc: true
 ## 2.1 Basic
 
 * [实验室环境配置](/eyelink/LabSetup/)
-* 数据采集操作
+* [数据采集操作](/eyelink/data_collection/)
 * 常见问题汇总
 
 ## 2.2 Master
