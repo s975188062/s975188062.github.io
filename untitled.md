@@ -1,0 +1,307 @@
+# 认识Experiment Builder
+
+> 随着我对EB软件了解的深入，我就越是能感受到作者对这个软件所倾注的心血！——Charlie
+
+> `Experiment Builder`软件在首次安装时，会附带时长为`30天`的`Demo License`。即30天之内是可以不用`加密狗`就可以打开`Experiment Builder`软件的。
+>
+> 但需要注意的是，`Demo License`下编写的实验程序和`加密狗`的正式授权存在文件不互通的问题。换句话说，在`Demo License`下编写的实验程序无法在查了加密狗的条件下打开。而且在`Demo License`下运行的程序会有一个去不掉的红色水印，不能用于正式实验。
+
+用户手册下载链接：
+
+* v2.2.245\(299\)：[Github](https://github.com/s975188062/s975188062.github.io/raw/master/_source/F_Manuals/ExperimentBuilder%20User%20Manual.pdf)，[百度网盘\(fezc\)](https://pan.baidu.com/s/1NkjeYMToELh51yqPyvjh3g)
+
+## 1. 软件界面 <a id="1-&#x8F6F;&#x4EF6;&#x754C;&#x9762;"></a>
+
+Experiment Builder使用的是Windows软件的典型构架，由菜单栏、工具栏、工作区和一些辅助面板构成。下面我们来依次介绍：
+
+### 1.1 菜单栏 <a id="11-&#x83DC;&#x5355;&#x680F;"></a>
+
+```text
+Experiment Builder 菜单栏
+├── File                    
+|  ├── New                      # 新建一个新的Project
+|  ├── Open                     # 打开一个现有的Project
+|  ├── Recent                   # 最近打开过的Project
+|  ├── Examples                 # EB自带的模板
+|  ├── Save                     # 保存当前Project
+|  ├── Save As                  # 将当前Project另存
+|  ├── Unlock Project           # 解锁当前Project
+|  ├── Package                  # 将当前Project压缩为.ebz文件
+|  ├── Unpack                   # 解压缩一个.ebz文件
+|  ├── Set Restore Point        # 设置回溯点
+|  ├── Restore                  # 回溯当前Project
+|  └── Exit                     # 退出EB
+├── Edit
+|  ├── Undo                     # 撤销
+|  ├── Redo                     # 重做
+|  ├── Cut                      # 剪切
+|  ├── Copy                     # 复制
+|  ├── Paste                    # 粘贴
+|  ├── Paste Multiple           # 粘贴多个
+|  ├── Delete                   # 删除
+|  ├── Refresh Custom Class     # 刷新重置Custom Class
+|  ├── Preferences              # 首选项
+|  ├── Library Manager          # 素材库管理器
+|  ├── Reference Manager        # 引用管理器
+|  ├── Node Groups              # 节点组
+|  └── Select All               # 全选
+├── View
+|  ├── Overview                 # 显示/隐藏Overview面板
+|  ├── Structure                # 显示/隐藏Structure面板
+|  ├── Properties               # 显示/隐藏Properties面板
+|  ├── Connections              # 显示/隐藏Connections面板
+|  ├── Navigator                # 显示/隐藏Navigator面板
+|  ├── Restore Default Views    # 显示/隐藏重置视图设置
+|  ├── Back                     # 上一个节点
+|  ├── Forward                  # 下一个节点
+|  ├── Zoom Selected            # 聚焦到选中的节点
+|  ├── Zoom In                  # 放大
+|  ├── Zoom Out                 # 缩小
+|  ├── Fit Content              # 铺满屏幕
+|  ├── Layout Options           # 排列设置
+|  ├── Arrange Layout           # 自动排列
+|  ├── Export Node              # 导出节点
+|  └── Import Node              # 导入节点
+├── Experiment
+|  ├── Clean                    # 清空当前Project
+|  ├── Build                    # 编译当前Project
+|  ├── Test Run                 # 编译并试运行当前Project
+|  └── Deploy                   # 编译并导出当前Project为可执行文件
+└── Help
+   ├── Contents                 # 电子版用户手册
+   ├── About                    # 关于
+   └── License                  # 许可证书
+```
+
+### 1.2 工具栏 <a id="12-&#x5DE5;&#x5177;&#x680F;"></a>
+
+工具栏的按钮基本都是菜单栏里面常用功能的快捷按钮，因此不做过多解释。
+
+但最后一个下拉菜单不是快捷按钮，是`Datasource`的快捷导航，这部分内容详见`Recording层`这篇文章。
+
+### 1.3 Overview面板 <a id="13-overview&#x9762;&#x677F;"></a>
+
+`Overview面板`实际上是工作区内`实验流程图`的一个缩略图，当`实验流程图`非常长时，方便我们快速导航到希望的位置。
+
+### 1.4 Structure面板 <a id="14-structure&#x9762;&#x677F;"></a>
+
+`Structure面板`从三个层次来解析实验的结构——`逻辑关系`、`控件`和`硬件`。这三个层次依次显示在`Structure面板`的左下角。
+
+* Experiment - 将实验的所有控件按照树状图的机构显示出来。
+* Components - 将实验中所用到的空间按类型归类后显示。
+* Device - 将实验中涉及到的硬件设备罗列出来。
+
+其中最值得一提的是`Device`中的`Eyelink`，这部分所指代的内容是眼动仪，我们可以在这里设置眼动仪的型号和工作模式。
+
+### 1.5 Properties面板 <a id="15-properties&#x9762;&#x677F;"></a>
+
+`Properties面板`顾名思义，这里显示的是特定对象的属性。
+
+当我们在`Experiment Builder`中选择任意一个对象时，该对象的属性都会显示在`Properties面板`中。
+
+### 1.6 Note面板 <a id="16-note&#x9762;&#x677F;"></a>
+
+和前面的`Properties面板`类似，`Note面板`里面显示的是选中对象的备注信息。
+
+### 1.7 工作区标签 <a id="17-&#x5DE5;&#x4F5C;&#x533A;&#x6807;&#x7B7E;"></a>
+
+`工作区标签`显示在整`工作区`的上方，提示了当前的工作区显示的是哪个对象的内容，并且允许用户在各个对象之间快速切换。
+
+### 1.8 控件库 <a id="18-&#x63A7;&#x4EF6;&#x5E93;"></a>
+
+控件库中是`Experiment Builder`中可以用来构建实验的全部功能控件。
+
+`Experiment Builder`将所有控件分为三类：`Action`、`Trigger`和`Other`。
+
+* Action - 命令主试机、被试机或者眼动仪执行某一个特定的命令。
+* Trigger - 控制Action的开始和结束。
+* Other - 除上述两种以外的辅助控件。
+
+详细列表如下：
+
+```text
+控件库
+├── Action                  
+|  ├── DisplayScreen                # 显示特定内容
+|  ├── DriftCorrection              # 漂移检查
+|  ├── CameraSetup                  # 执行相机校准
+|  ├── AddToLog                     # 将文本内容添加到运行日志中
+|  ├── SendEyelikMessage            # 将文本内容以Message的形式发送到.edf文件中
+|  ├── EyelinkCommand               # 将文本命令发送给主试机
+|  ├── AddToAccumulator             # 添加到累加器
+|  ├── PrepareSequence              # 准备下一个试次的刺激材料
+|  ├── Sequence                     # 序列
+|  ├── UpdateAttribute              # 更新属性
+|  ├── Play Sound                   # 播放声音
+|  ├── Play Sound Control           # 声音播放控制
+|  ├── Record Sound                 # 录制声音
+|  ├── Record Sound Control         # 声音录制控制
+|  ├── AddToResultFile              # 将特定变量添加到ResultFile中
+|  ├── SetTTL                       # 设置TTL设备针脚电平
+|  ├── Biometric TTL                # 控制被试机向其他设备发送TTL信号
+|  ├── serialPortWriteMessageTip    # 控制串口发送消息
+|  ├── Reset                        # 重置某一特定控件
+|  ├── Terminate                    # 终断实验
+|  ├── Recycle Data Line            # 挂起当前Datsouce数据行稍后执行
+|  └── Null action                  # 啥也不干
+├── Trigger
+|  ├── Timer                        # 计时器
+|  ├── InvisibleBoundry             # 当注视位置落入特定边界内触发
+|  ├── Conditional                  # 条件触发
+|  ├── EyeLinkButton                # Eyelink反应手柄触发
+|  ├── CedrusInput                  # Cedrus反应盒触发
+|  ├── Keyboard                     # 键盘触发
+|  ├── TTL                          # 接收到特定TTL信号的时候触发
+|  ├── triggerSerialPortMessageTip  # 穿口信号触发
+|  ├── Mouse                        # 鼠标点击触发
+|  ├── Fixation                     # 发生注视时触发
+|  ├── Saccade                      # 发生扫视时触发
+|  ├── Blink                        # 发生眨眼时触发
+|  ├── SampleVelocity               # 眼球运动达到特定速度时触发
+|  └── Voice Key                    # 采集到声音时触发
+└── Other
+   ├── Accumulator                  # 加法器
+   ├── Variable                     # 定义变量
+   └── ResultFile                   # 创建一个ResultFile
+```
+
+### 1.9 工作区 <a id="19-&#x5DE5;&#x4F5C;&#x533A;"></a>
+
+这一部分非常简单，`工作区`就是编辑实验的地方，具体内容和`1.7 工作区标签`对应。
+
+### 1.10 导航器 <a id="110-&#x5BFC;&#x822A;&#x5668;"></a>
+
+帮助我们快速了解当前工作区的上级结构。
+
+## 2. 查阅操作手册 <a id="2-&#x67E5;&#x9605;&#x64CD;&#x4F5C;&#x624B;&#x518C;"></a>
+
+> 遇事不决查Manual。——王治国
+
+关于`Experiment Builder`的全部问题，在`Manual`里面几乎都可以找到答案。
+
+在我学习软件的时候，曾经将英文手册翻译为中文。虽然后面没有再查阅过中文的操作手册，但是**英译汉的过程**给我带来了极大的技能提升。
+
+在我们安装好`Experiment Builder`时，`Manual`就已经被同步拷贝到我们的电脑上了。
+
+您可以通过一下两种方式打开用户手册：
+
+* 如上图所示，在`Experiment Builder`中打开。点击菜单栏“`Help` -&gt; `Content`”，或者直接按`F1`打开电子版操作手册。
+* 或者您也可以在开始菜单中找到`.pdf`格式的用户手册。如上图所示，依次点击“`开始` -&gt; `SR Research` -&gt; `ExperimentBuilder User Manual`”即可打开。
+
+## 3. 实验程序编写逻辑 <a id="3-&#x5B9E;&#x9A8C;&#x7A0B;&#x5E8F;&#x7F16;&#x5199;&#x903B;&#x8F91;"></a>
+
+### 3.1 基本流程图 <a id="31-&#x57FA;&#x672C;&#x6D41;&#x7A0B;&#x56FE;"></a>
+
+在介绍`Experiment Builder`时，我会说这是一个功能强大的**可视化**编程工具。
+
+提起编程，我们可能以为是下面这样的：
+
+```text
+def click_load_button():
+
+    global log_file_path
+
+    log_fp = filedialog.askopenfilename()
+
+    # 设置显示的路径内容
+    find_index = log_fp.count('/') - 3
+    count_num = 0
+    for i in range(0,len(log_fp)):
+        if log_fp[i] == '/':
+            count_num = count_num + 1
+            if count_num == find_index:
+                break
+    path_2_show = '...' + log_fp[i:len(log_fp)]
+    ttk.Label(monty3, text="             ").grid(column=4, row=0, columnspan=2, sticky='W')
+    ttk.Label(monty3, text=path_2_show).grid(column=4, row=0, columnspan=6, sticky='W')
+
+    # 获取文件的绝对路径
+    find_index = log_fp.count('/')
+    count_num = 0
+    for i in range(0,len(log_fp)):
+        if log_fp[i] == '/':
+            count_num = count_num + 1
+            if count_num == find_index:
+                break
+    log_file_path = log_fp[0:(i+1)]
+```
+
+上面这样就是代码编程，需要系统的学习才可以完成。
+
+好在EB用的并不是这样的方法，EB将常用的功能封装成了名为`控件`的黑盒，我们只需要在`Propreties面板`中设置相应控件的参数即可。无需担心控件内部的每一步是怎么工作的。
+
+下图就是EB编写程序的方式——**流程图**。
+
+在编写实验的过程中，我们将控件托放到工作区，以合适的逻辑关系链接起来，构成实验。
+
+在上图所示的例子中：
+
+* 实验进程从`START`开始
+* 然后第二行的`DISPLAY_SCREEN`工作，呈现我们事先设定好的刺激内容；
+* 刺激内容呈现完毕后，等待第三行中的`Trigger`被触发。我们可以看，第二行的`DISPLAY_SCREEN`同时链接了三个`Trigger`：`TIMER`、`EL_BUTTON`和`EL_KEYBOARD`。三个Trigger会同时等待触发信号，当三个当中的任意一个触发事件发生时，则根据箭头的连接继续进行实验。即运行`DISPLAY_BLANK`。
+
+> 我们可以总结一下上面几个控件实现的功能：
+>
+> 呈现刺激后，等待被试通过`Eyelink反应手柄`或者`键盘`进行行为反馈，接收到反馈信息后，清空显示的内容，呈现空屏幕。但是如果被试没有在规定的限制时间内给予反馈，则计时结束后直接呈现空屏。
+
+`Experiment Builder`就是通过这样的方式完成实验程序编写的。
+
+### 3.2 实验的典型结构 <a id="32-&#x5B9E;&#x9A8C;&#x7684;&#x5178;&#x578B;&#x7ED3;&#x6784;"></a>
+
+打开我们在本文第二节提到的操作手册，可以在“6.1 Hierarchical Organization of Experiment”中看到下图：
+
+一个典型的眼动实验就是分为这样四层的套娃结构。
+
+* **Experiment** - 代表整个实验，由`指导语`、`结束语`和一个或多个Block组成。
+* **Block** - 实验组。当我们由于一些特殊需求将整个实验拆分成多个小块进行时，每个小块就是一个`Block`。常见的拆分原因有：实验中途需要休息、设定几个试次为练习部分、特殊的实验设计等。单个`Block`由`Camera Setup`和多个`Trial`组成。
+* **Trial** - 试次，是实验的最小循环单位。包括从电脑读取呈现的材料、呈现刺激材料并记录眼动数据的一整个过程。
+* **Recording** - 真正记录眼动数据的部分。在这里面编写实验的刺激的内容和被试反馈等。
+
+> 关于Trial和Recording的关系，我任务有必要拿出来单独讲解一下。
+>
+> 我们假设一个**自定步速阅读**的实验，一共50个`Trial`，每个`Trial`内给被试看一个语篇，被试看完之后按`空格`出现下一篇。
+>
+> 从`Trial`的定义来看，整个实验的最小循环单位看似是“`呈现语篇` -&gt; `被试按键`”，实则不然。
+>
+> 从计算机层面来看，实验的最小循环单位是：“`加载一会要呈现的语篇` -&gt; `漂移矫正` -&gt; `呈现语篇` -&gt; `被试按键`”。
+>
+> 即“`呈现语篇` -&gt; `被试按键`”的过程仅仅是`Recording`。`Trial`要多出一些**计算机后台**的操作。
+
+那么，在`Experiment Builder`中编程就是按照自己的**实验设计**，依照**层级结构**，将不同的**实验控件**连接成**流程图**。
+
+## 4. 创建我的第一个实验 <a id="4-&#x521B;&#x5EFA;&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B9E;&#x9A8C;"></a>
+
+点击菜单栏“`File` -&gt; `New`”
+
+跳出新建窗口：
+
+四行设置从上到下依次是：
+
+* Project Name - 实验项目的名称。
+* Project Location - 保存的位置。
+* Templates - 创建实验使用的模板。如果选择`None`则创建一个空文件，如果选择`Eyelink_Template.ebz`则打开实验模板。
+* Eyelink Experiment - 是否是一个Eyelink的眼动实验。如果选`True`，则需要选择眼动仪的具体型号，`Current`为自动识别。
+
+点击`OK`则执行创建操作，此时会提示下图所示的窗口，告诉我们不要对实验文件夹内的文件执行新增或者删除的操作。
+
+这一点很重要，是`Experiment Builder`和`E-Prime`的一个很大的区别。
+
+点击`确定`后，我们的第一个实验就创建好了！
+
+## 5. 文件结构 <a id="5-&#x6587;&#x4EF6;&#x7ED3;&#x6784;"></a>
+
+创建好的实验存放在同名的文件夹中，以我的实验为例，我讲起储存在桌面的话，桌面就回增加一个名为“my\_first\_exp”的文件夹。文件夹内详细结构如下：
+
+```text
+├── my_first_exp                 
+|  ├── datasets                     # Datasource文件
+|  ├── library                      # 素材库，包括音频、图片等。
+|  ├── myfiles                      # 非程序运行相关的文件
+|  ├── results                      # 运行结果文件
+|  ├── graph.ebd                    # 实验程序
+|  ├── graph.ebd.bak                # 上一次保存的实验程序备份
+|  └── Preference.properties        # 偏好设置文件
+```
+
+以上。
+
