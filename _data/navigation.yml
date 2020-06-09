@@ -4,8 +4,8 @@ main:
     url: /
   - title: "Eyelink指北"
     url: /content/
-  - title: "私房食谱"
-    url: /recipe/
+  - title: "Paper研读"
+    url: /papers/
   - title: "三斤狗粮"
     url: /dogfood/
   - title: "文章分类"
