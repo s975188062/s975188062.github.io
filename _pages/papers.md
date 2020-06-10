@@ -6,4 +6,6 @@ toc: false
 
 ---
 
-Building……
+# S
+
+[Stable individual differences in search strategy?: The effect of task demands and motivational factors on scanning strategy in visual search](/paper/paper_stable_/)
