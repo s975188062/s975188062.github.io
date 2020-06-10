@@ -3,7 +3,7 @@ title: "眼动文章 - Stable individual differences in search strategy?: The ef
 excerpt: "<跟Charlie一起学>的试水文章，计划后续完成本文中涉及的6个任务的实验编程。"
 read_time: false
 header:
-  overlay_image: /assets/images/paper_white_header.png
+  overlay_image: /assets/images/paper_header.png
   overlay_filter: 0.5
 categories:
   - Paper
