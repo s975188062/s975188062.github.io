@@ -11,8 +11,7 @@ header:
 categories:
   - Blog Usage
 tags:
-  - RSS
-  - Feed
+  - RSS订阅
 toc: false
 comments: false
 author_profile: true
