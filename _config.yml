@@ -124,6 +124,8 @@ author:
       url: /dogfood/
     - label: "Charlie的万事屋"
       url: /pay4more/
+    - label: "博客更新日志"
+      url: /log/
     - label: "About"
       url: /about/
 #    - label: "Website"
