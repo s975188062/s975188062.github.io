@@ -1,5 +1,5 @@
 ---
-title: "安装Experiment Builder"
+title: "安装软件"
 excerpt: "Experiment Builder的安装教程。"
 read_time: false
 categories:
@@ -16,3 +16,4 @@ sidebar:
 
 ---
 
+# 下载安装包
