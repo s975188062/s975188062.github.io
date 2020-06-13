@@ -19,8 +19,6 @@ EB:
     url: /content/
   - title: "EB Basic"
     children:
-      - title: "安装Experiment Builder"
-        url: /eyelink/install_eb/
       - title: "认识软件"
         url: /eyelink/EB_Intro/
       - title: "编程前的实验设计准备"
@@ -80,6 +78,8 @@ host:
     children:
       - title: "实验室环境配置"
         url: /eyelink/LabSetup/
+      - title: "安装软件"
+        url: /eyelink/install_software/
       - title: "数据采集操作"
         url: /eyelink/data_collection/
   - title: "HOST Master"
