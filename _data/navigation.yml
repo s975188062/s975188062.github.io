@@ -78,7 +78,7 @@ host:
     children:
       - title: "实验室环境配置"
         url: /eyelink/LabSetup/
-      - title: "安装软件"
+      - title: "Eyelink软件安装"
         url: /eyelink/install_software/
       - title: "数据采集操作"
         url: /eyelink/data_collection/

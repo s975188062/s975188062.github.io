@@ -59,7 +59,7 @@ toc: true
 ## 2.1 Basic
 
 * [实验室环境配置](/eyelink/LabSetup/)
-* [安装软件](/eyelink/install_software/)
+* [Eyelink软件安装](/eyelink/install_software/)
 * [数据采集操作](/eyelink/data_collection/)
 * 常见问题汇总
 
