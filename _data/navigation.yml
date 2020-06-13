@@ -19,6 +19,8 @@ EB:
     url: /content/
   - title: "EB Basic"
     children:
+      - title: "安装Experiment Builder"
+        url: /eyelink/install_eb/
       - title: "认识软件"
         url: /eyelink/EB_Intro/
       - title: "编程前的实验设计准备"
