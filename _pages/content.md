@@ -25,6 +25,7 @@ toc: true
 
 ## 1.1 Basic
 
+* [安装Experiment Builder](/eyelink/install_eb/)
 * [认识Experiment Builder](/eyelink/EB_Intro/)
 * [编程前的实验设计准备](/eyelink/Experiment_Design/)
 * [Experiment层](/eyelink/Experiment_Level/)（DisplayScreen、Keyboard、Timer和Sequence）
