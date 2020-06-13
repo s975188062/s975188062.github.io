@@ -88,3 +88,29 @@ host:
         url: /eyelink/host-system-update/
       - title: "FAQs"
         url: /editing/
+
+DV:
+  - title: "点此获取“Eyelink指北”完整目录"
+    url: /content/
+  - title: "DV Basic"
+    children:
+      - title: "认识Data Viewer"
+        url: /editing/
+      - title: "数据导入"
+        url: /editing/
+      - title: "Trial Grouping"
+        url: /editing/
+      - title: "设置Interest Period"
+        url: /editing/
+      - title: "绘制Interest Area"
+        url: /editing/
+      - title: "Report Data"
+        url: /editing/
+  - title: "DV Master"
+    children:
+      - title: "数据清洗"
+        url: /eyelink/host-system-update/
+      - title: "绘制动态兴趣区Dynamic IA"
+        url: /editing/
+      - title: "数据补救"
+        url: /editing/
