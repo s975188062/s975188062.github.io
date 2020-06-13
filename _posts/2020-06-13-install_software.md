@@ -1,6 +1,6 @@
 ---
-title: "安装软件"
-excerpt: "Experiment Builder的安装教程。"
+title: "Eyelink软件安装教程"
+excerpt: "Windows和MacOS的Eyelink软件安装教程。"
 read_time: false
 categories:
   - Eyelink
