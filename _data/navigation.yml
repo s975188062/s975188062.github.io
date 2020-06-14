@@ -95,7 +95,7 @@ DV:
   - title: "DV Basic"
     children:
       - title: "认识Data Viewer"
-        url: /editing/
+        url: /eyelink/DV_Intro/
       - title: "数据导入"
         url: /editing/
       - title: "Trial Grouping"
