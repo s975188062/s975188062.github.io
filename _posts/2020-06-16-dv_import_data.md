@@ -73,11 +73,13 @@ br                                  # .edf文件名为“br”
 
 ![dv_import_data_toolbar_import_multiple_data](/assets/images/dv_import_data_toolbar_import_multiple_data.png)
 
-选择Deploy文件夹，即可扫描全部已经采集的数据。您可以将预实验的数据取消勾选，然后将僧下的所有实验一并导入。
+选择Deploy文件夹，即可扫描全部已经采集的数据。您可以将预实验的数据取消勾选，然后将剩下的所有实验一并导入。
 
 ![dv_import_data_import_multiple](/assets/images/dv_import_data_import_multiple.gif)
 
 可以看到，我现在已经将`br.edf`和`dm.edf`导入到了DV中。
+
+![dv_import_data_import_multiple_result](/assets/images/dv_import_data_import_multiple_result.png)
 
 ---
 
