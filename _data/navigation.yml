@@ -97,7 +97,7 @@ DV:
       - title: "认识Data Viewer"
         url: /eyelink/DV_Intro/
       - title: "数据导入"
-        url: /editing/
+        url: /eyelink/dv_import_data/
       - title: "Trial Grouping"
         url: /editing/
       - title: "设置Interest Period"
