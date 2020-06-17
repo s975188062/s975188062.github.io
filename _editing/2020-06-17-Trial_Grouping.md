@@ -9,7 +9,7 @@ categories:
   - Eyelink
 tags:
   - Data Viewer
-  - TrialGrouping
+  - Trial Grouping
 toc: true
 comments: true
 author_profile: false
