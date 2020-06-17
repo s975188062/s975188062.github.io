@@ -34,9 +34,9 @@ sidebar:
 
 | 软件 | Windows下载链接 | Mac下载链接 | 
 | --- | --- | --- |   
-| Experiment Builder | [Win-v2.2.299(提取码c10g)](https://pan.baidu.com/s/1rzwMpOJeR9PK6D6Oo3n01g) | [Mac-v2.2.299(提取码7cfa)](https://pan.baidu.com/s/14IqXism-ktX_qae_gzSUBQ) |
-| Data Viewer | [Win-v4.1.1(提取码wmzv)](https://pan.baidu.com/s/1XVAxAzoMquc51H1V2VuxEQ) | [Mac-v4.1.1(提取码n17d)](https://pan.baidu.com/s/1ruGbGM8ZJq5oZBjIkiPczw) |
-| Development Kit | [Win-v1.11.5(提取码kygv)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw) | [Mac-v1.11.1(提取码zied)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ) |
+| Experiment Builder | [![win_2.2.299](https://img.shields.io/badge/Windows_v2.2.299-c10g-green?&style=social)](https://pan.baidu.com/s/1rzwMpOJeR9PK6D6Oo3n01g) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v2.2.299-7cfa-green?&style=social)](https://pan.baidu.com/s/14IqXism-ktX_qae_gzSUBQ) |
+| Data Viewer | [![win_4.1.1](https://img.shields.io/badge/Windows_v4.1.1-wmzv-green?&style=social)](https://pan.baidu.com/s/1XVAxAzoMquc51H1V2VuxEQ) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v4.1.1-n17d-green?&style=social)](https://pan.baidu.com/s/1ruGbGM8ZJq5oZBjIkiPczw) |
+| Development Kit | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-kygv-green?&style=social)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ) |
 
 ---
 
