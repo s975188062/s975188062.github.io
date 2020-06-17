@@ -32,11 +32,11 @@ sidebar:
 * 您可以关注<Eyelink博润视动>公众号，在后台回复“EB”、“DV”和“DevKit”获取软件安装包；
 * 也可以点击下方的链接下载：
 
-| 软件 | Windows下载链接 | Mac下载链接 | 
-| --- | --- | --- |
+| 软件                 | Windows下载链接                                                                                                                               | Mac下载链接                                                                                                                                 |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Experiment Builder | [![win_2.2.299](https://img.shields.io/badge/Windows_v2.2.299-c10g-green?&style=social)](https://pan.baidu.com/s/1rzwMpOJeR9PK6D6Oo3n01g) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v2.2.299-7cfa-green?&style=social)](https://pan.baidu.com/s/14IqXism-ktX_qae_gzSUBQ) |
-| Data Viewer | [![win_4.1.1](https://img.shields.io/badge/Windows_v4.1.1-wmzv-green?&style=social)](https://pan.baidu.com/s/1XVAxAzoMquc51H1V2VuxEQ) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v4.1.1-n17d-green?&style=social)](https://pan.baidu.com/s/1ruGbGM8ZJq5oZBjIkiPczw) |
-| Development Kit | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-kygv-green?&style=social)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ) |
+| Data Viewer        | [![win_4.1.1](https://img.shields.io/badge/Windows_v4.1.1-wmzv-green?&style=social)](https://pan.baidu.com/s/1XVAxAzoMquc51H1V2VuxEQ)     | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v4.1.1-n17d-green?&style=social)](https://pan.baidu.com/s/1ruGbGM8ZJq5oZBjIkiPczw)   |
+| Development Kit    | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-kygv-green?&style=social)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw)   | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ)  |
 
 ---
 
