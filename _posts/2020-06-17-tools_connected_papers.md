@@ -49,6 +49,8 @@ Connected Papers兼备文献检索和文献谱系构建的两个功能，重点�
 
 您也可以选择标题、作者、年份或者被引用次数来排序。
 
+![tool_connectedpapers_priorworks](/assets/images/tool_connectedpapers_priorworks.png)
+
 快去试试吧～
 
 ---
