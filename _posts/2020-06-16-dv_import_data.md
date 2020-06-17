@@ -20,6 +20,8 @@ sidebar:
 
 ---
 
+> 从难度上描述Data Viewer处理眼动数据的过程，大致可以等同于把大象装冰箱。——Charlie
+
 我们在[>>>认识Data Viewer<<<](/eyelink/DV_Intro/#11-菜单栏)中已经阐述了`.edf`和`.evs`的关系。您直接打开`.edf`数据时只是查看当前数据，和批量处理数据还相差甚远。
 
 首先，让我们打开Data Viewer软件。
