@@ -26,7 +26,9 @@ Connected Papers兼备文献检索和文献谱系构建的两个功能，重点�
 
 ![tool_connectedpapers_mainpage_with_search_string](/assets/images/tool_connectedpapers_mainpage_with_search_string.png)
 
-我们只需要在输入框中输入我们想要检索文献的标题、网址或者DOI，点击`Build a graph`即可。如上图所示的例子，我在输入框中输入“Stable individual differences in search strategy?: The effect of task demands and motivational factors on scanning strategy in visual search”。点击`Build a graph`，Connected Papers会搜索相关的文献，让我们确定选择一篇。这是因为输入标题的原因，如果输入DOI或者网址的话则不需要选择的这一步。
+我们只需要在输入框中输入我们想要检索文献的标题、网址或者DOI，点击`Build a graph`即可。如上图所示的例子，我在输入框中输入“Stable individual differences in search strategy?: The effect of task demands and motivational factors on scanning strategy in visual search”。
+
+点击`Build a graph`，Connected Papers会搜索相关的文献，让我们确定选择一篇。这是因为输入标题的原因，如果输入DOI或者网址的话则不需要选择的这一步。
 
 ![tool_connectedpapers_choose_my_paper](/assets/images/tool_connectedpapers_choose_my_paper.png)
 
@@ -34,7 +36,7 @@ Connected Papers兼备文献检索和文献谱系构建的两个功能，重点�
 
 ![tool_connectedpapers_choose_my_paper_with_sighs](/assets/images/tool_connectedpapers_choose_my_paper_with_sighs.png)
 
-我们可以看到中间笔记为橘色的区域就是可视化的引用图谱了。
+我们可以看到中间标记为橘色的区域就是可视化的引用图谱了。
 
 * 每篇文章会用一个圆代替，我们检索的那篇文章会有一个黑色的描边。
 * 直接引用的文章会用连线连接起来表示。
