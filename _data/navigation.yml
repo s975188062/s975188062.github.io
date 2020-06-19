@@ -41,6 +41,8 @@ EB:
         url: /eyelink/exp_package_save_n_transfer/
   - title: "EB Master"
     children:
+      - title: "拉丁方设计"
+        url: /eyelink/latin_square_random/
       - title: "播放声音材料"
         url: /editing/
       - title: "播放视频材料"
