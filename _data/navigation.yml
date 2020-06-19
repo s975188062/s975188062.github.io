@@ -90,6 +90,16 @@ host:
         url: /eyelink/host-system-update/
       - title: "FAQs"
         url: /editing/
+  - title: "Eyelink指北的其他部分"
+    children:    
+    - title: "Experiment Builder"
+      url: /content/#1-experiment-builder
+    - title: "Data Viewer"
+      url: /content/#3-data-viewer
+    - title: "3rd-Party Tools"
+      url: /content/#4-third-party-programing-tools
+    - title: "Weblink"
+      url: /content/#5-weblink
 
 DV:
   - title: "点此获取“Eyelink指北”完整目录"
@@ -116,3 +126,13 @@ DV:
         url: /editing/
       - title: "数据补救"
         url: /editing/
+  - title: "Eyelink指北的其他部分"
+    children:    
+    - title: "Experiment Builder"
+      url: /content/#1-experiment-builder
+    - title: "主试机操作"
+      url: /content/#2-主试机及操作
+    - title: "3rd-Party Tools"
+      url: /content/#4-third-party-programing-tools
+    - title: "Weblink"
+      url: /content/#5-weblink
