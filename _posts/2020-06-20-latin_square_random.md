@@ -130,6 +130,8 @@ sidebar:
 
 为了简化操作，方便讲解，我们以4阶拉丁方设计为例。每个水平有5个试次，4x5共计20个试次。
 
+![eb_lartin_square_design](/assets/images/eb_lartin_square_design.png)
+
 ## 2.1 准备DataSource
 
 | Latin_Group | Level | Trial_ID | Trial_Detials |
