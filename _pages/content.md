@@ -38,6 +38,7 @@ toc: true
 
 ## 1.2 Master
 
+* [拉丁方设计](/eyelink/latin_square_random/)
 * 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
