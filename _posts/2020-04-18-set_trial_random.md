@@ -126,9 +126,9 @@ last_modified_at: 2020-06-20T08:06:00-05:00
 
 这部分操作的逻辑其实是这样的：
 
-在`Randomization Setting`中的`Block Level`设置了`Type Column`，则运行的时候就回先寻找`Type Column`里面第一行的值，即`T`。
+在`Randomization Setting`中的`Block Level`设置了`Type Column`，则运行的时候就会先寻找`Type Column`里面第一行的值，即`T`。
 
-执行完`T`的部分就回寻找第二种类型，即`F`。但是由于`Split by`的限制，每次只执行1个Trial，共执行三次。就是这样讲3个Trial划分成了3个Block。
+执行完`T`的部分会寻找第二种类型，即`F`。但是由于`Split by`的限制，每次只执行1个Trial，共执行三次。就是这样讲3个Trial划分成了3个Block。
 
 由于`Randomization Setting`设置了`Enable Trial Randomization`，所以`F`部分的执行顺序是随机的。相当于把所有`F`部分一起先做随机，再分批次执行。
 
