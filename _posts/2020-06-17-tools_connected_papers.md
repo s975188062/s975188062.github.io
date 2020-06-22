@@ -11,7 +11,8 @@ header:
 categories:
   - Tools
 comments: true
-toc: true
+toc: false
+classes: wide
 ---
 
 ---
