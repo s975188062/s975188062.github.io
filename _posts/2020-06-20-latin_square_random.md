@@ -25,7 +25,7 @@ sidebar:
 
 > 写在前面：
 > 
-> 关于奇数阶拉丁方平衡的计算方法可能是有误的，如果您了解这部分的话欢迎指出！您可以通过[首页目标单](http://charlie-techblog.com/)、文章底部的评论或者邮件(charlie-techblog@outlook.com)联系到我！
+> 关于奇数阶拉丁方平衡的计算方法是个人的一点理解，如果您了解这部分的话欢迎与我探讨！您可以通过[首页目标单](http://charlie-techblog.com/)、文章底部的评论或者邮件(charlie-techblog@outlook.com)联系到我！
 > 
 > 其他软件操作的部分是不会错误的，Charlie很自信 :D
 {: .notice--warning}
