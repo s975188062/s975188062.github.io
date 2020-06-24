@@ -9,6 +9,10 @@ classes: wide
 
 # 2020年
 
+## 2020年6月25日
+
+* 发布![vac](https://img.shields.io/badge/Visual_Angle_Calculator-v1.0-green)
+
 ## 2020年6月16日
 
 * 新增访问和访客计数功能。
