@@ -108,7 +108,9 @@ Trial Group，如同他的名字，是数据分组的意思。
 
 ![dv_trial_grouping_inspector_after_remove_Data](/assets/images/dv_trial_grouping_inspector_after_remove_Data.png)
 
-是否需要这一步，取决于我们对数据处理的需求。有些条件下，您可能完全不需要进行这一步。
+---
+
+是否需要Trial Grouping这一步，取决于我们对数据处理的需求。有些条件下，您可能完全不需要进行这一步。
 {: .notice--info}
 
 ---
