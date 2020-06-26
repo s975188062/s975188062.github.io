@@ -123,7 +123,7 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 
 ## 4.5 辅助工具
 
-* Visual-Angle Calculator
+* [![vac](https://img.shields.io/badge/Visual_Angle_Calculator-v1.0-green)](/tools/tools_vac/)
 
 ---
 
