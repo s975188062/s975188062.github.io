@@ -39,6 +39,7 @@ toc: true
 ## 1.2 Master
 
 * [拉丁方设计](/eyelink/latin_square_random/)
+* [文字自动化分兴趣区-Auot_Word_Segment](/eyelink/eb_auto_word_segment/)
 * 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
@@ -47,7 +48,6 @@ toc: true
 * Visual-World（DisplayScreen和Mouse）
 * 多模态（SetTTL、BiometricTTL等）
 * 真随机（Variable和UpdateAttribute）
-* 绘制兴趣区InterestArea（DisplayScreen）
 
 ## 1.3 单控件精讲
 

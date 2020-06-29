@@ -43,6 +43,8 @@ EB:
     children:
       - title: "拉丁方设计"
         url: /eyelink/latin_square_random/
+      - title: "文字自动化分兴趣区"
+        url: /eyelink/eb_auto_word_segment/
       - title: "播放声音材料"
         url: /editing/
       - title: "播放视频材料"
@@ -58,8 +60,6 @@ EB:
       - title: "多模态"
         url: /editing/
       - title: "真随机"
-        url: /editing/
-      - title: "绘制兴趣区"
         url: /editing/
   - title: "Eyelink指北的其他部分"
     children:    
