@@ -3,9 +3,9 @@ title: "使用Auto Word Segment来让EB替你画好兴趣区"
 excerpt: "阅读任务，只需三步，让EB完成绘制兴趣区的繁琐工作。"
 read_time: false
 header:
-  overlay_image: /assets/images/eb_aws_teaser.png
+  overlay_image: /assets/images/eb_aws_header.png
   overlay_filter: 0.5
-  teaser: /assets/images/eb_aws_header.png
+  teaser: /assets/images/eb_aws_teaser.png
 categories:
   - Eyelink
 tags:
