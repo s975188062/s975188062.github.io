@@ -113,7 +113,7 @@ DV:
       - title: "Trial Grouping"
         url: /eyelink/Trial_Grouping/
       - title: "设置Interest Period"
-        url: /editing/
+        url: /eyelink/dv_set_IP/
       - title: "绘制Interest Area"
         url: /editing/
       - title: "Report Data"
