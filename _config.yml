@@ -117,13 +117,13 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:Charlie-TechBlog@outlook.com
     - label: "私房食谱"
-      icon: "fas fa-fw fas-book"
+      icon: "fas fa-book"
       url: /recipe/
     - label: "Charlie的万事屋"
       icon: "fa fa-handshake-o"
       url: /pay4more/
     - label: "博客更新日志"
-      icon: "fa fa-file-text"
+      icon: "fas fa-file"
       url: /log/
     - label: "About"
       icon: "fa fa-id-card-o"
