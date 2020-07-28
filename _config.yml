@@ -126,7 +126,7 @@ author:
       icon: "fas fa-clipboard-list"
       url: /log/
     - label: "About"
-      icon: "fa fa-cat"
+      icon: "fa fa-paw"
       url: /about/
 
 # Site Footer
