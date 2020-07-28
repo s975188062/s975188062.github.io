@@ -113,19 +113,19 @@ author:
   location         : #"Beijing"
   email            : # "Schanglin@outlook.com"
   links:
-    - label: "Charlie-TechBlog@outlook.com"
+    - label: " Charlie-TechBlog@outlook.com"
       icon: "fas fa-envelope"
       url: mailto:Charlie-TechBlog@outlook.com
-    - label: "私房食谱"
+    - label: " 私房食谱"
       icon: "fas fa-book"
       url: /recipe/
-    - label: "Charlie的万事屋"
+    - label: " Charlie的万事屋"
       icon: "fas fa-receipt"
       url: /pay4more/
-    - label: "博客更新日志"
+    - label: " 博客更新日志"
       icon: "fas fa-clipboard-list"
       url: /log/
-    - label: "About"
+    - label: " About"
       icon: "fa fa-paw"
       url: /about/
 
