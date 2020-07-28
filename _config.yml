@@ -123,10 +123,10 @@ author:
       icon: "fas fa-receipt"
       url: /pay4more/
     - label: "博客更新日志"
-      icon: "fas fa-file"
+      icon: "fas fa-clipboard-list"
       url: /log/
     - label: "About"
-      icon: "fa fa-user-graduate"
+      icon: "fa fa-cat"
       url: /about/
 
 # Site Footer
