@@ -114,19 +114,19 @@ author:
   email            : # "Schanglin@outlook.com"
   links:
     - label: "Charlie-TechBlog@outlook.com"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-envelope"
       url: mailto:Charlie-TechBlog@outlook.com
     - label: "私房食谱"
       icon: "fas fa-book"
       url: /recipe/
     - label: "Charlie的万事屋"
-      icon: "fa fa-handshake-o"
+      icon: "fas fa-store"
       url: /pay4more/
     - label: "博客更新日志"
       icon: "fas fa-file"
       url: /log/
     - label: "About"
-      icon: "fa fa-id-card-o"
+      icon: "fa fa-user-graduate"
       url: /about/
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
