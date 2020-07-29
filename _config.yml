@@ -120,7 +120,7 @@ author:
       icon: "fas fa-book"
       url: /recipe/
     - label: " Charlie的万事屋"
-      icon: "fas fa-receipt"
+      icon: "fas fa-store-alt"
       url: /pay4more/
     - label: " 博客更新日志"
       icon: "fas fa-clipboard-list"
