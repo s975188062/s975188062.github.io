@@ -78,7 +78,7 @@ toc: true
 * [数据导入](/eyelink/dv_import_data/)
 * [TrialGrouping](/eyelink/Trial_Grouping/)
 * [设置InterestPeriod](/eyelink/dv_set_IP/)
-* 绘制InterestArea
+* [绘制InterestArea](/eyelink/dv_set_ia/)
 * Report Data
 
 ## 3.2 Master

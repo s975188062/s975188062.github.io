@@ -115,7 +115,7 @@ DV:
       - title: "设置Interest Period"
         url: /eyelink/dv_set_IP/
       - title: "绘制Interest Area"
-        url: /editing/
+        url: /eyelink/dv_set_ia/
       - title: "Report Data"
         url: /editing/
   - title: "DV Master"
