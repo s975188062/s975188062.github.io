@@ -1,6 +1,6 @@
 ---
 title: "2020年了，液晶LCD显示器仍然打不过CRT吗？"
-excerpt: "CRT显示器凭借其优秀的动态响应能力一直被奉为刺激呈现的金标准。在IPS显示器普及的今天，CRT显示器是否仍旧江山稳固呢？"
+excerpt: "CRT显示器凭借其优秀的动态响应能力一直被奉为刺激呈现的金标准。在LCD显示器普及的今天，CRT显示器是否仍旧江山稳固呢？"
 read_time: false
 header:
   overlay_image: /assets/images/device_crt_or_lcd_head.jpg
@@ -22,7 +22,9 @@ author_profile: true
 > 别满世界去找CRT了，LCD就够了。
 > 
 > 显卡型号推荐：GTX 1660 6G 以更贵
+> 
 > 显示器推荐：BenQ XL2430、Asus VG248QE
+> 
 > 视频线型号：DP、DVI
 {: .notice--info}
 
