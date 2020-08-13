@@ -5,6 +5,9 @@ read_time: false
 header:
   overlay_image: /assets/images/eprime_header.png
   overlay_filter: 0.5
+  actions:
+    - label: "下载示例文件(gsbv)"
+      url: "https://pan.baidu.com/s/1dLvtJpazXb8DARSqknLyWg"
 categories:
   - Eyelink
 tags:
@@ -21,17 +24,17 @@ sidebar:
 
 # 1. 简介
 
-固然E-Prime是一个广为接受的实验设计软件，在行为实验中的表现有目共睹。其短板也很明显，当需要连接设备进行采集的时候，实验编写的难度往往会提高不少。
+固然 E-Prime 是一个广为接受的实验设计软件，在行为实验中的表现有目共睹。其短板也很明显，当需要连接设备进行采集的时候，实验编写的难度往往会提高不少。
 
-仍然值得开心的是，Eyelink在API方面做的非常出色，其函数逻辑极其精简高效。
+仍然值得开心的是，Eyelink 在 API 方面做的非常出色，其函数逻辑极其精简高效。
 
-用E-Prime编写Eyelink眼动实验程序，只需三步：“复制 - 粘贴 - 修改”
+用 E-Prime 编写 Eyelink 眼动实验程序，只需三步：“复制 - 粘贴 - 修改”
 
 ---
 
 # 2. 示例程序
 
-如果您已经安装了Eyelink的DevelopmentKit，那么您的电脑里已经有了实例代码。
+如果您已经安装了 Eyelink 的 DevelopmentKit ，那么您的电脑里已经有了实例代码。
 
 ![eprime_demo_script_location](/assets/images/eprime_demo_script_location.png)
 
@@ -62,5 +65,20 @@ E-Prime
 我们以“picture”为例，打开E-Prime程序后，我们可以看到实验结构如下图所示：
 
 ![eprime_exp_structure](/assets/images/eprime_exp_structure.png)
+
+与 Eyelink 相关的脚本共有五个：
+
+* clConnect        -> 链接眼动仪
+* elCameraSetup    -> 相机校准
+* startRecording   -> 开始记录
+* stopRecording    -> 结束记录
+* elClose          -> 断开链接
+
+在使用 E-Prime 编写眼动程序时，建议您先完成不带眼动的部分，将其内容调整好后，再添加眼动仪的控制脚本。
+
+---
+
+以上。
+
 
 
