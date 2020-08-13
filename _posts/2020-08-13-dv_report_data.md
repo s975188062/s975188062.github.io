@@ -115,12 +115,12 @@ Reports
 
 如上图所示，我们设置导出了 6 个指标。其中前两个指标是默认的，后四个是我手动选择的：
 
-* RECORDING_SESSION_LABEL -> .edf文件名
-* TRIAL_INDEX -> 试次的运行次序ID
-* IA_LABEL -> 兴趣区的名字
-* IA_DWELL_TIME -> 总停留时间
-* IA_FIRST_FIXATION_DURATION -> 首次注视时长
-* IA_FIRST_RUN_DWELL_TIME -> 首次加工时间
+* RECORDING_SESSION_LABEL      -> .edf文件名
+* TRIAL_INDEX                  -> 试次的运行次序ID
+* IA_LABEL                     -> 兴趣区的名字
+* IA_DWELL_TIME                -> 总停留时间
+* IA_FIRST_FIXATION_DURATION   -> 首次注视时长
+* IA_FIRST_RUN_DWELL_TIME      -> 首次加工时间
 
 > 其中第 6 个指标 IA_FIRST_RUN_DWELL_TIME 首次加工时间 就是 Gaze Duration，同一个指标在不同研究方向中名称不同的现象其实是很常见的，所以要根据 Variable Definition 来判断是不是自己想要的指标。
 
