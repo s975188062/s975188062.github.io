@@ -145,7 +145,7 @@ E-Prime:
       - title: "总体概述"
         url: /eyelink/eprime_overview/
       - title: "elConnect脚本"
-        url: /editing/
+        url: /eyelink/eprime_elconnect/
       - title: "elCameraSetup脚本"
         url: /editing/
       - title: "startRecording脚本"
