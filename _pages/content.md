@@ -93,7 +93,7 @@ toc: true
 
 ## 4.1 E-Prime
 
-* 概述
+* [概述](/eyelink/eprime_overview/)
 * elConnect
 * elCameraSetup
 * startRecording

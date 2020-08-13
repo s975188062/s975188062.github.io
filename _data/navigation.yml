@@ -143,7 +143,7 @@ E-Prime:
   - title: "E-Prime for Eyelink"
     children:
       - title: "概述"
-        url: /editing/
+        url: /eyelink/eprime_overview/
       - title: "elConnect"
         url: /editing/
       - title: "elCameraSetup"
