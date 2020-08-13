@@ -142,7 +142,7 @@ Windows 系统会导出 Excl 格式，而 Mac OS X 系统则会导出 txt 格式
 
 ![dv_report_data_report_file](/assets/images/dv_report_data_report_file.png)
 
-根据需求继续导出其他数据即。
+根据需求继续导出其他数据即可。
 
 ---
 
