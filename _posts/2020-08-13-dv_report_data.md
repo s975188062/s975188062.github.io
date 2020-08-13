@@ -154,7 +154,11 @@ Charlie推荐的方法是熟读文献，明白指标的含义，并且内化为�
 
 这是一个经验内化的过程，DV 的指标命名规则还是很简单的，所有指标都是由几个简单的名词缩写组成，大多数时候顾名思义即可。
 
-您可以到 DataViewer User Manual 中第 6 节 Data Analysis and Report 中查找数据指标的定义表格，用户手册下载链接如下：
+您可以到 DataViewer User Manual 中第 6 节 Data Analysis and Report 中查找数据指标的定义表格。
+
+![dv_report_data_variable_list](/assets/images/dv_report_data_variable_list.png)
+
+用户手册下载链接如下：
 
 [DataViewer User Manual 4.1.1.pdf(w7f2)](https://pan.baidu.com/s/1wf4CD_c3Thp5oXa9cJGN-Q)
 
