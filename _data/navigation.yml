@@ -136,3 +136,21 @@ DV:
       url: /content/#4-third-party-programing-tools
     - title: "Weblink"
       url: /content/#5-weblink
+
+E-Prime:
+  - title: "点此获取“Eyelink指北”完整目录"
+    url: /content/
+  - title: "E-Prime for Eyelink"
+    children:
+      - title: "概述"
+        url: /editing/
+      - title: "elConnect"
+        url: /editing/
+      - title: "elCameraSetup"
+        url: /editing/
+      - title: "startRecording"
+        url: /editing/
+      - title: "stopRecording"
+        url: /editing/
+      - title: "elClose"
+        url: /editing/
