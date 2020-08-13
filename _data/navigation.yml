@@ -117,7 +117,7 @@ DV:
       - title: "绘制Interest Area"
         url: /eyelink/dv_set_ia/
       - title: "Report Data"
-        url: /editing/
+        url: /eyelink/dv_report_data/
   - title: "DV Master"
     children:
       - title: "数据清洗"
