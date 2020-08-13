@@ -93,12 +93,12 @@ toc: true
 
 ## 4.1 E-Prime
 
-* [概述](/eyelink/eprime_overview/)
-* elConnect
-* elCameraSetup
-* startRecording
-* stopRecording
-* elClose
+* [总体概述](/eyelink/eprime_overview/)
+* elConnect脚本
+* elCameraSetup脚本
+* startRecording脚本
+* stopRecording脚本
+* elClose脚本
 
 ## 4.2 PsychoToolBox
 
