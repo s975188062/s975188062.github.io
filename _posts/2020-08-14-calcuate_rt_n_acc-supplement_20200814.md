@@ -1,6 +1,6 @@
 ---
 title: "反应时和正确率的计算与记录 - 补充更新 1"
-excerpt: "今日收到多位老师反应，刺激屏幕的按键存在延迟，按键后不会立即显示下一屏的内容。借此机会向大家解释一下问题的原因，顺便加深大家对 DisplayScreen 这个控件的理解。"
+excerpt: "今日收到多位老师反应，刺激屏幕的按键反应存在延迟，按键后不会立即显示下一屏的内容。借此机会，向大家解释一下问题产生的原因，顺便加深大家对 DisplayScreen 这个控件的理解。"
 read_time: false
 header:
   overlay_image: /assets/images/eb_calcuate_rt_n_acc_header.png
