@@ -35,7 +35,7 @@ elConnect 脚本的位置在实验的指导语之后，elCameraSetup之前。
 
 > 此部分完全复制粘贴即可。
 
-```
+~~~ vb
 Dim edfFileName As String   '定义一个名为edfFileName的字符型变量Mouse.ShowCursor True       '显示鼠标  
 edfFileName = AskBox("Please enter an EDF file name" , "Test.edf")  
 '请求一个.edf文件的名字，显示一个对话框，请求文本内容
@@ -45,7 +45,7 @@ Dim edfFileName As String   '定义一个名为edfFileName的字符型变量Mou
 
 '检测输入的字符串长度是否为0，即是否没有输入文本内容
 '若没有输入任何内容，则对 edfFileName 赋值为 "Test.edf"If len(edfFileName) = 0 Then    	edfFileName = "Test.edf"End If
-'隐藏鼠标Mouse.ShowCursor False'报告鼠标是否被隐藏Debug.Print "mouse is visible? " &Mouse.IsCursorVisible()```## 设置 CameraSetup 相关参数> 此部分根据需要更改校准点的**颜色**和**尺寸**设置。```
+'隐藏鼠标Mouse.ShowCursor False'报告鼠标是否被隐藏Debug.Print "mouse is visible? " &Mouse.IsCursorVisible()~~~## 设置 CameraSetup 相关参数> 此部分根据需要更改校准点的**颜色**和**尺寸**设置。```
 '设置 CameraSetup 过程中的相关参数
 '包括 Calibrate 、 Validate 和 DriftCorrection 
 
