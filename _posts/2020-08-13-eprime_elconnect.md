@@ -35,7 +35,7 @@ elConnect 脚本的位置在实验的指导语之后，elCameraSetup之前。
 
 > 此部分完全复制粘贴即可。
 
-~~~ vb
+~~~vb
 Dim edfFileName As String   '定义一个名为edfFileName的字符型变量Mouse.ShowCursor True       '显示鼠标  
 edfFileName = AskBox("Please enter an EDF file name" , "Test.edf")  
 '请求一个.edf文件的名字，显示一个对话框，请求文本内容
