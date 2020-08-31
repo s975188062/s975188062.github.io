@@ -20,6 +20,9 @@ sidebar:
 
 ---
 
+> 2020.08.31 更新：
+> 1.3 Import/Export Report Variable Selection
+
 用DV进行眼动数据处理，一共分为五步：
 
 * 导入数据
@@ -143,6 +146,34 @@ Windows 系统会导出 Excl 格式，而 Mac OS X 系统则会导出 txt 格式
 ![dv_report_data_report_file](/assets/images/dv_report_data_report_file.png)
 
 根据需求继续导出其他数据即可。
+
+## 1.3 Import/Export Report Variable Selection
+
+> 本功能的目的是方便记录预实验中我们导出了哪些数据，在正式实验中直接沿用这些设置，不需要一个一个手动地选择。
+> 
+> 首先 Export Report Variable Selection 导出我们选中的指标信息
+> 
+> 再 Import Report Variable Selection 导入我们之前的选择
+
+Report Variable Selection 是指我们在导出各种报表时所选择的变量类型。
+
+![dv-report_data-report_window](/assets/images/dv-report_data-report_window.png)
+
+左侧红色线框中是未被选中导出的指标类型，右侧绿色线框中是选中导出的指标类型。
+
+所谓的 Report Variable Selection 就是指我们在所有的 Report 中选中了哪些变量。
+
+### 1.3.1 导出 Report Variable Selection
+
+![dv-report_data-export_RVS](/assets/images/dv-report_data-export_RVS.png)
+
+如图所示将 Report Variable Selection 文件保存到了桌面。
+
+### 1.3.2 导入 Report Variable Selection
+
+![dv-report_data-import_RVS](/assets/images/dv-report_data-import_RVS.png)
+
+如图所示，倒入 Report Variable Selection 配置文件即可。
 
 ---
 
