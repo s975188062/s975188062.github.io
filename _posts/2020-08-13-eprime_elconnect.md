@@ -10,6 +10,7 @@ header:
       url: "https://pan.baidu.com/s/1dLvtJpazXb8DARSqknLyWg"
 categories:
   - Eyelink
+  - E-Prime
 tags:
   - E-Prime
 toc: true
