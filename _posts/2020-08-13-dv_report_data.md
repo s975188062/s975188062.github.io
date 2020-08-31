@@ -33,6 +33,8 @@ sidebar:
 
 我们已经完成了前面的部分，现在来讲解最有一步 数据导出 。
 
+---
+
 # 1. 数据导出的逻辑和指标分类
 
 ![dv_report_data_show_in_menu_bar](/assets/images/dv_report_data_show_in_menu_bar.png)
