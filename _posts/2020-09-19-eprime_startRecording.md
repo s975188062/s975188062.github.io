@@ -96,8 +96,10 @@ doDriftCorrect Display.XRes/2,Display.YRes/2,False,True,Fixation
 ~~~ vb'下面的代码是为了告诉 Data Viewer 刺激的背景是什么'详情请查阅 EyeLink Data Viewer User Manual 中 "Protocol for EyeLink Data to Viewer Integration" 的部分'IMGLOAD 命令用于在 DV 中呈现背景图片tracker.sendMessage "!V IMGLOAD FILL " & TrialList.GetCurrentAttrib("imageName")'将图片发送到主试机的监控背景上，图片格式支持 24bit 的 bmp、jpg 或 giftracker.BitmapToBackdrop TrialList.GetCurrentAttrib("imageName"), 4~~~此处直接使用 `.GetCurrentAttrib` 函数引用 TrialList 中的变量值即可。此部分需要修改 `.GetCurrentAttrib` 函数引用的内容，要与自己 List 中的条目对应上。如果没有做成一张完整的图片，则可以在刺激呈现后再截屏，仅发送 DV 相关的命令即可。
 {: .notice--info}### 1.3.3 开始记录 StartRecording
 ~~~ vb'在开始记录眼动之前，先让眼动仪进入 idle mode 一段时间，确保 startRecording 函数可以正常工作'startRecording() 函数后的四个变量分别表示：“是否将Sample数据存入.edf文件”、“是否将Event数据存入.edf文件”、“是否将Sample数据在线传输给被试机”和“是否将Event数据在线传输给被试机”
-'如果某一个参数为 0 或 False ，则对应的数据操作则不会被执行 tracker.sendCommand "set_idle_mode"Sleep 50 ' 休眠 50ms 以确保眼动仪准备好tracker.startRecording True, True, False, False'预记录 100ms 的数据elutil.pumpDelay 100'下面的代码用于记录后续刺激呈现命令发出的时间'发送内容为 "pictureTrial_Start" 的 message 来进行标记Dim timeStart As Long   ‘定义一个名字为 timeStart 的 Long(长整型) 变量timeStart = elutil.currentTime()    '获取当前被试机时间戳tracker.sendMessage  "pictureTrial_Start"   ‘ 发送Message
+'如果某一个参数为 0 或 False ，则对应的数据操作则不会被执行 tracker.sendCommand "set_idle_mode"Sleep 50 ' 休眠 50ms 以确保眼动仪准备好tracker.startRecording True, True, False, False'预记录 100ms 的数据elutil.pumpDelay 100'下面的代码用于记录后续刺激呈现命令发出的时间'发送内容为 "pictureTrial_Start" 的 message 来进行标记Dim timeStart As Long   ‘定义一个名字为 timeStart 的 Long(长整型) 变量timeStart = elutil.currentTime()    '获取当前被试机时间戳tracker.sendMessage  "pictureTrial_Start"   ‘发送Message
 ~~~
+
+代码最后定义的 timeStart 将在 elStopRecording 脚本中用于计算刺激呈现延迟，我们放到后面讲解。
 
 前半部分复制粘贴即可，后面发送 Message 的部分修改一下 Message 的内容。
 {: .notice--info}
