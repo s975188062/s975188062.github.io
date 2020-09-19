@@ -95,8 +95,8 @@ toc: true
 
 * [总体概述](/eyelink/eprime_overview/)
 * [elConnect脚本](/eyelink/eprime_elconnect/)
-* elCameraSetup脚本
-* startRecording脚本
+* [elCameraSetup脚本](/eyelink/e-prime/eprime_elCameraSetup/)
+* [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
 * stopRecording脚本
 * elClose脚本
 
