@@ -1,6 +1,6 @@
 ---
-title: "elCameraSetup脚本(E-Prime眼动编程)"
-excerpt: "通过 E-Prime 执行相机校准。"
+title: "elStartRecording脚本(E-Prime眼动编程)"
+excerpt: "开始记录眼动，以及相当多的准备工作。"
 read_time: false
 header:
   overlay_image: /assets/images/eprime_header.png
