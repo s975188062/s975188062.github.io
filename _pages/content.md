@@ -98,7 +98,7 @@ toc: true
 * [elCameraSetup脚本](/eyelink/e-prime/eprime_elCameraSetup/)
 * [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
 * [stopRecording脚本](/eyelink/e-prime/eprime_stopRecording/)
-* elClose脚本
+* [elClose脚本](/eyelink/e-prime/eprime_elClose/)
 
 ## 4.2 PsychoToolBox
 
