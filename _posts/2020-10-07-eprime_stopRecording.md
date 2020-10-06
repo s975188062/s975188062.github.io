@@ -60,19 +60,45 @@ sidebar:
 
 如果有多个刺激呈现的屏幕，则需要多组计算显示延迟的代码围绕在每一个刺激呈现屏的前后，这个部分在后续的内容中会讲解。
 
+根据需要您可以决定是否计算 Onset 时间，不需要直接删除此段代码即可。
+{: .notice--info}
+
 ## 1.2 停止记录~~~ vb'多记录 100ms 的数据来等待被试机清空显示内容elutil.pumpDelay 100tracker.stopRecording   `停止记录眼动数据~~~ 
 
+复制粘贴即可。
+{: .notice--info}
+
 ## 1.3 绘制兴趣区
-~~~ vb 'The following code is for the EyeLink Data Viewer integration purpose.   'See section "Protocol for EyeLink Data to Viewer Integration" of the EyeLink Data Viewer User Manual'The IAREA message specifies the attributes of a rectangular interest area for the trial. 'Each trial can have a set of such rectangular interest areas. 'The example following draws a 100 * 100 pixels interest area in the center of the screentracker.sendMessage "!V IAREA RECTANGLE 1 " & Display.XRes/2 -50 & " " & Display.YRes/2 - 50 & " " & Display.XRes/2 + 50 & " " & Display.YRes/2 + 50 & " " &  TrialList.GetCurrentAttrib("imageName")~~~
+~~~ vb '下面的代码是为了和 Eyelink DataViewer 衔接。
+'详细内容你可以查看 EyeLink Data Viewer User Manual 中的 "Protocol for EyeLink Data to Viewer Integration" 部分'下面所展示的 IAREA message 在屏幕上制定的区域内绘制了一个矩形的兴趣区，并指定其边界 '每个试次可以有多个兴趣区 '在下面的例子中，我们在屏幕中心绘制了一个 100 * 100 像素的兴趣区
+'其中 1 为兴趣区ID，后面四个数字分别是兴趣区左上右下边界的像素值，最后一个变量为兴趣区的Label，此处直接引用了 TrialList 中的变量
+tracker.sendMessage "!V IAREA RECTANGLE 1 " & Display.XRes/2 -50 & " " & Display.YRes/2 - 50 & " " & Display.XRes/2 + 50 & " " & Display.YRes/2 + 50 & " " &  TrialList.GetCurrentAttrib("imageName")~~~
+
+根据需要决定是否需要绘制兴趣区，此处不画也可以在DV中进行数据处理的时候再画。
+{: .notice--info}
 
 ## 1.4 记录试次特征变量
 
-~~~ vb'This TRIAL_VAR command specifies a trial variable and value for the given trial. 'Send one message for each pair of trial condition variable and its corresponding value.tracker.sendMessage "!V TRIAL_VAR trial " & TrialList.GetCurrentAttrib("trialid")tracker.sendMessage "!V TRIAL_VAR picture " & TrialList.GetCurrentAttrib("imageName") ~~~
+首先我们要明确什么叫做特征变量。
+
+简单来说，我们在进行实验设计的时候，会计划好每个试次呈现哪些刺激内容，并创建一个表格来记录。这个表格在 ExperimentBuilder 中叫做 Datasource，在 E-Prime 中叫做 List。
+
+TRIAL_VAR 命令
+
+~~~ vb'!V TRIAL_VAR 命令可以对每个试次进行一些特征的标记。
+'每条 Message 包含一个特征值的名称和对应的值tracker.sendMessage "!V TRIAL_VAR trial " & TrialList.GetCurrentAttrib("trialid")tracker.sendMessage "!V TRIAL_VAR picture " & TrialList.GetCurrentAttrib("imageName") ~~~
+
+这段代码的目的是将 E-Prime 中的 List 完全复制到眼动数据中，List 中有多少列，则发送多少个“!V TRIAL_VAR”的 Message ，引用List中的内容，将其发送到 .edf 文件中。
+{: .notice—info}
 
 ## 1.5 结束试次
 
-~~~ vb'The TRIAL_RESULT message defines the end of a trial for the EyeLink Data Viewer. 'This is different than the end of recording message END that is logged when the trial recording ends. 'Data viewer will not parse any messages, events, or samples that exist in the data file after this message. tracker.sendMessage "TRIAL_RESULT 1" 
+~~~ vb
+'TRIAL_RESULT 这条 Message 是为了告诉 DataViewer 试次结束了'这条 Message 与 stopRecording 的命令不同，stopRecording是为了命令眼动仪停止记录眼动，而这条 Message 则是为了告诉 DataViewer 试次结束'DataViewer 不会处理这条 Message 后面的任何数据tracker.sendMessage "TRIAL_RESULT 1" 
 ~~~
+
+这条是一定要有的，复制粘贴即可。
+{: .notice—info}
 
 ---
 
