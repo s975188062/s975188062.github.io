@@ -151,6 +151,6 @@ E-Prime:
       - title: "startRecording脚本"
         url: /eyelink/e-prime/eprime_startRecording/
       - title: "stopRecording脚本"
-        url: /editing/
+        url: /eyelink/e-prime/eprime_stopRecording/
       - title: "elClose脚本"
         url: /editing/
