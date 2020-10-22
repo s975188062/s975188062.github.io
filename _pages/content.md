@@ -94,6 +94,7 @@ toc: true
 ## 4.1 E-Prime
 
 * [总体概述](/eyelink/eprime_overview/)
+* [User Script](/eyelink/e-prime/eprime-user_script/)
 * [elConnect脚本](/eyelink/eprime_elconnect/)
 * [elCameraSetup脚本](/eyelink/e-prime/eprime_elCameraSetup/)
 * [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
