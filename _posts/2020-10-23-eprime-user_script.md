@@ -1,5 +1,5 @@
 ---
-title: "AllScripts(E-Prime眼动编程)"
+title: "User Script(E-Prime眼动编程)"
 excerpt: "放到E-Prime程序的最前面，不需要理解，完全复制粘贴。"
 read_time: false
 header:
