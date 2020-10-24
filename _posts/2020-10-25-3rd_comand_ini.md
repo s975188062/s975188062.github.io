@@ -23,10 +23,6 @@ Command函数是对眼动仪进行配置的关键函数，根据输入参数的�
 ~~~
 # EyeLink CL COMMANDS.INI FILE
 # November 25 2005	
-# *** WARNING: DO NOT MODIFY THIS FILE DIRECTLY!!! PLEASE CUT AND PASTE   ***
-# *** SELECTED COMMANDS TO FINAL.INI AND MAKE MODIFICATIONS IN THAT FILE! ***
-# NOTE: some settings may be overridden by LASTRUN.INI
-
 	
     ## online_dcorr_trigger <x ref coord> <y ref coord>
 	;; Performs as a mouse click for either on-line drift correction or for parallax (static or vergence-based) correction in scene camera mode. The gaze coordinates are the position of the fixation point (online drift correct) or the position of the object the subject is fixating in the video overlay. Fixation data collected previous to this command will be evaluated to see if a valid fixation has been found to supply computed gaze position. This command can fail, returning one of the following error codes:
