@@ -91,6 +91,9 @@ toc: true
 
 # 4. Third-Party Programing Tools
 
+* [第三方编程 Command 函数可用参数参考文档](/eyelink/3rd-programing/3rd_comand_ini/)
+* 第三方编程 Message 函数可用参数参考文档
+
 ## 4.1 E-Prime
 
 * [总体概述](/eyelink/e-prime/eprime_overview/)
