@@ -13,6 +13,7 @@ tags:
 toc: true
 comments: true
 author_profile: true
+classes: wide
 ---
 
 ---
