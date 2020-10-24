@@ -10,7 +10,7 @@ categories:
   - 3rd-Programing
 tags:
   - 3rd-Programing
-toc: true
+toc: false
 comments: true
 author_profile: true
 classes: wide
