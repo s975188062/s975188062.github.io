@@ -140,10 +140,10 @@ DV:
 EL_3rd:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
-    - title: "Command 函数自查"
-      url: /editing/
-    - title: "Message 函数自查"
-      url: /editing/
+  - title: "Command 函数自查"
+    url: /editing/
+  - title: "Message 函数自查"
+    url: /editing/
   - title: "E-Prime for Eyelink"
     children:
       - title: "总体概述"
@@ -175,8 +175,6 @@ EL_3rd:
       - title: "Project 制作"
         url: /editing/
       - title: "数据采集"
-        url: /editing/
-      - title: "TPR_DB"
         url: /editing/
   - title: "其他辅助工具"
     children:
