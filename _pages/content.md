@@ -104,7 +104,7 @@ toc: true
 * [stopRecording脚本](/eyelink/e-prime/eprime_stopRecording/)
 * [elClose脚本](/eyelink/e-prime/eprime_elClose/)
 
-## 4.2 PsychoToolBox
+## 4.2 PsychToolBox
 
 * 概述
 

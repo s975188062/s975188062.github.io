@@ -140,6 +140,10 @@ DV:
 EL_3rd:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
+  - title: "Command 函数自查"
+    url: /editing/
+  - title: "Message 函数自查"
+    url: /editing/
   - title: "E-Prime for Eyelink"
     children:
       - title: "总体概述"
@@ -156,3 +160,25 @@ EL_3rd:
         url: /eyelink/e-prime/eprime_stopRecording/
       - title: "elClose脚本"
         url: /eyelink/e-prime/eprime_elClose/
+  - title: "PsychToolBox for Eyelink"
+    children:
+      - title: "概述"
+        url: /editing/
+  - title: "PsychoPy for Eyelink"
+    children:
+      - title: "Zhiguo-Eyelab"
+        url: "https://github.com/zhiguo-eyelab/Pylink_book"
+  - title: "Translog-II"
+    children:
+      - title: "概述"
+        url: /editing/
+      - title: "Project 制作"
+        url: /editing/
+      - title: "数据采集"
+        url: /editing/
+      - title: "TPR_DB"
+        url: /editing/
+  - title: "其他辅助工具"
+    children:
+      - title: "Visual Angle Calculator"
+        url: /tools/tools_vac/
