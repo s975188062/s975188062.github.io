@@ -123,7 +123,6 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 * 概述
 * Project的制作
 * 数据采集
-* TPR_DB
 
 ## 4.5 辅助工具
 
