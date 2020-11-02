@@ -14,7 +14,10 @@ tags:
   - Translog-II
 toc: true
 comments: true
-author_profile: true
+author_profile: false
+sidebar:
+  title: "目录"
+  nav: EL_3rd
 ---
 
 ---
@@ -23,7 +26,19 @@ author_profile: true
 >
 > Translog-II 是一种用于记录和研究读写过程的程序。它可以获取人类翻译过程并量化为客观的数字。同 Translog 2000 和 Translog 2006 一样，Translog-II 也包含 2 个主要组件：Translog-II Supervisor 用于创建项目并重播记录的数据。 Translog-II User 用于运行文实验项目（阅读，书写或翻译）。 Translog-II 将数据保存为一个日志文件，其中包含阅读，写入和翻译过程的被试活动数据。同时，可以通过外部工具进行评估（请参阅TPR-DB）。
 
+# 1. Supervisor & User
 
+## 1.1 Supervisor 
+
+## 1.2 User
+
+---
+
+# 2. 眼动数据整合
+
+---
+
+# 3. TPR-DB
 
 ---
 
