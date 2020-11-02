@@ -18,7 +18,7 @@ comments: true
 author_profile: false
 sidebar:
   title: "目录"
-  nav: E-Prime
+  nav: EL_3rd
 ---
 
 ---
@@ -44,7 +44,11 @@ doCameraSetup
 > 
 > 您可以通过下面的方法获取您显示器的实际分辨率：
 > 
-> "桌面 -> 右键 -> 显示设置 -> 分辨率"---# 2. 全部源代码
+> "桌面 -> 右键 -> 显示设置 -> 分辨率"
+
+---
+
+# 2. 全部源代码
 
 ~~~ vb
 'Important! 

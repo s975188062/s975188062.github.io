@@ -12,7 +12,10 @@ tags:
   - 3rd-Programing
 toc: false
 comments: true
-author_profile: true
+author_profile: false
+sidebar:
+  title: "目录"
+  nav: EL_3rd
 classes: wide
 ---
 
