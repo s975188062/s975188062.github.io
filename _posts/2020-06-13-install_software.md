@@ -35,10 +35,9 @@ sidebar:
 
 | 软件                 | Windows下载链接                                                                                                                               | Mac下载链接                                                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Experiment Builder | [![win_2.2.299](https://img.shields.io/badge/Windows_v2.2.299-c10g-green?&style=social)](https://pan.baidu.com/s/1rzwMpOJeR9PK6D6Oo3n01g) | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v2.2.299-7cfa-green?&style=social)](https://pan.baidu.com/s/14IqXism-ktX_qae_gzSUBQ) |
-| Data Viewer        | [![win_4.1.1](https://img.shields.io/badge/Windows_v4.1.1-wmzv-green?&style=social)](https://pan.baidu.com/s/1XVAxAzoMquc51H1V2VuxEQ)     | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v4.1.1-n17d-green?&style=social)](https://pan.baidu.com/s/1ruGbGM8ZJq5oZBjIkiPczw)   |
+| Experiment Builder | [![win_2.3.38](https://img.shields.io/badge/Windows_v2.3.38-5lae-green?&style=social)](https://pan.baidu.com/s/1ldQoKv5WPXVb-otfGV6fbQ) | [![Mac_2.3.38](https://img.shields.io/badge/MacOS_v2.3.38-qdnj-green?&style=social)](https://pan.baidu.com/s/1_OH7lMZHA1CMmQ3GzTzsBQ) |
+| Data Viewer        | [![win_4.1.211](https://img.shields.io/badge/Windows_v4.1.211-2wv4-green?&style=social)](https://pan.baidu.com/s/1kUd3atMobKNwdhuQqm5deg)     | [![Mac_4.1.211](https://img.shields.io/badge/MacOS_v4.1.211-u7oe-green?&style=social)](https://pan.baidu.com/s/1slylu_jhQ5NjnETo5KKVxw)   |
 | Development Kit    | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-kygv-green?&style=social)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw)   | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ)  |
-
 
 ---
 
