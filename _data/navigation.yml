@@ -171,7 +171,7 @@ EL_3rd:
   - title: "Translog-II"
     children:
       - title: "概述"
-        url: /editing/
+        url: /eyelink/translog-ii/translog-overview/
       - title: "Project 制作"
         url: /editing/
       - title: "数据采集"

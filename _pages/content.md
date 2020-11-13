@@ -120,7 +120,7 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 
 ## 4.4 Translog II
 
-* 概述
+* [概述](/eyelink/translog-ii/translog-overview/)
 * Project的制作
 * 数据采集
 
