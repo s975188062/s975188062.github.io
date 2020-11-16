@@ -37,7 +37,7 @@ sidebar:
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Experiment Builder | [![win_2.3.38](https://img.shields.io/badge/Windows_v2.3.38-5lae-green?&style=social)](https://pan.baidu.com/s/1ldQoKv5WPXVb-otfGV6fbQ) | [![Mac_2.3.38](https://img.shields.io/badge/MacOS_v2.3.38-qdnj-green?&style=social)](https://pan.baidu.com/s/1_OH7lMZHA1CMmQ3GzTzsBQ) |
 | Data Viewer        | [![win_4.1.211](https://img.shields.io/badge/Windows_v4.1.211-2wv4-green?&style=social)](https://pan.baidu.com/s/1kUd3atMobKNwdhuQqm5deg)     | [![Mac_4.1.211](https://img.shields.io/badge/MacOS_v4.1.211-u7oe-green?&style=social)](https://pan.baidu.com/s/1slylu_jhQ5NjnETo5KKVxw)   |
-| Development Kit    | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-kygv-green?&style=social)](https://pan.baidu.com/s/1jSqjRoSd9DKps9_9Aj9qpw)   | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ)  |
+| Development Kit    | [![win_1.1.15](https://img.shields.io/badge/Windows_v1.1.15-2mtn-green?&style=social)](https://pan.baidu.com/s/1XxhRsunDnea4XQHIWV8nGg)   | [![Mac_2.2.299](https://img.shields.io/badge/MacOS_v1.1.11-zied-green?&style=social)](https://pan.baidu.com/s/1LyIpUTbiKygrVL0mJjKBIQ)  |
 
 ---
 
