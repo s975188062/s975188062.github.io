@@ -66,7 +66,7 @@ class: wide
     <input type="text" name="_replyto">
   </label>
   <label>
-    指标名称？
+    您的问题？
     <textarea name="faqs"></textarea>
   </label>
 
@@ -96,7 +96,7 @@ class: wide
     <input type="text" name="_replyto">
   </label>
   <label>
-    指标名称？
+    程序或数据的简介及下载链接？
     <textarea name="video"></textarea>
   </label>
 
