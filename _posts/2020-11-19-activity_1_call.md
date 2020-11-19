@@ -39,4 +39,26 @@ class: wide
 
 ---
 
+<form
+  action="https://formspree.io/mbjadrzd"
+  method="POST"
+>
+  <label>
+    尊姓大名：
+    <input type="text" name="_customname">
+  </label>
+  <label>
+    您的邮箱地址：
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    说点什么吗？
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">发送</button>
+</form>
+
 以上。
