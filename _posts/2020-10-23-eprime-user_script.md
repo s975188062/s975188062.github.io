@@ -31,9 +31,12 @@ sidebar:
 
 在任何 Eyelink 的 E-Prime 实验中，都需要在 E-Prime 的 User Script中填入相同的依赖代码，完全复制粘贴即可。
 
-User Script 的位置如下：
+E-Prime 3 中 User Script 的位置如下：
 
 ![eprime-user_script](/assets/images/eprime-user_script.png)
+
+E-Prime 2 中 User Script 的位置如下：
+![eprime-userscript-2](/assets/images/eprime-userscript-2.png)
 
 如果您有其他的 User Script，将 Eyelink 相关的代码复制粘贴在您的代码后面即可。
 
