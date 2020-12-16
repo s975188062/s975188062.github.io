@@ -128,6 +128,9 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 
 * [![vac](https://img.shields.io/badge/Visual_Angle_Calculator-v1.0-green)](/tools/tools_vac/)
 
+## 4.6 数据读取
+
+* [使用 Matlab/Python 读取 .edf 数据](/eyelink/3rd-read_edf/)
 ---
 
 # 5. Weblink

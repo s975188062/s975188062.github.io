@@ -180,3 +180,7 @@ EL_3rd:
     children:
       - title: "Visual Angle Calculator"
         url: /tools/tools_vac/
+  - title: "数据读取"
+    children:
+      - title: "Matlab/Python"
+        url: /eyelink/3rd-read_edf/
