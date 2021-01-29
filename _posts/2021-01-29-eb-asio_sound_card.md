@@ -138,11 +138,19 @@ M-Audio Air 192｜4 声卡支持 Win7 以上系统，下载好驱动程序默认
 
 驱动安装好之后，我们可以在 “开始菜单 - M-Audio” 文件夹中找到 `M-Audio AIR 192 4 Control Panel`。如果声卡已经连接在电脑上的话，打开 `M-Audio AIR 192 4 Control Panel` 则可以看到如下窗口。
 
+![card_not_connected](/assets/images/eb-asio-card_connected.png)
 
+但是如果看到如下图所示的窗口，提示 "Hardware not connected"，请检查硬件连接或者驱动安装。详细情况可咨询购买声卡的商家客服。
+
+![card_not_connected](/assets/images/eb-asio-card_not_connected.png)
 
 ## 2.3 Config ASIO
 
+成功安装声卡之后，在开始菜单的 SR Research 文件夹中打开 Configure ASIO 工具并打开。
 
+将 ASIO Driver 设置为我们的声卡（此处Charlie用的是M-Aduio AIR 192|6）。
+
+![asio_settings](/assets/images/eb-asio-asio_settings.png)
 
 ---
 
