@@ -62,8 +62,11 @@ PCI-e 声卡是指声卡使用 PCI-Express 接口。翻译一下就是这种声�
 M-Audio M-Track Air 192 系列共计有四个分型号，分别是：
 
 > M-Audio M-Track Air 192｜4
+> 
 > M-Audio M-Track Air 192｜6
+> 
 > M-Audio M-Track Air 192｜8
+> 
 > M-Audio M-Track Air 192｜14
 
 最后数字的变化是 I/O 数量不同，即 输入/输出 接口的数量不同。这个地方我们要从声卡最原始的功能来解释：
