@@ -1,5 +1,5 @@
 ---
-title: "工具 - Pythonista 3"
+title: "工具 - Pythonista 3.0"
 excerpt: "iPad，买前生产力，买后游戏机。如何在iPad上面coding，是一个困扰了我很久的问题，直到我发现了Pythonista 3。"
 read_time: false
 header:
