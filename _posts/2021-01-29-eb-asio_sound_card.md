@@ -53,7 +53,7 @@ PCI-e 声卡是指声卡使用 PCI-Express 接口。翻译一下就是这种声�
 
 ## 1.2 USB 声卡
 
-下图所示，是 Charlie 比较推荐的声卡型号—— [M-Audio M-Track Air 192|4](https://search.jd.com/Search?keyword=M-Audio%20M-Track%20Air%20192&enc=utf-8) 。
+下图所示，是 Charlie 比较推荐的声卡型号 [M-Audio M-Track Air 192|4](https://search.jd.com/Search?keyword=M-Audio%20M-Track%20Air%20192&enc=utf-8) 。
 
 ![eb-asio-usb_audio_card](/assets/images/eb-asio-usb_audio_card.png)
 
