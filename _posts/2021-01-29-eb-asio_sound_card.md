@@ -53,7 +53,7 @@ PCI-e 声卡是指声卡使用 PCI-Express 接口。翻译一下就是这种声�
 
 ## 1.2 USB 声卡
 
-下图所示，是 Charlie 比较推荐的声卡型号 [M-Audio M-Track Air 192/4](https://search.jd.com/Search?keyword=M-Audio%20M-Track%20Air%20192&enc=utf-8) 。
+下图所示，是 Charlie 比较推荐的声卡型号 [M-Audio M-Track Air 192 4](https://search.jd.com/Search?keyword=M-Audio%20M-Track%20Air%20192&enc=utf-8) 。
 
 ![eb-asio-usb_audio_card](/assets/images/eb-asio-usb_audio_card.png)
 
@@ -61,17 +61,17 @@ PCI-e 声卡是指声卡使用 PCI-Express 接口。翻译一下就是这种声�
 
 M-Audio M-Track Air 192 系列共计有四个分型号，分别是：
 
-> M-Audio M-Track Air 192｜4
+> M-Audio M-Track Air 192 4
 > 
-> M-Audio M-Track Air 192｜6
+> M-Audio M-Track Air 192 6
 > 
-> M-Audio M-Track Air 192｜8
+> M-Audio M-Track Air 192 8
 > 
-> M-Audio M-Track Air 192｜14
+> M-Audio M-Track Air 192 14
 
 最后数字的变化是 I/O 数量不同，即 输入/输出 接口的数量不同。这个地方我们要从声卡最原始的功能来解释：
 
-USB声卡本身是作为乐器/人声的录音使用的，所以声卡本身是一个音乐制作的硬件。我们实验中看重其毫秒级的声音录制/播放延迟，将其用作我们播放/录制声音的工具。其 输入/输出 接口数量的多少实际上是可以同时连接多少乐器和音箱，而作为我们实验过程中的工具，保证输入和输出通道各一个既可满足需求。所以我们选择 I/O 最小的 _M-Audio M-Track Air 192｜4_ 。
+USB声卡本身是作为乐器/人声的录音使用的，所以声卡本身是一个音乐制作的硬件。我们实验中看重其毫秒级的声音录制/播放延迟，将其用作我们播放/录制声音的工具。其 输入/输出 接口数量的多少实际上是可以同时连接多少乐器和音箱，而作为我们实验过程中的工具，保证输入和输出通道各一个既可满足需求。所以我们选择 I/O 最小的 _M-Audio M-Track Air 192 4_ 。
 
 ---
 
@@ -151,7 +151,7 @@ M-Audio Air 192｜4 声卡支持 Win7 以上系统，下载好驱动程序默认
 
 成功安装声卡之后，在开始菜单的 SR Research 文件夹中打开 Configure ASIO 工具并打开。
 
-将 ASIO Driver 设置为我们的声卡（此处Charlie用的是M-Aduio AIR 192|6）。
+将 ASIO Driver 设置为我们的声卡（此处Charlie用的是M-Aduio AIR 192 6）。
 
 ![asio_settings](/assets/images/eb-asio-asio_settings.png)
 
