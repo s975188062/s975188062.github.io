@@ -40,6 +40,12 @@ author_profile: true
 
 ## 1.1 备份文件
 
+
+注意！Charlie 推荐将数据和文件被分到可移动硬盘或者 U 盘。这样最省心！
+
+{: .notice--info}
+
+
 > **数据**就是**金钱**！
 >
 > **数据**就是**生命**！
@@ -56,9 +62,9 @@ author_profile: true
 
 ![os-install_windows-show_where_is_documents_folder](../assets/images/os-install_windows-show_where_is_documents_folder.png)
 
-备份数据有两种模式：只格式化系统盘和格式化整个电脑。容我进行一下简单介绍:
+备份数据有两种模式：只格式化系统盘 或者 格式化整个电脑。容我进行一下简单介绍:
 
-* 电脑上除了 C 盘还至少有其他盘
+* 电脑上除了 C 盘还至少有其他盘（这样操作其实很不省心）
 
 > 如果你的电脑上电脑上除了 C 盘还有其他盘，那么你可以把数据备份到除了 C 盘以外的其他硬盘上，如到 D 盘。这里面有一个小问题，就是是否要保留原本留在D盘里面的其他数据。
 >
@@ -70,7 +76,7 @@ author_profile: true
 >
 > 这种情况下可以只格式化 C 盘，不对其他盘进行操作。
 
-电脑只有一个 C 盘
+* 电脑只有一个 C 盘（省心）
 
 > 如果电脑上只有这一个盘的话，就必须使用其他的 U 盘或者其他移动硬盘来备份数据了，这部分不再赘述。
 
@@ -98,7 +104,7 @@ author_profile: true
 
 制作系统安装盘的操作会格式化 U 盘，请注意备份重要文件。
 
-{: .notice-warning}
+{: .notice--warning}
 
 打开`MediaCreationTool`，接受许可协议。
 
@@ -129,6 +135,110 @@ author_profile: true
 ---
 
 # 2. 安装系统
+
+## 2.1 安装
+
+将 U 盘插到电脑上，重启电脑。顺利的话，电脑将自动重启进入如下界面：
+
+![os-install_windows-install_step_1_select_language](../assets/images/os-install_windows-install_step_1_select_language.png)
+
+> 如果没能自动进入到这个界面的话，重新启动电脑。在电脑启动的过程中注意屏幕的提示。
+>
+> 如 Charlie 手边的是一台 Intel NUC5i7RYH。在启动时会显示如下界面：
+>
+> ![os-install_windows-install_step_x_start](../assets/images/os-install_windows-install_step_x_start.png)
+>
+> 其中最后一行提示`F10 to Enter Boot Menu`，所以应该在此时尽快按`F10`启动 BootManager。
+>
+> 因为电脑的主板型号不同，具体按键也不尽相同，基本的逻辑就是找一找看通过什么按键可以进入到`Boot Menu`或者`Boot Manager`。常见的按键包括但不仅限于`F12`、`F1`、`F2`和`F10`，按照概率排序。
+>
+> 随后在 Boot Manager 中选择以“USB”开头的选项：
+>
+> ![os-install_windows-install_step_x_boot_manager](../assets/images/os-install_windows-install_step_x_boot_manager.png)
+>
+> 按回车即可进入到开始介绍的界面。
+
+一切默认选择，直接点击下一步：
+
+![os-install_windows-install_step_1_select_language_2](../assets/images/os-install_windows-install_step_1_select_language_2.png)
+
+现在安装：
+
+![os-install_windows-install_step_2_install_now](../assets/images/os-install_windows-install_step_2_install_now.png)
+
+选择“我没有产品密钥”：
+
+![os-install_windows-install_step_3_no_license](../assets/images/os-install_windows-install_step_3_no_license.png)
+
+选择“Windows 10 专业版”，点击“确定”：
+
+![os-install_windows-install_step_4_stlect_pro_version](../assets/images/os-install_windows-install_step_4_stlect_pro_version.png)
+
+接受许可条款，点击“下一步”：
+
+![os-install_windows-install_step_5_accept_license](../assets/images/os-install_windows-install_step_5_accept_license.png)
+
+选择“自定义：仅安装 Windows (高级) (C)”：
+
+![os-install_windows-install_step_6_install_only](../assets/images/os-install_windows-install_step_6_install_only.png)
+
+选择要安装的驱动器，这一步比较复杂。
+
+![os-install_windows-install_step_7_which_disk](../assets/images/os-install_windows-install_step_7_which_disk.png)
+
+首先，我们需要选择正确的驱动器分区，即我们平时所说的 `C 盘`、`D 盘`、`E 盘`。
+
+> 蓝色：代表物理硬盘，指电脑中实际安装了几个硬盘。
+>
+> 绿色：代表硬盘分区，除了`C 盘`、`D 盘`、`E 盘`外还会有系统引导分区和恢复分区等。
+>
+> 紫色：分区盘的容量。
+
+对于初学者来说貌似很难去判断应该选择哪一个，那么我们使用一个简单一点的方法。
+
+* 电脑上除了 C 盘还至少有其他盘
+
+> 注意上图中紫色标记的数值，根据硬盘容量找到哪个是你的 C 盘分区。只删除这一个分区。
+
+* 电脑只有一个 C 盘
+
+> 重复下图的步骤，依次删除全部的分区。
+
+注意！如果您将数据备份到了除了 C 盘的其他硬盘上，一定不要删除错误，否则全部数据都将丢失。
+
+{: .notice--warning}
+
+![os-install_windows-install_step_7_select_disk](../assets/images/os-install_windows-install_step_7_delete_disk.png)
+
+随后在列表中选中“驱动器 x 未分配的空间”，点击下一步（列表中也可能有其他分区）：
+
+![os-install_windows-install_step_7_select_disk](../assets/images/os-install_windows-install_step_7_select_disk.png)
+
+随后，系统将会自动安装，安装完毕后系统会自动重启：
+
+![os-install_windows-install_step_8_installing](../assets/images/os-install_windows-install_step_8_installing.png)
+
+电脑重启后，拔下 U 盘即可。重启的过程实际上是第一次启动系统，过程会有些漫长，我们耐心等待。
+
+## 2.2 初始化
+
+重启后我们就可以开始初始化我们的新操作系统了。
+
+选择“中国”，点击“是”：
+
+![os-install_windows-install_init_1_language](../assets/images/os-install_windows-install_init_1_language.png)
+
+选择“微软拼音”，点击“是”：
+
+![os-install_windows-install_init_2_keyboard](../assets/images/os-install_windows-install_init_2_keyboard.png)
+
+点击“跳过”：
+
+![os-install_windows-install_init_3_skip_second_keyboard](../assets/images/os-install_windows-install_init_3_skip_second_keyboard.png)
+
+
+
+
 
 ---
 
