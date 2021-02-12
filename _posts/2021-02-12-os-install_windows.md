@@ -16,7 +16,6 @@ toc: true
 comments: true
 author_profile: true
 ---
-
 # 0. 纯净系统的利与弊
 
 凡事皆有利弊，在决定是否要安装一个纯净的操作系统之前，我们先来看一下纯净的系统有哪些优势和劣势。
@@ -41,12 +40,8 @@ author_profile: true
 
 ## 1.1 备份文件
 
-
-
 注意！Charlie 推荐将数据和文件被分到可移动硬盘或者 U 盘。这样最省心！
 {: .notice--info}
-
-
 
 > **数据**就是**金钱**！
 >
@@ -205,9 +200,7 @@ author_profile: true
 
 > 重复下图的步骤，依次删除全部的分区。
 
-注意！如果您将数据备份到了除了 C 盘的其他硬盘上，一定不要删除错误，否则全部数据都将丢失。
-
-{: .notice--warning}
+注意！如果您将数据备份到了除了 C 盘的其他硬盘上，一定不要删除错误，否则全部数据都将丢失。{: .notice--warning}
 
 ![os-install_windows-install_step_7_select_disk](/assets/images/os-install_windows-install_step_7_delete_disk.png)
 
@@ -296,7 +289,7 @@ Charlie 在工作中积攒了一套系统环境补全工具，分享给大家。
 
 大多数时候都是需要额外激活的，在这个过程中不要联网。
 
-### 3.1.1 关闭 Windows Defender 
+### 3.1.1 关闭 Windows Defender
 
 打开“开始菜单 - Windows 安全中心 - 病毒和威胁防护 - 管理设置”。
 
@@ -306,7 +299,7 @@ Charlie 在工作中积攒了一套系统环境补全工具，分享给大家。
 
 ![os-install_windows-disable_windows_defender](/assets/images/os-install_windows-disable_windows_defender.png)
 
-### 3.1.2 使用 KMS Activator 激活 Windows 
+### 3.1.2 使用 KMS Activator 激活 Windows
 
 这里我们要使用的是[HEU KMS Activator](https://blog.csdn.net/vbcom/article/details/6962388)
 
