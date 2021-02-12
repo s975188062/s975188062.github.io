@@ -41,9 +41,11 @@ author_profile: true
 ## 1.1 备份文件
 
 
+
 注意！Charlie 推荐将数据和文件被分到可移动硬盘或者 U 盘。这样最省心！
 
 {: .notice--info}
+
 
 
 > **数据**就是**金钱**！
@@ -236,15 +238,62 @@ author_profile: true
 
 ![os-install_windows-install_init_3_skip_second_keyboard](../assets/images/os-install_windows-install_init_3_skip_second_keyboard.png)
 
+点击“我没有 Internet 连接”：
 
+![os-install_windows-install_init_4_network](../assets/images/os-install_windows-install_init_4_network.png)
 
+点击“继续执行有限设置”：
 
+![os-install_windows-install_init_5_limited_setting](../assets/images/os-install_windows-install_init_5_limited_setting.png)
+
+设定用户名，尽量不要使用中文，并且使用下划线代替空格，如“Changlin_Song”：
+
+![os-install_windows-install_init_6_user_name](../assets/images/os-install_windows-install_init_6_user_name.png)
+
+设置密码：
+
+![os-install_windows-install_init_7_password](../assets/images/os-install_windows-install_init_7_password.png)
+
+隐私设置，点击“接受”即可：
+
+![os-install_windows-install_init_8_private_setting](../assets/images/os-install_windows-install_init_8_private_setting.png)
+
+设置语音助手 Cotana ，点击“以后再说”：
+
+![os-install_windows-install_init_9_cortana](../assets/images/os-install_windows-install_init_9_cortana.png)
+
+随后系统会自动完成一些配置，显示界面如下：
+
+![os-install_windows-install_init_10_need_minutes](../assets/images/os-install_windows-install_init_10_need_minutes.png)
+
+几分钟后，就进入了新的系统，至此完成了一半。
+
+![os-install_windows-install_init_done](../assets/images/os-install_windows-install_init_done.png)
 
 ---
 
 # 3. 补全驱动和运行环境
 
+Charlie 在前面已经提到过，“纯净”也代表着“要啥啥没有”，所以我们需要自力更生做一些事情。
+
+Charlie 在工作中积攒了一套系统环境补全工具，分享给大家。其中包含如下几个部分：
+
+- KMS 系统激活工具 [【下载连接(8fn0)】](https://pan.baidu.com/s/16Vof2bRM6dLz6vTXloxojw) [【原项目地址】](https://blog.csdn.net/vbcom/article/details/6962388)
+- DrictX 修复工具 [【下载连接(5tdt)】](https://pan.baidu.com/s/1A4Wtl6DXf6m8WFT78oOBGQ)  [【原项目地址】](https://github.com/zbezj) 
+
+在下面的使用中将进行详细介绍。
+
 ## 3.1 激活系统
+
+> 激活系统的正确姿势一定是到微软指定代理商处购买~~死贵的~~系统激活码。
+>
+> “官方正版”和“国产正版”之间其实在使用上并没有区别。两者之间的唯一不同就是是否是微软合法授权的。大家可以放心食用。
+
+当然 Charlie 也有让你使用”国产正版“的方法。
+
+这里我们要使用的是[HEU KMS Activator](https://blog.csdn.net/vbcom/article/details/6962388)
+
+
 
 ## 3.2 更新系统
 
