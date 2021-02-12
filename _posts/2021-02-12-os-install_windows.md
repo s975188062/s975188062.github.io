@@ -200,7 +200,8 @@ author_profile: true
 
 > 重复下图的步骤，依次删除全部的分区。
 
-注意！如果您将数据备份到了除了 C 盘的其他硬盘上，一定不要删除错误，否则全部数据都将丢失。{: .notice--warning}
+注意！如果您将数据备份到了除了 C 盘的其他硬盘上，一定不要删除错误，否则全部数据都将丢失。
+{: .notice--warning}
 
 ![os-install_windows-install_step_7_select_disk](/assets/images/os-install_windows-install_step_7_delete_disk.png)
 
