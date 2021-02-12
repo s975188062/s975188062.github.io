@@ -18,11 +18,15 @@ toc: false
 * Matlab / Psychtoolbox 
 * Python / PsychoPy
 * ExperimentBuilder
+* C/C++
 
 ### 设备
 
 * Eyetracking / 眼动追踪
 * EEG / 脑电
+* TDT/听觉刺激、多通道神经电生理、光遗传
+* Ardunio
+* RSP
 
 ### 数据处理
 
