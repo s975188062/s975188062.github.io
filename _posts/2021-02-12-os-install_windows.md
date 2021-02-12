@@ -105,9 +105,9 @@ author_profile: true
 
 > 别担心，装完系统之后 U 盘还可以继续使用
 
-制作系统安装盘的操作会格式化 U 盘，请注意备份重要文件。
+{: .notice--warning}制作系统安装盘的操作会格式化 U 盘，请注意备份重要文件。
 
-{: .notice--warning}
+
 
 打开`MediaCreationTool`，接受许可协议。
 
