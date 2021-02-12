@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.5
   teaser: /assets/images/os-Install_windows_taster.png
 categories:
-  - 操作系统
+  - OS
 tags:
   - 系统安装
   - Windows
