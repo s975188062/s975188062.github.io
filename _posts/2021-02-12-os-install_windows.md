@@ -314,7 +314,7 @@ Charlie 在工作中积攒了一套系统环境补全工具，分享给大家。
 
 右键`HEU_KMS_Activator_v22.1.0`，点击“以管理员身份运行”。
 
-> 如果没有任何反应或者没能成功打开，那么应该是没有完全关闭 Windows Defender ，请重新执行 [3.1.1 关闭 Windows Defender]() 中的步骤。
+> 如果没有任何反应或者没能成功打开，那么应该是没有完全关闭 Windows Defender ，请重新执行 [3.1.1 关闭 Windows Defender](/操作系统/os-install_windows/#311-关闭-windows-defender) 中的步骤。
 
 点击软件中间的 Windows Logo 即可自动激活 Windows。过程中您可以看到软件窗口下部有一个显示进度的百分比提示。
 
@@ -324,7 +324,7 @@ Charlie 在工作中积攒了一套系统环境补全工具，分享给大家。
 
 如果您看到了如上的窗口，那么您的 Windows 系统已经激活成功。
 
-那么您可以反向执行 [3.1.1 关闭 Windows Defender]() 中的步骤，重新打开 Windows Defender 。
+那么您可以反向执行 [3.1.1 关闭 Windows Defender](/操作系统/os-install_windows/#311-关闭-windows-defender) 中的步骤，重新打开 Windows Defender 。
 
 ## 3.2 更新系统
 
