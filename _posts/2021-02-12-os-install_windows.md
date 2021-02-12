@@ -119,7 +119,7 @@ author_profile: true
 
 默认，下一步。
 
-![win_media_creation_tool_config_installation_settings](/assets\images\os-install_windows-win_media_creation_tool_config_installation_settings.png)
+![win_media_creation_tool_config_installation_settings](/assets/images/os-install_windows-win_media_creation_tool_config_installation_settings.png)
 
 选择“U 盘”。
 
