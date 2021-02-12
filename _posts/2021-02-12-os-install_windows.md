@@ -44,7 +44,6 @@ author_profile: true
 
 
 注意！Charlie 推荐将数据和文件被分到可移动硬盘或者 U 盘。这样最省心！
-
 {: .notice--info}
 
 
@@ -105,11 +104,8 @@ author_profile: true
 
 > 别担心，装完系统之后 U 盘还可以继续使用
 
-{: .notice--warning}
-
 制作系统安装盘的操作会格式化 U 盘，请注意备份重要文件。
-
-
+{: .notice--warning}
 
 打开`MediaCreationTool`，接受许可协议。
 
