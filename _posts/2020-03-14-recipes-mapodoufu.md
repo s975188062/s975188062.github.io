@@ -11,6 +11,7 @@ categories:
 classes: wide
 toc: false # 右侧页内导航
 comments: true
+typora-root-url: ..
 ---
 
 麻婆豆腐作为一道家喻户晓的川菜，以其麻辣的口味和弹软的口感深受普通老百姓喜欢。即便是身处东北的黑龙江，巧手的主妇也会时不时给孩子做上一次解解馋。话不多说，先上成品图
