@@ -3,6 +3,7 @@ permalink: /bv_demo_equipments_logger/
 title: "样机流转记录"
 toc: false
 class: wide
+author_profile: false
 ---
 
 请录入样机流转信息：
