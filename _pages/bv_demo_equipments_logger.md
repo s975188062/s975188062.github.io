@@ -16,7 +16,7 @@ toc: false
   </label>
   <label>
     寄出/寄回 及 地址信息：
-    <input type="text" name="_customAddress">
+    <textarea name="address"></textarea>
   </label>
   <label>
     客户名称：
@@ -28,7 +28,7 @@ toc: false
   </label>
   <label>
     核心部件S/N号：
-    <input type="text" name="_mainSN">
+    <textarea name="SN"></textarea>
   </label>
   <label>
     设备清单：
