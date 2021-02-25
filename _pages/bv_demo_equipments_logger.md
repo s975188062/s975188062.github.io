@@ -4,6 +4,7 @@ title: "样机流转记录"
 toc: false
 ---
 
+请录入样机流转信息：
 
 <form
   action="https://formspree.io/mbjadrzd"
