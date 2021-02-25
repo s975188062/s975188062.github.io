@@ -1,5 +1,5 @@
 ---
-permalink: /bv_demo_equipments/
+permalink: /bv_demo_equipments_logger/
 title: "样机流转记录"
 toc: false
 ---
