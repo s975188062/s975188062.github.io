@@ -1,6 +1,6 @@
 ---
 title: "数据清洗 4-Stage Fixation Cleaning"
-excerpt: "EB Basic系列的随机设置，主要涉及试次随机、实验内分组（Block）和分割实验等。"
+excerpt: "阅读中的数据清洗，可能会让效应不显著的数据变得显著，也可能什么效果有没有。"
 read_time: false
 header:
   overlay_image: /assets/images/dv_intro_header.png
