@@ -83,7 +83,7 @@ toc: true
 
 ## 3.2 Master
 
-* 数据清洗
+* [数据清洗](/eyelink/dv-4_stage_fixation_cleaning/)
 * 绘制动态兴趣区DynamicInterestArea
 * 数据补救
 

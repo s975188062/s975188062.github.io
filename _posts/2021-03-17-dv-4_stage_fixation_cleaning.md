@@ -18,6 +18,8 @@ sidebar:
   nav: DV
 ---
 
+---
+
 # 1. 什么是 4-Stage Fixation Cleaning
 
 4-Stage Fixation Cleaning 是一种数据清洗方法，一般在**阅读研究**的数据预处理中使用。其背后的逻辑大致如下：
@@ -173,7 +175,7 @@ Non IA Left Eye
 
 为了方便大家计数，Charlie 写了一个小工具送给大家：
 
-[>>>Cleaning Counter - v0.1 （密码：xxxx）<<<]()
+[>>>Cleaning Counter - v0.1 （密码：ckjs）<<<](https://pan.baidu.com/s/1aqNcy_j7NA1M8uAFRJXUeA)
 
 ![dv-4_stage_fix_cleaning-cleaning_counter](/assets/images/dv-4_stage_fix_cleaning-cleaning_counter.png)
 
