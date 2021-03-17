@@ -121,7 +121,7 @@ DV:
   - title: "DV Master"
     children:
       - title: "数据清洗"
-        url: /eyelink/host-system-update/
+        url: /editing/
       - title: "绘制动态兴趣区Dynamic IA"
         url: /editing/
       - title: "数据补救"
