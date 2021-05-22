@@ -1,0 +1,806 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>主试机系统更新教程 - Charlie的学习与生活</title>
+<meta name="description" content="  ">
+
+
+  <meta name="author" content="宋昌霖">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="Charlie的学习与生活">
+<meta property="og:title" content="主试机系统更新教程">
+<meta property="og:url" content="http://localhost:4000/eyelink/host-system-update/">
+
+
+  <meta property="og:description" content="  ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-23T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/eyelink/host-system-update/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "宋昌霖",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Charlie的学习与生活 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<style>
+  table{
+    border-left:1px solid #000000;border-top:1px solid #000000;
+    width: 100%;
+    word-wrap:break-word; word-break:break-all;
+  }
+  table th{
+  text-align:center;
+  }
+  table th,td{
+    border-right:1px solid #000000;border-bottom:1px solid #000000;
+  }
+</style>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/imgs/icon.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          Charlie的学习与生活
+          <span class="site-subtitle">Last Update 2020.03.25 | 8% Done</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/content/" >Eyelink指北</a>
+            </li><li class="masthead__menu-item">
+              <a href="/recipe/" >私房食谱</a>
+            </li><li class="masthead__menu-item">
+              <a href="/dogfood/" >三斤狗粮</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >文章分类</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >标签</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">首页</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#eyelink" itemprop="item"><span itemprop="name">Eyelink</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">主试机系统更新教程</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/head_photo.png" alt="宋昌霖" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">宋昌霖</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>唯爱人与美食不可辜负</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">关注</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:Charlie-TechBlog@outlook.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Charlie-TechBlog@outlook.com</a></li>
+          
+        
+          
+            <li><a href="/content/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Eyelink指北</a></li>
+          
+        
+          
+            <li><a href="/recipe/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> 私房食谱</a></li>
+          
+        
+          
+            <li><a href="/dogfood/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> 三斤狗粮</a></li>
+          
+        
+          
+            <li><a href="/pay4more/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Charlie的万事屋</a></li>
+          
+        
+          
+            <li><a href="/about/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> About</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="主试机系统更新教程">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2020-03-23T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">主试机系统更新教程
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  少于 1 分钟阅读
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 在本页上</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#1-eyelink-10002000">1. Eyelink 1000/2000</a></li>
+  <li><a href="#2-eyelink-1000plus">2. Eyelink 1000Plus</a></li>
+  <li><a href="#3-eyelink-portable-duo">3. Eyelink Portable Duo</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <hr />
+
+<p>截止2020年3月23日，最新的系统版本号如下：</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Eyelink 1000</code> -&gt; <code class="highlighter-rouge">4.594</code></li>
+  <li><code class="highlighter-rouge">Eyelink 2000</code> -&gt; <code class="highlighter-rouge">4.594</code></li>
+  <li><code class="highlighter-rouge">Eyelink 1000Plus</code> -&gt; <code class="highlighter-rouge">5.15</code></li>
+  <li><code class="highlighter-rouge">Eyelink Portable Duo</code> -&gt; <code class="highlighter-rouge">6.12</code></li>
+</ul>
+
+<p>您可以打开主试机，在<code class="highlighter-rouge">Offline界面</code>的右下角，查看当前系统版本号，如下图所示：</p>
+
+<p><img src="/assets/images/hsot_1kp_offline.jpg" alt="hsot_1kp_offline" /></p>
+
+<p>我们可以看到当前主试机的系统版本号为“5.00.50”。</p>
+
+<hr />
+
+<h1 id="1-eyelink-10002000">1. Eyelink 1000/2000</h1>
+
+<p><code class="highlighter-rouge">桌面式</code>根据红外发光器的位置，在下图中二选一下载；
+<code class="highlighter-rouge">塔式</code>、<code class="highlighter-rouge">核磁式</code>、<code class="highlighter-rouge">灵长类动物式</code>下载任意一个均可；
+<code class="highlighter-rouge">LCD Arm</code>请下载红外发光器在右侧的版本。</p>
+
+<ul>
+  <li>红外发光器在左侧：<a href="https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_left.zip">Github</a>，<a href="https://pan.baidu.com/s/10IoW79--cSgtJgkLcM7wpA">百度网盘(z52o)</a>；</li>
+  <li>红外发光器在右侧：<a href="https://raw.githubusercontent.com/s975188062/s975188062.github.io/master/_source/Host%20PC%20Upgrade%20Installiation/elcl_4.594_right.zip">Github</a>，<a href="https://pan.baidu.com/s/1kGxr_IbWez46tFMZUCkEwg">百度网盘(xi2x)</a>。</li>
+</ul>
+
+<p>Eyelink 1000/2000的主试机使用的是DOS系统，在更新操作系统时需要进入到<code class="highlighter-rouge">Windows</code>系统中来操作。</p>
+
+<p>开机，在<code class="highlighter-rouge">Boost Manager</code>界面进入<code class="highlighter-rouge">Microsoft Windows Vista</code>。</p>
+
+<p><img src="/assets/images/EL_1k_host_boost.jpg" alt="EL_1k_host_boost" /></p>
+
+<p>进入<code class="highlighter-rouge">Microsoft Windows Vista</code>后打开<code class="highlighter-rouge">我的电脑</code>，可以看到除Windows系统分区外还有一个硬盘分区，根据主试机版本不同，可能叫做<code class="highlighter-rouge">D:/</code>或<code class="highlighter-rouge">Eyelink</code>等不同名字。</p>
+
+<p>无论硬盘分区叫什么名字，该分区下都有一个名为<code class="highlighter-rouge">ELCL</code>的文件夹。</p>
+
+<p>另一边，我们将下载好的更新压缩包解压保存到U盘中。将U盘插到需要更新的主试机上，我们可以看到解压好的更新压缩包也叫做<code class="highlighter-rouge">ELCL</code>。此时我们只需要将U盘中的<code class="highlighter-rouge">ELCL</code>文件夹拖拽至Eyelink系统盘中，覆盖原来的<code class="highlighter-rouge">ELCL</code>文件夹即可。</p>
+
+<p>重新启动电脑，在<code class="highlighter-rouge">Boost Manager</code>进入<code class="highlighter-rouge">Eyelink</code>，敲入“t”，按回车即可启动主试机。这个时候我们可以在<code class="highlighter-rouge">Offile界面</code>看到已经更新到最新系统了。</p>
+
+<hr />
+
+<h1 id="2-eyelink-1000plus">2. Eyelink 1000Plus</h1>
+
+<p><code class="highlighter-rouge">Eyelink 1000Plus</code>系列主试机系统的最新版本为<code class="highlighter-rouge">5.15</code>.</p>
+
+<p>下载链接：<a href="https://github.com/s975188062/s975188062.github.io/raw/master/_source/Host%20PC%20Upgrade%20Installiation/elcl-5.15.zip">Github</a>，<a href="https://pan.baidu.com/s/1AkHcBcP-OohzHz62zG0jFw">百度网盘(2zef)</a></p>
+
+<p>下载后将文件直接放到U盘中，<strong>不要解压缩</strong>。</p>
+
+<p>首先，在主试机的<code class="highlighter-rouge">Offline界面</code>点击<code class="highlighter-rouge">Exit Eyelink</code>按钮，退出<code class="highlighter-rouge">Track系统</code>。</p>
+
+<p><img src="/assets/images/host_offline2boost.jpg" alt="host_offline2boost" /></p>
+
+<p>系统将直接进入到如下图所示的<code class="highlighter-rouge">File Manager界面</code>。如果没有自行跳转，则点击<code class="highlighter-rouge">File Manager按钮</code>进入到<code class="highlighter-rouge">File Manager界面</code>。</p>
+
+<p>在电脑上插入已经准备好的U盘。</p>
+
+<p>点击<code class="highlighter-rouge">Configuration按钮</code>。</p>
+
+<p><img src="/assets/images/host_filemanager2configuration.jpg" alt="host_filemanager2configuration" /></p>
+
+<p>点击<code class="highlighter-rouge">System Update按钮</code>。</p>
+
+<p><img src="/assets/images/host_configuration2updateSystem.jpg" alt="host_configuration2updateSyste" /></p>
+
+<p>点击<code class="highlighter-rouge">Choose File按钮</code>。</p>
+
+<p><img src="/assets/images/host_system_update.jpg" alt="host_system_update" /></p>
+
+<p>在窗口上方的地址栏中，选择新插入的U盘，名称可能是<code class="highlighter-rouge">/fs/usb0</code>。</p>
+
+<p><img src="/assets/images/host_sysUpdate_choose_drive.jpg" alt="host_sysUpdate_choose_drive" /></p>
+
+<p>在文件列表中选择准备好的升级包，点击右下角的<code class="highlighter-rouge">Open</code>按钮。</p>
+
+<p><img src="/assets/images/host_sysUpdate_choose_file.jpg" alt="host_sysUpdate_choose_file" /></p>
+
+<p>点击<code class="highlighter-rouge">Update</code>按钮。</p>
+
+<p><img src="/assets/images/host_sysUpdate_confrim_update.jpg" alt="host_sysUpdate_confrim_update" /></p>
+
+<p>系统会自动完成更新，点击工具栏的<code class="highlighter-rouge">Eyelink</code>按钮即可返回到<code class="highlighter-rouge">Track</code>系统中。</p>
+
+<p><img src="/assets/images/host_start_from_filemanager.jpg" alt="host_start_from_filemanage" /></p>
+
+<hr />
+
+<h1 id="3-eyelink-portable-duo">3. Eyelink Portable Duo</h1>
+
+<p><code class="highlighter-rouge">Eyelink Portable Duo</code>系列主试机系统的最新版本为<code class="highlighter-rouge">6.12</code>.</p>
+
+<p>下载链接：<a href="https://github.com/s975188062/s975188062.github.io/raw/master/_source/Host%20PC%20Upgrade%20Installiation/elusb-6.12-18-02-01-PortableDUO.duo.zip">Github</a>，<a href="https://pan.baidu.com/s/1HL-TsFR2V48d04APO_Zg2g">百度网盘(i87e)</a></p>
+
+<p>您可以在主试机的<code class="highlighter-rouge">Setup界面</code>的<strong>左下角</strong>查看主试机的系统版本号。如下图所示：</p>
+
+<p><img src="/assets/images/host_pd_setup.jpg" alt="host_pd_setup" /></p>
+
+<p>下载后将文件直接放到U盘中，<strong>不要解压缩</strong>。</p>
+
+<p>点击屏幕右侧的<code class="highlighter-rouge">Exit按钮</code>，随后在出现的对话框中点击<code class="highlighter-rouge">Exit Eyelink</code>即可自动跳转到<code class="highlighter-rouge">File Manager界面</code>。如果没有自行跳转，则点击<code class="highlighter-rouge">File Manager按钮</code>进入到<code class="highlighter-rouge">File Manager界面</code>。</p>
+
+<p>后面的操作和<code class="highlighter-rouge">Eyelink 1000Plus</code>的升级方法一致。</p>
+
+<blockquote>
+  <p>在电脑上插入已经准备好的U盘。</p>
+
+  <p>点击<code class="highlighter-rouge">Configuration按钮</code>。</p>
+
+  <p><img src="/assets/images/host_filemanager2configuration.jpg" alt="host_filemanager2configuration" /></p>
+
+  <p>点击<code class="highlighter-rouge">System Update按钮</code>。</p>
+
+  <p><img src="/assets/images/host_configuration2updateSystem.jpg" alt="host_configuration2updateSyste" /></p>
+
+  <p>点击<code class="highlighter-rouge">Choose File按钮</code>。</p>
+
+  <p><img src="/assets/images/host_system_update.jpg" alt="host_system_update" />
+在窗口上方的地址栏中，选择新插入的U盘，名称可能是<code class="highlighter-rouge">/fs/usb0</code>。</p>
+
+  <p><img src="/assets/images/host_sysUpdate_choose_drive.jpg" alt="host_sysUpdate_choose_drive" /></p>
+
+  <p>在文件列表中选择准备好的升级包，点击右下角的<code class="highlighter-rouge">Open</code>按钮。</p>
+
+  <p><img src="/assets/images/host_sysUpdate_choose_file.jpg" alt="host_sysUpdate_choose_file" /></p>
+
+  <p>点击<code class="highlighter-rouge">Update</code>按钮。</p>
+
+  <p><img src="/assets/images/host_sysUpdate_confrim_update.jpg" alt="host_sysUpdate_confrim_update" /></p>
+
+  <p>系统会自动完成更新，点击工具栏的<code class="highlighter-rouge">Eyelink</code>按钮即可返回到<code class="highlighter-rouge">Track</code>系统中。</p>
+
+  <p><img src="/assets/images/host_start_from_filemanager.jpg" alt="host_start_from_filemanage" /></p>
+</blockquote>
+
+<p>以上。</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 标签: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#%E4%B8%BB%E8%AF%95%E6%9C%BA" class="page__taxonomy-item" rel="tag">主试机</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%E5%AE%9E%E9%AA%8C%E5%AE%A4%E8%AE%BE%E7%BD%AE" class="page__taxonomy-item" rel="tag">实验室设置</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#eyelink" class="page__taxonomy-item" rel="tag">Eyelink</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time datetime="2020-03-23T00:00:00+08:00">March 23, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%E4%B8%BB%E8%AF%95%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%95%99%E7%A8%8B%20http%3A%2F%2Flocalhost%3A4000%2Feyelink%2Fhost-system-update%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2Fhost-system-update%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Feyelink%2Fhost-system-update%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/eyelink/LabSetup/" class="pagination--pager" title="好的数据质量 从一个完美的实验室开始
+">向前</a>
+    
+    
+      <a href="/eyelink/EB_Intro/" class="pagination--pager" title="认识Experiment Builder
+">向后</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">猜您还喜欢</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Experiment_Design/" rel="permalink">编程前的实验设计准备
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/EB_Intro/" rel="permalink">认识Experiment Builder
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/LabSetup/" rel="permalink">好的数据质量 从一个完美的实验室开始
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/eyelink/Drift/" rel="permalink">关于Drift Correction 你应该知道更多
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 分钟阅读
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/s975188062" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 宋昌霖. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
