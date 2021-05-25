@@ -140,6 +140,8 @@ DV:
 EL_3rd:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
+  - title: "3-rd 编程概述"
+    url: /eyelink/3rd-intro/
   - title: "Command 函数自查"
     url: /editing/
   - title: "Message 函数自查"
@@ -182,5 +184,5 @@ EL_3rd:
         url: /tools/tools_vac/
   - title: "数据读取"
     children:
-      - title: "Matlab/Python"
+      - title: "Matlab/Py读取edf"
         url: /eyelink/3rd-read_edf/
