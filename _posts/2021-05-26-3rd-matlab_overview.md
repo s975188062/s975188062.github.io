@@ -33,7 +33,8 @@ sidebar:
 
 官网中对于安装方法已经介绍的非常详细了，Charlie 在此不再赘述。
 
-注意！一定要使用 PsychToolBox 官方的安装指导方法来下载 PsychToolBox，不能从其他电脑处直接复制过来。虽然直接复制 PsychToolBox 可能可以运行行为实验的函数，但是绝大多数情况下，Eyelink 相关的代码都无法正常工作。{: .notice--warning}
+> 注意！一定要使用 PsychToolBox 官方的安装指导方法来下载 PsychToolBox，不能从其他电脑处直接复制过来。虽然直接复制 PsychToolBox 可能可以运行行为实验的函数，但是绝大多数情况下，Eyelink 相关的代码都无法正常工作。
+{: .notice--warning}
 
 安装完成后，您可以在 Command Window 中直接运行 `Eyelink`，如果显示了下列内容，则说明 PsychToolBox 已经成功安装。
 
