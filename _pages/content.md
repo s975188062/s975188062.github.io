@@ -85,12 +85,12 @@ toc: true
 
 * [数据清洗](/eyelink/dv-4_stage_fixation_cleaning/)
 * 绘制动态兴趣区DynamicInterestArea
-* 数据补救
 
 ---
 
 # 4. Third-Party Programing Tools
 
+* [第三方编程概述](/eyelink/3rd-intro/)
 * [第三方编程 Command 函数可用参数参考文档](/eyelink/3rd-programing/3rd_comand_ini/)
 * 第三方编程 Message 函数可用参数参考文档
 
@@ -131,6 +131,7 @@ SR-Research公司的王治国博士已经就PsychoPy的内容创作了系统的�
 ## 4.6 数据读取
 
 * [使用 Matlab/Python 读取 .edf 数据](/eyelink/3rd-read_edf/)
+
 ---
 
 # 5. Weblink
