@@ -165,6 +165,8 @@ EL_3rd:
   - title: "PsychToolBox for Eyelink"
     children:
       - title: "概述"
+        url: /eyelink/3rd-matlab_overview/
+      - title: "EyelinkPicture.m"
         url: /editing/
   - title: "PsychoPy for Eyelink"
     children:
