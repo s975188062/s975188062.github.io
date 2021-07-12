@@ -20,37 +20,38 @@ sidebar:
 
 ---
 
+---
 
+与 E-Prime 不同的是，Matlab 的代码通常是用一个脚本装下所有。
+
+因此，在下文的代码中，将涵盖`与眼动仪建立、断开连接`、`基本参数设置`、`相机校准`、`Message标记`和`数据传输`的全部内容。Charlie 会尽量在注释中标记清楚。
+
+如果你是第一次接触眼动程序的话，在阅读代码之前，请移步[>>>Eyelink 第三方应用程序接口简述<<<](/eyelink/3rd-intro/)了解眼动实验程序的基本构造。{: .notice--info}
 
 ``` matlab
 function EyeLinkPicture
 
-% Short MATLAB example that uses the Eyelink and Psychophysics Toolboxes
-% This is the example as shown in the EyelinkToolbox article in BRMIC
-% Cornelissen, Peters and Palmer 2002), but updated to also work on the
-% PC version of the toolbox, and uses some new routines.
+% 基于 Eyelink 和 Psychophysics Toolboxes 的简短示例
+% 这就是在 BRMIC 中关于 EyelinkToolbox 的文章（Cornelissen, Peters and Palmer 2002）所提及的程序
+% 截至目前几经更新，使用了一些新的函数。
 % 
-% Adapted after "Psychtoolbox\PsychHardware\EyelinkToolbox\EyelinkDemos\ShortDemos\EyelinkExample.m"
+% 改编自 "Psychtoolbox\PsychHardware\EyelinkToolbox\EyelinkDemos\ShortDemos\EyelinkExample.m"
 %
-% HISTORY
+% 更新历史：
 %
 % mm/dd/yy
-% 07/01/08 js 	redone the structure of the experiment and added 
-%		integration messages to the EyeLink Data Viewer software
-% 07/14/08 js 	added code to set your own EDF file name before opening
-%		the experiment graphics
-% 07/13/10  fwc made to work with new toolbox with callback and updated to
-%               enable eye image display, added "cleanup" function,
-%               reenabled try-catch
-% 09/20/12 srresearch updated to allow:
-%               1. Transfer the image to host. (STEP 7.1)
-%               2. Change the calibration colors and turn on/off the
-%                   calibration beep. (STEP 6)
-%               3. End trials by button box. (STEP 7.5)
+% 07/01/08 js 	 重写实验结构，并添加 DV Message 相关代码
+% 07/14/08 js 	 增加自定义 EDF 文件名称的代码
+% 07/13/10 fwc 	 适配新工具箱，在校准过程中得以显示眼睛的图像
+%			   	增加 cleanup() 函数，重新启用 try-catch
+% 09/20/12 srresearch 更新如下功能:
+%                1. 发送刺激内容到主试机 (STEP 7.1)
+%                2. 更改校准颜色设置，开关校准声音 (STEP 6)
+%                3. 通过反应盒结束试次 (STEP 7.5)
 % 12/20/13  srresearch
-%                Added part to make it run with octave
-%                fixed issue with non integer arguments for Eyelink('message' ...)
-%                removed cleanup function, used Eyelink('ShutDown'); Screen('CloseAll') instead.
+%                增加对 octave 的支持
+%                修复 Eyelink('message' ...) 函数传递非整数参数的问题
+%                移除 cleanup() 函数，使用 Eyelink('ShutDown'); Screen('CloseAll') 代替
 %
 
 
@@ -401,6 +402,8 @@ catch
 end %try..catch.
 
 ```
+
+
 
 
 ---
