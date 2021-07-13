@@ -20,40 +20,41 @@ sidebar:
 
 ---
 
+---
 
+与 E-Prime 不同的是，Matlab 的代码通常是用一个脚本装下所有。
+
+因此，在下文的代码中，将涵盖`与眼动仪建立、断开连接`、`基本参数设置`、`相机校准`、`Message标记`和`数据传输`的全部内容。Charlie 会尽量在注释中标记清楚。
+
+另外，本文中将着重讲解与 Eyelink 有关的代码，Matlab 和 PsychToolBox 的基本函数部分略。
+
+如果你是第一次接触眼动程序的话，在阅读代码之前，请移步[>>>Eyelink 第三方应用程序接口简述<<<](/eyelink/3rd-intro/)了解眼动实验程序的基本构造。{: .notice--info}
 
 ``` matlab
 function EyeLinkPicture
 
-% Short MATLAB example that uses the Eyelink and Psychophysics Toolboxes
-% This is the example as shown in the EyelinkToolbox article in BRMIC
-% Cornelissen, Peters and Palmer 2002), but updated to also work on the
-% PC version of the toolbox, and uses some new routines.
+% 基于 Eyelink 和 Psychophysics Toolboxes 的简短示例
+% 这就是在 BRMIC 中关于 EyelinkToolbox 的文章（Cornelissen, Peters and Palmer 2002）所提及的程序
+% 截至目前几经更新，使用了一些新的函数。
 % 
-% Adapted after "Psychtoolbox\PsychHardware\EyelinkToolbox\EyelinkDemos\ShortDemos\EyelinkExample.m"
+% 改编自 "Psychtoolbox\PsychHardware\EyelinkToolbox\EyelinkDemos\ShortDemos\EyelinkExample.m"
 %
-% HISTORY
+% 更新历史：
 %
 % mm/dd/yy
-% 07/01/08 js 	redone the structure of the experiment and added 
-%		integration messages to the EyeLink Data Viewer software
-% 07/14/08 js 	added code to set your own EDF file name before opening
-%		the experiment graphics
-% 07/13/10  fwc made to work with new toolbox with callback and updated to
-%               enable eye image display, added "cleanup" function,
-%               reenabled try-catch
-% 09/20/12 srresearch updated to allow:
-%               1. Transfer the image to host. (STEP 7.1)
-%               2. Change the calibration colors and turn on/off the
-%                   calibration beep. (STEP 6)
-%               3. End trials by button box. (STEP 7.5)
+% 07/01/08 js 	 重写实验结构，并添加 DV Message 相关代码
+% 07/14/08 js 	 增加自定义 EDF 文件名称的代码
+% 07/13/10 fwc 	 适配新工具箱，在校准过程中得以显示眼睛的图像
+%			   	增加 cleanup() 函数，重新启用 try-catch
+% 09/20/12 srresearch 更新如下功能:
+%                1. 发送刺激内容到主试机 (STEP 7.1)
+%                2. 更改校准颜色设置，开关校准声音 (STEP 6)
+%                3. 通过反应盒结束试次 (STEP 7.5)
 % 12/20/13  srresearch
-%                Added part to make it run with octave
-%                fixed issue with non integer arguments for Eyelink('message' ...)
-%                removed cleanup function, used Eyelink('ShutDown'); Screen('CloseAll') instead.
+%                增加对 octave 的支持
+%                修复 Eyelink('message' ...) 函数传递非整数参数的问题
+%                移除 cleanup() 函数，使用 Eyelink('ShutDown'); Screen('CloseAll') 代替
 %
-
-
 
 clear;
 
@@ -63,14 +64,19 @@ else
     more off;
 end
 
-% list of images used for the trial
+% 实验中需要用到的图片名称列表
 imageList = {'town.jpg' 'town_blur.jpg' 'composite.jpg'};
+
+% 等同于 Experiment Builder 的 DummyMode
+% 0 - 关闭 需要连接眼动仪运行程序
+% 1 - 打开 可不连接眼动仪调试程序
 dummymode=0;
+
 try 
     % STEP 1
-    % Added a dialog box to set your own EDF file name before opening 
-    % experiment graphics. Make sure the entered EDF file name is 1 to 8 
-    % characters in length and only numbers or letters are allowed.
+    % 在实验开始之前，创建一个对话框，在这个对话框中自定义 EDF 文件的名称
+    % 需要注意的是，EDF 文件在命名上仅支持不超过 8 位的英文、数字和下划线
+    % 的组合，且英文字母不区分大小写。
     if IsOctave
         edfFile = 'DEMO';
     else
@@ -86,18 +92,15 @@ try
     end
 
     % STEP 2
-    % Open a graphics window on the main screen
-    % using the PsychToolbox's Screen function.
+    % 使用 PsychToolbox 的 Screen() 函数在主显示器上打开一个图形窗口
     screenNumber=max(Screen('Screens'));
     [window, wRect]=Screen('OpenWindow', screenNumber, 0,[],32,2);
     Screen(window,'BlendFunction',GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-
     % STEP 3
-    % Provide Eyelink with details about the graphics environment
-    % and perform some initializations. The information is returned
-    % in a structure that also contains useful defaults
-    % and control codes (e.g. tracker state bit and Eyelink key values).
+    % 通过 EyelinkInitDefaults() 函数以 STEP 2 创建的图像窗口的参数初
+    % 始化 Eyelink 的句柄并命名为 el。el 结构体中包含实验所需的参数默认
+    % 值和控制代码（如眼动仪的状态码和按键代码等）。
     el=EyelinkInitDefaults(window);
 
     % STEP 4
@@ -401,6 +404,8 @@ catch
 end %try..catch.
 
 ```
+
+
 
 
 ---
