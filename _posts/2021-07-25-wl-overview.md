@@ -16,7 +16,6 @@ author_profile: false
 sidebar:
   title: "目录"
   nav: WL
-classes: wide
 ---
 
 ---
