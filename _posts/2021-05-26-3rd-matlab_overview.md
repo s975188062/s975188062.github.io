@@ -33,7 +33,7 @@ sidebar:
 
 官网中对于安装方法已经介绍的非常详细了，Charlie 在此不再赘述。
 
-> 注意！一定要使用 PsychToolBox 官方的安装指导方法来下载 PsychToolBox，不能从其他电脑处直接复制过来。虽然直接复制 PsychToolBox 可能可以运行行为实验的函数，但是绝大多数情况下，Eyelink 相关的代码都无法正常工作。
+> ⚠️注意！一定要使用 PsychToolBox 官方的安装指导方法来下载 PsychToolBox，不能从其他电脑处直接复制过来。虽然直接复制 PsychToolBox 可能可以运行行为实验的函数，但是绝大多数情况下，Eyelink 相关的代码都无法正常工作。
 {: .notice--warning}
 
 安装完成后，您可以在 Command Window 中直接运行 `Eyelink`，如果显示了下列内容，则说明 PsychToolBox 已经成功安装。
@@ -164,12 +164,20 @@ EyelinkToolBox
 ├── EyelinkTests                    # EyelinkToolBox 基本函数的不完全测试脚本
 ├── changes.m                       # 更新记录
 ├── compatibility.m                 # 兼容性声明
-└── contents.m                      # EyelinkToolBox 内容物介绍
+└── contents.m                      # EyelinkToolBox 内容介绍
 ```
 
-以上内容中，推荐有限阅读 `EyelinkPicture.m` 中的代码来作为入门学习。
+以上内容中，推荐优先阅读 `EyelinkPicture.m` 中的代码来作为入门学习。
 
 后续的 PsychToolBox 教程中也将从 `EyelinkPicture.m` 开始。
+
+需要注意的是，在安装了 Eyelink Development Kit 后，在本地的路径下也会有一个示例程序的文件夹。
+
+你可以在 “C:\Users\Public\Documents\EyeLink\SampleExperiments” 里面找到它。
+
+![3rd-ptb-show_SDK_folder](/assets/images/3rd-ptb-show_SDK_folder.png)
+
+由于 PTB 还未更新这部分内容，Charlie 将在后续的脚本讲解中注明讲解的脚本路径。且优先讲解本地 SDK 中的示例脚本（因为本地的示例脚本 SDK 版本比较新）。
 
 ---
 
