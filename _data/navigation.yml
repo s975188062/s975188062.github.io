@@ -190,8 +190,8 @@ EL_3rd:
     children:
       - title: "概述"
         url: /eyelink/3rd-matlab_overview/
-      - title: "EyelinkPicture.m"
-        url: /editing/
+      - title: "SimplePicture"
+        url: /eyelink/3rd-matlab_SimplePicture/
   - title: "PsychoPy for Eyelink"
     children:
       - title: "Zhiguo-Eyelab"
