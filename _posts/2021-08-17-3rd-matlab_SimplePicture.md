@@ -38,7 +38,7 @@ sidebar:
 
 另外，本文中将着重讲解与 Eyelink 有关的代码，Matlab 和 PsychToolBox 的基本函数部分略。
 
-如果你是第一次接触眼动程序的话，在阅读代码之前，请移步[>>>Eyelink 第三方应用程序接口简述<<<](/eyelink/3rd-intro/)了解眼动实验程序的基本构造。
+如果你是第一次接触眼动程序的话，在阅读代码之前，请移步[>Eyelink 第三方应用程序接口简述<](/eyelink/3rd-intro/)了解眼动实验程序的基本构造。
 {: .notice--info}
 
 ``` matlab
