@@ -27,7 +27,7 @@ sidebar:
 您也可以通过[>>>点击此处(提取码：fjs3)<<<](https://pan.baidu.com/s/1Qw68CGlqE_jGTC5iwf0IrA)下载完整的 SampleExperiments 文件夹。
 {: .notice--info}
 
-2021.08.16 - 此版本相较于**目前**PTB内置的 Picture.m 更新，代码函数是互通的，用法略有区别。
+2021.08.16 - 相较于**目前**PTB内置的 Picture.m，此版本代码更全面，代码函数是互通的，用法略有区别。
 {: .notice--info}
 
 ---
