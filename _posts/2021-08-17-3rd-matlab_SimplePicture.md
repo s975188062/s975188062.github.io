@@ -295,7 +295,7 @@ try
         % 向 EDF 文件写入 "!V IAREA " message 来创建图片的兴趣区
         % "!V IAREA RECTANGLE <id> <left> <top> <right> <bottom> [label string]"
         % "!V IAREA ELLIPSE <id> <left> <top> <right> <bottom> [label string]"
-        % "!V IAREA FREEHAND <id> <x1,y1> <x2 ,y2> ... <xn ,yn> [label string]"
+        % "!V IAREA FREEHAND <id> <x1,y1> <x2,y2> ... <xn,yn> [label string]"
         % []内是可缺省参数
         % 详情请见 DataViewer manual section: Protocol for EyeLink Data to Viewer Integration > Interest Area Commands
         Eyelink('Message', '!V IAREA RECTANGLE %d %d %d %d %d %s', 1, round(width/2-imgInfo.Width/2), round(height/2-imgInfo.Height/2), round(width/2+imgInfo.Width/2), round(height/2+imgInfo.Height/2),'IMAGE_IA');
