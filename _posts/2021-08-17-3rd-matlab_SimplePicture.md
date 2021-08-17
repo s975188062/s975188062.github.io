@@ -10,9 +10,10 @@ categories:
 tags:
   - Matlab
   - PsychToolBox
-toc: true
+toc: false
 comments: true
 author_profile: false
+classes: wide
 sidebar:
   title: "目录"
   nav: EL_3rd
