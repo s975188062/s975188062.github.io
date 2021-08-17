@@ -1,5 +1,5 @@
 ---
-title: "Matlab/PsychToolBox EyelinkPicture.m"
+title: "PsychToolBox 脚本讲解 - EyeLink_SimplePicture.m"
 excerpt: "EyeLink_SimplePicture.m 是学习 Eyelink 的 PsychToolBox 编程的最好脚本。本文将着重介绍脚本中与 Eyelink 相关的关键函数。"
 read_time: false
 header:
