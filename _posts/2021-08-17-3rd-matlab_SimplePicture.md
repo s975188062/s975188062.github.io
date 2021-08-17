@@ -21,7 +21,7 @@ sidebar:
 
 ---
 
-此脚本来源于**本地示例文件夹**中的 `EyeLink_SimplePicture.m`，如果您已经安装 Eyelink Development Kit，您可以在 “C:\Users\Public\Documents\EyeLink/SampleExperiments/MATLAB Psychtoolbox/Psychtoolbox/PsychHardware/EyelinkToolbox/EyelinkDemos/SR-ResearchDemos/SimplePicture” 中找到它。
+此脚本来源于**本地示例文件夹**中的 `EyeLink_SimplePicture.m`，如果您已经安装 `2.2.1` 版本的  `Eyelink Development Kit`，您可以在 “C:\Users\Public\Documents\EyeLink/SampleExperiments/MATLAB Psychtoolbox/Psychtoolbox/PsychHardware/EyelinkToolbox/EyelinkDemos/SR-ResearchDemos/SimplePicture” 中找到它。
 {: .notice--info}
 
 您也可以通过[>>>点击此处(提取码：fjs3)<<<](https://pan.baidu.com/s/1Qw68CGlqE_jGTC5iwf0IrA)下载完整的 SampleExperiments 文件夹。
