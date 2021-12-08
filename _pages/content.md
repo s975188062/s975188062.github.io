@@ -103,6 +103,7 @@ toc: true
 * [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
 * [stopRecording脚本](/eyelink/e-prime/eprime_stopRecording/)
 * [elClose脚本](/eyelink/e-prime/eprime_elClose/)
+* E-Prime的多模态
 
 ## 4.2 PsychToolBox
 
