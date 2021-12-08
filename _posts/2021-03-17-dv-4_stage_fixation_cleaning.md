@@ -63,7 +63,7 @@ sidebar:
 
 Stage 1 有两个参数，分别为 Duration Threshold 和 Distance Threshold。
 
-DV 会依次对每个注视点进行检测，首先检测每个注视点的持续时间是否超过 Duration Threshold（ Stage 1 的默认设置中为 40ms）。如果没有超过 Duration Threshold，则会检测这个注视点与其前一个或者后一个注视点在 x 方向（水平）上的距离是否小于等于 Distance Threshold（ Stage 1 的默认设置中为 0.5度）。
+DV 会依次对每个注视点进行检测，首先检测每个注视点的持续时间是否超过 Duration Threshold（ Stage 1 的默认设置中为 80ms）。如果没有超过 Duration Threshold，则会检测这个注视点与其前一个或者后一个注视点在 x 方向（水平）上的距离是否小于等于 Distance Threshold（ Stage 1 的默认设置中为 0.5度）。
 
 如果找到了临近的注视点，则将这个持续时间很短的注视点就近合并到邻近的注视点中；如果没有，则删除这个时间过短的注视。
 

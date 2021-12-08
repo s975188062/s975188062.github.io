@@ -111,13 +111,19 @@ toc: true
 
 ## 4.3 PsychoPy
 
-浙江大学的王治国教授已经就PsychoPy的内容创作了系统的工具书，此处直接引用王博士的劳动成果。
+浙江大学的王治国老师已经就此内容创作了系统的工具书，此处直接引用王老师的劳动成果。
 
-> This book will first introduce the building blocks and syntax of Python, then discuss libraries that we can use to program psychology experiments, i.e., PsychoPy and Pygame. For eye-tracking, this book will feature the Pylink library, a Python interface to the EyeLink Developer’s Kit. The example scripts accompanying this book are freely available on GitHub, https://github.com/zhiguo-eyelab/Pylink_book/tree/master/example_scripts. This book is a useful reference for eye-tracking researchers, but you can also use it in graduate or undergraduate level programming courses. ——王治国
+> Several Python programming books feature tools designed for experimental psychologists. What sets this book apart is its focus on eye-tracking.
+> 
+> Eye-tracking is a widely used research technique in psychology and neuroscience labs. Research grade eye-trackers are typically faster, more accurate, and of course, more expensive than the ones seen in consumer goods or usability labs. Not surprisingly, a successful eye-tracking study usually requires sophisticated computer programming. Easy syntax and flexibility make Python a perfect choice for this task, especially for psychology researchers with little or no computer programming experience.
+> 
+> This book offers detailed coverage of the Pylink library, a Python interface for the gold standard EyeLink ® eye-trackers, with many step-by-step example scripts. This book is a useful reference for eye-tracking researchers, but you can also use it as a textbook for graduate-level programming courses.
 
-**传送门**：[Zhiguo-Eyelab](https://github.com/zhiguo-eyelab/Pylink_book)
+**传送门**：[Eye-Tracking with Python and Pylink](https://link.springer.com/book/10.1007%2F978-3-030-82635-2)
 
-感谢王博士的无私分享。
+此为 Springer 链接，大多数学校都已订阅，大家可自由下载。
+
+感谢王老师的无私分享。
 
 ## 4.4 Translog II
 
