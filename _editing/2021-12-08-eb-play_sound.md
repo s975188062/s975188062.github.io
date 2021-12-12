@@ -20,7 +20,7 @@ sidebar:
 
 ---
 
-# 0. 声卡的抉择
+# 1. 声卡的抉择
 
 在学习如何播放声音之前，我们需要先了解一下播放声音的硬件——声卡。
 
@@ -29,9 +29,11 @@ sidebar:
 **本节太长不看**：有条件的话尽量用 ASIO 声卡保证声音刺激呈现的时间精度，成本千元左右。实在不行用集成声卡也凑合。请跳到[<u>1. 播放声音</u>](/eyelink/eb-asio_sound_card/)继续阅读。
 {: .notice--info}
 
-## 0.1 集成声卡
+## 1.1 集成声卡
 
-简单来说，集成声卡在我们每个人的电脑里面都有，是和计算机的主板集成在一起的，故名集成声卡。
+简单来说，集成声卡在我们每个人的 Windows 电脑里面都有，是和计算机的主板集成在一起的，故名集成声卡。
+
+> macOS 苹果电脑内部集成的是 ASIO 声卡，贵是有道理的……
 
 根据集成声卡的型号不同，其性能表现也会有所差异，这种差异主要体现在声音的播放延迟上。
 
@@ -47,7 +49,10 @@ sidebar:
 
 众所周知，实验求稳。抖动的延迟对于数据的影响不可预知，所以集成声卡并不是实验的最佳选择。
 
-## 0.2 ASIO 声卡
+## 1.2 ASIO 声卡
+
+对于 macOS 的用户，恭喜你，电脑里面已经内置了 ASIO 声卡，无需额外购买。
+{: .notice--info}
 
 > ASIO 是 Audio Stream Input Output 的缩写。是由 Steinberg 公司开发的专业声卡驱动模式的一种简称。
 > 
@@ -57,19 +62,44 @@ sidebar:
 
 ---
 
-# 1. 播放声音
+# 2. 播放声音
 
-## 1.1 准备声音文件
+## 2.1 准备声音文件
 
-在 EB 中，
+在 EB 中仅支持 *.wav 格式的音频，因此我们首先要将所有声音文件转换为 wav 格式。
 
-## 1.2 设置声卡驱动
+在命名上，请一如既往的遵循 ASCII 命名，即**仅**使用英文字母、数字和下划线的组合对音频文件进行命名。
 
-## 1.3 设置播放声音
+在数据格式上，EB 仅支持 16 bit PCM 编码，在转换音频文件格式的时候，请注意此选项。
 
-### 1.3.1 Play Sound Action
+> 关于 16 bit PCM 编码，大多数格式转换工具在输出 wav 格式时都默认遵循此编码格式。如果没有选择此编码格式，在下面导入 Library Manager 的过程中会报错，因此无需过于纠结编码格式。
 
-### 1.3.2 Synchronize Audio
+接着，我们来将 *.wav 文件导入到 Library Manager 中。
+
+![eb-play_sound-add_wav_file_to_library_manager](/assets/images/eb-play_sound-add_wav_file_to_library_manager.png)
+
+> 此处 Charlie 仅添加了一个文件，如果你有多个文件要添加，可以一起选中，一起添加进来。
+
+## 2.2 设置声卡驱动
+
+在菜单栏打开 `Preference`，选中 `Audio`，设置 `Audio Driver`。
+
+对于 macOS 苹果电脑用户，只有 OSX 一个选项，入下图所示。
+
+![eb-play_sound-config_audio_driver_in_mac](/assets/images/eb-play_sound-config_audio_driver_in_mac.jpg)
+
+对于 Windows 用户：
+
+* 如果您使用的是集成声卡，请将 `Audio Driver` 选项设置为 `DirectX`
+* 如果您使用的是 ASIO 声卡，请将 `Audio Driver` 选项设置为 `ASIO`
+
+![eb-play_sound-config_audio_driver_in_win](/assets/images/eb-play_sound-config_audio_driver_in_win.png)
+
+## 2.3 设置播放声音
+
+### 2.3.1 Play Sound Action
+
+### 2.3.2 Synchronize Audio
 
 ---
 
