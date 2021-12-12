@@ -15,18 +15,23 @@ toc: false
 ### Code/实验编程
 
 * E-Prime / E-Basic
-* Matlab / Psychtoolbox 
+* Matlab / PsychToolBox 
 * Python / PsychoPy
 * ExperimentBuilder
 * C/C++
 
 ### 设备
 
-* Eyetracking / 眼动追踪
+* Eye-Tracking / 眼动追踪
 * EEG / 脑电
 * TDT/听觉刺激、多通道神经电生理、光遗传
-* Ardunio
-* RSP
+
+### Geek
+
+* Arduino
+* RaspBerryPi
+* AutoDesk Fusion 360
+* AutoDesk EGALE PCB
 
 ### 数据处理
 
