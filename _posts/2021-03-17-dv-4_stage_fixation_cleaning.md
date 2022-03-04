@@ -65,7 +65,7 @@ Stage 1 有两个参数，分别为 Duration Threshold 和 Distance Threshold。
 
 DV 会依次对每个注视点进行检测，首先检测每个注视点的持续时间是否超过 Duration Threshold（ Stage 1 的默认设置中为 80ms）。如果没有超过 Duration Threshold，则会检测这个注视点与其前一个或者后一个注视点在 x 方向（水平）上的距离是否小于等于 Distance Threshold（ Stage 1 的默认设置中为 0.5度）。
 
-如果找到了临近的注视点，且这个临近注视点的持续时间大于 Duration Threshold，则将这个持续时间很短的注视点就近合并到邻近的注视点中；如果前后两个临近注视点的持续时间均大于 Duration Threshold，则将就近合并到持续时间较长的临近注视点中。
+如果找到了满足距离条件的临近注视点，且这个临近注视点的持续时间大于 Duration Threshold，则将这个持续时间很短的注视点就近合并到邻近的注视点中；如果前后两个临近注视点的持续时间均大于 Duration Threshold，则将就近合并到持续时间较长的临近注视点中。
 
 我们也可以取消 Stage 1 的勾选来跳过这个阶段的数据清洗。
 
