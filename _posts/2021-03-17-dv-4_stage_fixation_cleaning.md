@@ -173,6 +173,9 @@ Non IA Left Eye
 
 为了方便大家计数，Charlie 写了一个小工具送给大家：
 
+**注意！** 4-Stage Fixation Cleaning 会对整个试次的数据进行清理，并不仅是兴趣期内的数据。因此我们获得的清洗日志文件 cleaning.txt 中也包含了整个试次的清理数据，不仅仅是兴趣区内。在计算清理比例的时候需要考虑这部分影响。
+{: .notice--info}
+
 [>>>Cleaning Counter - v0.1 （密码：ckjs）<<<](https://pan.baidu.com/s/1aqNcy_j7NA1M8uAFRJXUeA)
 
 ![dv-4_stage_fix_cleaning-cleaning_counter](/assets/images/dv-4_stage_fix_cleaning-cleaning_counter.png)
