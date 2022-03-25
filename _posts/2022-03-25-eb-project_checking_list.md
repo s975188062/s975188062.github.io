@@ -1,5 +1,5 @@
 ---
-tittle: "Experiment Builder 编程自检表"
+title: "Experiment Builder 编程自检表"
 excerpt: "百密必有一疏，检查常见的问题可以避免许多不必要的麻烦。"
 read_time: false
 header:
