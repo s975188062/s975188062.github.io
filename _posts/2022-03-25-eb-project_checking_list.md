@@ -11,6 +11,7 @@ tags:
 toc: true
 comments: false
 author_profile: false
+classes: wide
 sidebar:
   title: "目录"
   nav: EB
