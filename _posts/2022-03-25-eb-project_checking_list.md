@@ -9,7 +9,7 @@ categories:
   - Eyelink
 tags:
   - Experiment Builder
-toc: true
+toc: false
 comments: false
 author_profile: false
 classes: wide
