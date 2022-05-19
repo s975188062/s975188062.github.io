@@ -45,9 +45,9 @@ EB:
         url: /eyelink/latin_square_random/
       - title: "文字自动化分兴趣区"
         url: /eyelink/eb_auto_word_segment/
-      - title: "播放声音材料"
-        url: /editing/
-      - title: "播放视频材料"
+      - title: "播放声音"
+        url: /eyelink/eb-play_sound/
+      - title: "播放视频"
         url: /editing/
       - title: "录音"
         url: /editing/

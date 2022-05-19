@@ -40,8 +40,8 @@ toc: true
 
 * [拉丁方设计](/eyelink/latin_square_random/)
 * [文字自动化分兴趣区-Auot_Word_Segment](/eyelink/eb_auto_word_segment/)
-* 播放声音材料（DisplayScreen、PlayAudio和PlauAudioControl）
-* 播放视频材料（DisplayScreen、PlayAudio和PlauAudioControl）
+* [播放声音（DisplayScreen、PlayAudio和PlauAudioControl）](/eyelink/eb-play_sound/)
+* 播放视频（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
 * 边界触发（InvisibleBoundary）
 * GC-Window（DisplayScreen）
