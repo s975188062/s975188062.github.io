@@ -23,7 +23,7 @@ sidebar:
 
 ---
 
-> 本篇是基于安装了 1.11.5 版本 Development Kit 的用户，如果您安装的是 2.1.1 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_startRecoring_devkit_2_1_1/)。
+> 本篇是基于安装了 `1.11.5` 版本 Development Kit 的用户，如果您安装的是 `2.1.1` 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_startRecoring_devkit_2_1_1/)。
 {: .notice--warning}
 
 > elStartRecording 和 elStopRecording 是最关键的两个脚本。本文中会涉及一些眼动实验编程的基础概念。
