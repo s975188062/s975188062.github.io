@@ -212,3 +212,57 @@ EL_3rd:
     children:
       - title: "Matlab/Py读取edf"
         url: /eyelink/3rd-read_edf/
+
+EL_3rd_Eprime:
+  - title: "点此获取“Eyelink指北”完整目录"
+    url: /content/
+  - title: "E-Prime for Eyelink"
+    children:
+      - title: "总体概述"
+        url: /eyelink/e-prime/eprime_overview/
+      - title: "DevKit v1.11"
+        children:
+        - title: "User Script"
+          url: /eyelink/e-prime/eprime-user_script/
+        - title: "elConnect脚本"
+          url: /eyelink/e-prime/eprime_elconnect/
+        - title: "elCameraSetup脚本"
+          url: /eyelink/e-prime/eprime_elCameraSetup/
+        - title: "startRecording脚本"
+          url: /eyelink/e-prime/eprime_startRecording/
+        - title: "stopRecording脚本"
+          url: /eyelink/e-prime/eprime_stopRecording/
+        - title: "elClose脚本"
+          url: /eyelink/e-prime/eprime_elClose/
+      - title: "DevKit v2.1"
+        children:
+        - title: "User Script"
+          url: /editing/
+        - title: "elConnect脚本"
+          url: /editing/
+        - title: "elCameraSetup脚本"
+          url: /editing/
+        - title: "startRecording脚本"
+          url: /editing/
+        - title: "stopRecording脚本"
+          url: /editing/
+        - title: "elClose脚本"
+          url: /editing/
+  - title: "Eyelink指北的其他部分"
+    children:
+    - title: "3-rd 编程概述"
+      url: /eyelink/3rd-intro/
+    - title: "Command 函数自查"
+      url: /editing/
+    - title: "Message 函数自查"
+      url: /editing/
+    - title: "PsychToolBox for Eyelink"
+      url: /content/#42-psychtoolbox
+    - title: "PsychoPy for Eyelink"
+      url: /content/#43-psychopy
+    - title: "Translog-II"
+      url: /content/#44-translog-ii
+    - title: "其他辅助工具"
+      url: /content/#45-辅助工具
+    - title: "数据读取"
+      url: /content/#46-数据读取

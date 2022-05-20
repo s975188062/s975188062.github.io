@@ -18,7 +18,7 @@ comments: true
 author_profile: false
 sidebar:
   title: "目录"
-  nav: EL_3rd
+  nav: EL_3rd_Eprime
 ---
 
 ---
@@ -36,7 +36,8 @@ E-Prime 3 中 User Script 的位置如下：
 ![eprime-user_script](/assets/images/eprime-user_script.png)
 
 E-Prime 2 中 User Script 的位置如下：
-![eprime-userscript-2](/assets/images/eprime-userscript-2.png)
+
+![eprime-userscript-2](/assets/images/eprime-userscript-2.png)
 
 如果您有其他的 User Script，将 Eyelink 相关的代码复制粘贴在您的代码后面即可。
 

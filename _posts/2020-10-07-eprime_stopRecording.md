@@ -18,7 +18,7 @@ comments: true
 author_profile: false
 sidebar:
   title: "目录"
-  nav: EL_3rd
+  nav: EL_3rd_Eprime
 ---
 
 ---
