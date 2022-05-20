@@ -220,34 +220,34 @@ EL_3rd_Eprime:
     children:
       - title: "总体概述"
         url: /eyelink/e-prime/eprime_overview/
-      - title: "DevKit v1.11"
-        children:
-        - title: "User Script"
-          url: /eyelink/e-prime/eprime-user_script/
-        - title: "elConnect脚本"
-          url: /eyelink/e-prime/eprime_elconnect/
-        - title: "elCameraSetup脚本"
-          url: /eyelink/e-prime/eprime_elCameraSetup/
-        - title: "startRecording脚本"
-          url: /eyelink/e-prime/eprime_startRecording/
-        - title: "stopRecording脚本"
-          url: /eyelink/e-prime/eprime_stopRecording/
-        - title: "elClose脚本"
-          url: /eyelink/e-prime/eprime_elClose/
-      - title: "DevKit v2.1"
-        children:
-        - title: "User Script"
-          url: /editing/
-        - title: "elConnect脚本"
-          url: /editing/
-        - title: "elCameraSetup脚本"
-          url: /editing/
-        - title: "startRecording脚本"
-          url: /editing/
-        - title: "stopRecording脚本"
-          url: /editing/
-        - title: "elClose脚本"
-          url: /editing/
+  - title: "For DevKit v1.11"
+    children:
+      - title: "User Script"
+        url: /eyelink/e-prime/eprime-user_script/
+      - title: "elConnect脚本"
+        url: /eyelink/e-prime/eprime_elconnect/
+      - title: "elCameraSetup脚本"
+        url: /eyelink/e-prime/eprime_elCameraSetup/
+      - title: "startRecording脚本"
+        url: /eyelink/e-prime/eprime_startRecording/
+      - title: "stopRecording脚本"
+        url: /eyelink/e-prime/eprime_stopRecording/
+      - title: "elClose脚本"
+        url: /eyelink/e-prime/eprime_elClose/
+  - title: "DevKit v2.1"
+    children:
+      - title: "User Script"
+        url: /editing/
+      - title: "elConnect脚本"
+        url: /editing/
+      - title: "elCameraSetup脚本"
+        url: /editing/
+      - title: "startRecording脚本"
+        url: /editing/
+      - title: "stopRecording脚本"
+        url: /editing/
+      - title: "elClose脚本"
+        url: /editing/
   - title: "Eyelink指北的其他部分"
     children:
     - title: "3-rd 编程概述"
