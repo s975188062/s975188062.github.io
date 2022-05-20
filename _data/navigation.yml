@@ -167,7 +167,7 @@ EL_3rd:
   - title: "3-rd 编程概述"
     url: /eyelink/3rd-intro/
   - title: "Command 函数自查"
-    url: /editing/
+    url: /eyelink/3rd-programing/3rd_comand_ini/
   - title: "Message 函数自查"
     url: /editing/
   - title: "E-Prime for Eyelink"
@@ -253,7 +253,7 @@ EL_3rd_Eprime:
       - title: "3-rd 编程概述"
         url: /eyelink/3rd-intro/
       - title: "Command 函数自查"
-        url: /editing/
+        url: /eyelink/3rd-programing/3rd_comand_ini/
       - title: "Message 函数自查"
         url: /editing/
       - title: "PsychToolBox for Eyelink"
