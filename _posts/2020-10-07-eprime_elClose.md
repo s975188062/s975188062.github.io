@@ -1,5 +1,5 @@
 ---
-title: "elClose脚本(E-Prime眼动编程)"
+title: "elClose脚本(E-Prime with DevKit v1.11.5)"
 excerpt: "在 E-Prime 中将眼动数据保存好。"
 read_time: false
 header:

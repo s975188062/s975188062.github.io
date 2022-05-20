@@ -1,5 +1,5 @@
 ---
-title: "elStartRecording脚本(E-Prime眼动编程)"
+title: "elStartRecording脚本(E-Prime with DevKit v1.11.5)"
 excerpt: "在 E-Prime 中命令主试机开始记录眼动，以及发送命令前后的相当多的准备工作。"
 read_time: false
 header:
