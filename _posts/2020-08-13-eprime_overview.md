@@ -23,6 +23,9 @@ sidebar:
 
 ---
 
+> 本篇是基于安装了 1.11.5 版本 Development Kit 的用户，如果您安装的是 2.1.1 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_overview_devkit_2_1_1/)。
+{: .notice--warning}
+
 # 1. 简介
 
 固然 E-Prime 是一个广为接受的实验设计软件，在行为实验中的表现有目共睹。其短板也很明显，当需要连接设备进行采集的时候，实验编写的难度往往会提高不少。
