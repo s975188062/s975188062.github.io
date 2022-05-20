@@ -23,3 +23,7 @@ sidebar:
 
 ---
 
+> 本篇是基于安装了 `2.1.1` 版本 Development Kit 的用户，如果您安装的是 `1.11.5` 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_overview/)。您可以在 “开始菜单 - SR Research - SR Version” 中查看 `eyelink_core.dll` 的版本来确定您的 Development Kit 版本。
+{: .notice--warning}
+
+路径依赖，亦或是进度紧迫来不及学习 Experiment Builder，总会有很多需要用 E-Prime 进行眼动实验的时候。
