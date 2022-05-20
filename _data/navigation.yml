@@ -234,7 +234,7 @@ EL_3rd_Eprime:
         url: /eyelink/e-prime/eprime_stopRecording/
       - title: "elClose脚本"
         url: /eyelink/e-prime/eprime_elClose/
-  - title: "DevKit v2.1"
+  - title: "For DevKit v2.1"
     children:
       - title: "User Script"
         url: /editing/
@@ -248,7 +248,7 @@ EL_3rd_Eprime:
         url: /editing/
       - title: "elClose脚本"
         url: /editing/
-  - title: "Eyelink指北的其他部分"
+  - title: "第三方支持的其他部分"
     children:
     - title: "3-rd 编程概述"
       url: /eyelink/3rd-intro/
