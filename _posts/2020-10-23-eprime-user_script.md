@@ -23,6 +23,9 @@ sidebar:
 
 ---
 
+> 本篇是基于安装了 1.11.5 版本 Development Kit 的用户，如果您安装的是 2.1.1 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_user_script_devkit_2_1_1/)。
+{: .notice--warning}
+
 # 1.User Script
 
 本文中所涉及的是 Eyelink 在 E-Prime 下运行的依赖代码。
