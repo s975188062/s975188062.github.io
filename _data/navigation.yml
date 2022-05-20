@@ -250,19 +250,19 @@ EL_3rd_Eprime:
         url: /editing/
   - title: "第三方支持的其他部分"
     children:
-    - title: "3-rd 编程概述"
-      url: /eyelink/3rd-intro/
-    - title: "Command 函数自查"
-      url: /editing/
-    - title: "Message 函数自查"
-      url: /editing/
-    - title: "PsychToolBox for Eyelink"
-      url: /content/#42-psychtoolbox
-    - title: "PsychoPy for Eyelink"
-      url: /content/#43-psychopy
-    - title: "Translog-II"
-      url: /content/#44-translog-ii
-    - title: "其他辅助工具"
-      url: /content/#45-辅助工具
-    - title: "数据读取"
-      url: /content/#46-数据读取
+      - title: "3-rd 编程概述"
+        url: /eyelink/3rd-intro/
+      - title: "Command 函数自查"
+        url: /editing/
+      - title: "Message 函数自查"
+        url: /editing/
+      - title: "PsychToolBox for Eyelink"
+        url: /content/#42-psychtoolbox
+      - title: "PsychoPy for Eyelink"
+        url: /content/#43-psychopy
+      - title: "Translog-II"
+        url: /content/#44-translog-ii
+      - title: "其他辅助工具"
+        url: /content/#45-辅助工具
+      - title: "数据读取"
+        url: /content/#46-数据读取
