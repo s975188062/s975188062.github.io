@@ -216,12 +216,10 @@ EL_3rd:
 EL_3rd_Eprime:
   - title: "点此获取“Eyelink指北”完整目录"
     url: /content/
-  - title: "E-Prime for Eyelink"
+  - title: "E-Prime with DevKit v1.11"
     children:
       - title: "总体概述"
         url: /eyelink/e-prime/eprime_overview/
-  - title: "For DevKit v1.11"
-    children:
       - title: "User Script"
         url: /eyelink/e-prime/eprime-user_script/
       - title: "elConnect脚本"
@@ -234,8 +232,10 @@ EL_3rd_Eprime:
         url: /eyelink/e-prime/eprime_stopRecording/
       - title: "elClose脚本"
         url: /eyelink/e-prime/eprime_elClose/
-  - title: "For DevKit v2.1"
+  - title: "E-Prime with DevKit v2.1"
     children:
+      - title: "总体概述"
+        url: /eyelink/e-prime/eprime_overview/
       - title: "User Script"
         url: /editing/
       - title: "elConnect脚本"
