@@ -1,6 +1,6 @@
 ---
 permalink: /content/
-title: "Eyelink指北"
+title: "Eyelink 指北"
 toc: true
 ---
 
