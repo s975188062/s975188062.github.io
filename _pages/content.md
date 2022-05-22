@@ -109,7 +109,7 @@ toc: true
 ### 4.1.2 E-Prime with DevKit v2.1.1
 
 * [总体概述](/eyelink/e-prime/eprime-overview_devkit_2_1_1/)
-* User Script
+* [User Script](/eyelink/e-prime/eprime-user_script_devkit_2_1_1/)
 * elConnect 脚本
 * elCameraSetup 脚本
 * startRecording 脚本
