@@ -237,7 +237,7 @@ EL_3rd_Eprime:
       - title: "总体概述"
         url: /eyelink/e-prime/eprime-overview_devkit_2_1_1/
       - title: "User Script"
-        url: /editing/
+        url: /eyelink/e-prime/eprime-user_script_devkit_2_1_1/
       - title: "elConnect脚本"
         url: /editing/
       - title: "elCameraSetup脚本"
