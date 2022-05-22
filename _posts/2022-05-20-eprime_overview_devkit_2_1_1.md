@@ -36,8 +36,7 @@ sidebar:
 
 只需要 “复制 - 粘贴 - 修改”。
 
-注意，如果您使用的是 E-Prime 3 ，则 E-Prime 版本必须大于 3.0.3 .80 。您可以点击[>>>这里(提取码cub6)<<<](https://pan.baidu.com/s/1inwSPDWVUBf67F2gf31y0Q)下载满足要求的最低版本 E-Prime 3 安装包。
-{: .notice--info}
+注意，如果您使用的是 E-Prime 3 ，则 E-Prime 版本必须大于 3.0.3 .80 。您可以点击[>>>这里(提取码cub6)<<<](https://pan.baidu.com/s/1inwSPDWVUBf67F2gf31y0Q)下载满足要求的最低版本 E-Prime 3 安装包。{: .notice--info}
 
 ---
 
