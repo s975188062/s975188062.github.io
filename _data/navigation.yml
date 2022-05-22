@@ -235,7 +235,7 @@ EL_3rd_Eprime:
   - title: "E-Prime with DevKit v2.1.1"
     children:
       - title: "总体概述"
-        url: /eyelink/e-prime/eprime_overview/
+        url: /eyelink/e-prime/eprime-overview_devkit_2_1_1/
       - title: "User Script"
         url: /editing/
       - title: "elConnect脚本"
