@@ -26,7 +26,7 @@ sidebar:
 > 本篇是基于安装了 `1.11.5` 版本 Development Kit 的用户，如果您安装的是 `2.1.1` 版本的 Development Kit ，请点击 [>>>传送门<<<](/eyelink/e-prime/eprime_user_script_devkit_2_1_1/)。您可以在 “开始菜单 - SR Research - SR Version” 中查看 `eyelink_core.dll` 的版本来确定您的 Development Kit 版本。
 {: .notice--warning}
 
-# 1.User Script
+# 1. User Script
 
 本文中所涉及的是 Eyelink 在 E-Prime 下运行的依赖代码。
 
@@ -46,7 +46,7 @@ E-Prime 2 中 User Script 的位置如下：
 
 ---
 
-# 2.源代码
+# 2. 源代码
 
 将下面的全部代码复制粘贴，不要修改。
 
