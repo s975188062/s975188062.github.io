@@ -96,6 +96,8 @@ toc: true
 
 ## 4.1 E-Prime
 
+### 4.1.1 E-Prime with DevKit v1.11.5
+
 * [总体概述](/eyelink/e-prime/eprime_overview/)
 * [User Script](/eyelink/e-prime/eprime-user_script/)
 * [elConnect脚本](/eyelink/e-prime/eprime_elconnect/)
@@ -103,6 +105,19 @@ toc: true
 * [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
 * [stopRecording脚本](/eyelink/e-prime/eprime_stopRecording/)
 * [elClose脚本](/eyelink/e-prime/eprime_elClose/)
+
+### 4.1.2 E-Prime with DevKit v2.1.1
+
+* [总体概述](/eyelink/e-prime/eprime-overview_devkit_2_1_1/)
+* User Script
+* elConnect脚本
+* elCameraSetup脚本
+* startRecording脚本
+* stopRecording脚本
+* elClose脚本
+
+### 4.1.3 其他
+
 * E-Prime的多模态
 
 ## 4.2 PsychToolBox
