@@ -25,12 +25,12 @@ toc: true
 
 ## 1.1 Basic
 
-* [认识Experiment Builder](/eyelink/EB_Intro/)
+* [认识 Experiment Builder](/eyelink/EB_Intro/)
 * [编程前的实验设计准备](/eyelink/Experiment_Design/)
-* [Experiment层](/eyelink/Experiment_Level/)（DisplayScreen、Keyboard、Timer和Sequence）
-* [Block层](/eyelink/Block_Level/)（CameraSetup）
-* [Trial层](/eyelink/Trial_Level/)（PrepareSequence和DriftCorrection）
-* [Recording层](/eyelink/Recording_Level/)（Datasource、引用和Test Run）
+* [Experiment 层](/eyelink/Experiment_Level/)（DisplayScreen、Keyboard、Timer和Sequence）
+* [Block 层](/eyelink/Block_Level/)（CameraSetup）
+* [Trial 层](/eyelink/Trial_Level/)（PrepareSequence和DriftCorrection）
+* [Recording 层](/eyelink/Recording_Level/)（Datasource、引用和Test Run）
 * [设置随机](/eyelink/set_trial_random/)（Datasource）
 * [计算反应时和正确率](/eyelink/calcuate_rt_n_acc/#1-计算反应时)（Variable、UpdateAttribute和Conditional）
 * [记录行为信息](/eyelink/calcuate_rt_n_acc/#23-保存到result-file)（ResultFile和AddToResultFile）
@@ -39,7 +39,7 @@ toc: true
 ## 1.2 Master
 
 * [拉丁方设计](/eyelink/latin_square_random/)
-* [文字自动化分兴趣区-Auot_Word_Segment](/eyelink/eb_auto_word_segment/)
+* [文字自动化分兴趣区 - Auot_Word_Segment](/eyelink/eb_auto_word_segment/)
 * [播放声音（DisplayScreen、PlayAudio和PlauAudioControl）](/eyelink/eb-play_sound/)
 * 播放视频（DisplayScreen、PlayAudio和PlauAudioControl）
 * 录音（RecordSound、RecordSoundControl和VoiceKey）
@@ -60,7 +60,7 @@ toc: true
 ## 2.1 Basic
 
 * [实验室环境配置](/eyelink/LabSetup/)
-* [Eyelink软件安装](/eyelink/install_software/)
+* [Eyelink 软件安装](/eyelink/install_software/)
 * [数据采集操作](/eyelink/data_collection/)
 * 常见问题汇总
 
@@ -74,11 +74,11 @@ toc: true
 
 ## 3.1 Basic
 
-* [认识Data Viewer](/eyelink/DV_Intro/)
+* [认识 Data Viewer](/eyelink/DV_Intro/)
 * [数据导入](/eyelink/dv_import_data/)
 * [TrialGrouping](/eyelink/Trial_Grouping/)
-* [设置InterestPeriod](/eyelink/dv_set_IP/)
-* [绘制InterestArea](/eyelink/dv_set_ia/)
+* [设置 InterestPeriod](/eyelink/dv_set_IP/)
+* [绘制 InterestArea](/eyelink/dv_set_ia/)
 * [Report Data](/eyelink/dv_report_data/)
 
 ## 3.2 Master
@@ -100,25 +100,25 @@ toc: true
 
 * [总体概述](/eyelink/e-prime/eprime_overview/)
 * [User Script](/eyelink/e-prime/eprime-user_script/)
-* [elConnect脚本](/eyelink/e-prime/eprime_elconnect/)
-* [elCameraSetup脚本](/eyelink/e-prime/eprime_elCameraSetup/)
-* [startRecording脚本](/eyelink/e-prime/eprime_startRecording/)
-* [stopRecording脚本](/eyelink/e-prime/eprime_stopRecording/)
-* [elClose脚本](/eyelink/e-prime/eprime_elClose/)
+* [elConnect 脚本](/eyelink/e-prime/eprime_elconnect/)
+* [elCameraSetup 脚本](/eyelink/e-prime/eprime_elCameraSetup/)
+* [startRecording 脚本](/eyelink/e-prime/eprime_startRecording/)
+* [stopRecording 脚本](/eyelink/e-prime/eprime_stopRecording/)
+* [elClose 脚本](/eyelink/e-prime/eprime_elClose/)
 
 ### 4.1.2 E-Prime with DevKit v2.1.1
 
 * [总体概述](/eyelink/e-prime/eprime-overview_devkit_2_1_1/)
 * User Script
-* elConnect脚本
-* elCameraSetup脚本
-* startRecording脚本
-* stopRecording脚本
-* elClose脚本
+* elConnect 脚本
+* elCameraSetup 脚本
+* startRecording 脚本
+* stopRecording 脚本
+* elClose 脚本
 
 ### 4.1.3 其他
 
-* E-Prime的多模态
+* E-Prime 中的多模态
 
 ## 4.2 PsychToolBox
 
