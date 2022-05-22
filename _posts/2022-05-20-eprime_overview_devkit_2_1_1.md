@@ -36,6 +36,9 @@ sidebar:
 
 只需要 “复制 - 粘贴 - 修改”。
 
+注意，如果您使用的是 E-Prime 3 ，则 E-Prime 版本必须大于 3.0.3 .80 。您可以点击[>>>这里(提取码cub6)<<<](https://pan.baidu.com/s/1inwSPDWVUBf67F2gf31y0Q)下载满足要求的最低版本 E-Prime 3 安装包。
+{: .notice--info}
+
 ---
 
 # 2. 示例程序
@@ -54,19 +57,34 @@ E-Prime
     ├── picture             # 自由浏览图片的基本范式
     └── simple              # 自由浏览文本的基本范式
 ├── E-Prime 2 and 3         # E-Prime2 示例代码，叫准时无法看到眼睛图像
-    ├── EyeLink_FixWindowFastSamples    # 
-    ├── EyeLink_GCFastSamples           # 
-    ├── EyeLink_Picture                 #
-    ├── EyeLink_PictureMRI              #
-    ├── EyeLink_SaccadeEvent            #
-    ├── EyeLink_SimpleCanvasSave        #
-    └── EyeLink_Video                   #
-└── Readme.txt                  # 示例介绍
+    ├── EyeLink_FixWindowFastSamples    # Invisible Boundary Trigger 的 E-Prime 实现
+    ├── EyeLink_GCFastSamples           # 移动窗口范式
+    ├── EyeLink_Picture                 # 图片任务
+    ├── EyeLink_PictureMRI              # 适用于核磁下的图片任务
+    ├── EyeLink_SaccadeEvent            # Saccade Trigger 的 E-Prime 实现
+    ├── EyeLink_SimpleCanvasSave        # 单行文本阅读任务，如何截屏并保存整体的视觉刺激
+    └── EyeLink_Video                   # 视频任务
+└── Readme.txt              # 示例介绍
 ```
+
+> EyeLink_FixWindowFastSamples 、EyeLink_GCFastSamples 、EyeLink_SaccadeEvent 和 EyeLink_SimpleCanvasSave 这些本在 Experiment Builder 中一个控件和简单几步的设置就可以完成的事情，在 E-Prime 中却需要几十上百行代码才做得到。同时稳定性也不尽如人意……
+{: .notice--warning}
 
 ---
 
 # 3. 示例程序概览
+
+我们打开最基本的 EyeLink_Picture 示例，我们可以看到这个示例是一个最简单图片浏览任务，其中插入了数个 Inline 控件。
+
+![eprime-overview_v2-example_scripts_strcut](/assets/images/eprime-overview_v2-example_scripts_strcut.png)
+
+Charlie 会在后续的教程中陆续讲解这些脚本。
+
+# 4. 在 E-Prime 中编写眼动实验的正确姿势
+
+在 E-Prime 中编写眼动程序的时候，建议一定要先编写好不带眼动的部分，调试好程序逻辑之后，再插入眼动控制的脚本。如果是眼动脑电联合的实验程序，也请先完成脑电的部分，最后调试眼动部分。
+
+其他诸如要设定显示器刷新率等诸多小坑，将在后续的脚本中详细讲述。
 
 ---
 
