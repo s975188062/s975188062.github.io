@@ -110,7 +110,7 @@ toc: true
 
 * [总体概述](/eyelink/e-prime/eprime-overview_devkit_2_1_1/)
 * [User Script](/eyelink/e-prime/eprime-user_script_devkit_2_1_1/)
-* elConnect 脚本
+* [elConnect 脚本](/eyelink/e-prime/eprime-elconnect_devkit_2_1_1/)
 * elCameraSetup 脚本
 * startRecording 脚本
 * stopRecording 脚本
