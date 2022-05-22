@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.5
   actions:
     - label: "下载示例文件(提取码：vo0m)"
-      url: "链接: https://pan.baidu.com/s/1A8QKilCfR1CNSBa_xsqKeA
+      url: "https://pan.baidu.com/s/1A8QKilCfR1CNSBa_xsqKeA"
 categories:
   - Eyelink
   - E-Prime
