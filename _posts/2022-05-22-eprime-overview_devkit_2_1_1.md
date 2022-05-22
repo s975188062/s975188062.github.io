@@ -77,7 +77,7 @@ E-Prime
 
 ![eprime-overview_v2-example_scripts_strcut](/assets/images/eprime-overview_v2-example_scripts_strcut.png)
 
-Charlie 会在后续的教程中陆续讲解这些脚本。
+Charlie 会在后续的教程都将基于 EyeLink_Picture 示例续讲解这些脚本。
 
 ---
 
