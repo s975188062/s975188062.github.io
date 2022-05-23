@@ -241,7 +241,7 @@ EL_3rd_Eprime:
       - title: "elConnect脚本"
         url: /eyelink/e-prime/eprime-elconnect_devkit_2_1_1/
       - title: "elCameraSetup脚本"
-        url: /editing/
+        url: /eyelink/e-prime/eprime-clCameraSetup_devkit_2_1_1/
       - title: "startRecording脚本"
         url: /editing/
       - title: "stopRecording脚本"
