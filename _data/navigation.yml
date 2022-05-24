@@ -243,7 +243,7 @@ EL_3rd_Eprime:
       - title: "elCameraSetup脚本"
         url: /eyelink/e-prime/eprime-clCameraSetup_devkit_2_1_1/
       - title: "startRecording脚本"
-        url: /editing/
+        url: /eyelink/e-prime/eprime-startRecording_devkit_2_1_1/
       - title: "stopRecording脚本"
         url: /editing/
       - title: "elClose脚本"
