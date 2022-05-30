@@ -61,8 +61,6 @@ PCI-e 声卡是指声卡使用 PCI-Express 接口。翻译一下就是这种声�
 
 ![eb-asio-usb_audio_card](/assets/images/eb-asio-usb_audio_card.png)
 
-由于 USB声卡 内部有功放（功率放大器），因此我们输入的声音信号可以经过放大再拾取记录。
-
 M-Audio M-Track Air 192 系列共计有四个分型号，分别是：
 
 > M-Audio M-Track Air 192 4
@@ -133,15 +131,17 @@ M-Audio M-Track Air 192 系列共计有四个分型号，分别是：
 
 ![eb-asio-35_2_65_audio_adapter](/assets/images/eb-asio-35_2_65_audio_adapter.png)
 
->最后我们再回顾一下所有的硬件连接，请忽略下图中的乐器：
+> 最后我们再回顾一下所有的硬件连接，请忽略下图中的乐器：
 >
->![eb_asio_usb_card_io_port](/assets/images/eb_asio_usb_card_io_port.png)
+> ![eb_asio_usb_card_io_port](/assets/images/eb_asio_usb_card_io_port.png)
 
 ## 2.2 安装驱动
 
 驱动文件下载链接：[Install M-Audio AIR 192 4 1.0.3(提取密码: t0ca)](https://pan.baidu.com/s/1_XO6yGfI0-bzfkHSvHrLBg)
 
 M-Audio Air 192｜4 声卡支持 Win7 以上系统，下载好驱动程序默认安装即可。
+
+> 部分 Windows 7 系统可能会出现声卡驱动无法正常安装的情况，具体原因不得而知也暂时没有有效的解决办法，建议大家使用 Windows 10 系统进行实验。
 
 驱动安装好之后，我们可以在 “开始菜单 - M-Audio” 文件夹中找到 `M-Audio AIR 192 4 Control Panel`。如果声卡已经连接在电脑上的话，打开 `M-Audio AIR 192 4 Control Panel` 则可以看到如下窗口。
 
