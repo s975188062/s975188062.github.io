@@ -1,5 +1,5 @@
 ---
-title: "elConnect脚本(E-Prime with DevKit v2.1.1)"
+title: "elConnect脚本(E-Prime3 with DevKit v2.1.1)"
 excerpt: "用脚本建立 E-Prime 与 Eyelink Host 的链接。"
 read_time: false
 header:

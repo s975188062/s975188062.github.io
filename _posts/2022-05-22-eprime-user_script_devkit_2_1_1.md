@@ -1,5 +1,5 @@
 ---
-title: "User Script(E-Prime with DevKit v2.1.1)"
+title: "User Script(E-Prime3 with DevKit v2.1.1)"
 excerpt: "放到E-Prime程序的最前面，不需要理解，完全复制粘贴。"
 read_time: false
 header:
@@ -31,10 +31,6 @@ sidebar:
 在 User Script 中，定义了整个实验程序需要用到的函数和变量。如要理解里面的全部代码，需要较多的编程基础，但好在我们基本不需要理解这些代码。
 
 在所有的实验中，使用的这些定义代码都是相通的，所以我们只需要将其完整地复制到自己的程序中即可。
-
-E-Prime 2 中 User Script 的位置如下：
-
-![eprime-ep2_user_script_v2](/assets/images/eprime-ep2_user_script_v2.png)
 
 E-Prime 3 中 User Script 的位置如下：
 
