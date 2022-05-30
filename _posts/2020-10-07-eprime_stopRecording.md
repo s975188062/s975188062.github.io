@@ -1,5 +1,5 @@
 ---
-title: "elStopRecording脚本(E-Prime 2 with DevKit v1.11.5)"
+title: "elStopRecording脚本(E-Prime with DevKit v1.11.5)"
 excerpt: "在 E-Prime 中命令主试机停止当前试次的数据记录，以及发送命令前后不多的收尾工作。"
 read_time: false
 header:

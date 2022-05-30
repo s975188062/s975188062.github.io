@@ -1,5 +1,5 @@
 ---
-title: "E-Prime眼动编程概述(E-Prime 2 with DevKit v1.11.5)"
+title: "E-Prime眼动编程概述(E-Prime with DevKit v1.11.5)"
 excerpt: "用复制粘贴的方法完成E-Prime眼动编程，简单得让你无法相信。"
 read_time: false
 header:

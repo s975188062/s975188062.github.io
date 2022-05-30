@@ -1,5 +1,5 @@
 ---
-title: "User Script(E-Prime 2 with DevKit v1.11.5)"
+title: "User Script(E-Prime with DevKit v1.11.5)"
 excerpt: "放到E-Prime程序的最前面，不需要理解，完全复制粘贴。"
 read_time: false
 header:
@@ -33,6 +33,10 @@ sidebar:
 理解起来需要较多的编程基础，但好在我们不需要理解。
 
 在任何 Eyelink 的 E-Prime 实验中，都需要在 E-Prime 的 User Script中填入相同的依赖代码，完全复制粘贴即可。
+
+E-Prime 3 中 User Script 的位置如下：
+
+![eprime-user_script](/assets/images/eprime-user_script.png)
 
 E-Prime 2 中 User Script 的位置如下：
 

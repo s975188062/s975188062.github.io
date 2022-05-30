@@ -1,5 +1,5 @@
 ---
-title: "elCameraSetup脚本(E-Prime3 with DevKit v2.1.1)"
+title: "elCameraSetup脚本(E-Prime with DevKit v2.1.1)"
 excerpt: "通过 E-Prime 执行相机校准。"
 read_time: false
 header:
