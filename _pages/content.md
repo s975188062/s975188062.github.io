@@ -96,7 +96,7 @@ toc: true
 
 ## 4.1 E-Prime
 
-### 4.1.1 E-Prime with DevKit v1.11.5
+### [旧版]4.1.1 E-Prime with DevKit v1.11.5
 
 * [总体概述](/eyelink/e-prime/eprime_overview/)
 * [User Script](/eyelink/e-prime/eprime-user_script/)
@@ -106,7 +106,7 @@ toc: true
 * [stopRecording 脚本](/eyelink/e-prime/eprime_stopRecording/)
 * [elClose 脚本](/eyelink/e-prime/eprime_elClose/)
 
-### 4.1.2 E-Prime with DevKit v2.1.1
+### [新版/推荐]4.1.2 E-Prime with DevKit v2.1.1
 
 * [总体概述](/eyelink/e-prime/eprime-overview_devkit_2_1_1/)
 * [User Script](/eyelink/e-prime/eprime-user_script_devkit_2_1_1/)
