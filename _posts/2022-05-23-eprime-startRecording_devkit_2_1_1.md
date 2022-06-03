@@ -326,3 +326,7 @@ tracker.startRecording True, True, True, True
 sleep 100 'Delay to make sure that the Host PC is properly up and running before
 		  'the trial stimuli are presented
 ~~~
+
+---
+
+以上。
