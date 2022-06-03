@@ -247,7 +247,7 @@ EL_3rd_Eprime:
       - title: "stopRecording脚本"
         url: /eyelink/e-prime/eprime-stopRecording_devkit_2_1_1/
       - title: "elClose脚本"
-        url: /editing/
+        url: /eyelink/e-prime/eprime-elClose/
   - title: "第三方支持的其他部分"
     children:
       - title: "3-rd 编程概述"
