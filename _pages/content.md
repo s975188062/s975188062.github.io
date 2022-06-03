@@ -113,7 +113,7 @@ toc: true
 * [elConnect 脚本](/eyelink/e-prime/eprime-elconnect_devkit_2_1_1/)
 * [elCameraSetup 脚本](/eyelink/e-prime/eprime-clCameraSetup_devkit_2_1_1/)
 * [startRecording 脚本](/eyelink/e-prime/eprime-startRecording_devkit_2_1_1/)
-* stopRecording 脚本
+* [stopRecording 脚本](/eyelink/e-prime/eprime-stopRecording_devkit_2_1_1/)
 * elClose 脚本
 
 ### 4.1.3 其他
