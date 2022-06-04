@@ -38,6 +38,7 @@ toc: true
 
 ## 1.2 Master
 
+* 显示图片与位置随机
 * [拉丁方设计](/eyelink/latin_square_random/)
 * [文字自动化分兴趣区 - Auot_Word_Segment](/eyelink/eb_auto_word_segment/)
 * [播放声音（DisplayScreen、PlayAudio和PlauAudioControl）](/eyelink/eb-play_sound/)
@@ -47,7 +48,6 @@ toc: true
 * GC-Window（DisplayScreen）
 * Visual-World（DisplayScreen和Mouse）
 * 多模态（SetTTL、BiometricTTL等）
-* 真随机（Variable和UpdateAttribute）
 
 ## 1.3 单控件精讲
 
